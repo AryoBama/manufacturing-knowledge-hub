@@ -1,0 +1,107 @@
+[
+  {
+    "source": "D-1201",
+    "target": "GA-1201A",
+    "relationship": "feeds_into",
+    "description": "Suction line from Hexane Drum to GA-1201A",
+    "source_document": "PID-1201-REV05"
+  },
+  {
+    "source": "GA-1201A",
+    "target": "R-1201",
+    "relationship": "feeds_into",
+    "description": "Discharge line from GA-1201A to Reactor",
+    "source_document": "PID-1201-REV05"
+  },
+  {
+    "source": "GA-1201A",
+    "target": "GA-1201B",
+    "relationship": "connected_to",
+    "description": "Auto-standby paired pump configuration",
+    "source_document": "PID-1201-REV05"
+  },
+  {
+    "source": "PSLL-1201",
+    "target": "GA-1201A",
+    "relationship": "triggers_trip",
+    "description": "Trip motor on Low Suction Pressure (< 0.5 barg)",
+    "source_document": "INT-1201-REV03"
+  },
+  {
+    "source": "VSHH-1201",
+    "target": "GA-1201A",
+    "relationship": "triggers_trip",
+    "description": "Trip motor on High Bearing Vibration (> 7.1 mm/s)",
+    "source_document": "INT-1201-REV03"
+  },
+  {
+    "source": "TSHH-1201",
+    "target": "GA-1201A",
+    "relationship": "triggers_trip",
+    "description": "Trip motor on High Bearing Temperature (> 85 C)",
+    "source_document": "INT-1201-REV03"
+  },
+  {
+    "source": "ZSO-1201",
+    "target": "GA-1201A",
+    "relationship": "permissive_for",
+    "description": "Permissive to start pump: Suction valve must be 100% open",
+    "source_document": "INT-1201-REV03"
+  },
+  {
+    "source": "GA-1201A",
+    "target": "SEQ-1201",
+    "relationship": "protected_by",
+    "description": "Protected by SIS Interlock SEQ-1201",
+    "source_document": "INT-1201-REV03"
+  },
+  {
+    "source": "RO-1201",
+    "target": "FM-ORIFICE-PLUG",
+    "relationship": "has_failure_mode",
+    "description": "Debris accumulation at 3.5mm orifice",
+    "source_document": "OPL-1201-REV02"
+  },
+  {
+    "source": "FM-ORIFICE-PLUG",
+    "target": "FM-SEAL-DRYRUN",
+    "relationship": "causes",
+    "description": "Deprives API Plan 11 flush circulation",
+    "source_document": "OPL-1201-REV02"
+  },
+  {
+    "source": "FM-SEAL-DRYRUN",
+    "target": "FM-SEAL-LEAK",
+    "relationship": "causes",
+    "description": "Heat checking and carbon face fracture",
+    "source_document": "OPL-1201-REV02"
+  },
+  {
+    "source": "FM-SEAL-LEAK",
+    "target": "MECH-SEAL-1201A",
+    "relationship": "part_of",
+    "description": "Physical seal component damage",
+    "source_document": "OPL-1201-REV02"
+  },
+  {
+    "source": "COUPLING-1201A",
+    "target": "FM-MISALIGNMENT",
+    "relationship": "has_failure_mode",
+    "description": "Thermal expansion or foundation settlement",
+    "source_document": "OPL-1201-REV02"
+  },
+  {
+    "source": "FM-MISALIGNMENT",
+    "target": "FM-HIGH-VIBRATION",
+    "relationship": "causes",
+    "description": "Dynamic 1X/2X shaft oscillation",
+    "source_document": "OPL-1201-REV02"
+  },
+  {
+    "source": "FM-HIGH-VIBRATION",
+    "target": "VSHH-1201",
+    "relationship": "measures",
+    "description": "Sensor detects vibration exceeding 7.1 mm/s",
+    "source_document": "INT-1201-REV03"
+  }
+]

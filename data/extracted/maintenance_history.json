@@ -1,0 +1,2743 @@
+[
+  {
+    "event_id": "NT-2024-560424",
+    "equipment_tag": "KC-4501",
+    "date": "2024-06-04",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-4501",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560614",
+    "equipment_tag": "LV-6701",
+    "date": "2024-06-09",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560138",
+    "equipment_tag": "YD-2301",
+    "date": "2024-06-14",
+    "failure_mode": "No",
+    "symptom": "Outlet moisture reading drifting vs lab sample",
+    "root_cause": "Analyzer sample line partly blocked and cell drift",
+    "corrective_action": "Cleaned sample line and recalibrated MT-2306 to lab reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560713",
+    "equipment_tag": "CT-7801",
+    "date": "2024-06-14",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560339",
+    "equipment_tag": "KC-4501",
+    "date": "2024-06-18",
+    "failure_mode": "Unspecified",
+    "symptom": "Seal gas flow FT-4506 low, buffer pressure unstable",
+    "root_cause": "N2 buffer regulator diaphragm failed",
+    "corrective_action": "Replaced seal gas regulator, re-established buffer dP",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "N2 regulator"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560498",
+    "equipment_tag": "EA-5601",
+    "date": "2024-06-20",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560733",
+    "equipment_tag": "CT-7801",
+    "date": "2024-06-22",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-7801",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560332",
+    "equipment_tag": "KC-4501",
+    "date": "2024-06-22",
+    "failure_mode": "Unspecified",
+    "symptom": "High blow-by, low 2nd stage efficiency",
+    "root_cause": "PTFE piston rings worn beyond limit",
+    "corrective_action": "Renewed 2nd stage PTFE piston and rider rings, honed cylinder",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "PTFE piston rings"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560505",
+    "equipment_tag": "EA-5601",
+    "date": "2024-06-22",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560767",
+    "equipment_tag": "FA-8901",
+    "date": "2024-07-01",
+    "failure_mode": "Yes",
+    "symptom": "Nitrogen leak at manway after inspection",
+    "root_cause": "SW gasket unevenly seated",
+    "corrective_action": "Renewed SW SS316/graphite gasket, leak test passed",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "SW SS316/graphite manway gasket"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560745",
+    "equipment_tag": "FA-8901",
+    "date": "2024-07-04",
+    "failure_mode": "Unspecified",
+    "symptom": "Boot drain valve N4 passing / leaking",
+    "root_cause": "Seat eroded by water/solids",
+    "corrective_action": "Reseated / replaced boot drain valve HV-8904",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Boot drain valve"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560696",
+    "equipment_tag": "CT-7801",
+    "date": "2024-07-05",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560404",
+    "equipment_tag": "KC-4501",
+    "date": "2024-07-06",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560212",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-07-08",
+    "failure_mode": "Yes",
+    "symptom": "Bed multipoint TC point 3 reading open circuit",
+    "root_cause": "Thermocouple element failed at the sheath junction",
+    "corrective_action": "Replaced TC point 3 in the multipoint assembly, verified reading and TSHH-3401 select",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "Multipoint thermocouple element (1 pt)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560545",
+    "equipment_tag": "LV-6701",
+    "date": "2024-07-16",
+    "failure_mode": "Yes",
+    "symptom": "Hexane weeping at LV-6701 stem packing",
+    "root_cause": "PTFE V-ring packing worn",
+    "corrective_action": "Renewed PTFE V-ring packing set, re-torqued gland",
+    "downtime_hours": 4.0,
+    "parts_replaced": [
+      "PTFE V-ring packing set"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560350",
+    "equipment_tag": "KC-4501",
+    "date": "2024-07-16",
+    "failure_mode": "No",
+    "symptom": "Proof test of KO drum high-high level trip",
+    "root_cause": "Float healthy, minor set-point trim",
+    "corrective_action": "Verified LSHH-4510 float and trip action",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560576",
+    "equipment_tag": "LV-6701",
+    "date": "2024-07-20",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560790",
+    "equipment_tag": "FA-8901",
+    "date": "2024-07-21",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560673",
+    "equipment_tag": "CT-7801",
+    "date": "2024-07-22",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560604",
+    "equipment_tag": "LV-6701",
+    "date": "2024-07-22",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560049",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-07-24",
+    "failure_mode": "No",
+    "symptom": "Scheduled SIL-1 proof test of GA-1201A trip logic",
+    "root_cause": "All trips functioned within tolerance",
+    "corrective_action": "Simulated PSLL/VSHH/TSHH trips, verified EFF-1..5 actions and auto-start GA-1201B",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560502",
+    "equipment_tag": "EA-5601",
+    "date": "2024-07-25",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560184",
+    "equipment_tag": "YD-2301",
+    "date": "2024-07-26",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560786",
+    "equipment_tag": "FA-8901",
+    "date": "2024-07-27",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560229",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-07-30",
+    "failure_mode": "Yes",
+    "symptom": "N2 inert valve slow / sticking during inerting step",
+    "root_cause": "Actuator seals hardened, positioner out of calibration",
+    "corrective_action": "Serviced actuator, replaced seals, recalibrated positioner",
+    "downtime_hours": 6.0,
+    "parts_replaced": [
+      "Actuator seal kit"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560455",
+    "equipment_tag": "EA-5601",
+    "date": "2024-07-31",
+    "failure_mode": "Yes",
+    "symptom": "Statutory relief valve test",
+    "root_cause": "Set pressure within tolerance",
+    "corrective_action": "Overhauled PSV-5607, lapped seat, re-set 16 barg, certified",
+    "downtime_hours": 6.0,
+    "parts_replaced": [
+      "PSV soft goods"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560235",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-08-05",
+    "failure_mode": "Yes",
+    "symptom": "Scheduled statutory PSV pop test",
+    "root_cause": "Set pressure drift +0.3 barg found",
+    "corrective_action": "Overhauled PSV-3401, lapped seat, re-set to 6 barg, certified",
+    "downtime_hours": 12.0,
+    "parts_replaced": [
+      "PSV soft goods kit"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560149",
+    "equipment_tag": "YD-2301",
+    "date": "2024-08-05",
+    "failure_mode": "Yes",
+    "symptom": "O2 analyzer reading unstable, inerting confidence low",
+    "root_cause": "O2 sensor cell end of life",
+    "corrective_action": "Replaced O2 sensor cell, calibrated on span gas, verified ASHH-2307",
+    "downtime_hours": 6.0,
+    "parts_replaced": [
+      "O2 analyzer sensor cell"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560032",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-08-10",
+    "failure_mode": "No",
+    "symptom": "Discharge flow control hunting, FIC-1201 oscillating",
+    "root_cause": "Loop poorly tuned after transmitter re-range",
+    "corrective_action": "Re-ranged FT-1201 and retuned FIC-1201 PID parameters",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560057",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-08-17",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560830",
+    "equipment_tag": "FA-8901",
+    "date": "2024-08-20",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-8901",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560368",
+    "equipment_tag": "KC-4501",
+    "date": "2024-08-20",
+    "failure_mode": "Unspecified",
+    "symptom": "Process gas detected at distance-piece vent",
+    "root_cause": "PTFE pressure packing rings worn",
+    "corrective_action": "Renewed pressure packing set, checked rod runout",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "PTFE packing set"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560415",
+    "equipment_tag": "KC-4501",
+    "date": "2024-08-26",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560069",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-08-31",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560769",
+    "equipment_tag": "FA-8901",
+    "date": "2024-09-02",
+    "failure_mode": "No",
+    "symptom": "Drum pressure reading erratic",
+    "root_cause": "Impulse line plugged",
+    "corrective_action": "Cleared impulse line, re-zeroed PT-8902",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560435",
+    "equipment_tag": "EA-5601",
+    "date": "2024-09-02",
+    "failure_mode": "Yes",
+    "symptom": "Hexane weep at channel flange",
+    "root_cause": "Spiral-wound channel gasket relaxed / damaged",
+    "corrective_action": "Renewed channel gasket, re-torqued in cross pattern",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "SW SS316/graphite gasket"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560380",
+    "equipment_tag": "KC-4501",
+    "date": "2024-09-03",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560115",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-09-03",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560679",
+    "equipment_tag": "CT-7801",
+    "date": "2024-09-05",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560582",
+    "equipment_tag": "LV-6701",
+    "date": "2024-09-05",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560161",
+    "equipment_tag": "YD-2301",
+    "date": "2024-09-10",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560739",
+    "equipment_tag": "FA-8901",
+    "date": "2024-09-11",
+    "failure_mode": "No",
+    "symptom": "Reflux drum level transmitter drifting vs gauge",
+    "root_cause": "Transmitter zero drift",
+    "corrective_action": "Recalibrated LT-8901 against the bridle gauge",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560590",
+    "equipment_tag": "LV-6701",
+    "date": "2024-09-17",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560402",
+    "equipment_tag": "KC-4501",
+    "date": "2024-09-19",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560652",
+    "equipment_tag": "CT-7801",
+    "date": "2024-09-19",
+    "failure_mode": "Unspecified",
+    "symptom": "Displaced drift eliminator panels, visible drift",
+    "root_cause": "Panels dislodged by wind/age",
+    "corrective_action": "Realigned and secured PVC drift eliminator panels",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "PVC eliminator panels"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560170",
+    "equipment_tag": "YD-2301",
+    "date": "2024-09-20",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560327",
+    "equipment_tag": "KC-4501",
+    "date": "2024-09-21",
+    "failure_mode": "Unspecified",
+    "symptom": "KC-4501 tripped on PSLL-4504 low lube oil pressure",
+    "root_cause": "Lube oil pump gears worn, relief valve set low",
+    "corrective_action": "Overhauled lube oil pump, reset relief valve, verified 2.5 barg",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Lube oil pump gear set"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560814",
+    "equipment_tag": "FA-8901",
+    "date": "2024-09-24",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560450",
+    "equipment_tag": "EA-5601",
+    "date": "2024-09-29",
+    "failure_mode": "No",
+    "symptom": "Erratic tube dP reading",
+    "root_cause": "Impulse lines plugged with fines",
+    "corrective_action": "Cleaned and re-zeroed PDT-5605 transmitter",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560524",
+    "equipment_tag": "EA-5601",
+    "date": "2024-10-01",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560727",
+    "equipment_tag": "CT-7801",
+    "date": "2024-10-03",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560286",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-10-05",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560095",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-10-06",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560645",
+    "equipment_tag": "CT-7801",
+    "date": "2024-10-07",
+    "failure_mode": "Unspecified",
+    "symptom": "Scheduled pH analyzer calibration",
+    "root_cause": "Electrode drift",
+    "corrective_action": "Recalibrated AI-7805 on buffer solutions, replaced electrode",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "pH electrode"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560267",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-10-10",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560065",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-10-10",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560100",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-10-12",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560291",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-10-20",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560132",
+    "equipment_tag": "YD-2301",
+    "date": "2024-10-23",
+    "failure_mode": "No",
+    "symptom": "FT-2302 nitrogen purge flow reading low/erratic",
+    "root_cause": "Flow element fouled with fine powder carryover",
+    "corrective_action": "Removed and cleaned flow element, verified FSLL-2302 trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560465",
+    "equipment_tag": "EA-5601",
+    "date": "2024-10-25",
+    "failure_mode": "Yes",
+    "symptom": "Scheduled major bundle inspection",
+    "root_cause": "General fouling, tubes within wall-loss limit",
+    "corrective_action": "Pulled bundle, UT of 246 tubes, cleaned and re-installed",
+    "downtime_hours": 40.0,
+    "parts_replaced": [
+      "Bundle gaskets set"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560657",
+    "equipment_tag": "CT-7801",
+    "date": "2024-10-26",
+    "failure_mode": "Yes",
+    "symptom": "Vibration traced to drive-shaft coupling",
+    "root_cause": "Composite floating-shaft coupling worn",
+    "corrective_action": "Replaced drive-shaft coupling, aligned, tested",
+    "downtime_hours": 10.0,
+    "parts_replaced": [
+      "Composite shaft coupling"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560663",
+    "equipment_tag": "CT-7801",
+    "date": "2024-10-28",
+    "failure_mode": "No",
+    "symptom": "Scheduled IR test of wet-duty fan motor",
+    "root_cause": "Insulation healthy",
+    "corrective_action": "Megger and PI test, checked cable gland sealing",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560835",
+    "equipment_tag": "FA-8901",
+    "date": "2024-10-31",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-8901",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560306",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-11-01",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560155",
+    "equipment_tag": "YD-2301",
+    "date": "2024-11-04",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560030",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-11-05",
+    "failure_mode": "No",
+    "symptom": "PDI-1201 reading erratic, seal-flush low alarm nuisance-tripping",
+    "root_cause": "Impulse lines fouled with hexane residue/polymer fines",
+    "corrective_action": "Cleaned impulse lines and re-zeroed PDI-1201 transmitter",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560699",
+    "equipment_tag": "CT-7801",
+    "date": "2024-11-12",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560536",
+    "equipment_tag": "LV-6701",
+    "date": "2024-11-13",
+    "failure_mode": "Unspecified",
+    "symptom": "Manual handwheel jack on LV-6701 seized",
+    "root_cause": "Corrosion in handwheel thread",
+    "corrective_action": "Overhauled handwheel assembly, greased thread",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Handwheel assembly"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560123",
+    "equipment_tag": "YD-2301",
+    "date": "2024-11-15",
+    "failure_mode": "No",
+    "symptom": "Scheduled proof test of dryer outlet high-high temperature trip",
+    "root_cause": "Set-point within tolerance, minor zero drift corrected",
+    "corrective_action": "Recalibrated TSHH-2301 to 125 degC and function tested to logic",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560511",
+    "equipment_tag": "EA-5601",
+    "date": "2024-11-24",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560218",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-11-29",
+    "failure_mode": "Unspecified",
+    "symptom": "One heater bank drawing no current, slow heat-up",
+    "root_cause": "Electric heater element bank open circuit / element burnt",
+    "corrective_action": "Replaced heater element bank, meggered, verified TIC-17343 response",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Heater element bank"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560742",
+    "equipment_tag": "FA-8901",
+    "date": "2024-11-30",
+    "failure_mode": "Yes",
+    "symptom": "Statutory relief valve test",
+    "root_cause": "Set pressure drift found",
+    "corrective_action": "Overhauled PSV-8901, lapped seat, re-set 10 barg, certified",
+    "downtime_hours": 10.0,
+    "parts_replaced": [
+      "PSV soft goods kit"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560223",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-11-30",
+    "failure_mode": "No",
+    "symptom": "Inerting O2 analyzer drift vs portable reference",
+    "root_cause": "Analyzer zero drift and sample dryer saturated",
+    "corrective_action": "Recalibrated AI-3401 on span gas, replaced sample dryer",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Sample dryer cartridge"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560548",
+    "equipment_tag": "LV-6701",
+    "date": "2024-12-01",
+    "failure_mode": "No",
+    "symptom": "Scheduled air set maintenance",
+    "root_cause": "Filter element dirty",
+    "corrective_action": "Replaced filter regulator element, drained bowl",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Filter regulator element"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560779",
+    "equipment_tag": "FA-8901",
+    "date": "2024-12-09",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560824",
+    "equipment_tag": "FA-8901",
+    "date": "2024-12-11",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-8901",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560038",
+    "equipment_tag": "GA-1201A",
+    "date": "2024-12-11",
+    "failure_mode": "No",
+    "symptom": "6-monthly motor preventive maintenance",
+    "root_cause": "Routine - insulation resistance healthy 850 MOhm",
+    "corrective_action": "Re-greased motor DE/NDE bearings, IR & PI test recorded",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Polyurea grease (100 g)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560429",
+    "equipment_tag": "EA-5601",
+    "date": "2024-12-13",
+    "failure_mode": "Yes",
+    "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+    "root_cause": "Hexane fouling / polymer fines deposit on tube bores",
+    "corrective_action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed",
+    "downtime_hours": 16.0,
+    "parts_replaced": [
+      "SW SS316/graphite gaskets (2)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560777",
+    "equipment_tag": "FA-8901",
+    "date": "2024-12-13",
+    "failure_mode": "No",
+    "symptom": "SIL-1 proof test of overhead protection logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated LSHH/LSLL/PSHH trips, verified EFF actions",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560244",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-12-14",
+    "failure_mode": "No",
+    "symptom": "Reduction H2 analyzer reading unreliable",
+    "root_cause": "H2 analyzer cell at end of life",
+    "corrective_action": "Replaced H2 analyzer cell, calibrated, verified reduction tracking",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "H2 analyzer cell"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560552",
+    "equipment_tag": "LV-6701",
+    "date": "2024-12-16",
+    "failure_mode": "Yes",
+    "symptom": "Continuous air leak, valve drifting closed",
+    "root_cause": "Fisher 667 diaphragm ruptured",
+    "corrective_action": "Replaced actuator diaphragm, re-benched, recalibrated",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "Fisher 667 diaphragm"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560747",
+    "equipment_tag": "FA-8901",
+    "date": "2024-12-16",
+    "failure_mode": "No",
+    "symptom": "Blanket / vent split-range valve hunting",
+    "root_cause": "Split-range calibration overlap incorrect",
+    "corrective_action": "Re-tuned PCV-8905 split-range, verified PT-8902 hold",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560573",
+    "equipment_tag": "LV-6701",
+    "date": "2024-12-20",
+    "failure_mode": "Yes",
+    "symptom": "Minor weep at body/bonnet joint",
+    "root_cause": "Spiral-wound body gasket relaxed",
+    "corrective_action": "Renewed body gasket, torqued bonnet bolts",
+    "downtime_hours": 4.0,
+    "parts_replaced": [
+      "SW body gasket"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560630",
+    "equipment_tag": "CT-7801",
+    "date": "2024-12-24",
+    "failure_mode": "No",
+    "symptom": "Routine barscreen cleaning on operator round",
+    "root_cause": "Normal debris accumulation",
+    "corrective_action": "Raked barscreen clear, checked differential level",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560295",
+    "equipment_tag": "DC-3401A",
+    "date": "2024-12-26",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560792",
+    "equipment_tag": "FA-8901",
+    "date": "2024-12-27",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560121",
+    "equipment_tag": "YD-2301",
+    "date": "2024-12-27",
+    "failure_mode": "Yes",
+    "symptom": "Minor powder weep at feed-end gland",
+    "root_cause": "PTFE 4505L packing hardened and worn",
+    "corrective_action": "Renewed 2 pcs PTFE 4505L feed-end packing",
+    "downtime_hours": 10.5,
+    "parts_replaced": [
+      "PTFE packing PILLER 4505L (2 pcs)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560685",
+    "equipment_tag": "CT-7801",
+    "date": "2024-12-31",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560518",
+    "equipment_tag": "EA-5601",
+    "date": "2025-01-01",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560438",
+    "equipment_tag": "EA-5601",
+    "date": "2025-01-03",
+    "failure_mode": "No",
+    "symptom": "Continuous steam at condensate, high steam use",
+    "root_cause": "Steam trap element failed open",
+    "corrective_action": "Replaced steam trap element, verified condensate temperature",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Steam trap element"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560808",
+    "equipment_tag": "FA-8901",
+    "date": "2025-01-04",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560313",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-01-06",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-3401",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560530",
+    "equipment_tag": "LV-6701",
+    "date": "2025-01-06",
+    "failure_mode": "Yes",
+    "symptom": "LV-6701 not responding to LIC-6701, level control lost",
+    "root_cause": "Stem seized in PTFE packing (over-tightened + fines)",
+    "corrective_action": "Freed stem, renewed packing, lubricated, re-stroked and calibrated",
+    "downtime_hours": 5.0,
+    "parts_replaced": [
+      "PTFE V-ring packing set"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560371",
+    "equipment_tag": "KC-4501",
+    "date": "2025-01-08",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560021",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-01-16",
+    "failure_mode": "No",
+    "symptom": "Scheduled proof test of low-low suction pressure trip",
+    "root_cause": "Switch set-point drift found +0.08 barg during proof test",
+    "corrective_action": "Recalibrated PSLL-1201 to 0.5 barg trip, function tested to DCS",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560730",
+    "equipment_tag": "CT-7801",
+    "date": "2025-01-18",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560564",
+    "equipment_tag": "LV-6701",
+    "date": "2025-01-21",
+    "failure_mode": "No",
+    "symptom": "LV-6701 isolation for planned maintenance",
+    "root_cause": "Planned - bypass used to hold level",
+    "corrective_action": "Lined up HV-6701 manual bypass, isolated LV-6701 safely",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560667",
+    "equipment_tag": "CT-7801",
+    "date": "2025-01-25",
+    "failure_mode": "Yes",
+    "symptom": "Reduced cooling performance, collapsed fill",
+    "root_cause": "PVC film fill degraded / partially collapsed",
+    "corrective_action": "Replaced degraded fill section, restored performance",
+    "downtime_hours": 24.0,
+    "parts_replaced": [
+      "PVC film fill packs"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560513",
+    "equipment_tag": "EA-5601",
+    "date": "2025-01-27",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560410",
+    "equipment_tag": "KC-4501",
+    "date": "2025-01-29",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560489",
+    "equipment_tag": "EA-5601",
+    "date": "2025-01-31",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560347",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-05",
+    "failure_mode": "Yes",
+    "symptom": "High interstage temperature, fouling suspected",
+    "root_cause": "Waterside fouling of intercooler tubes",
+    "corrective_action": "Hydrojetted intercooler tubes, restored approach temp",
+    "downtime_hours": 16.0,
+    "parts_replaced": [
+      "Gaskets EA-4502"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560364",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-06",
+    "failure_mode": "No",
+    "symptom": "SIL-2 proof test of compressor shutdown logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated PSLL/TSHH/VSHH trips, verified recycle open and motor trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560205",
+    "equipment_tag": "YD-2301",
+    "date": "2025-02-08",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-5500",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560600",
+    "equipment_tag": "LV-6701",
+    "date": "2025-02-10",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560356",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-18",
+    "failure_mode": "Yes",
+    "symptom": "TE-4507 main bearing temperature rising",
+    "root_cause": "Restricted oil supply groove to No.2 main bearing",
+    "corrective_action": "Inspected and cleared oil passage, checked bearing clearance",
+    "downtime_hours": 22.0,
+    "parts_replaced": [
+      "Main bearing shell (inspected)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560044",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-02-21",
+    "failure_mode": "Unspecified",
+    "symptom": "Scheduled T/A major overhaul of GA-1201A",
+    "root_cause": "End-of-run wear on wear rings and seal per RBI plan",
+    "corrective_action": "Renewed seal, both bearings, wear rings",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "event_id": "NT-2024-560011",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-02-23",
+    "failure_mode": "Unspecified",
+    "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+    "root_cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+    "corrective_action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to 1.9 mm/s",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Shim pack"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560202",
+    "equipment_tag": "YD-2301",
+    "date": "2025-02-26",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-5500",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560392",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-28",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560194",
+    "equipment_tag": "YD-2301",
+    "date": "2025-03-01",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560117",
+    "equipment_tag": "YD-2301",
+    "date": "2025-03-03",
+    "failure_mode": "Yes",
+    "symptom": "Steam and powder leaking at YD-2301 discharge gland",
+    "root_cause": "PTFE 4526L gland packing worn beyond service limit",
+    "corrective_action": "Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after warm-up",
+    "downtime_hours": 12.0,
+    "parts_replaced": [
+      "PTFE packing PILLER 4526L (8 pcs)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560650",
+    "equipment_tag": "CT-7801",
+    "date": "2025-03-04",
+    "failure_mode": "Unspecified",
+    "symptom": "Vibration and noise from fan bearing",
+    "root_cause": "Spherical roller fan bearing worn",
+    "corrective_action": "Replaced fan bearing, re-greased, checked shaft",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Spherical roller bearing"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560441",
+    "equipment_tag": "EA-5601",
+    "date": "2025-03-05",
+    "failure_mode": "Yes",
+    "symptom": "Water found in solvent, rising outlet temperature",
+    "root_cause": "Two tubes leaking at tube-to-tubesheet joint",
+    "corrective_action": "Located and plugged 2 tubes both ends, hydrotest passed",
+    "downtime_hours": 30.0,
+    "parts_replaced": [
+      "Tapered tube plugs x4"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560072",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-03-05",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560141",
+    "equipment_tag": "YD-2301",
+    "date": "2025-03-05",
+    "failure_mode": "Unspecified",
+    "symptom": "Scheduled drive gearbox oil change",
+    "root_cause": "Routine - oil sample acceptable",
+    "corrective_action": "Drained and refilled ISO VG 220, replaced breather",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 220 gear oil (18 L)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560628",
+    "equipment_tag": "LV-6701",
+    "date": "2025-03-07",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-6701",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560274",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-03-09",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560566",
+    "equipment_tag": "LV-6701",
+    "date": "2025-03-12",
+    "failure_mode": "Unspecified",
+    "symptom": "LV-6701 passing when closed (Class IV exceeded)",
+    "root_cause": "Seat/plug erosion from polymer bottoms",
+    "corrective_action": "Lapped seat and plug, restored Class IV shut-off",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Lapping compound"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560055",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-03-19",
+    "failure_mode": "Unspecified",
+    "symptom": "Hairline crack in epoxy grout under baseplate edge",
+    "root_cause": "Vibration-induced grout fatigue at pump end",
+    "corrective_action": "Chipped out loose grout and re-grouted with epoxy, torqued hold-down bolts",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Epoxy grout"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560421",
+    "equipment_tag": "KC-4501",
+    "date": "2025-03-24",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-4501",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560189",
+    "equipment_tag": "YD-2301",
+    "date": "2025-03-25",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560017",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-03-29",
+    "failure_mode": "Unspecified",
+    "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+    "root_cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+    "corrective_action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Bearing 7310 BECBM"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560475",
+    "equipment_tag": "EA-5601",
+    "date": "2025-04-05",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560757",
+    "equipment_tag": "FA-8901",
+    "date": "2025-04-06",
+    "failure_mode": "Yes",
+    "symptom": "Level bridle gauge not tracking",
+    "root_cause": "Bridle legs plugged with fines",
+    "corrective_action": "Blew down and cleared bridle, restored gauge",
+    "downtime_hours": 4.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560281",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-04-06",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560240",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-04-07",
+    "failure_mode": "Unspecified",
+    "symptom": "End-of-life catalyst replacement at turnaround",
+    "root_cause": "Spent Pd/Al2O3 catalyst at end of run",
+    "corrective_action": "Vacuumed out spent catalyst, inspected grids, loaded 3.2 m3 fresh catalyst",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Pd/Al2O3 catalyst 3.2 m3"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560200",
+    "equipment_tag": "YD-2301",
+    "date": "2025-04-09",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560097",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-04-11",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560642",
+    "equipment_tag": "CT-7801",
+    "date": "2025-04-12",
+    "failure_mode": "Unspecified",
+    "symptom": "TSHH-7803 gearbox oil temperature rising",
+    "root_cause": "Degraded oil and fouled oil cooler",
+    "corrective_action": "Changed oil, cleaned oil cooler, verified temperature",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 220 oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560396",
+    "equipment_tag": "KC-4501",
+    "date": "2025-04-13",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560795",
+    "equipment_tag": "FA-8901",
+    "date": "2025-04-14",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560472",
+    "equipment_tag": "EA-5601",
+    "date": "2025-04-15",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560493",
+    "equipment_tag": "EA-5601",
+    "date": "2025-04-17",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560803",
+    "equipment_tag": "FA-8901",
+    "date": "2025-04-25",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560470",
+    "equipment_tag": "EA-5601",
+    "date": "2025-04-25",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560182",
+    "equipment_tag": "YD-2301",
+    "date": "2025-04-27",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560311",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-05-03",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560168",
+    "equipment_tag": "YD-2301",
+    "date": "2025-05-04",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560384",
+    "equipment_tag": "KC-4501",
+    "date": "2025-05-15",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560127",
+    "equipment_tag": "YD-2301",
+    "date": "2025-05-21",
+    "failure_mode": "Yes",
+    "symptom": "SSLL-2305 speed low alarm, chain slack observed",
+    "root_cause": "Chain elongation with normal wear caused slip",
+    "corrective_action": "Adjusted take-up, lubricated chain, checked sprocket wear",
+    "downtime_hours": 4.0,
+    "parts_replaced": [
+      "Chain oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560019",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-05-26",
+    "failure_mode": "No",
+    "symptom": "Routine lube route - oil level below mid-mark on sight glass",
+    "root_cause": "Normal consumption / minor weep at constant-level oiler",
+    "corrective_action": "Topped up ISO VG 68 to correct level, checked oiler bottle seal",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 68 lubricating oil (0.5 L)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560542",
+    "equipment_tag": "LV-6701",
+    "date": "2025-05-26",
+    "failure_mode": "No",
+    "symptom": "Positioner giving position error after drift",
+    "root_cause": "Positioner feedback out of calibration",
+    "corrective_action": "Recalibrated DVC6200, updated firmware, verified travel",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560763",
+    "equipment_tag": "FA-8901",
+    "date": "2025-05-26",
+    "failure_mode": "Yes",
+    "symptom": "Scheduled corrosion monitoring of boot",
+    "root_cause": "Wall thickness within corrosion allowance",
+    "corrective_action": "UT survey of boot and shell bottom, logged in RBI file",
+    "downtime_hours": 12.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560263",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-05-27",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560288",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-05-31",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560558",
+    "equipment_tag": "LV-6701",
+    "date": "2025-06-02",
+    "failure_mode": "No",
+    "symptom": "Proof test of separator high-high level trip",
+    "root_cause": "Within tolerance",
+    "corrective_action": "Recalibrated LSHH-6710 and verified EFF-1 open action",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560322",
+    "equipment_tag": "KC-4501",
+    "date": "2025-06-10",
+    "failure_mode": "Unspecified",
+    "symptom": "High discharge temperature trip TSHH-4503, capacity drop",
+    "root_cause": "1st stage suction plate valve fractured",
+    "corrective_action": "Replaced complete suction valve set, checked seat, leak tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Plate valve set (suction)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560272",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-06-11",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560703",
+    "equipment_tag": "CT-7801",
+    "date": "2025-06-14",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560109",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-06-15",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560570",
+    "equipment_tag": "LV-6701",
+    "date": "2025-06-18",
+    "failure_mode": "No",
+    "symptom": "Position feedback mismatch on DCS",
+    "root_cause": "Limit switches out of adjustment",
+    "corrective_action": "Recalibrated open/closed limit switches",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560737",
+    "equipment_tag": "CT-7801",
+    "date": "2025-06-23",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-7801",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560724",
+    "equipment_tag": "CT-7801",
+    "date": "2025-06-23",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560413",
+    "equipment_tag": "KC-4501",
+    "date": "2025-06-30",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560334",
+    "equipment_tag": "KC-4501",
+    "date": "2025-07-01",
+    "failure_mode": "No",
+    "symptom": "Proof test of lube oil low-low trip",
+    "root_cause": "Set-point within tolerance",
+    "corrective_action": "Recalibrated PSLL-4504 to 1.5 barg, function tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560317",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-07-06",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-3401",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560479",
+    "equipment_tag": "EA-5601",
+    "date": "2025-07-09",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560609",
+    "equipment_tag": "LV-6701",
+    "date": "2025-07-17",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560166",
+    "equipment_tag": "YD-2301",
+    "date": "2025-07-23",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560688",
+    "equipment_tag": "CT-7801",
+    "date": "2025-07-23",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560753",
+    "equipment_tag": "FA-8901",
+    "date": "2025-07-27",
+    "failure_mode": "No",
+    "symptom": "Proof test of drum high-high level trip",
+    "root_cause": "Within tolerance",
+    "corrective_action": "Recalibrated LSHH-8901 and verified EFF-1 column feed trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560719",
+    "equipment_tag": "CT-7801",
+    "date": "2025-07-29",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560253",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-08-01",
+    "failure_mode": "Yes",
+    "symptom": "Grid inspection during catalyst change window",
+    "root_cause": "Minor scale on SS304 grid, no distortion",
+    "corrective_action": "Cleaned and inspected support/hold-down grids, NDT of welds",
+    "downtime_hours": 24.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560300",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-08-05",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560089",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-08-18",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560636",
+    "equipment_tag": "CT-7801",
+    "date": "2025-08-21",
+    "failure_mode": "Unspecified",
+    "symptom": "Scheduled fan gearbox oil change",
+    "root_cause": "Routine - oil sample acceptable",
+    "corrective_action": "Drained and refilled ISO VG 220, replaced breather",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 220 gear oil (4.5 L)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560027",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-08-25",
+    "failure_mode": "Yes",
+    "symptom": "Abnormal noise from coupling area, guard vibration",
+    "root_cause": "Rexnord coupling element cracked from repeated misalignment cycles",
+    "corrective_action": "Replaced coupling spacer element, re-aligned, re-fit guard",
+    "downtime_hours": 6.5,
+    "parts_replaced": [
+      "Rexnord coupling spacer element"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560005",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-08-29",
+    "failure_mode": "Unspecified",
+    "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal drain flowing",
+    "root_cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face to run dry and score",
+    "corrective_action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, verified PDI-1201 dP",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Mechanical seal JC T2100"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560134",
+    "equipment_tag": "YD-2301",
+    "date": "2025-08-29",
+    "failure_mode": "Unspecified",
+    "symptom": "Rumbling noise and vibration from NDE trunnion",
+    "root_cause": "NDE trunnion support roller bearing worn/spalled",
+    "corrective_action": "Replaced NDE trunnion roller bearing, re-checked drum tracking",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Trunnion roller bearing"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560784",
+    "equipment_tag": "FA-8901",
+    "date": "2025-09-03",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560596",
+    "equipment_tag": "LV-6701",
+    "date": "2025-09-08",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560359",
+    "equipment_tag": "KC-4501",
+    "date": "2025-09-16",
+    "failure_mode": "No",
+    "symptom": "Scheduled HV motor electrical test",
+    "root_cause": "Windings healthy, IR 1200 MOhm",
+    "corrective_action": "IR and polarisation index test, cleaned terminal box",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560143",
+    "equipment_tag": "YD-2301",
+    "date": "2025-09-16",
+    "failure_mode": "Yes",
+    "symptom": "Suspected internal steam tube leak (rising moisture, water in powder)",
+    "root_cause": "Two steam tubes cracked from thermal cycling",
+    "corrective_action": "Hydrotested bundle, plugged 2 leaking tubes both ends",
+    "downtime_hours": 36.0,
+    "parts_replaced": [
+      "Tube plugs (tapered) x4"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560654",
+    "equipment_tag": "CT-7801",
+    "date": "2025-09-17",
+    "failure_mode": "No",
+    "symptom": "Blowdown conductivity reading unreliable",
+    "root_cause": "Conductivity cell fouled with scale",
+    "corrective_action": "Cleaned and recalibrated AI-7806 conductivity cell",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560147",
+    "equipment_tag": "YD-2301",
+    "date": "2025-09-17",
+    "failure_mode": "No",
+    "symptom": "SIL-2 proof test of dryer shutdown logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated TSHH/FSLL/ASHH trips, verified EFF actions and centrifuge trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560602",
+    "equipment_tag": "LV-6701",
+    "date": "2025-09-19",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560377",
+    "equipment_tag": "KC-4501",
+    "date": "2025-09-22",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560175",
+    "equipment_tag": "YD-2301",
+    "date": "2025-09-23",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560690",
+    "equipment_tag": "CT-7801",
+    "date": "2025-09-24",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560259",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-09-24",
+    "failure_mode": "No",
+    "symptom": "Proof test of carrier nitrogen low-flow trip",
+    "root_cause": "Within tolerance",
+    "corrective_action": "Recalibrated FSLL-17343 to 150 kg/h and function tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560106",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-09-27",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560063",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-09-28",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560242",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-09-29",
+    "failure_mode": "Yes",
+    "symptom": "Nitrogen leak at bottom manway during leak test",
+    "root_cause": "Spiral-wound gasket unevenly seated",
+    "corrective_action": "Renewed SW SS316/graphite gasket, re-torqued in star pattern, leak test passed",
+    "downtime_hours": 10.0,
+    "parts_replaced": [
+      "SW SS316/graphite gasket"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560638",
+    "equipment_tag": "CT-7801",
+    "date": "2025-10-04",
+    "failure_mode": "Yes",
+    "symptom": "VSHH-7802 vibration alarm on CT-7801 fan",
+    "root_cause": "Leading-edge erosion on one FRP blade caused imbalance",
+    "corrective_action": "Inspected blades, re-balanced fan, vibration normalised",
+    "downtime_hours": 12.0,
+    "parts_replaced": [
+      "Balance weights"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560210",
+    "equipment_tag": "YD-2301",
+    "date": "2025-10-09",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-5500",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560277",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-10-10",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560468",
+    "equipment_tag": "EA-5601",
+    "date": "2025-10-12",
+    "failure_mode": "Unspecified",
+    "symptom": "Corroded saddle hold-down bolts",
+    "root_cause": "Atmospheric corrosion under insulation edge",
+    "corrective_action": "Replaced saddle hold-down bolts, applied coating",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Hold-down bolts"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560077",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-10-19",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560485",
+    "equipment_tag": "EA-5601",
+    "date": "2025-10-20",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560419",
+    "equipment_tag": "KC-4501",
+    "date": "2025-10-21",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-4501",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560342",
+    "equipment_tag": "KC-4501",
+    "date": "2025-10-23",
+    "failure_mode": "Unspecified",
+    "symptom": "VSHH-4505 crosshead vibration approaching trip",
+    "root_cause": "Crosshead pin clearance excessive",
+    "corrective_action": "Renewed crosshead pin/bush, set clearance, vibration normalised",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Crosshead pin"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560707",
+    "equipment_tag": "CT-7801",
+    "date": "2025-10-29",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560588",
+    "equipment_tag": "LV-6701",
+    "date": "2025-10-31",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560773",
+    "equipment_tag": "FA-8901",
+    "date": "2025-11-01",
+    "failure_mode": "Yes",
+    "symptom": "Turnaround internal inspection",
+    "root_cause": "Mist pad slightly fouled, vortex breaker intact",
+    "corrective_action": "Inspected internals, cleaned mist pad, NDT of nozzles",
+    "downtime_hours": 36.0,
+    "parts_replaced": [
+      "Manway gasket"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560586",
+    "equipment_tag": "LV-6701",
+    "date": "2025-11-02",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560130",
+    "equipment_tag": "YD-2301",
+    "date": "2025-11-13",
+    "failure_mode": "Unspecified",
+    "symptom": "Live steam leaking at YD-2301 head rotary joint",
+    "root_cause": "Kadant rotary joint carbon seal worn out",
+    "corrective_action": "Replaced rotary joint seal kit, renewed NBR O-ring, leak tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Kadant rotary joint seal kit"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560083",
+    "equipment_tag": "GA-1201A",
+    "date": "2025-11-14",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560460",
+    "equipment_tag": "EA-5601",
+    "date": "2025-11-16",
+    "failure_mode": "Unspecified",
+    "symptom": "Cracked gauge glass on condensate pot",
+    "root_cause": "Thermal/mechanical stress on glass",
+    "corrective_action": "Replaced LG-5606 gauge glass and seals",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Gauge glass"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560159",
+    "equipment_tag": "YD-2301",
+    "date": "2025-11-19",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560446",
+    "equipment_tag": "EA-5601",
+    "date": "2025-11-20",
+    "failure_mode": "No",
+    "symptom": "Outlet temperature hunting around set-point",
+    "root_cause": "Steam valve TV-5602 loop poorly tuned",
+    "corrective_action": "Retuned TIC-5602 PID, verified stable control",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560619",
+    "equipment_tag": "LV-6701",
+    "date": "2025-11-22",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560457",
+    "equipment_tag": "EA-5601",
+    "date": "2025-11-28",
+    "failure_mode": "Yes",
+    "symptom": "Turnaround pressure test and inspection",
+    "root_cause": "No defects found, minor scale",
+    "corrective_action": "Hydrotested shell, IRIS/UT of sample tubes, cleaned",
+    "downtime_hours": 24.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560624",
+    "equipment_tag": "LV-6701",
+    "date": "2025-11-29",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-6701",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560607",
+    "equipment_tag": "LV-6701",
+    "date": "2025-12-01",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560256",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-12-01",
+    "failure_mode": "No",
+    "symptom": "SIL-2 proof test of reduction reactor logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated TSHH/PSHH/FSLL trips, verified heater trip and H2 block",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560390",
+    "equipment_tag": "KC-4501",
+    "date": "2025-12-02",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560797",
+    "equipment_tag": "FA-8901",
+    "date": "2025-12-03",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560248",
+    "equipment_tag": "DC-3401A",
+    "date": "2025-12-04",
+    "failure_mode": "No",
+    "symptom": "Heater outlet temperature overshooting set-point",
+    "root_cause": "Loop tuning too aggressive after heater repair",
+    "corrective_action": "Retuned TIC-17343 PID, verified smooth ramp",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560178",
+    "equipment_tag": "YD-2301",
+    "date": "2025-12-05",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560819",
+    "equipment_tag": "FA-8901",
+    "date": "2025-12-06",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  }
+]

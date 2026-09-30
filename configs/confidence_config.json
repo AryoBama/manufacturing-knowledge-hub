@@ -1,0 +1,11 @@
+{
+  "penalties": {
+    "conflicting_sources": 0.30,
+    "draft_source": 0.30,
+    "obsolete_source": 0.50
+  },
+  "thresholds": {
+    "high_confidence_min": 0.75,
+    "medium_confidence_min": 0.45
+  }
+}

@@ -1,0 +1,1308 @@
+[
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-001",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Pump Type",
+    "value": "Horizontal, End Suction, Single Stage",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Pump Type"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-002",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Model",
+    "value": "3x2x10 CDX-M",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Model"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-003",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Rated Flow",
+    "value": 45,
+    "unit": "m3/h",
+    "canonical_field": "rated_flow",
+    "source_label": "Rated Flow"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-004",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Rated Head",
+    "value": 120,
+    "unit": "m",
+    "canonical_field": "rated_head",
+    "source_label": "Rated Head"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-005",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "NPSH Required",
+    "value": 3.5,
+    "unit": "m",
+    "canonical_field": "npsh_required",
+    "source_label": "NPSH Required"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-006",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Differential Pressure",
+    "value": 8.6,
+    "unit": "bar",
+    "canonical_field": "differential_pressure",
+    "source_label": "Differential Pressure"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-007",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Pumping Temperature",
+    "value": 40,
+    "unit": "degC",
+    "canonical_field": "pumping_temperature",
+    "source_label": "Pumping Temperature"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-008",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Specific Gravity",
+    "value": 0.66,
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Specific Gravity"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-009",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Fluid",
+    "value": "n-Hexane",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Fluid"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-010",
+    "record_type": "technical_parameter",
+    "category": "Pump Design",
+    "parameter": "Viscosity",
+    "value": 0.31,
+    "unit": "cP",
+    "canonical_field": null,
+    "source_label": "Viscosity"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-011",
+    "record_type": "technical_parameter",
+    "category": "Material",
+    "parameter": "Casing Material",
+    "value": "ASTM A351 CF8M (SS316)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Casing Material"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-012",
+    "record_type": "technical_parameter",
+    "category": "Material",
+    "parameter": "Impeller Material",
+    "value": "ASTM A351 CF8M (SS316)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Impeller Material"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-013",
+    "record_type": "technical_parameter",
+    "category": "Material",
+    "parameter": "Shaft Material",
+    "value": "AISI 4140",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Shaft Material"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-014",
+    "record_type": "technical_parameter",
+    "category": "Mechanical",
+    "parameter": "Mechanical Seal",
+    "value": "John Crane T2100, Single",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Mechanical Seal"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-015",
+    "record_type": "technical_parameter",
+    "category": "Mechanical",
+    "parameter": "Seal Flush Plan",
+    "value": "API Plan 11 + Plan 62 Quench",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Seal Flush Plan"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-016",
+    "record_type": "technical_parameter",
+    "category": "Mechanical",
+    "parameter": "Bearing Type \u2013 DE",
+    "value": "7310 BECBM",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Bearing Type \u2013 DE"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-017",
+    "record_type": "technical_parameter",
+    "category": "Mechanical",
+    "parameter": "Bearing Type \u2013 NDE",
+    "value": "6310 C3",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Bearing Type \u2013 NDE"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-018",
+    "record_type": "technical_parameter",
+    "category": "Mechanical",
+    "parameter": "Lubrication",
+    "value": "Oil Bath, ISO VG 68",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Lubrication"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-019",
+    "record_type": "technical_parameter",
+    "category": "Mechanical",
+    "parameter": "Coupling",
+    "value": "Flexible Spacer, Rexnord",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Coupling"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-020",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Driver Type",
+    "value": "Electric Motor, TEFC",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Driver Type"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-021",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Output Power",
+    "value": 30,
+    "unit": "kW",
+    "canonical_field": "motor_power",
+    "source_label": "Output Power"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-022",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Poles",
+    "value": "2 Pole",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Poles"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-023",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Speed",
+    "value": 2970,
+    "unit": "rpm",
+    "canonical_field": "motor_speed",
+    "source_label": "Speed"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-024",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Voltage",
+    "value": 380,
+    "unit": "V",
+    "canonical_field": "motor_voltage",
+    "source_label": "Voltage"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-025",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Phase / Frequency",
+    "value": "3 Ph / 50 Hz",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Phase / Frequency"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-026",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Rated Current",
+    "value": 56,
+    "unit": "A",
+    "canonical_field": "rated_current",
+    "source_label": "Rated Current"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-027",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Insulation Class",
+    "value": "F (Temp Rise B)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Insulation Class"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-028",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Enclosure",
+    "value": "TEFC IP55",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Enclosure"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-029",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Frame",
+    "value": "IEC 200L",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Frame"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-030",
+    "record_type": "technical_parameter",
+    "category": "Motor",
+    "parameter": "Weight",
+    "value": 295,
+    "unit": "kg",
+    "canonical_field": null,
+    "source_label": "Weight"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-031",
+    "record_type": "technical_parameter",
+    "category": "Electrical",
+    "parameter": "Area Classification",
+    "value": "Zone 2, IIA T3",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Area Classification"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-DS-GA-1201A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - GA-1201A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Centrifugal Pump (API 610 OH2)",
+      "functional_location": "TJC-LLD-1200-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-GA-1201A-032",
+    "record_type": "technical_parameter",
+    "category": "Electrical",
+    "parameter": "Ex Protection",
+    "value": "Ex nA IIC T3 Gc",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Ex Protection"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSLL-1201",
+      "instrument_type": "Pressure Switch",
+      "instrument_description": "Suction Pressure LOW-LOW",
+      "function": "Trip initiator T1 \u2192 SEQ-1201"
+    },
+    "record_id": "TR-PSLL-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSLL-1201 Setpoint",
+    "value": "< 0.5",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Suction Pressure LOW-LOW Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PDI-1201",
+      "instrument_type": "Differential Pressure Indicator",
+      "instrument_description": "Seal Flush Differential Pressure",
+      "function": "Start permissive P2; API Plan 11 confirmation"
+    },
+    "record_id": "TR-PDI-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PDI-1201 Setpoint",
+    "value": "> 1.5",
+    "unit": "bar",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Seal Flush Differential Pressure Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FSLL-1201",
+      "instrument_type": "Flow Switch",
+      "instrument_description": "Discharge Flow LOW-LOW",
+      "function": "Trip initiator T2 \u2192 SEQ-1201"
+    },
+    "record_id": "TR-FSLL-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FSLL-1201 Setpoint",
+    "value": "< 9 m\u00b3/h for 30s",
+    "unit": "m3/h",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Discharge Flow LOW-LOW Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "VSHH-1201",
+      "instrument_type": "Vibration Switch",
+      "instrument_description": "Bearing Vibration HIGH-HIGH",
+      "function": "Trip initiator T3 \u2192 SEQ-1201"
+    },
+    "record_id": "TR-VSHH-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "VSHH-1201 Setpoint",
+    "value": "> 7.1 mm/s RMS",
+    "unit": "mm/s",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Bearing Vibration HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "VT-1201",
+      "instrument_type": "Vibration Transmitter",
+      "instrument_description": "Vibration Transmitter",
+      "function": "PdM trend monitoring (daily route)"
+    },
+    "record_id": "TR-VT-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "VT-1201 Setpoint",
+    "value": "Alarm: 4.5 mm/s",
+    "unit": "mm/s",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Vibration Transmitter Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TSHH-1201",
+      "instrument_type": "Temperature Switch",
+      "instrument_description": "Bearing Temperature HIGH-HIGH",
+      "function": "Trip initiator T4 \u2192 SEQ-1201"
+    },
+    "record_id": "TR-TSHH-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TSHH-1201 Setpoint",
+    "value": "> 95",
+    "unit": "degC",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Bearing Temperature HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "MPR-1201",
+      "instrument_type": "Protection Relay",
+      "instrument_description": "Motor Protection Relay",
+      "function": "Trip initiator T5 (overload/electrical fault)"
+    },
+    "record_id": "TR-MPR-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "MPR-1201 Setpoint",
+    "value": "MPR relay pickup",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Motor Protection Relay Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "HS-1201",
+      "instrument_type": "Hand Switch",
+      "instrument_description": "Emergency Stop Hand Switch",
+      "function": "Trip initiator T6 \u2192 Local/DCS emergency stop"
+    },
+    "record_id": "TR-HS-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "HS-1201 Setpoint",
+    "value": "Manual",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Emergency Stop Hand Switch Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FV-1201",
+      "instrument_type": "Control Valve",
+      "instrument_description": "Minimum Flow Recycle Valve",
+      "function": "EFF-3: Open on trip; deadhead protection"
+    },
+    "record_id": "TR-FV-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FV-1201 Setpoint",
+    "value": "OPEN on low flow",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Minimum Flow Recycle Valve Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "ZSO-1201",
+      "instrument_type": "Limit Switch",
+      "instrument_description": "Suction Valve Position (Open)",
+      "function": "Start permissive P1"
+    },
+    "record_id": "TR-ZSO-1201-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "ZSO-1201 Setpoint",
+    "value": "OPEN",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Suction Valve Position (Open) Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "ZSO-1202",
+      "instrument_type": "Limit Switch",
+      "instrument_description": "Min-Flow Valve Position (Open)",
+      "function": "Start permissive P3"
+    },
+    "record_id": "TR-ZSO-1202-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "ZSO-1202 Setpoint",
+    "value": "OPEN",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Min-Flow Valve Position (Open) Setpoint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-EQUIPMENT_TAG",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_tag",
+    "value": "GA-1201A",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_tag"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-EQUIPMENT_NAME",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_name",
+    "value": "HEXANE FEED PUMP",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_name"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-AREA",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "area",
+    "value": "1200 \u2013 Feed Preparation & Purification",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "area"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-FUNCTIONAL_LOCATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "functional_location",
+    "value": "TJC-LLD-1200-01",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "functional_location"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-GRID_REFERENCE",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "grid_reference",
+    "value": "A-3",
+    "unit": null,
+    "canonical_field": "grid_reference",
+    "source_label": "grid_reference"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-ELEVATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "elevation",
+    "value": "+0.00",
+    "unit": "m",
+    "canonical_field": "elevation",
+    "source_label": "elevation"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-FOOTPRINT",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "footprint",
+    "value": "3.5 x 5.0",
+    "unit": "m (approx)",
+    "canonical_field": null,
+    "source_label": "footprint"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-COORDINATE_SYSTEM",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "coordinate_system",
+    "value": "Plant Grid (E/N)",
+    "unit": "metres",
+    "canonical_field": null,
+    "source_label": "coordinate_system"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-ACCESS_ROAD",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "access_road",
+    "value": "Road 6m \u2013 North boundary",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "access_road"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-MAIN_PIPE_RACK",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "main_pipe_rack",
+    "value": "East side",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "main_pipe_rack"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-HAZARDOUS_AREA_REF",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "hazardous_area_ref",
+    "value": "WPN-MAT-001",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "hazardous_area_ref"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "PP-GA-1201A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-GA-1201A-NOTES",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "notes",
+    "value": "Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "notes"
+  }
+]

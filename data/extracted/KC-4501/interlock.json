@@ -1,0 +1,14 @@
+{
+  "chunk_id": "TJC-LLD-IL-KC-4501-P01-C01",
+  "document_id": "TJC-LLD-IL-KC-4501",
+  "document_type": "INTERLOCK",
+  "title": "Recycle Gas Compressor Shutdown Logic & Cause Effect (SEQ-4501)",
+  "equipment_tag": "KC-4501",
+  "content": "INTERLOCK LOGIC: SEQ-4501. SIL: SIL 2. TAG: KC-4501. FLOC: TJC-LLD-4500-01. CAUSE & EFFECT MATRIX: T1 Lube Oil Pressure LOW-LOW (PSLL-4504 < 1.5 barg, 2oo3) -> Trip Compressor Motor, DCS Alarm, Auto-start standby lube pump. T2 2nd Stage Discharge Temp HIGH-HIGH (TSHH-4502 > 135 degC, 1oo1) -> Trip Compressor Motor, Vent Recycle Loop. T3 Suction KO Drum Level HIGH-HIGH (LSHH-4510, 1oo2) -> Trip Compressor Motor, Close Suction XV-4501. START PERMISSIVES: P1 Lube oil pressure established > 2.5 barg (PT-4504), P2 Suction valve open, P3 Cooling water flow normal.",
+  "source": {
+    "file_name": "Interlock Logic Diagram KC-4501.pdf",
+    "page": 1,
+    "revision": "Rev.02",
+    "status": "Issued for Operation"
+  }
+}

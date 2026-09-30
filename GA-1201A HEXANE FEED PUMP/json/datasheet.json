@@ -1,0 +1,14 @@
+{
+  "chunk_id": "TJC-LLD-DS-GA-1201A-P01-C01",
+  "document_id": "TJC-LLD-DS-GA-1201A",
+  "document_type": "DATASHEET",
+  "title": "Equipment Datasheet - HEXANE FEED PUMP (GA-1201A)",
+  "equipment_tag": "GA-1201A",
+  "content": "EQUIPMENT DATASHEET: GA-1201A (HEXANE FEED PUMP).\nDocument No: TJC-LLD-DS-GA-1201A, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Centrifugal Pump (API 610 OH2).\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 1200 \u2013 Feed Preparation & Purification.\nFunctional Location: TJC-LLD-1200-01, Criticality: High Critical.\nService: Hexane feed transfer to 1st Polymerization Reactor DC-4501.\nMECHANICAL SPECIFICATIONS:\nPump Type: Horizontal, End Suction, Single Stage; Model: 3x2x10 CDX-M; Rated Flow: 45 m\u00b3/h; Rated Head: 120 m; NPSH Required: 3.5 m; Differential Pressure: 8.6 bar; Pumping Temperature: 40 \u00b0C; Specific Gravity: 0.66; Fluid: n-Hexane; Viscosity: 0.31 cP; Casing Material: ASTM A351 CF8M (SS316); Impeller Material: ASTM A351 CF8M (SS316); Shaft Material: AISI 4140; Mechanical Seal: John Crane T2100, Single; Seal Flush Plan: API Plan 11 + Plan 62 Quench; Bearing Type \u2013 DE: 7310 BECBM; Bearing Type \u2013 NDE: 6310 C3; Lubrication: Oil Bath, ISO VG 68; Coupling: Flexible Spacer, Rexnord\nMOTOR & ELECTRICAL SPECIFICATIONS:\nDriver Type: Electric Motor, TEFC; Output Power: 30 kW; Poles: 2 Pole; Speed: 2970 rpm; Voltage: 380 V; Phase / Frequency: 3 Ph / 50 Hz; Rated Current: 56 A; Insulation Class: F (Temp Rise B); Enclosure: TEFC IP55; Frame: IEC 200L; Weight: 295 kg; Area Classification: Zone 2, IIA T3; Ex Protection: Ex nA IIC T3 Gc\nCROSS REFERENCES: P&ID: TJC-LLD-PID-1201, Interlock: SEQ-1201.",
+  "source": {
+    "file_name": "Equipment Datasheet - GA-1201A.pdf",
+    "page": 1,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  }
+}

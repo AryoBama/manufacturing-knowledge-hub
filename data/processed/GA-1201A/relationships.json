@@ -1,0 +1,666 @@
+[
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T1",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "Close Discharge XV-1201 (EFF-2)",
+        "Open Min-Flow FV-1201 (EFF-3)",
+        "DCS Alarm (EFF-4)",
+        "Start Standby Pump GA-1201B (EFF-5)"
+      ],
+      "targets": [
+        "GA-1201A",
+        "XV-1201",
+        "FV-1201",
+        "DCS",
+        "GA-1201B"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-1201-T1",
+    "source_tag": "PSLL-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Suction Pressure LOW-LOW (Setpoint: < 0.5 barg, Voting: 2oo3)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T2",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "Close Discharge XV-1201 (EFF-2)",
+        "Open Min-Flow FV-1201 (EFF-3)",
+        "DCS Alarm (EFF-4)",
+        "Start Standby Pump GA-1201B (EFF-5)"
+      ],
+      "targets": [
+        "GA-1201A",
+        "XV-1201",
+        "FV-1201",
+        "DCS",
+        "GA-1201B"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-1201-T2",
+    "source_tag": "FSLL-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Discharge Flow LOW-LOW (min flow) (Setpoint: < 9 m\u00b3/h for 30s, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T3",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "Close Discharge XV-1201 (EFF-2)",
+        "Open Min-Flow FV-1201 (EFF-3)",
+        "DCS Alarm (EFF-4)",
+        "Start Standby Pump GA-1201B (EFF-5)"
+      ],
+      "targets": [
+        "GA-1201A",
+        "XV-1201",
+        "FV-1201",
+        "DCS",
+        "GA-1201B"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-1201-T3",
+    "source_tag": "VSHH-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Bearing Vibration HIGH-HIGH (Setpoint: > 7.1 mm/s RMS, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T4",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "Close Discharge XV-1201 (EFF-2)",
+        "Open Min-Flow FV-1201 (EFF-3)"
+      ],
+      "targets": [
+        "GA-1201A",
+        "XV-1201",
+        "FV-1201"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-1201-T4",
+    "source_tag": "TSHH-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Bearing Temperature HIGH-HIGH (Setpoint: > 95 \u00b0C, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T5",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "Close Discharge XV-1201 (EFF-2)",
+        "Open Min-Flow FV-1201 (EFF-3)",
+        "DCS Alarm (EFF-4)",
+        "Start Standby Pump GA-1201B (EFF-5)"
+      ],
+      "targets": [
+        "GA-1201A",
+        "XV-1201",
+        "FV-1201",
+        "DCS",
+        "GA-1201B"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-1201-T5",
+    "source_tag": "MPR-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Motor Overload / Electrical Fault (Setpoint: MPR relay pickup, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T6",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "Close Discharge XV-1201 (EFF-2)",
+        "Open Min-Flow FV-1201 (EFF-3)"
+      ],
+      "targets": [
+        "GA-1201A",
+        "XV-1201",
+        "FV-1201"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-1201-T6",
+    "source_tag": "HS-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Local/DCS Emergency Stop (Setpoint: Manual, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P1",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-1201-P1",
+    "source_tag": "ZSO-1201",
+    "relationship": "permissive_for",
+    "target_tag": "GA-1201A",
+    "context": "Suction valve OPEN (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P2",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-1201-P2",
+    "source_tag": "PDI-1201",
+    "relationship": "permissive_for",
+    "target_tag": "GA-1201A",
+    "context": "Seal flush established (dP > 1.5 bar) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-IL-GA-1201A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - GA-1201A.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P3",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-1201-P3",
+    "source_tag": "ZSO-1202",
+    "relationship": "permissive_for",
+    "target_tag": "GA-1201A",
+    "context": "Min-flow valve OPEN (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "SEQ-1201 T1"
+    },
+    "relationship_id": "REL-PID-PSLL-1201",
+    "source_tag": "PSLL-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Suction Pressure LOW-LOW (Pressure Switch). Function: Trip initiator T1 \u2192 SEQ-1201. Location: Suction line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Transmitter",
+      "related_interlock": "SEQ-1201 T1"
+    },
+    "relationship_id": "REL-PID-PT-1201",
+    "source_tag": "PT-1201",
+    "relationship": "monitors",
+    "target_tag": "GA-1201A",
+    "context": "Suction Pressure Transmitter (Pressure Transmitter). Function: Pressure monitoring & PSLL-1201 voting. Location: Suction line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Indicator (Local)",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PI-1201",
+    "source_tag": "PI-1201",
+    "relationship": "monitors",
+    "target_tag": "GA-1201A",
+    "context": "Suction Pressure Indicator (Pressure Indicator (Local)). Function: Local indication suction pressure. Location: Suction line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Differential Pressure Indicator",
+      "related_interlock": "SEQ-1201 P2"
+    },
+    "relationship_id": "REL-PID-PDI-1201",
+    "source_tag": "PDI-1201",
+    "relationship": "permissive_for",
+    "target_tag": "GA-1201A",
+    "context": "Seal Flush Differential Pressure (Differential Pressure Indicator). Function: Start permissive P2; API Plan 11 confirmation. Location: Seal flush line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Orifice Plate",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-RO-1201",
+    "source_tag": "RO-1201",
+    "relationship": "controls",
+    "target_tag": "GA-1201A",
+    "context": "Seal Flush Orifice (Orifice Plate). Function: Flow restriction for API Plan 11 seal flush. Location: Seal flush line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Switch",
+      "related_interlock": "SEQ-1201 T2"
+    },
+    "relationship_id": "REL-PID-FSLL-1201",
+    "source_tag": "FSLL-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Discharge Flow LOW-LOW (Flow Switch). Function: Trip initiator T2 \u2192 SEQ-1201. Location: Discharge line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FIT-1201",
+    "source_tag": "FIT-1201",
+    "relationship": "controls",
+    "target_tag": "GA-1201A",
+    "context": "Discharge Flow Transmitter (Flow Transmitter). Function: Flow measurement for FIC-1201 control loop. Location: Discharge line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Indicator (Local)",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FI-1201",
+    "source_tag": "FI-1201",
+    "relationship": "monitors",
+    "target_tag": "GA-1201A",
+    "context": "Flow Indicator (Flow Indicator (Local)). Function: Local flow monitoring. Location: Discharge line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Vibration Switch",
+      "related_interlock": "SEQ-1201 T3"
+    },
+    "relationship_id": "REL-PID-VSHH-1201",
+    "source_tag": "VSHH-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Bearing Vibration HIGH-HIGH (Vibration Switch). Function: Trip initiator T3 \u2192 SEQ-1201. Location: Pump bearing"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Vibration Transmitter",
+      "related_interlock": "SEQ-1201 T3"
+    },
+    "relationship_id": "REL-PID-VT-1201",
+    "source_tag": "VT-1201",
+    "relationship": "monitors",
+    "target_tag": "GA-1201A",
+    "context": "Vibration Transmitter (Vibration Transmitter). Function: PdM trend monitoring (daily route). Location: Pump bearing"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temperature Switch",
+      "related_interlock": "SEQ-1201 T4"
+    },
+    "relationship_id": "REL-PID-TSHH-1201",
+    "source_tag": "TSHH-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Bearing Temperature HIGH-HIGH (Temperature Switch). Function: Trip initiator T4 \u2192 SEQ-1201. Location: Pump bearing"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temperature Transmitter",
+      "related_interlock": "SEQ-1201 T4"
+    },
+    "relationship_id": "REL-PID-TT-1201",
+    "source_tag": "TT-1201",
+    "relationship": "monitors",
+    "target_tag": "GA-1201A",
+    "context": "Bearing Temperature Transmitter (Temperature Transmitter). Function: Temperature trend monitoring. Location: Pump bearing"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Protection Relay",
+      "related_interlock": "SEQ-1201 T5"
+    },
+    "relationship_id": "REL-PID-MPR-1201",
+    "source_tag": "MPR-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Motor Protection Relay (Protection Relay). Function: Trip initiator T5 (overload/electrical fault). Location: Motor MCC"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Hand Switch",
+      "related_interlock": "SEQ-1201 T6"
+    },
+    "relationship_id": "REL-PID-HS-1201",
+    "source_tag": "HS-1201",
+    "relationship": "triggers_trip",
+    "target_tag": "GA-1201A",
+    "context": "Emergency Stop Hand Switch (Hand Switch). Function: Trip initiator T6 \u2192 Local/DCS emergency stop. Location: Local control station"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "On/Off Valve (Motor Operated)",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-XV-1201",
+    "source_tag": "XV-1201",
+    "relationship": "controls",
+    "target_tag": "GA-1201A",
+    "context": "Suction Isolation Valve (On/Off Valve (Motor Operated)). Function: Isolation valve; ZSO-1201 monitors open status. Location: Suction line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "On/Off Valve",
+      "related_interlock": "SEQ-1201 EFF-2"
+    },
+    "relationship_id": "REL-PID-XV-1201A/B",
+    "source_tag": "XV-1201A/B",
+    "relationship": "controls",
+    "target_tag": "GA-1201A",
+    "context": "Discharge On/Off Valve (On/Off Valve). Function: EFF-2: Close on trip. Location: Discharge line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "SEQ-1201 EFF-3"
+    },
+    "relationship_id": "REL-PID-FV-1201",
+    "source_tag": "FV-1201",
+    "relationship": "controls",
+    "target_tag": "GA-1201A",
+    "context": "Minimum Flow Recycle Valve (Control Valve). Function: EFF-3: Open on trip; deadhead protection. Location: Min-flow bypass line"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Limit Switch",
+      "related_interlock": "SEQ-1201 P1"
+    },
+    "relationship_id": "REL-PID-ZSO-1201",
+    "source_tag": "ZSO-1201",
+    "relationship": "permissive_for",
+    "target_tag": "GA-1201A",
+    "context": "Suction Valve Position (Open) (Limit Switch). Function: Start permissive P1. Location: Suction valve"
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "TJC-LLD-PID-1201A",
+    "document_type": "PID",
+    "source": {
+      "file_name": "PID_Set_01.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Limit Switch",
+      "related_interlock": "SEQ-1201 P3"
+    },
+    "relationship_id": "REL-PID-ZSO-1202",
+    "source_tag": "ZSO-1202",
+    "relationship": "permissive_for",
+    "target_tag": "GA-1201A",
+    "context": "Min-Flow Valve Position (Open) (Limit Switch). Function: Start permissive P3. Location: Min-flow valve"
+  }
+]

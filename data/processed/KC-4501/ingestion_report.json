@@ -1,0 +1,24 @@
+{
+  "equipment": "KC-4501",
+  "source_directory": "data\\extracted\\KC-4501",
+  "total_objects": 36,
+  "valid_objects": 36,
+  "invalid_objects": 0,
+  "validation_passed": true,
+  "by_type": {
+    "document_chunks": 3,
+    "technical_records": 6,
+    "maintenance_records": 27,
+    "relationships": 0
+  },
+  "maintenance_semantics": {
+    "total_events": 27,
+    "actual_failures_or_breakdowns": 8,
+    "routine_preventive_or_tests": 19
+  },
+  "unmapped_technical_parameters": [],
+  "warnings": [
+    "27 object(s) lack formal revision in source (preserved as null without inferring)"
+  ],
+  "validation_errors": []
+}

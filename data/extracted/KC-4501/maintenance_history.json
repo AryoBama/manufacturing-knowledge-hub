@@ -1,0 +1,353 @@
+[
+  {
+    "event_id": "NT-2024-560424",
+    "equipment_tag": "KC-4501",
+    "date": "2024-06-04",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-4501",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560339",
+    "equipment_tag": "KC-4501",
+    "date": "2024-06-18",
+    "failure_mode": "Unspecified",
+    "symptom": "Seal gas flow FT-4506 low, buffer pressure unstable",
+    "root_cause": "N2 buffer regulator diaphragm failed",
+    "corrective_action": "Replaced seal gas regulator, re-established buffer dP",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "N2 regulator"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560332",
+    "equipment_tag": "KC-4501",
+    "date": "2024-06-22",
+    "failure_mode": "Unspecified",
+    "symptom": "High blow-by, low 2nd stage efficiency",
+    "root_cause": "PTFE piston rings worn beyond limit",
+    "corrective_action": "Renewed 2nd stage PTFE piston and rider rings, honed cylinder",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "PTFE piston rings"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560404",
+    "equipment_tag": "KC-4501",
+    "date": "2024-07-06",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560350",
+    "equipment_tag": "KC-4501",
+    "date": "2024-07-16",
+    "failure_mode": "No",
+    "symptom": "Proof test of KO drum high-high level trip",
+    "root_cause": "Float healthy, minor set-point trim",
+    "corrective_action": "Verified LSHH-4510 float and trip action",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560368",
+    "equipment_tag": "KC-4501",
+    "date": "2024-08-20",
+    "failure_mode": "Unspecified",
+    "symptom": "Process gas detected at distance-piece vent",
+    "root_cause": "PTFE pressure packing rings worn",
+    "corrective_action": "Renewed pressure packing set, checked rod runout",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "PTFE packing set"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560415",
+    "equipment_tag": "KC-4501",
+    "date": "2024-08-26",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560380",
+    "equipment_tag": "KC-4501",
+    "date": "2024-09-03",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560402",
+    "equipment_tag": "KC-4501",
+    "date": "2024-09-19",
+    "failure_mode": "No",
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560327",
+    "equipment_tag": "KC-4501",
+    "date": "2024-09-21",
+    "failure_mode": "Unspecified",
+    "symptom": "KC-4501 tripped on PSLL-4504 low lube oil pressure",
+    "root_cause": "Lube oil pump gears worn, relief valve set low",
+    "corrective_action": "Overhauled lube oil pump, reset relief valve, verified 2.5 barg",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Lube oil pump gear set"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560371",
+    "equipment_tag": "KC-4501",
+    "date": "2025-01-08",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560410",
+    "equipment_tag": "KC-4501",
+    "date": "2025-01-29",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560347",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-05",
+    "failure_mode": "Yes",
+    "symptom": "High interstage temperature, fouling suspected",
+    "root_cause": "Waterside fouling of intercooler tubes",
+    "corrective_action": "Hydrojetted intercooler tubes, restored approach temp",
+    "downtime_hours": 16.0,
+    "parts_replaced": [
+      "Gaskets EA-4502"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560364",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-06",
+    "failure_mode": "No",
+    "symptom": "SIL-2 proof test of compressor shutdown logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated PSLL/TSHH/VSHH trips, verified recycle open and motor trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560356",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-18",
+    "failure_mode": "Yes",
+    "symptom": "TE-4507 main bearing temperature rising",
+    "root_cause": "Restricted oil supply groove to No.2 main bearing",
+    "corrective_action": "Inspected and cleared oil passage, checked bearing clearance",
+    "downtime_hours": 22.0,
+    "parts_replaced": [
+      "Main bearing shell (inspected)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560392",
+    "equipment_tag": "KC-4501",
+    "date": "2025-02-28",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560421",
+    "equipment_tag": "KC-4501",
+    "date": "2025-03-24",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-4501",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560396",
+    "equipment_tag": "KC-4501",
+    "date": "2025-04-13",
+    "failure_mode": "No",
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560384",
+    "equipment_tag": "KC-4501",
+    "date": "2025-05-15",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560322",
+    "equipment_tag": "KC-4501",
+    "date": "2025-06-10",
+    "failure_mode": "Unspecified",
+    "symptom": "High discharge temperature trip TSHH-4503, capacity drop",
+    "root_cause": "1st stage suction plate valve fractured",
+    "corrective_action": "Replaced complete suction valve set, checked seat, leak tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Plate valve set (suction)"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560413",
+    "equipment_tag": "KC-4501",
+    "date": "2025-06-30",
+    "failure_mode": "No",
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560334",
+    "equipment_tag": "KC-4501",
+    "date": "2025-07-01",
+    "failure_mode": "No",
+    "symptom": "Proof test of lube oil low-low trip",
+    "root_cause": "Set-point within tolerance",
+    "corrective_action": "Recalibrated PSLL-4504 to 1.5 barg, function tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560359",
+    "equipment_tag": "KC-4501",
+    "date": "2025-09-16",
+    "failure_mode": "No",
+    "symptom": "Scheduled HV motor electrical test",
+    "root_cause": "Windings healthy, IR 1200 MOhm",
+    "corrective_action": "IR and polarisation index test, cleaned terminal box",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560377",
+    "equipment_tag": "KC-4501",
+    "date": "2025-09-22",
+    "failure_mode": "No",
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560419",
+    "equipment_tag": "KC-4501",
+    "date": "2025-10-21",
+    "failure_mode": "No",
+    "symptom": "SIS proof test of SEQ-4501",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560342",
+    "equipment_tag": "KC-4501",
+    "date": "2025-10-23",
+    "failure_mode": "Unspecified",
+    "symptom": "VSHH-4505 crosshead vibration approaching trip",
+    "root_cause": "Crosshead pin clearance excessive",
+    "corrective_action": "Renewed crosshead pin/bush, set clearance, vibration normalised",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Crosshead pin"
+    ]
+  },
+  {
+    "event_id": "NT-2024-560390",
+    "equipment_tag": "KC-4501",
+    "date": "2025-12-02",
+    "failure_mode": "No",
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  }
+]

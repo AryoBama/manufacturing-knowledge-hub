@@ -1,0 +1,53 @@
+{
+  "document_id": "TJC-LLD-DS-KC-4501",
+  "document_type": "DATASHEET",
+  "equipment_tag": "KC-4501",
+  "equipment_name": "RECYCLE GAS COMPRESSOR",
+  "equipment_type": "Reciprocating Compressor",
+  "functional_location": "TJC-LLD-4500-01",
+  "service": "Recycle gas compression to polymerization loop",
+  "source": {
+    "file_name": "Equipment Datasheet - KC-4501.pdf",
+    "page": 1,
+    "revision": "Rev.02",
+    "status": "Issued for Operation"
+  },
+  "parameters": [
+    {
+      "category": "Compressor Design",
+      "parameter": "Rated Flow",
+      "value": 2200,
+      "unit": "m3/h"
+    },
+    {
+      "category": "Compressor Design",
+      "parameter": "Differential Pressure",
+      "value": 13.5,
+      "unit": "bar"
+    },
+    {
+      "category": "Compressor Design",
+      "parameter": "Pumping Temperature",
+      "value": 65,
+      "unit": "degC"
+    },
+    {
+      "category": "Motor Driver",
+      "parameter": "Motor Power",
+      "value": 250,
+      "unit": "kW"
+    },
+    {
+      "category": "Motor Driver",
+      "parameter": "Speed",
+      "value": 740,
+      "unit": "rpm"
+    },
+    {
+      "category": "Motor Driver",
+      "parameter": "Voltage",
+      "value": 3300,
+      "unit": "V"
+    }
+  ]
+}

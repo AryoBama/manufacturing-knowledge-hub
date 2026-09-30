@@ -1,0 +1,58 @@
+{
+  "equipment": "GA-1201A",
+  "source_directory": "GA-1201A HEXANE FEED PUMP",
+  "total_objects": 148,
+  "valid_objects": 148,
+  "invalid_objects": 0,
+  "validation_passed": true,
+  "by_type": {
+    "document_chunks": 13,
+    "technical_records": 55,
+    "maintenance_records": 52,
+    "relationships": 28
+  },
+  "maintenance_semantics": {
+    "total_events": 52,
+    "actual_failures_or_breakdowns": 7,
+    "routine_preventive_or_tests": 45
+  },
+  "unmapped_technical_parameters": [
+    "Area Classification",
+    "Bearing Type \u2013 DE",
+    "Bearing Type \u2013 NDE",
+    "Casing Material",
+    "Coupling",
+    "Driver Type",
+    "Enclosure",
+    "Ex Protection",
+    "Fluid",
+    "Frame",
+    "Impeller Material",
+    "Insulation Class",
+    "Lubrication",
+    "Mechanical Seal",
+    "Model",
+    "Phase / Frequency",
+    "Poles",
+    "Pump Type",
+    "Seal Flush Plan",
+    "Shaft Material",
+    "Specific Gravity",
+    "Viscosity",
+    "Weight",
+    "access_road",
+    "area",
+    "coordinate_system",
+    "equipment_name",
+    "equipment_tag",
+    "footprint",
+    "functional_location",
+    "hazardous_area_ref",
+    "main_pipe_rack",
+    "notes"
+  ],
+  "warnings": [
+    "90 object(s) lack formal revision in source (preserved as null without inferring)"
+  ],
+  "validation_errors": []
+}

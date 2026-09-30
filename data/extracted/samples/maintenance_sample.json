@@ -1,0 +1,14 @@
+{
+  "event_id": "MNT-GA1201A-2025-01",
+  "equipment_tag": "GA-1201A",
+  "date": "2025-08-14",
+  "failure_mode": "High vibration",
+  "symptom": "VSHH-1201 triggered alarm at 7.3 mm/s RMS",
+  "root_cause": "Coupling misalignment and worn drive-end bearing (7310 BECBM)",
+  "corrective_action": "Realigned pump-motor shaft and replaced DE bearing",
+  "downtime_hours": 3.5,
+  "parts_replaced": [
+    "7310 BECBM bearing",
+    "Rexnord flexible spacer coupling"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "intent_to_knowledge_types": {
+    "equipment_information": ["equipment_spec"],
+    "procedure": ["operating_procedure"],
+    "troubleshooting": [
+      "operating_procedure",
+      "protection_logic",
+      "failure_history",
+      "process_logic"
+    ],
+    "failure_history": ["failure_history"],
+    "protection": ["protection_logic", "process_logic"],
+    "location": ["physical_location"],
+    "general_information": ["general_knowledge"]
+  },
+  "knowledge_to_document_types": {
+    "equipment_spec": ["DATASHEET", "GA_DRAWING"],
+    "operating_procedure": ["OPL", "SOP"],
+    "protection_logic": ["INTERLOCK", "PID"],
+    "process_logic": ["PID"],
+    "failure_history": ["MAINTENANCE"],
+    "physical_location": ["PLOT_PLAN", "GA_DRAWING"],
+    "general_knowledge": [
+      "DATASHEET",
+      "OPL",
+      "INTERLOCK",
+      "MAINTENANCE",
+      "PID",
+      "GA_DRAWING",
+      "PLOT_PLAN"
+    ]
+  },
+  "intent_source_priority": {
+    "troubleshooting": ["OPL", "INTERLOCK", "MAINTENANCE", "PID"],
+    "protection": ["INTERLOCK", "PID"],
+    "failure_history": ["MAINTENANCE"],
+    "procedure": ["OPL", "SOP"],
+    "equipment_information": ["DATASHEET", "GA_DRAWING"],
+    "location": ["PLOT_PLAN", "GA_DRAWING"],
+    "general_information": [
+      "DATASHEET",
+      "OPL",
+      "INTERLOCK",
+      "MAINTENANCE",
+      "PID",
+      "GA_DRAWING",
+      "PLOT_PLAN"
+    ]
+  }
+}

@@ -1,0 +1,1320 @@
+[
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560049",
+    "date": "2024-07-24",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled SIL-1 proof test of GA-1201A trip logic",
+    "root_cause": "All trips functioned within tolerance",
+    "corrective_action": "Simulated PSLL/VSHH/TSHH trips, verified EFF-1..5 actions and auto-start GA-1201B",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560032",
+    "date": "2024-08-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Discharge flow control hunting, FIC-1201 oscillating",
+    "root_cause": "Loop poorly tuned after transmitter re-range",
+    "corrective_action": "Re-ranged FT-1201 and retuned FIC-1201 PID parameters",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560057",
+    "date": "2024-08-17",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560069",
+    "date": "2024-08-31",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560115",
+    "date": "2024-09-03",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560095",
+    "date": "2024-10-06",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560065",
+    "date": "2024-10-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560100",
+    "date": "2024-10-12",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560030",
+    "date": "2024-11-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "PDI-1201 reading erratic, seal-flush low alarm nuisance-tripping",
+    "root_cause": "Impulse lines fouled with hexane residue/polymer fines",
+    "corrective_action": "Cleaned impulse lines and re-zeroed PDI-1201 transmitter",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560038",
+    "date": "2024-12-11",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "6-monthly motor preventive maintenance",
+    "root_cause": "Routine - insulation resistance healthy 850 MOhm",
+    "corrective_action": "Re-greased motor DE/NDE bearings, IR & PI test recorded",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Polyurea grease (100 g)"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560021",
+    "date": "2025-01-16",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled proof test of low-low suction pressure trip",
+    "root_cause": "Switch set-point drift found +0.08 barg during proof test",
+    "corrective_action": "Recalibrated PSLL-1201 to 0.5 barg trip, function tested to DCS",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560044",
+    "date": "2025-02-21",
+    "failure_occurred": true,
+    "failure_mode": "Unspecified",
+    "symptom": "Scheduled T/A major overhaul of GA-1201A",
+    "root_cause": "End-of-run wear on wear rings and seal per RBI plan",
+    "corrective_action": "Renewed seal, both bearings, wear rings",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560011",
+    "date": "2025-02-23",
+    "failure_occurred": true,
+    "failure_mode": "Unspecified",
+    "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+    "root_cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+    "corrective_action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to 1.9 mm/s",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Shim pack"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560072",
+    "date": "2025-03-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560055",
+    "date": "2025-03-19",
+    "failure_occurred": true,
+    "failure_mode": "Unspecified",
+    "symptom": "Hairline crack in epoxy grout under baseplate edge",
+    "root_cause": "Vibration-induced grout fatigue at pump end",
+    "corrective_action": "Chipped out loose grout and re-grouted with epoxy, torqued hold-down bolts",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Epoxy grout"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560017",
+    "date": "2025-03-29",
+    "failure_occurred": true,
+    "failure_mode": "Unspecified",
+    "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+    "root_cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+    "corrective_action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Bearing 7310 BECBM"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560097",
+    "date": "2025-04-11",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560019",
+    "date": "2025-05-26",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Routine lube route - oil level below mid-mark on sight glass",
+    "root_cause": "Normal consumption / minor weep at constant-level oiler",
+    "corrective_action": "Topped up ISO VG 68 to correct level, checked oiler bottle seal",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 68 lubricating oil (0.5 L)"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560109",
+    "date": "2025-06-15",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560089",
+    "date": "2025-08-18",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560027",
+    "date": "2025-08-25",
+    "failure_occurred": true,
+    "failure_mode": "Abnormal noise from coupling area, guard vibration",
+    "symptom": "Abnormal noise from coupling area, guard vibration",
+    "root_cause": "Rexnord coupling element cracked from repeated misalignment cycles",
+    "corrective_action": "Replaced coupling spacer element, re-aligned, re-fit guard",
+    "downtime_hours": 6.5,
+    "parts_replaced": [
+      "Rexnord coupling spacer element"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560005",
+    "date": "2025-08-29",
+    "failure_occurred": true,
+    "failure_mode": "Unspecified",
+    "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal drain flowing",
+    "root_cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face to run dry and score",
+    "corrective_action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, verified PDI-1201 dP",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Mechanical seal JC T2100"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560106",
+    "date": "2025-09-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560063",
+    "date": "2025-09-28",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560077",
+    "date": "2025-10-19",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560083",
+    "date": "2025-11-14",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 0,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240012",
+    "date": "2024-07-24",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled SIL-1 proof test of GA-1201A trip logic",
+    "root_cause": "All trips functioned within tolerance",
+    "corrective_action": "Simulated PSLL/VSHH/TSHH trips, verified EFF-1..5 actions and auto-start GA-1201B",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 1,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240009",
+    "date": "2024-08-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Discharge flow control hunting, FIC-1201 oscillating",
+    "root_cause": "Loop poorly tuned after transmitter re-range",
+    "corrective_action": "Re-ranged FT-1201 and retuned FIC-1201 PID parameters",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 2,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240014",
+    "date": "2024-08-17",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 3,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240017",
+    "date": "2024-08-31",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 4,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240027",
+    "date": "2024-09-03",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 5,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240022",
+    "date": "2024-10-06",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 6,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240016",
+    "date": "2024-10-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 7,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240024",
+    "date": "2024-10-12",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 8,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240008",
+    "date": "2024-11-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "PDI-1201 reading erratic, seal-flush low alarm nuisance-tripping",
+    "root_cause": "Impulse lines fouled with hexane residue/polymer fines",
+    "corrective_action": "Cleaned impulse lines and re-zeroed PDI-1201 transmitter",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 9,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240010",
+    "date": "2024-12-11",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "6-monthly motor preventive maintenance",
+    "root_cause": "Routine - insulation resistance healthy 850 MOhm",
+    "corrective_action": "Re-greased motor DE/NDE bearings, IR & PI test recorded",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Polyurea grease (100 g)"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 10,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240006",
+    "date": "2025-01-16",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled proof test of low-low suction pressure trip",
+    "root_cause": "Switch set-point drift found +0.08 barg during proof test",
+    "corrective_action": "Recalibrated PSLL-1201 to 0.5 barg trip, function tested to DCS",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 11,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240011",
+    "date": "2025-02-21",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled T/A major overhaul of GA-1201A",
+    "root_cause": "End-of-run wear on wear rings and seal per RBI plan",
+    "corrective_action": "Renewed seal, both bearings, wear rings",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 12,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240003",
+    "date": "2025-02-23",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+    "root_cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+    "corrective_action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to 1.9 mm/s",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Shim pack"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 13,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240018",
+    "date": "2025-03-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 14,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240013",
+    "date": "2025-03-19",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Hairline crack in epoxy grout under baseplate edge",
+    "root_cause": "Vibration-induced grout fatigue at pump end",
+    "corrective_action": "Chipped out loose grout and re-grouted with epoxy, torqued hold-down bolts",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Epoxy grout"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 15,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240004",
+    "date": "2025-03-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+    "root_cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+    "corrective_action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Bearing 7310 BECBM"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 16,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240023",
+    "date": "2025-04-11",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 17,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240005",
+    "date": "2025-05-26",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Routine lube route - oil level below mid-mark on sight glass",
+    "root_cause": "Normal consumption / minor weep at constant-level oiler",
+    "corrective_action": "Topped up ISO VG 68 to correct level, checked oiler bottle seal",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 68 lubricating oil (0.5 L)"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 18,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240026",
+    "date": "2025-06-15",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 19,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240021",
+    "date": "2025-08-18",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 20,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "WO-240007",
+    "date": "2025-08-25",
+    "failure_occurred": true,
+    "failure_mode": "Shaft / Coupling Misalignment",
+    "symptom": "Abnormal noise from coupling area, guard vibration",
+    "root_cause": "Rexnord coupling element cracked from repeated misalignment cycles",
+    "corrective_action": "Replaced coupling spacer element, re-aligned, re-fit guard",
+    "downtime_hours": 6.5,
+    "parts_replaced": [
+      "Rexnord coupling spacer element"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 21,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240002",
+    "date": "2025-08-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal drain flowing",
+    "root_cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face to run dry and score",
+    "corrective_action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, verified PDI-1201 dP",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Mechanical seal JC T2100"
+    ]
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 22,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240025",
+    "date": "2025-09-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-1201",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 23,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240015",
+    "date": "2025-09-28",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 24,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240019",
+    "date": "2025-10-19",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "GA-1201A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History GA-1201A.xlsx",
+      "page": 1,
+      "sheet": "GA-1201A",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 25,
+      "original_tag": "GA-1201A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "WO-240020",
+    "date": "2025-11-14",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "retrieval": {
+    "lexical_weight": 0.40,
+    "fuzzy_weight": 0.20,
+    "vector_weight": 0.40,
+    "top_k": 5
+  },
+  "sufficiency": {
+    "min_relevance_threshold": 0.20
+  }
+}

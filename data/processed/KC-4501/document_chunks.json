@@ -1,0 +1,55 @@
+[
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.02",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_parameters": 6
+    },
+    "chunk_id": "TJC-LLD-DS-KC-4501-P01-C01",
+    "title": "Equipment Datasheet - RECYCLE GAS COMPRESSOR (KC-4501)",
+    "equipment_type": "Reciprocating Compressor",
+    "content": "EQUIPMENT DATASHEET: KC-4501 (RECYCLE GAS COMPRESSOR).\nDocument ID: TJC-LLD-DS-KC-4501, Revision: Rev.02, Status: Issued for Operation.\nEquipment Type: Reciprocating Compressor.\nFunctional Location: TJC-LLD-4500-01.\nService: Recycle gas compression to polymerization loop.\nCompressor Design - Rated Flow: 2200 m3/h\nCompressor Design - Differential Pressure: 13.5 bar\nCompressor Design - Pumping Temperature: 65 degC\nMotor Driver - Motor Power: 250 kW\nMotor Driver - Speed: 740 rpm\nMotor Driver - Voltage: 3300 V"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.02",
+      "status": "Issued for Operation"
+    },
+    "metadata": {},
+    "chunk_id": "TJC-LLD-IL-KC-4501-P01-C01",
+    "title": "Recycle Gas Compressor Shutdown Logic & Cause Effect (SEQ-4501)",
+    "equipment_type": null,
+    "content": "INTERLOCK LOGIC: SEQ-4501. SIL: SIL 2. TAG: KC-4501. FLOC: TJC-LLD-4500-01. CAUSE & EFFECT MATRIX: T1 Lube Oil Pressure LOW-LOW (PSLL-4504 < 1.5 barg, 2oo3) -> Trip Compressor Motor, DCS Alarm, Auto-start standby lube pump. T2 2nd Stage Discharge Temp HIGH-HIGH (TSHH-4502 > 135 degC, 1oo1) -> Trip Compressor Motor, Vent Recycle Loop. T3 Suction KO Drum Level HIGH-HIGH (LSHH-4510, 1oo2) -> Trip Compressor Motor, Close Suction XV-4501. START PERMISSIVES: P1 Lube oil pressure established > 2.5 barg (PT-4504), P2 Suction valve open, P3 Cooling water flow normal."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "OPL-KC-4501-01",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-KC-4501-01.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.01",
+      "status": "Approved"
+    },
+    "metadata": {},
+    "chunk_id": "OPL-KC-4501-01-P01-C01",
+    "title": "Recycle Gas Compressor Pre-Start Lube Priming Procedure",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON: OPL-KC-4501-01. Title: Recycle Gas Compressor Pre-Start Lube Priming Procedure. Equipment: KC-4501. Area: 4500. Interlock Ref: SEQ-4501. PURPOSE: Ensure crosshead, crankpin, and piston rod packings receive adequate lube pressure prior to compressor start. SAFETY: Flammable gas zone, wear ESD PPE. PROCEDURE: Step 1: Start auxiliary lube oil pump. Step 2: Verify lube pressure on PI-4504 reaches 2.5 barg. Step 3: Check cylinder pre-lube lubricator drops (12 drops/min). Step 4: Confirm zero active trip on SEQ-4501. TROUBLESHOOTING: Low lube pressure -> check suction strainer or gear pump wear."
+  }
+]

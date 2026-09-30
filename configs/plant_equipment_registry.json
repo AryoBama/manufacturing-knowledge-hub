@@ -1,0 +1,105 @@
+{
+  "GA-1201A": {
+    "tag": "GA-1201A",
+    "name": "Hexane Feed Pump",
+    "type": "Centrifugal Pump (API 610 OH2)",
+    "area": "1200",
+    "loop_number": "1201",
+    "aliases": [
+      "ga1201a", "ga-1201a", "ga 1201a",
+      "pump a", "pompa a", "feed pump a", "pompa feed a",
+      "hexane feed pump", "hexane feed pump a", "pompa hexane", "pompa heksana", "pompa heksan",
+      "hexane pump", "hexane pump a", "feed pump", "pompa feed heksan", "pompa feed"
+    ]
+  },
+  "GA-1201B": {
+    "tag": "GA-1201B",
+    "name": "Hexane Standby Pump",
+    "type": "Centrifugal Pump (API 610 OH2)",
+    "area": "1200",
+    "loop_number": "1201",
+    "aliases": [
+      "ga1201b", "ga-1201b", "ga 1201b",
+      "pump b", "pompa b", "feed pump b", "pompa feed b", "pompa heksan b",
+      "hexane standby pump", "hexane feed pump b", "pompa cadangan hexane", "hexane pump b",
+      "standby pump", "pompa standby"
+    ]
+  },
+  "KC-4501": {
+    "tag": "KC-4501",
+    "name": "Recycle Gas Compressor",
+    "type": "Reciprocating Compressor",
+    "area": "4500",
+    "loop_number": "4501",
+    "aliases": [
+      "kc4501", "kc-4501", "kc 4501",
+      "recycle gas compressor", "recycle compressor", "gas compressor", "compressor", "kompresor gas", "kompresor recycle", "kompresor"
+    ]
+  },
+  "YD-2301": {
+    "tag": "YD-2301",
+    "name": "Polymer Fluid Bed Dryer",
+    "type": "Fluidized Bed Dryer",
+    "area": "2300",
+    "loop_number": "2301",
+    "aliases": [
+      "yd2301", "yd-2301", "yd 2301",
+      "polymer powder fluid bed dryer", "polymer fluid bed dryer", "fluid bed dryer", "polymer dryer", "powder dryer", "dryer", "pengering polimer", "dryer polimer"
+    ]
+  },
+  "DC-3401A": {
+    "tag": "DC-3401A",
+    "name": "Catalyst Reduction Reactor",
+    "type": "Agitated Reactor Vessel",
+    "area": "3400",
+    "loop_number": "3401",
+    "aliases": [
+      "dc3401a", "dc-3401a", "dc 3401a",
+      "catalyst preparation tank a", "catalyst reduction reactor", "reduction reactor", "catalyst tank", "prep tank", "tangki katalis", "reaktor katalis", "reaktor reduksi", "catalyst preparation reactor"
+    ]
+  },
+  "EA-5601": {
+    "tag": "EA-5601",
+    "name": "Solvent Heater",
+    "type": "Shell & Tube Heat Exchanger",
+    "area": "5600",
+    "loop_number": "5601",
+    "aliases": [
+      "ea5601", "ea-5601", "ea 5601",
+      "recycle solvent cooler", "solvent cooler", "solvent heater", "steam heater", "heat exchanger", "pendingin solven", "cooler solven", "pemanas solven", "heater solven"
+    ]
+  },
+  "LV-6701": {
+    "tag": "LV-6701",
+    "name": "Separator Level Control Valve",
+    "type": "Control Valve / Discharge Unit",
+    "area": "6700",
+    "loop_number": "6701",
+    "aliases": [
+      "lv6701", "lv-6701", "lv 6701",
+      "product separation discharge valve", "product separation valve", "discharge valve", "separator level control valve", "level control valve", "separator valve", "katup discharge", "katup separasi", "valve separator", "control valve level"
+    ]
+  },
+  "CT-7801": {
+    "tag": "CT-7801",
+    "name": "Cooling Tower Cell Fan",
+    "type": "Induced Draft Cooling Tower",
+    "area": "7800",
+    "loop_number": "7801",
+    "aliases": [
+      "ct7801", "ct-7801", "ct 7801",
+      "cooling water tower", "cooling tower cell fan", "cooling tower fan", "tower fan", "cell fan", "fan cooling tower", "kipas cooling tower", "cooling tower", "menara pendingin", "menara air pendingin"
+    ]
+  },
+  "FA-8901": {
+    "tag": "FA-8901",
+    "name": "Reflux Accumulator Drum",
+    "type": "Distillation Column",
+    "area": "8900",
+    "loop_number": "8901",
+    "aliases": [
+      "fa8901", "fa-8901", "fa 8901",
+      "solvent fractionation column", "fractionation column", "distillation column", "reflux accumulator drum", "reflux accumulator", "reflux drum", "kolom distilasi", "drum refluks", "drum akumulator"
+    ]
+  }
+}
