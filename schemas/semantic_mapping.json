@@ -1,0 +1,166 @@
+{
+  "mappings": [
+    {
+      "canonical_field": "rated_flow",
+      "display_name": "Rated Flow Rate",
+      "source_labels": [
+        "Rated Flow",
+        "Rated Capacity",
+        "Design Flow",
+        "Nominal Flow",
+        "Q_rated",
+        "Capacity"
+      ],
+      "standard_unit": "m3/h",
+      "equipment_types": ["PUMP", "COMPRESSOR", "BLOWER"],
+      "data_type": "float",
+      "validated_by": "Process Engineering Team"
+    },
+    {
+      "canonical_field": "rated_head",
+      "display_name": "Rated Head",
+      "source_labels": [
+        "Rated Head",
+        "Design Head",
+        "Total Dynamic Head",
+        "TDH",
+        "Head"
+      ],
+      "standard_unit": "m",
+      "equipment_types": ["PUMP"],
+      "data_type": "float",
+      "validated_by": "Mechanical Rotating Team"
+    },
+    {
+      "canonical_field": "differential_pressure",
+      "display_name": "Differential Pressure",
+      "source_labels": [
+        "Differential Pressure",
+        "Diff Pressure",
+        "dP",
+        "Delta P",
+        "Operating dP"
+      ],
+      "standard_unit": "bar",
+      "equipment_types": ["PUMP", "COMPRESSOR", "FILTER", "HEAT_EXCHANGER"],
+      "data_type": "float",
+      "validated_by": "Process Engineering Team"
+    },
+    {
+      "canonical_field": "npsh_required",
+      "display_name": "NPSH Required",
+      "source_labels": [
+        "NPSH Required",
+        "NPSHr",
+        "NPSH (r)",
+        "Net Positive Suction Head Required"
+      ],
+      "standard_unit": "m",
+      "equipment_types": ["PUMP"],
+      "data_type": "float",
+      "validated_by": "Mechanical Rotating Team"
+    },
+    {
+      "canonical_field": "pumping_temperature",
+      "display_name": "Pumping / Operating Temperature",
+      "source_labels": [
+        "Pumping Temperature",
+        "Operating Temperature",
+        "Design Temperature",
+        "Operating Temp",
+        "Fluid Temperature"
+      ],
+      "standard_unit": "degC",
+      "equipment_types": ["ALL"],
+      "data_type": "float",
+      "validated_by": "Process Engineering Team"
+    },
+    {
+      "canonical_field": "motor_power",
+      "display_name": "Motor Output Power",
+      "source_labels": [
+        "Output Power",
+        "Motor Power",
+        "Rated Power",
+        "Motor Rating",
+        "Rated Motor Output",
+        "Driver Power"
+      ],
+      "standard_unit": "kW",
+      "equipment_types": ["MOTOR", "PUMP", "COMPRESSOR", "DRYER"],
+      "data_type": "float",
+      "validated_by": "Electrical Engineering Team"
+    },
+    {
+      "canonical_field": "motor_speed",
+      "display_name": "Rotational Speed",
+      "source_labels": [
+        "Speed",
+        "Rated Speed",
+        "RPM",
+        "Rotational Speed",
+        "Motor Speed"
+      ],
+      "standard_unit": "rpm",
+      "equipment_types": ["MOTOR", "PUMP", "COMPRESSOR"],
+      "data_type": "float",
+      "validated_by": "Electrical Engineering Team"
+    },
+    {
+      "canonical_field": "motor_voltage",
+      "display_name": "Motor Supply Voltage",
+      "source_labels": [
+        "Voltage",
+        "Supply Voltage",
+        "Rated Voltage",
+        "Operating Voltage"
+      ],
+      "standard_unit": "V",
+      "equipment_types": ["MOTOR", "ELECTRICAL"],
+      "data_type": "float",
+      "validated_by": "Electrical Engineering Team"
+    },
+    {
+      "canonical_field": "rated_current",
+      "display_name": "Full Load Current",
+      "source_labels": [
+        "Rated Current",
+        "Full Load Current",
+        "FLA",
+        "Operating Current"
+      ],
+      "standard_unit": "A",
+      "equipment_types": ["MOTOR"],
+      "data_type": "float",
+      "validated_by": "Electrical Engineering Team"
+    },
+    {
+      "canonical_field": "grid_reference",
+      "display_name": "Plant Grid Location",
+      "source_labels": [
+        "Grid Reference",
+        "Grid Ref",
+        "Plot Grid",
+        "Location Coordinates"
+      ],
+      "standard_unit": null,
+      "equipment_types": ["ALL"],
+      "data_type": "string",
+      "validated_by": "Civil & Piping Layout Team"
+    },
+    {
+      "canonical_field": "elevation",
+      "display_name": "Equipment Grade Elevation",
+      "source_labels": [
+        "Elevation",
+        "Grade Elevation",
+        "EL",
+        "Baseplate Elevation"
+      ],
+      "standard_unit": "m",
+      "equipment_types": ["ALL"],
+      "data_type": "string",
+      "validated_by": "Civil & Piping Layout Team"
+    }
+  ]
+}
