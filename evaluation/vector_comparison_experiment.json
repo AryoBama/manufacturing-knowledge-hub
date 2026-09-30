@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "Engine": "Baseline (Metadata + Lexical + Subword)",
+    "Questions Evaluated": 7,
+    "Hit@1": "100.0% (6/6)",
+    "Hit@3": "100.0% (6/6)",
+    "Hit@5": "100.0% (6/6)",
+    "MRR": "1.000",
+    "Sufficiency Accuracy": "100.0%",
+    "Wrong Equipment Rate": "0.0%",
+    "Mean Latency": "2.04 ms"
+  },
+  "enhanced": {
+    "Engine": "Enhanced (Metadata + Lexical + Subword + VectorDB)",
+    "Questions Evaluated": 7,
+    "Hit@1": "100.0% (6/6)",
+    "Hit@3": "100.0% (6/6)",
+    "Hit@5": "100.0% (6/6)",
+    "MRR": "1.000",
+    "Sufficiency Accuracy": "100.0%",
+    "Wrong Equipment Rate": "0.0%",
+    "Mean Latency": "4.23 ms"
+  }
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "Q1",
+    "question": "What is GA-1201A and what is its rated flow?",
+    "session_context": {},
+    "expected_equipment": "GA-1201A",
+    "expected_intent": "equipment_information",
+    "expected_knowledge_types": ["equipment_spec"],
+    "expected_document_types": ["DATASHEET", "GA_DRAWING"],
+    "expected_evidence": ["TJC-LLD-DS-GA-1201A-P01-C01"],
+    "expected_sufficiency": "sufficient"
+  },
+  {
+    "id": "Q2",
+    "question": "What conditions can trip GA-1201A?",
+    "session_context": {},
+    "expected_equipment": "GA-1201A",
+    "expected_intent": "protection",
+    "expected_knowledge_types": ["protection_logic", "process_logic"],
+    "expected_document_types": ["INTERLOCK", "PID"],
+    "expected_evidence": ["TJC-LLD-IL-GA-1201A-P01-C01"],
+    "expected_sufficiency": "sufficient"
+  },
+  {
+    "id": "Q3",
+    "question": "What should I check when GA-1201A has high vibration?",
+    "session_context": {},
+    "expected_equipment": "GA-1201A",
+    "expected_intent": "troubleshooting",
+    "expected_knowledge_types": ["operating_procedure", "protection_logic", "failure_history", "process_logic"],
+    "expected_document_types": ["OPL", "PID", "INTERLOCK", "MAINTENANCE"],
+    "expected_evidence": [
+      "OPL-GA-1201A-07-P01-C01",
+      "OPL-GA-1201A-03-P01-C01",
+      "OPL-GA-1201A-04-P01-C01",
+      "OPL-GA-1201A-05-P01-C01",
+      "OPL-GA-1201A-06-P01-C01",
+      "TJC-LLD-IL-GA-1201A-P01-C01"
+    ],
+    "expected_sufficiency": "sufficient"
+  },
+  {
+    "id": "Q4",
+    "question": "What are the start permissives for GA-1201A?",
+    "session_context": {},
+    "expected_equipment": "GA-1201A",
+    "expected_intent": "protection",
+    "expected_knowledge_types": ["protection_logic", "process_logic"],
+    "expected_document_types": ["INTERLOCK", "PID"],
+    "expected_evidence": ["TJC-LLD-IL-GA-1201A-P01-C01"],
+    "expected_sufficiency": "sufficient"
+  },
+  {
+    "id": "Q5",
+    "question": "What is the design head of the hexane feed pump?",
+    "session_context": {},
+    "expected_equipment": "GA-1201A",
+    "expected_intent": "equipment_information",
+    "expected_knowledge_types": ["equipment_spec"],
+    "expected_document_types": ["DATASHEET", "GA_DRAWING"],
+    "expected_evidence": ["TJC-LLD-DS-GA-1201A-P01-C01"],
+    "expected_sufficiency": "sufficient"
+  },
+  {
+    "id": "Q6",
+    "question": "What causes the pump to trip on low suction pressure?",
+    "session_context": {
+      "last_mentioned_tag": "GA-1201A"
+    },
+    "expected_equipment": "GA-1201A",
+    "expected_intent": "protection",
+    "expected_knowledge_types": ["protection_logic", "process_logic"],
+    "expected_document_types": ["INTERLOCK", "PID"],
+    "expected_evidence": ["TJC-LLD-IL-GA-1201A-P01-C01", "TJC-LLD-PID-1201-P01-C01"],
+    "expected_sufficiency": "sufficient"
+  },
+  {
+    "id": "Q7",
+    "question": "What should I check if there is abnormal noise and vibration?",
+    "session_context": {},
+    "expected_equipment": null,
+    "expected_intent": "troubleshooting",
+    "expected_knowledge_types": ["operating_procedure", "protection_logic", "failure_history", "process_logic"],
+    "expected_document_types": ["OPL", "PID", "INTERLOCK", "MAINTENANCE"],
+    "expected_evidence": [],
+    "expected_sufficiency": "clarification_required"
+  }
+]

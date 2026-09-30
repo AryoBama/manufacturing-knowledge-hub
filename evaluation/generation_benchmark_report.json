@@ -1,0 +1,151 @@
+{
+  "metrics": {
+    "Total Questions Evaluated": 9,
+    "Sufficiency & Safety Gate Accuracy": "100.0% (9/9)",
+    "Citation Provenance Validity Rate": "100.0% (8/8)",
+    "Hallucination Rate (Ground-truth Citation Enforcement)": "0.0%",
+    "Refusal on Ambiguity Accuracy": "100.0% (1/1)"
+  },
+  "details": [
+    {
+      "id": "Q1",
+      "query": "What is GA-1201A and what is its rated flow?",
+      "resolved_tag": "GA-1201A",
+      "intent": "equipment_information",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 1,
+      "citations": [
+        "[DATASHEET: TJC-LLD-DS-GA-1201A | Rev.03 | Issued for Operation | P.1]"
+      ],
+      "actions_count": 0,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q2",
+      "query": "What conditions can trip GA-1201A?",
+      "resolved_tag": "GA-1201A",
+      "intent": "protection",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 3,
+      "citations": [
+        "[INTERLOCK: TJC-LLD-IL-GA-1201A | Rev.03 | Issued for Operation | P.1]",
+        "[PID: TJC-LLD-PID-1201A | Issued for Operation | P.1]",
+        "[PID: TJC-LLD-PID-1201 | Rev 0 | Issued for Operation | P.1]"
+      ],
+      "actions_count": 2,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q3",
+      "query": "What should I check when GA-1201A has high vibration?",
+      "resolved_tag": "GA-1201A",
+      "intent": "troubleshooting",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 10,
+      "citations": [
+        "[INTERLOCK: TJC-LLD-IL-GA-1201A | Rev.03 | Issued for Operation | P.1]",
+        "[PID: TJC-LLD-PID-1201A | Issued for Operation | P.1]",
+        "[DATASHEET: TJC-LLD-DS-GA-1201A | Rev.03 | Issued for Operation | P.1]",
+        "[MAINTENANCE: SAP-PM-HIST | Approved | P.1]",
+        "[MAINTENANCE: SAP-PM-HIST | Approved | P.1]",
+        "[OPL: OPL-GA-1201A-04 | Rev 0 | Issued for Operation | P.1]",
+        "[OPL: OPL-GA-1201A-05 | Rev 0 | Issued for Operation | P.1]",
+        "[OPL: OPL-GA-1201A-06 | Rev 0 | Issued for Operation | P.1]",
+        "[OPL: OPL-GA-1201A-03 | Rev 0 | Issued for Operation | P.1]",
+        "[OPL: OPL-GA-1201A-02 | Rev 0 | Issued for Operation | P.1]"
+      ],
+      "actions_count": 2,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q4",
+      "query": "What are the start permissives for GA-1201A?",
+      "resolved_tag": "GA-1201A",
+      "intent": "protection",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 3,
+      "citations": [
+        "[INTERLOCK: TJC-LLD-IL-GA-1201A | Rev.03 | Issued for Operation | P.1]",
+        "[PID: TJC-LLD-PID-1201A | Issued for Operation | P.1]",
+        "[PID: TJC-LLD-PID-1201 | Rev 0 | Issued for Operation | P.1]"
+      ],
+      "actions_count": 2,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q5",
+      "query": "What is the design head of the hexane feed pump?",
+      "resolved_tag": "GA-1201A",
+      "intent": "equipment_information",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 1,
+      "citations": [
+        "[DATASHEET: TJC-LLD-DS-GA-1201A | Rev.03 | Issued for Operation | P.1]"
+      ],
+      "actions_count": 0,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q6",
+      "query": "What causes the pump to trip on low suction pressure?",
+      "resolved_tag": "GA-1201A",
+      "intent": "protection",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 3,
+      "citations": [
+        "[INTERLOCK: TJC-LLD-IL-GA-1201A | Rev.03 | Issued for Operation | P.1]",
+        "[PID: TJC-LLD-PID-1201A | Issued for Operation | P.1]",
+        "[PID: TJC-LLD-PID-1201 | Rev 0 | Issued for Operation | P.1]"
+      ],
+      "actions_count": 2,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q7",
+      "query": "What should I check if there is abnormal noise and vibration?",
+      "resolved_tag": null,
+      "intent": "troubleshooting",
+      "confidence": "LOW",
+      "confidence_score": 0.35,
+      "citations_count": 0,
+      "citations": [],
+      "actions_count": 0,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q8_MULTI",
+      "query": "What is the maintenance history of YD-2301?",
+      "resolved_tag": "YD-2301",
+      "intent": "failure_history",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 1,
+      "citations": [
+        "[MAINTENANCE: SAP-PM-HIST | Approved | P.1]"
+      ],
+      "actions_count": 0,
+      "sufficiency_pass": true
+    },
+    {
+      "id": "Q9_MULTI",
+      "query": "Has KC-4501 had any past breakdown or failure events?",
+      "resolved_tag": "KC-4501",
+      "intent": "failure_history",
+      "confidence": "HIGH",
+      "confidence_score": 0.9,
+      "citations_count": 2,
+      "citations": [
+        "[MAINTENANCE: SAP-PM-HIST | Approved | P.1]",
+        "[MAINTENANCE: SAP-PM-HIST | Approved | P.1]"
+      ],
+      "actions_count": 1,
+      "sufficiency_pass": true
+    }
+  ]
+}

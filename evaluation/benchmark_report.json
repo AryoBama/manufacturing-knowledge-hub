@@ -1,0 +1,122 @@
+{
+  "metrics": {
+    "Hit@1": "100.0% (6/6)",
+    "Hit@3": "100.0% (6/6)",
+    "Hit@5": "100.0% (6/6)",
+    "MRR": "1.000",
+    "Sufficiency Accuracy": "100.0% (7/7)"
+  },
+  "details": [
+    {
+      "id": "Q1",
+      "question": "What is GA-1201A and what is its rated flow?",
+      "intent": "equipment_information",
+      "equipment": "GA-1201A",
+      "retrieved_top_3": [
+        "TJC-LLD-DS-GA-1201A-P01-C01"
+      ],
+      "hits": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true
+      },
+      "predicted_sufficiency": "sufficient",
+      "expected_sufficiency": "sufficient"
+    },
+    {
+      "id": "Q2",
+      "question": "What conditions can trip GA-1201A?",
+      "intent": "protection",
+      "equipment": "GA-1201A",
+      "retrieved_top_3": [
+        "TJC-LLD-IL-GA-1201A-P01-C01",
+        "TJC-LLD-PID-1201-P01-C01"
+      ],
+      "hits": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true
+      },
+      "predicted_sufficiency": "sufficient",
+      "expected_sufficiency": "sufficient"
+    },
+    {
+      "id": "Q3",
+      "question": "What should I check when GA-1201A has high vibration?",
+      "intent": "troubleshooting",
+      "equipment": "GA-1201A",
+      "retrieved_top_3": [
+        "OPL-GA-1201A-04-P01-C01",
+        "SAP-PM-HIST-GA-1201A-P01-C01",
+        "OPL-GA-1201A-05-P01-C01"
+      ],
+      "hits": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true
+      },
+      "predicted_sufficiency": "sufficient",
+      "expected_sufficiency": "sufficient"
+    },
+    {
+      "id": "Q4",
+      "question": "What are the start permissives for GA-1201A?",
+      "intent": "protection",
+      "equipment": "GA-1201A",
+      "retrieved_top_3": [
+        "TJC-LLD-IL-GA-1201A-P01-C01",
+        "TJC-LLD-PID-1201-P01-C01"
+      ],
+      "hits": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true
+      },
+      "predicted_sufficiency": "sufficient",
+      "expected_sufficiency": "sufficient"
+    },
+    {
+      "id": "Q5",
+      "question": "What is the design head of the hexane feed pump?",
+      "intent": "equipment_information",
+      "equipment": "GA-1201A",
+      "retrieved_top_3": [
+        "TJC-LLD-DS-GA-1201A-P01-C01"
+      ],
+      "hits": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true
+      },
+      "predicted_sufficiency": "sufficient",
+      "expected_sufficiency": "sufficient"
+    },
+    {
+      "id": "Q6",
+      "question": "What causes the pump to trip on low suction pressure?",
+      "intent": "protection",
+      "equipment": "GA-1201A",
+      "retrieved_top_3": [
+        "TJC-LLD-IL-GA-1201A-P01-C01",
+        "TJC-LLD-PID-1201-P01-C01"
+      ],
+      "hits": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true
+      },
+      "predicted_sufficiency": "sufficient",
+      "expected_sufficiency": "sufficient"
+    },
+    {
+      "id": "Q7",
+      "question": "What should I check if there is abnormal noise and vibration?",
+      "intent": "troubleshooting",
+      "equipment": null,
+      "retrieved_top_3": [],
+      "hits": {},
+      "predicted_sufficiency": "clarification_required",
+      "expected_sufficiency": "clarification_required"
+    }
+  ]
+}
