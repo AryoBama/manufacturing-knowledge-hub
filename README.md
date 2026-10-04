@@ -5,44 +5,44 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com)
 [![SvelteKit](https://img.shields.io/badge/Frontend-SvelteKit%205-FF3E00.svg)](https://svelte.dev)
 [![Tests](https://img.shields.io/badge/Tests-99%20Passed-brightgreen.svg)]()
-[![License](https://img.shields.io/badge/Status-Competition%20Ready-success.svg)]()
+[![Status](https://img.shields.io/badge/Status-Competition%20Ready-success.svg)]()
 
-Platform integrasi pengetahuan operasional pabrik petrokimia yang menghubungkan **SOP, P&ID, Datasheet Teknis, Interlock Cause & Effect Matrix, One-Point Lessons (OPL), serta Riwayat Pemeliharaan SAP PM** menjadi satu kesatuan *evidence-grounded AI knowledge hub*. Sistem ini dirancang anti-halusinasi (*zero unverified extrapolation*), dapat diaudit hingga nomor halaman dan revisi dokumen, serta siap diintegrasikan dengan sistem DCS/EDMS/AIMS dan Digital Twin.
+An enterprise-grade, evidence-grounded industrial AI platform designed for continuous process petrochemical plants. It seamlessly connects **Equipment Datasheets, Piping & Instrumentation Diagrams (P&IDs), Interlock Cause & Effect Matrices, Standard Operating Procedures (SOPs), One-Point Lessons (OPLs), and Historical SAP PM Maintenance Logs** into an auditable, zero-hallucination knowledge hub that links every claim directly to verified engineering documents down to the page and revision.
 
 ---
 
-## Daftar Isi
-1. [Latar Belakang & Solusi CALIBER 2026](#latar-belakang--solusi-caliber-2026)
-2. [Arsitektur Sistem (System Architecture)](#arsitektur-sistem-system-architecture)
-3. [Diagram Arsitektur Sistem](#diagram-arsitektur-sistem)
-4. [Alur Pipeline Kueri (Query Pipeline Lifecycle)](#alur-pipeline-kueri-query-pipeline-lifecycle)
-5. [Fitur & Keunggulan Utama](#fitur--keunggulan-utama)
-6. [Audit Matematika Skor Kepercayaan (Confidence Scoring)](#audit-matematika-skor-kepercayaan-confidence-scoring)
-7. [Dokumentasi API & Endpoint](#dokumentasi-api--endpoint)
-8. [Panduan Instalasi & Menjalankan Sistem](#panduan-instalasi--menjalankan-sistem)
+## Table of Contents
+1. [Industrial Context & Problem Statement](#industrial-context--problem-statement)
+2. [System Architecture](#system-architecture)
+3. [Architecture Diagrams](#architecture-diagrams)
+4. [Query Pipeline Lifecycle](#query-pipeline-lifecycle)
+5. [Core Engineering Capabilities](#core-engineering-capabilities)
+6. [Mathematical Confidence Scoring Model](#mathematical-confidence-scoring-model)
+7. [API Specifications & Core Endpoints](#api-specifications--core-endpoints)
+8. [Installation & Getting Started](#installation--getting-started)
 9. [Automated Test Suite & Adversarial Benchmarks](#automated-test-suite--adversarial-benchmarks)
-10. [Struktur Repositori](#struktur-repositori)
+10. [Repository Directory Structure](#repository-directory-structure)
 
 ---
 
-## Latar Belakang & Solusi CALIBER 2026
+## Industrial Context & Problem Statement
 
-Di industri petrokimia (*continuous process plant*), pengetahuan teknis pabrik sering kali terfragmentasi di berbagai silo dokumen:
-* **Datasheet Peralatan**: Berisi batasan desain mekanikal & termal yang statis.
-* **P&ID (Piping & Instrumentation Diagram)**: Konfigurasi perpipaan, batas baterai, dan instrumentasi *as-built*.
-* **Interlock Cause & Effect**: Matriks proteksi keselamatan instrumen (*SIS/ESD, trip setpoints, start permissives*).
-* **SOP & OPL (One-Point Lesson)**: Prosedur operasional lapangan dan keahlian praktisi (*tacit knowledge*).
-* **SAP PM (Plant Maintenance Log)**: Riwayat kegagalan nyata, *root cause analysis* (RCA), dan tindakan perbaikan masa lalu.
+In continuous petrochemical operations, mission-critical engineering knowledge is typically fragmented across isolated silos:
+* **Equipment Datasheets**: Static design boundaries, thermal ratings, and mechanical design pressures.
+* **P&IDs (Piping & Instrumentation Diagrams)**: As-built piping configurations, battery limits, control loops, and tag designations.
+* **Interlock Cause & Effect Matrices**: Safety Instrumented Systems (SIS/ESD), trip thresholds, and start permissives.
+* **SOPs & One-Point Lessons (OPLs)**: Field operational checklists, troubleshooting steps, and SME tacit knowledge.
+* **SAP PM (Plant Maintenance History)**: Empirical failure records, work orders, root cause analyses (RCAs), and corrective actions.
 
-**Risiko di Lapangan:** Ketika terjadi anomali (misalnya vibrasi tinggi pada pompa atau kenaikan suhu reboiler), teknisi dan operator membutuhkan waktu lama untuk menyilangkan informasi antar dokumen. Kesalahan interpretasi atau ketergantungan pada asumsi dapat memicu *unplanned plant shutdown*, kerusakan fatal aset, maupun *safety hazard*.
+**Operational Risk:** When equipment anomalies emerge (e.g., pump coupling vibration or heat exchanger pressure drop), plant engineers and operators must cross-reference multiple siloed documents under time pressure. Reliance on memory, unverified assumptions, or fragmented documentation risks uncontained trips, catastrophic asset damage, and major safety hazards.
 
-**Solusi Kami:** **Manufacturing Knowledge Hub** menghadirkan fondasi **Industrial Data Ops** yang menstandarisasi seluruh modalitas dokumen ke dalam *Canonical Pydantic Data Contracts*, membangun **Plant Knowledge Graph** relasional, dan mengorkestrasikan **Multi-Signal Hybrid Retrieval Engine** dengan jaminan **Evidence Sufficiency Gate** sebelum jawaban disintesis oleh LLM.
+**Our Solution:** The **Manufacturing Knowledge Hub** establishes an **Industrial Data Ops** foundation that unifies all engineering modalities into canonical Pydantic data contracts, constructs a relational **Plant Knowledge Graph**, and orchestrates a **Multi-Signal Hybrid Retrieval Engine** governed by a strict **Evidence Sufficiency Gate** before generating verifiable, provenance-grounded answers.
 
 ---
 
-## Arsitektur Sistem (System Architecture)
+## System Architecture
 
-Sistem dirancang dengan arsitektur berlapis yang ter-decouple (*clean decoupled architecture*):
+The platform is designed around a clean, decoupled 6-layer architecture:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -79,33 +79,33 @@ Sistem dirancang dengan arsitektur berlapis yang ter-decouple (*clean decoupled 
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Rincian 6 Lapisan Arsitektur:
+### The 6 Architectural Layers:
 
 1. **Ingestion & Data Normalization Layer ([`src/ingestion/`](src/ingestion/)):**
-   * Mengubah file Excel mentah dan PDF menjadi dokumen terstruktur JSON berskema baku ([`schemas/`](schemas/)).
-   * Memvalidasi *document approval status* (`Issued for Operation`, `Approved`, `Issued for Construction`).
+   * Normalizes raw engineering spreadsheets and PDF documents into canonical Pydantic data models ([`schemas/`](schemas/)).
+   * Validates document governance attributes (`Issued for Operation`, `Approved`, `Issued for Construction`).
 2. **Plant Knowledge Graph & Failure Memory Layer ([`src/graph/`](src/graph/), [`src/failure_memory/`](src/failure_memory/)):**
-   * Memetakan topologi fisik pabrik: `Plant -> Area -> Unit -> Equipment -> Instrument`.
-   * Menghubungkan jalur propagasi anomali *multi-hop* (misalnya: *lube oil pressure low $\rightarrow$ bearing friction $\rightarrow$ high vibration trip*).
-   * Mesin memori kegagalan melacak frekuensi kerusakan dan mencocokkan gejala saat ini dengan *SAP Work Order* historis.
+   * Encodes physical plant hierarchy: `Plant -> Area -> Unit -> Equipment -> Instrument`.
+   * Models multi-hop causal degradation pathways (e.g., *flush orifice obstruction $\rightarrow$ dry run $\rightarrow$ seal face overheating $\rightarrow$ high vibration trip*).
+   * Failure Memory Engine tracks failure frequencies and performs symptom similarity matching against historical SAP PM work orders.
 3. **Query Understanding & Industrial NLU ([`src/query/`](src/query/)):**
-   * Resolusi entitas presisi tinggi untuk *equipment tags* (misal: `GA-1201A`, `FA-8901`, `EA-5601`) dan instrumen (`PSLL-1201`, `VSHH-1201`).
-   * Klasifikasi intensi teknis multi-kategori: `equipment_information`, `protection`, `troubleshooting`, `failure_history`, `operating_limits`, `conflict_check`.
+   * High-precision entity resolution for equipment tags (e.g., `GA-1201A`, `FA-8901`, `EA-5601`) and instrument loops (`PSLL-1201`, `VSHH-1201`).
+   * Hybrid intent classification covering 6 distinct operational categories: `equipment_information`, `protection`, `troubleshooting`, `failure_history`, `operating_limits`, `conflict_check`.
 4. **Multi-Signal Hybrid Retrieval Engine ([`src/retrieval/`](src/retrieval/)):**
-   * Menggabungkan pencarian leksikal kata kunci eksak (BM25), pencarian kemiripan subkata/karakter, filter metadata ketat, dan pencarian vektor kosinus pada *in-process SQLite Vector Store*.
+   * Fuses exact keyword matching (BM25), subword character n-gram cosine matching, strict metadata filtering, and semantic vector similarity via an embedded SQLite vector store.
 5. **Evidence Sufficiency Gate & Conflict Detector ([`src/retrieval/sufficiency.py`](src/retrieval/sufficiency.py)):**
-   * Mengaudit apakah dokumen yang ditemukan cukup untuk menjawab pertanyaan secara aman.
-   * Mendeteksi jika terdapat konflik nilai desain antar revisi dokumen sebelum dikirim ke LLM.
+   * Evaluates evidence sufficiency and document approval status before dispatching context to the generator.
+   * Identifies contradictory process parameters across document revisions (triggering defensive warnings).
 6. **Grounded Generation & Citation Attribution ([`src/generation/`](src/generation/)):**
-   * LLM adapter fleksibel (Google Gemini 3.8 Flash, DeepSeek, OpenAI) dengan *deterministic fallback* jika kuota API habis atau offline.
-   * Generator sekuensial OPL yang menjamin **seluruh langkah prosedur tampil tuntas tanpa pemotongan kaku** dan terkelompok per dokumen SOP/OPL.
-   * Setiap poin jawaban langsung terhubung dengan badge sitasi dokumen sumber yang dapat diklik.
+   * Pluggable LLM adapters (Google Gemini 3.8 Flash, DeepSeek, OpenAI) with deterministic offline fallback.
+   * **Zero-Truncation Procedural Step Engine**: Guarantees that diagnostic procedures from OPLs and SOPs are presented completely without arbitrary truncation.
+   * Granular claim attribution mapping every point directly to an interactive source citation badge (`[DS1]`, `[IL2]`, `[OP7]`, `[PM5]`).
 
 ---
 
-## Diagram Arsitektur Sistem
+## Architecture Diagrams
 
-### 1. Diagram Komponen End-to-End (High-Level Architecture)
+### 1. High-Level Component & Data Flow Architecture
 
 ```mermaid
 flowchart TD
@@ -150,7 +150,7 @@ flowchart TD
     end
 ```
 
-### 2. Diagram Alur Eksekusi Kueri (Sequence Diagram)
+### 2. Query Execution Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -190,9 +190,9 @@ sequenceDiagram
 
 ---
 
-## Alur Pipeline Kueri (Query Pipeline Lifecycle)
+## Query Pipeline Lifecycle
 
-Ketika seorang engineer mengajukan pertanyaan pada sistem, pipeline mengeksekusi 6 tahapan terstandar:
+Each technical query traverses a deterministic 6-stage lifecycle:
 
 ```mermaid
 flowchart LR
@@ -203,127 +203,127 @@ flowchart LR
     GEN --> ANS["6. Grounded Answer with Badge Citations"]
 ```
 
-1. **Pemahaman Kueri (NLU):** Menangkap entitas target (misal `GA-1201A`) dan mengklasifikasikan maksud pertanyaan (`troubleshooting`, `protection`, `equipment_information`).
-2. **Pengambilan Bukti Hibrida (Hybrid Retrieval):** Menarik parameter dari dokumen spesifikasi teknis, rekaman interlock logic diagram, OPL praktisi, dan riwayat kerusakan historis SAP PM.
-3. **Penyaringan Kualitas Bukti (Sufficiency Gate):** Memastikan bukti berasal dari dokumen resmi bertatus *Issued for Operation* atau *Approved*. Jika ada ambiguitas (misal kueri tanpa tag alat), sistem secara proaktif menolak berspekulasi dan meminta klarifikasi (*defensive safety*).
-4. **Sintesis Langkah Prosedural (Procedural Synthesis):**
-   * Mengekstrak seluruh urutan aksi (*Step 1, Step 2, ..., Step N*) dari OPL tanpa pemotongan kaku.
-   * Mengelompokkan langkah kerja berdasarkan nomor dokumen OPL untuk menghindari kebingungan di lapangan.
-5. **Kalkulasi Kepercayaan (Confidence Calculation):** Menghitung skor numerik berdasarkan bobot matematis yang dapat diaudit.
-6. **Penyajian Terverifikasi (Delivery):** Menyajikan ringkasan eksekutif, langkah teknis berurutan, rekomendasi tindakan operasional yang ter-decouple, serta tabel sitasi dokumen lengkap (nomor dokumen, revisi, status, dan halaman).
+1. **Query Understanding (NLU):** Extracts targeted equipment tags (e.g., `GA-1201A`, `KC-4501`) and classifies engineering intent.
+2. **Hybrid Retrieval:** Collects facts from datasheets, P&ID registers, interlock trip matrices, SME OPLs, and maintenance logs.
+3. **Evidence Sufficiency Gate:** Validates that evidence originated from official documents with `Issued for Operation` or `Approved` status. For ambiguous queries lacking equipment tags, the system triggers a clarification prompt instead of speculating.
+4. **Procedural Step Synthesis:**
+   * Extracts every procedural step (`Step 1`, `Step 2`, ..., `Step N`) from OPLs without arbitrary limits.
+   * Groups steps under their respective OPL procedure headings to ensure workflow integrity.
+5. **Auditable Confidence Scoring:** Computes a mathematical composite score across asset match, source validity, sufficiency, and knowledge coverage.
+6. **Delivery & Attribution:** Emits executive summaries, numbered procedural checklists, decoupled operational actions, and an interactive source citation table.
 
 ---
 
-## Fitur & Keunggulan Utama
+## Core Engineering Capabilities
 
-### 1. Anti-Halusinasi & Evidence-Grounded
-Sistem menolak memberikan klaim faktual tanpa dasar kutipan dokumen resmi. Jika dokumen tidak menyebutkan suatu spesifikasi, sistem menyatakan *"Not specified in verified documents"* daripada mengarang jawaban.
+### 1. Zero-Hallucination & Document Grounding
+The system enforces strict provenance. If a parameter or value is absent from verified engineering documentation, the system explicitly reports that it is not specified rather than extrapolating.
 
-### 2. Zero-Truncation Procedural Workflow
-Prosedur perbaikan dan inspeksi dari OPL tidak dipotong secara kaku (misal `[:5]`). Seluruh tahapan sekuensial disajikan lengkap per dokumen OPL agar teknisi tidak melewatkan tahapan keselamatan akhir (*LOTO, re-shimming, solo test run, coupling guard installation*).
+### 2. Complete Procedural Step Preservation
+In petrochemical maintenance, cutting an SOP or OPL procedure short is a severe safety hazard. The engine preserves all steps (from initial LOTO isolation down to final solo runs and guard reinstallation) grouped by procedure document.
 
-### 3. Decoupled Operational Guidance
-Rekomendasi tindakan dipisahkan secara tegas dari fakta teknis murni. Rekomendasi hanya dibangkitkan jika ada bukti kuat dari OPL atau riwayat SAP PM untuk mencegah tindakan operasional prematur (*premature component replacement warning*).
+### 3. Decoupled Operational Recommendations
+Recommendations are strictly separated from factual claims. Actions are only proposed when backed by explicit OPL guidelines or validated historical SAP PM work orders, including defensive warnings against premature component replacement.
 
-### 4. Failure Memory & Root Cause Mining
-Menghubungkan keluhan gejala fisik di lapangan dengan basis data pemeliharaan SAP PM. Sistem secara instan merekomendasikan solusi perbaikan yang telah terbukti (*proven corrective actions*) dari kegagalan terdahulu pada peralatan sejenis.
+### 4. Failure Memory & SAP PM Mining
+Connects field symptoms directly to historical work orders. The engine identifies previous root causes (e.g., grout fatigue, thermal growth misalignment) and provides proven corrective actions.
 
-### 5. Pluggable & Air-Gapped Ready
-Sistem dapat berjalan 100% *offline* tanpa internet menggunakan *Deterministic Ingestion & Extraction Engine* lokal, atau menggunakan *Live LLM API* (Google Gemini, DeepSeek, OpenAI) dengan *timeout & retry guard*.
+### 5. Multi-Hop Knowledge Graph Navigation
+Enables traversing physical hierarchies and safety causal chains to explore how an upstream anomaly (e.g., level transmitter fault) propagates into downstream trips or equipment stress.
 
 ---
 
-## Audit Matematika Skor Kepercayaan (Confidence Scoring)
+## Mathematical Confidence Scoring Model
 
-Tingkat kepercayaan (*Confidence Level*: `HIGH`, `MEDIUM`, `LOW`, `UNVERIFIED`) tidak ditebak secara arbitrer, melainkan dihitung berdasarkan dekomposisi formula matematis:
+Confidence levels (`HIGH`, `MEDIUM`, `LOW`, `UNVERIFIED`) are governed by an auditable mathematical formula:
 
 $$\text{Confidence} = 0.25 \cdot A + 0.25 \cdot S + 0.25 \cdot R + 0.15 \cdot C + 0.10 \cdot I - P_{\text{conflict}} - P_{\text{obsolete}}$$
 
-| Komponen | Bobot | Deskripsi Pengukuran |
+| Component | Weight | Measurement Objective |
 | :--- | :---: | :--- |
-| **Asset Match ($A$)** | **25%** | Presisi resolusi entitas peralatan (`1.0` untuk tag spesifik, `0.0` jika ambigu). |
-| **Source Validity ($S$)** | **25%** | Rasio dokumen bersumber resmi (*Approved* / *Issued for Operation*). |
-| **Retrieval Sufficiency ($R$)** | **25%** | Lolos evaluasi gerbang kecukupan bukti dan skor relevansi bukti teratas. |
-| **Knowledge Coverage ($C$)** | **15%** | Proporsi tipe pengetahuan yang terpenuhi dibanding yang disyaratkan intensi. |
-| **Intent Certainty ($I$)** | **10%** | Tingkat kepastian klasifikasi intensi kueri teknis. |
-| **Conflict Penalty ($P_{\text{conflict}}$)** | *-30%* | Penalti jika terdeteksi inkonsistensi nilai parameter antar dokumen. |
-| **Obsolete Penalty ($P_{\text{obsolete}}$)** | *-50%* | Penalti jika dokumen yang digunakan telah berstatus usang (*superseded*). |
+| **Asset Match ($A$)** | **25%** | Entity resolution precision (`1.0` for exact tag match, `0.0` if ambiguous). |
+| **Source Validity ($S$)** | **25%** | Ratio of approved engineering sources (`Approved` / `Issued for Operation`). |
+| **Retrieval Sufficiency ($R$)** | **25%** | Verification that evidence satisfies the sufficiency gate criteria. |
+| **Knowledge Coverage ($C$)** | **15%** | Fraction of required knowledge types fulfilled for the given intent. |
+| **Intent Certainty ($I$)** | **10%** | Classification confidence of the query understanding engine. |
+| **Conflict Penalty ($P_{\text{conflict}}$)** | *-30%* | Penalty deducted if contradictory engineering values are detected across revisions. |
+| **Obsolete Penalty ($P_{\text{obsolete}}$)** | *-50%* | Penalty deducted if superseded or draft documents are cited. |
 
 ---
 
-## Dokumentasi API & Endpoint
+## API Specifications & Core Endpoints
 
-Aplikasi mengekspos REST API berbasis FastAPI:
+The backend provides a high-performance REST API built on FastAPI:
 
-| Endpoint | Method | Kategori | Deskripsi |
+| Endpoint | Method | Category | Description |
 | :--- | :---: | :--- | :--- |
-| **`/api/query`** | `POST` | **Core Q&A** | Tanya jawab cerdas berbasis dokumen teknik, interlock, dan OPL dengan sitasi lengkap. |
-| **`/api/failure-memory/search`** | `POST` | **Failure Memory** | Pencarian insiden historis dan RCA berdasarkan deskripsi gejala kerusakan. |
-| **`/api/failure-memory/patterns/{tag}`** | `GET` | **Failure Memory** | Pola kerusakan dan frekuensi kegagalan komponen pada peralatan tertentu. |
-| **`/api/failure-memory/rca/{tag}`** | `GET` | **Failure Memory** | Riwayat tindakan perbaikan (*corrective actions*) dari SAP PM. |
-| **`/api/graph/hierarchy/{tag}`** | `GET` | **Plant Graph** | Penelusuran hierarki fisik aset (*Plant -> Area -> Unit -> Equipment*). |
-| **`/api/graph/protections/{tag}`** | `GET` | **Plant Graph** | Pemetaan sensor interlock, logika voting (2oo3/1oo2), dan *start permissives*. |
-| **`/api/graph/path`** | `POST` | **Plant Graph** | Pelacakan rantai rambatan kegagalan *multi-hop* antar aset dan subsistem. |
-| **`/api/health`** | `GET` | **Monitoring** | Healthcheck liveness probe. |
-| **`/api/ready`** | `GET` | **Monitoring** | Readiness probe untuk kesiapan Vector DB, Knowledge Graph, dan Dokumen Store. |
+| **`/api/query`** | `POST` | **Core Q&A** | Answers technical, safety interlock, and troubleshooting queries with full citation provenance. |
+| **`/api/failure-memory/search`** | `POST` | **Failure Memory** | Searches historical failure records and RCAs based on symptom descriptions. |
+| **`/api/failure-memory/patterns/{tag}`** | `GET` | **Failure Memory** | Returns failure frequency distributions and recurring failure modes for an asset. |
+| **`/api/failure-memory/rca/{tag}`** | `GET` | **Failure Memory** | Retrieves proven historical corrective actions and replacement parts from SAP PM. |
+| **`/api/graph/hierarchy/{tag}`** | `GET` | **Plant Graph** | Traverses physical plant hierarchy (`Plant -> Area -> Unit -> Equipment`). |
+| **`/api/graph/protections/{tag}`** | `GET` | **Plant Graph** | Maps interlock trip sensors, voting logic (2oo3/1oo2), and start permissives. |
+| **`/api/graph/path`** | `POST` | **Plant Graph** | Traces multi-hop causal degradation and failure propagation pathways. |
+| **`/api/health`** | `GET` | **Monitoring** | Service liveness probe. |
+| **`/api/ready`** | `GET` | **Monitoring** | Readiness probe verifying vector store, graph engine, and document registry. |
 
 ---
 
-## Panduan Instalasi & Menjalankan Sistem
+## Installation & Getting Started
 
-### 1. Konfigurasi Lingkungan (`.env`)
-Salin file [`.env.example`](.env.example) menjadi `.env`:
+### 1. Environment Configuration (`.env`)
+Copy the sample environment file:
 ```bash
 cp .env.example .env
 ```
 
-Pilih mode operasi di `.env`:
+Configure your LLM provider in `.env`:
 ```env
-# Opsi 1: Google Gemini (Disarankan)
+# Option 1: Google Gemini (Recommended)
 LLM_PROVIDER=gemini
 GEMINI_API_KEY=AIzaSy...
 GEMINI_MODEL=gemini-3.8-flash
 LLM_TIMEOUT=18.0
 OFFLINE_MODE=false
 
-# Opsi 2: 100% Offline (Tanpa Koneksi Internet / Air-Gapped)
+# Option 2: 100% Offline (Air-Gapped / No External API)
 OFFLINE_MODE=true
 ```
 
 ---
 
-### 2. Menjalankan via Docker Compose (Rekomendasi Produksi)
-Docker Compose akan otomatis mengompilasi backend FastAPI dan frontend SvelteKit:
+### 2. Running with Docker Compose (Recommended)
+Launch the complete stack (FastAPI backend + SvelteKit web frontend):
 
 ```bash
 docker compose up --build -d
 ```
 * **Web UI (Frontend)**: `http://localhost:3000`
-* **Backend API & Swagger UI**: `http://localhost:8000/docs`
+* **API Documentation (Swagger UI)**: `http://localhost:8000/docs`
 
-Untuk melihat log kontainer:
+Check service logs:
 ```bash
 docker compose logs -f
 ```
 
 ---
 
-### 3. Menjalankan Secara Lokal (Local Development)
+### 3. Local Development Setup
 
 #### Backend (Python 3.11+):
 ```bash
-# Aktifkan virtual environment
+# Create and activate virtual environment
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
+source .venv/bin/activate  # Linux/macOS
 # .venv\Scripts\activate   # Windows
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Jalankan server FastAPI
+# Run the FastAPI server
 python scripts/run_backend.py
 ```
-*Server backend aktif di `http://127.0.0.1:8000`.*
+*Backend runs at `http://127.0.0.1:8000`.*
 
 #### Frontend (SvelteKit 5 + Node.js 20+):
 ```bash
@@ -331,12 +331,12 @@ cd frontend
 npm install
 npm run dev
 ```
-*Aplikasi frontend aktif di `http://localhost:5173`.*
+*Frontend runs at `http://localhost:5173`.*
 
 ---
 
-### 4. Menjalankan Terminal CLI Showcase
-Untuk mendemonstrasikan sistem secara instan melalui antarmuka CLI terminal:
+### 4. Running the Terminal CLI Showcase
+To run automated competition demonstration queries directly in your terminal:
 ```bash
 python scripts/demo.py --showcase
 ```
@@ -345,43 +345,43 @@ python scripts/demo.py --showcase
 
 ## Automated Test Suite & Adversarial Benchmarks
 
-Proyek ini dilengkapi dengan **99 automated unit, integration, and adversarial tests** yang mencakup:
-* Pengujian ketahanan anti-halusinasi (*hallucination resistance*).
-* Pengujian jebakan diagnosa prematur (*premature component replacement traps*).
-* Pengujian penolakan terhadap kueri ambigu tanpa tag peralatan (*clarification safety gate*).
-* Pengujian akurasi interlock trip setpoint dan resolusi kontradiksi revisi dokumen.
+The project includes **99 automated unit, integration, and adversarial tests** covering:
+* Hallucination resistance on non-existent specifications.
+* Premature component replacement traps (advising root-cause verification first).
+* Clarification triggers for ambiguous or missing equipment tags.
+* Exact interlock trip thresholds and multi-document contradiction resolution.
 
-Jalankan test suite dengan satu perintah:
+Execute all tests with:
 ```bash
 pytest -v
 ```
 
-Hasil verifikasi:
+Verification status:
 ```text
 ============================= 99 passed in 2m 44s ==============================
 ```
 
 ---
 
-## Struktur Repositori
+## Repository Directory Structure
 
 ```text
 manufacturing-knowledge-hub/
-├── configs/                  # Konfigurasi routing, bobot retrieval, dan skor confidence
+├── configs/                  # Routing configurations, retrieval weights, and confidence settings
 │   ├── confidence_config.json
 │   ├── plant_equipment_registry.json
 │   └── retrieval_config.json
-├── data/                     # Basis data pengetahuan & dokumen pabrik
-│   ├── extracted/            # Dokumen ekstraksi terstandarisasi JSON
-│   ├── knowledge/            # Definisi topologi graf hierarki pabrik
-│   ├── processed/            # Master data canonical (Datasheet, P&ID, OPL, SAP PM)
-│   ├── raw/                  # Berkas sumber asli Excel & PDF
-│   └── vector_store.db       # In-process SQLite vector database
-├── docs/                     # Spesifikasi arsitektur & dokumentasi kompetisi
+├── data/                     # Engineering knowledge store & plant documents
+│   ├── extracted/            # Normalized JSON documents conforming to schemas
+│   ├── knowledge/            # Plant physical hierarchy and causal graph definitions
+│   ├── processed/            # Master canonical data (Datasheets, P&IDs, OPLs, SAP PM)
+│   ├── raw/                  # Source spreadsheets and documents
+│   └── vector_store.db       # In-process SQLite vector database (embeddings)
+├── docs/                     # Technical specifications and architectural references
 ├── frontend/                 # SvelteKit 5 + Tailwind CSS Industrial Knowledge UI
 │   ├── src/
-│   │   ├── lib/              # Komponen Svelte (AnswerView, DocumentList, ChatSidebar)
-│   │   └── routes/           # Routing halaman (Chat, Repository, Failure Memory)
+│   │   ├── lib/              # UI components (AnswerView, DocumentList, ChatSidebar)
+│   │   └── routes/           # Application views (Chat, Repository, Failure Memory)
 │   ├── Dockerfile
 │   └── package.json
 ├── schemas/                  # Pydantic Canonical Data Contracts
@@ -389,19 +389,19 @@ manufacturing-knowledge-hub/
 │   ├── technical.py          # Datasheet, P&ID, Interlock data models
 │   ├── maintenance.py        # SAP PM Maintenance Event data model
 │   └── relationship.py       # Plant relationship matrix model
-├── scripts/                  # CLI utilities & runner
+├── scripts/                  # CLI utilities & entrypoint runners
 │   ├── demo.py               # Interactive CLI & automated competition showcase runner
 │   └── run_backend.py        # Local backend server runner
-├── src/                      # Source code modul backend
+├── src/                      # Core backend source modules
 │   ├── adapters/             # Pluggable LLM adapters (Gemini, DeepSeek, OpenAI)
 │   ├── api/                  # FastAPI web server & route handlers
-│   ├── failure_memory/       # Mesin memori kegagalan & analisis RCA
+│   ├── failure_memory/       # Failure memory engine & RCA mining
 │   ├── generation/           # Evidence fusion, synthesizer, & confidence engine
 │   ├── graph/                # Plant knowledge graph engine & pathfinder
-│   ├── ingestion/            # Pipeline loader dan normalizer dokumen teknik
+│   ├── ingestion/            # Ingestion pipeline and document normalizers
 │   ├── query/                # Industrial NLU & entity resolution engine
 │   ├── retrieval/            # Multi-signal hybrid retriever & sufficiency gate
-│   └── vector/               # In-process SQLite vector store & dense embedder
+│   └── vector/               # SQLite in-process vector store & dense embedder
 ├── tests/                    # 99 Unit, integration, & adversarial test cases
 ├── Dockerfile                # Production-ready backend Dockerfile
 ├── docker-compose.yml        # Multi-container orchestration (Backend + Frontend)
@@ -410,6 +410,6 @@ manufacturing-knowledge-hub/
 
 ---
 
-## Tim Pengembang (CALIBER 2026)
-Dikembangkan untuk kompetisi **CALIBER 2026 — Case 1: Manufacturing Knowledge Hub (Chandra Asri Pacific)**.
-Solusi dirancang untuk memenuhi standar keandalan industri petrokimia modern: **Akurat, Terlacak, Anti-Halusinasi, dan Siap Operasi.**
+## Development Team (CALIBER 2026)
+Developed for **CALIBER 2026 — Case 1: Manufacturing Knowledge Hub (Chandra Asri Pacific)**.  
+Engineered to deliver modern industrial AI standards: **Accurate, Traceable, Anti-Hallucinatory, and Operationally Ready.**
