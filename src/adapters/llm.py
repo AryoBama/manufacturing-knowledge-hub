@@ -129,7 +129,10 @@ class GeminiAdapter(LLMAdapter):
                     time.sleep(1.2 * (attempt + 1))
                     continue
                 if res.is_error:
-                    logger.error("Gemini API error (%s): %s", res.status_code, res.text)
+                    if res.status_code == 429:
+                        logger.warning("Gemini API rate limit exceeded (429 Quota exhausted). Falling back.")
+                    else:
+                        logger.error("Gemini API error (%s): %s", res.status_code, res.text[:200])
                     res.raise_for_status()
                 data = res.json()
                 candidates = data.get("candidates", [])

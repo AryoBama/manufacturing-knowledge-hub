@@ -9,6 +9,30 @@ from schemas.maintenance import MaintenanceRecord
 from src.ingestion.metadata import find_canonical_field, resolve_equipment
 
 
+def clean_token(token: str) -> str:
+    """Strips punctuation and trailing dots/colons from token."""
+    import re
+    return re.sub(r'^[^\w]+|[^\w]+$', '', token.lower())
+
+
+def token_prefix_match(t1: str, t2: str, min_len: int = 3) -> bool:
+    """
+    Algorithmic match without hardcoded keyword dictionaries:
+    Two tokens match if:
+    1. Exact equality (e.g. 'flow' == 'flow')
+    2. One is a prefix of the other with length >= min_len (e.g. 'temp' matches 'temperature', 'press' matches 'pressure')
+    """
+    a = clean_token(t1)
+    b = clean_token(t2)
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if len(a) >= min_len and len(b) >= min_len:
+        return a.startswith(b) or b.startswith(a)
+    return False
+
+
 class StructuredKnowledgeStore:
     """
     Step 16: Structured Knowledge Store for Phase 2 Integration.
@@ -83,50 +107,71 @@ class StructuredKnowledgeStore:
 
         return cls(technical_records=trs, relationships=rels, maintenance_records=mrs)
 
+    def get_technical_records_by_tag(self, equipment_tag: str) -> List[TechnicalRecord]:
+        """
+        Returns all structured technical parameters for an equipment tag.
+        """
+        tag_upper = equipment_tag.upper()
+        res = resolve_equipment(equipment_tag)
+        if res.get("status") == "resolved":
+            tag_upper = res["equipment_tag"]
+        return list(self._tech_by_tag.get(tag_upper, []))
+
     def lookup_technical_parameter(
         self,
         equipment_tag: str,
         parameter_query: str
     ) -> List[TechnicalRecord]:
         """
-        Looks up a parameter (e.g. 'Rated Flow', 'rated_flow', 'speed', 'motor power')
-        for a specific equipment tag.
+        Looks up a parameter (e.g. 'Rated Flow', 'rated_flow', 'speed', 'design temperature', 'pressure')
+        for a specific equipment tag using dynamic token prefix matching.
         """
+        import re
         tag_upper = equipment_tag.upper()
         res = resolve_equipment(equipment_tag)
         if res.get("status") == "resolved":
             tag_upper = res["equipment_tag"]
 
         param_clean = parameter_query.strip().lower()
-        query_variants = [param_clean]
-        if "temperature" in param_clean or "temp" in param_clean:
-            query_variants.extend(["temperature", "temp", "temp."])
-        if "pressure" in param_clean or "press" in param_clean:
-            query_variants.extend(["pressure", "press"])
-
         matches: List[TechnicalRecord] = []
-        for qv in query_variants:
-            canon_field, _ = find_canonical_field(qv)
-            if canon_field and (tag_upper, canon_field) in self._tech_by_canon:
-                for tr in self._tech_by_canon[tag_upper, canon_field]:
-                    if tr not in matches:
-                        matches.append(tr)
 
-        # Check parameter text match
+        # 1. Check canonical field index directly
+        canon_field, _ = find_canonical_field(param_clean)
+        if canon_field and (tag_upper, canon_field) in self._tech_by_canon:
+            for tr in self._tech_by_canon[tag_upper, canon_field]:
+                if tr not in matches:
+                    matches.append(tr)
+
+        # 2. Dynamic token prefix matching across candidate parameters
         candidates = self._tech_by_tag.get(tag_upper, [])
+        query_tokens = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', param_clean) if len(clean_token(w)) >= 3]
+
         for tr in candidates:
             if tr in matches:
                 continue
             tr_param = tr.parameter.lower()
             tr_canon = (tr.canonical_field or "").lower()
-            for qv in query_variants:
-                if (
-                    qv in tr_param
-                    or tr_param in qv
-                    or (tr_canon and (qv in tr_canon or tr_canon in qv))
-                ):
-                    matches.append(tr)
-                    break
+
+            # Exact or substring match
+            if (
+                param_clean in tr_param
+                or tr_param in param_clean
+                or (tr_canon and (param_clean in tr_canon or tr_canon in param_clean))
+            ):
+                matches.append(tr)
+                continue
+
+            # Token-level prefix match
+            param_tokens = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', tr_param) if len(clean_token(w)) >= 3]
+            canon_tokens = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', tr_canon) if len(clean_token(w)) >= 3]
+            all_target_tokens = param_tokens + canon_tokens
+
+            if any(
+                token_prefix_match(qt, tt, min_len=3)
+                for qt in query_tokens
+                for tt in all_target_tokens
+            ):
+                matches.append(tr)
 
         return matches
 

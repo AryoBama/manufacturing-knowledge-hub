@@ -1,4 +1,5 @@
 import re
+from collections import defaultdict
 from typing import List, Optional, Dict, Any, Union
 from schemas.common import DocumentStatus
 from src.query.models import QueryUnderstanding
@@ -85,7 +86,7 @@ class AnswerSynthesizer:
 
         # 3b. State: Conflicting Evidence Detected
         if package.sufficiency == SufficiencyStatus.CONFLICTING_EVIDENCE:
-            citations = self._build_citations(package.items)
+            citations = self._build_citations(package.items, query=package.query)
             conflict_points = []
             for c in package.conflicts:
                 conflict_points.append(f"Contradiction in {c.parameter_name} for {c.entity_tag or 'target'}:")
@@ -111,7 +112,7 @@ class AnswerSynthesizer:
 
 
         # 4. State: Sufficient Evidence
-        citations = self._build_citations(package.items)
+        citations = self._build_citations(package.items, query=package.query)
         recommendations = RecommendationEngine.generate_recommendations(package)
 
         intent = package.intent
@@ -204,28 +205,55 @@ class AnswerSynthesizer:
         summary: List[int] = sorted({i for hits in point_citations for i in hits})
         return {"point_citations": point_citations, "summary_citations": summary}
 
-    def _build_citations(self, items: List[EvidenceItem]) -> List[SourceCitation]:
-        citations = []
-        seen = set()
+    def _build_citations(self, items: List[EvidenceItem], query: Optional[str] = None) -> List[SourceCitation]:
+        from src.retrieval.structured_store import token_prefix_match, clean_token
+        
+        stop_words = {"what", "how", "about", "the", "for", "and", "does", "can", "tell", "show", "is", "are", "with", "this", "that", "give", "please"}
+        q_tokens = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]{3,}\b', query or "") if clean_token(w) not in stop_words]
+
+        # Group items by (document_id, file_name, page)
+        grouped = defaultdict(list)
         for it in items:
             key = (it.document_id, it.source.file_name, it.source.page)
-            if key in seen:
-                continue
-            seen.add(key)
+            grouped[key].append(it)
 
-            # Metadata purity: do not invent defaults for missing fields
-            clean_excerpt = " ".join(it.content.split()[:25]) + "..." if len(it.content) > 120 else it.content
-            stat_val = it.source.status.value if hasattr(it.source.status, "value") else str(it.source.status or "")
+        citations = []
+        for key, group in grouped.items():
+            # Pick best item for this source location based on query relevance and specificity
+            def item_score(it: EvidenceItem) -> tuple[int, float, float]:
+                it_words = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', it.content)]
+                match_count = sum(1 for qt in q_tokens if any(token_prefix_match(qt, iw, min_len=3) for iw in it_words))
+                specificity = match_count / (len(it_words) + 1.0) if match_count > 0 else 0.0
+                return (match_count, specificity, it.relevance_score)
+
+            best_item = max(group, key=item_score)
+
+            # Metadata purity: clean, focused excerpt split across newlines and semicolons
+            segments = [s.strip() for s in re.split(r'[\n;]+', best_item.content) if s.strip()]
+            if len(segments) > 1 and q_tokens:
+                scored_segments = []
+                for s in segments:
+                    s_words = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', s)]
+                    m_count = sum(1 for qt in q_tokens if any(token_prefix_match(qt, sw, min_len=3) for sw in s_words))
+                    scored_segments.append((m_count, s))
+                scored_segments.sort(key=lambda x: x[0], reverse=True)
+                target_text = scored_segments[0][1]
+            else:
+                target_text = segments[0] if segments else best_item.content
+
+            clean_excerpt = " ".join(target_text.split()[:25]) + ("..." if len(target_text) > 120 else "")
+            stat_val = best_item.source.status.value if hasattr(best_item.source.status, "value") else str(best_item.source.status or "")
+
             citations.append(
                 SourceCitation(
-                    evidence_id=it.evidence_id,
-                    document_id=it.document_id,
-                    document_type=it.document_type,
-                    file_name=it.source.file_name,
-                    revision=it.source.revision,
+                    evidence_id=best_item.evidence_id,
+                    document_id=best_item.document_id,
+                    document_type=best_item.document_type,
+                    file_name=best_item.source.file_name,
+                    revision=best_item.source.revision,
                     status=stat_val or None,
-                    page=it.source.page,
-                    sheet=it.source.sheet,
+                    page=best_item.source.page,
+                    sheet=best_item.source.sheet,
                     excerpt=clean_excerpt
                 )
             )
@@ -243,6 +271,7 @@ class AnswerSynthesizer:
         level: ConfidenceLevel,
         reason: str
     ) -> GeneratedAnswer:
+        from src.retrieval.structured_store import token_prefix_match, clean_token
         tag = package.equipment_tag
         eq_name = PLANT_EQUIPMENT_REGISTRY.get(tag, {}).get("name", "Equipment")
         detailed = []
@@ -255,46 +284,63 @@ class AnswerSynthesizer:
 
         # 2. Document chunk specifications
         for it in package.get_items_by_type("document_chunk"):
-            for line in it.content.split("\n"):
-                line = line.strip("- ").strip()
-                if any(k in line.lower() for k in ["flow", "head", "power", "rpm", "pressure", "pump", "motor", "spec", "npsh", "current", "voltage", "bearing", "seal", "temp"]):
-                    if line and line not in detailed:
-                        detailed.append(line)
+            for line in re.split(r'[\n;]+', it.content):
+                line = line.strip("- *#").strip()
+                if not line or line.startswith(("-", "=", "|")):
+                    continue
+                if len(line) >= 4 and line not in detailed:
+                    detailed.append(line)
 
-        summary = f"{tag} ({eq_name}) technical specifications from verified datasheet."
-        flow_line = next((p for p in detailed if "flow" in p.lower()), "")
-        if flow_line:
-            summary += f" Key operating point: {flow_line}."
+        # Dynamic parameter matching and filtering
+        stop_words = {
+            "what", "how", "about", "the", "for", "and", "does", "can", "tell", "show", "is",
+            "are", "with", "this", "that", "give", "please", "spec", "specs", "specification",
+            "specifications", "info", "information", "detail", "details", "data", "sheet"
+        }
+        tag_tokens = {clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', tag or "")}
+        q_words = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]{3,}\b', package.query)]
+        target_words = [w for w in q_words if w not in stop_words and w not in tag_tokens]
 
-        # Prioritize parameters matching query terms (e.g. temperature, pressure, npsh, current, head, power)
-        q_words = [w.lower() for w in re.findall(r'\b[a-zA-Z]{3,}\b', package.query)]
-        target_words = [w for w in q_words if w not in ["what", "how", "about", "the", "for", "and", "does", "pump", "drum", "fan", "valve", "tell", "show"]]
         if target_words:
-            primary_words = []
-            if "temperature" in target_words or "temp" in target_words:
-                primary_words.extend(["temperature", "temp", "temp."])
-            elif "pressure" in target_words or "press" in target_words:
-                primary_words.extend(["pressure", "press"])
-            elif "flow" in target_words or "capacity" in target_words:
-                primary_words.extend(["flow", "capacity"])
-            elif "head" in target_words:
-                primary_words.append("head")
-            elif "power" in target_words:
-                primary_words.append("power")
-            elif "speed" in target_words or "rpm" in target_words:
-                primary_words.extend(["speed", "rpm"])
-            elif "material" in target_words:
-                primary_words.append("material")
+            scored = []
+            for p in detailed:
+                p_words = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', p)]
+                matched_qts = set()
+                for qt in target_words:
+                    if any(token_prefix_match(qt, pw, min_len=3) for pw in p_words):
+                        matched_qts.add(qt)
+                scored.append((len(matched_qts), matched_qts, p))
 
-            sort_words = primary_words if primary_words else target_words
-            detailed.sort(key=lambda p: any(w in p.lower() for w in sort_words), reverse=True)
-            matched_param = next((p for p in detailed if any(w in p.lower() for w in sort_words)), "")
-            if matched_param:
-                summary = f"For {tag} ({eq_name}), verified datasheet specifies {matched_param}."
+            max_score = max((s for s, _, _ in scored), default=0)
+            if max_score > 0:
+                best_matches = [p for s, _, p in scored if s == max_score]
+                related = []
+                if max_score > 1:
+                    modifiers = {"design", "operating", "maximum", "minimum", "rated", "normal", "high", "low", "suction", "discharge"}
+                    primary_tokens = [t for t in target_words if t not in modifiers]
+                    if primary_tokens:
+                        for s, matched_qts, p in scored:
+                            if p not in best_matches and any(pt in matched_qts for pt in primary_tokens):
+                                related.append(p)
+                filtered = best_matches + related
+                detailed = filtered if filtered else [p for s, _, p in scored if s > 0]
+                summary = f"For {tag} ({eq_name}), verified datasheet specifies {detailed[0]}."
+            else:
+                summary = f"{tag} ({eq_name}) technical specifications from verified datasheet."
+                flow_line = next((p for p in detailed if "flow" in p.lower()), "")
+                if flow_line:
+                    summary += f" Key operating point: {flow_line}."
+                detailed = detailed[:10]
+        else:
+            summary = f"{tag} ({eq_name}) technical specifications from verified datasheet."
+            flow_line = next((p for p in detailed if "flow" in p.lower()), "")
+            if flow_line:
+                summary += f" Key operating point: {flow_line}."
+            detailed = detailed[:10]
 
         q_lower = package.query.lower()
         if any(k in q_lower for k in ["old doc", "dokumen lama", "is that true", "is this true", "benar?"]):
-            detailed.insert(0, f"Document Lifecycle Verification: Verified active datasheet (Issued for Operation) specifies operating parameters. Any conflicting claim from older or superseded revisions is void.")
+            detailed.insert(0, "Document Lifecycle Verification: Verified active datasheet (Issued for Operation) specifies operating parameters. Any conflicting claim from older or superseded revisions is void.")
 
         return GeneratedAnswer(
             query=package.query,
@@ -302,7 +348,7 @@ class AnswerSynthesizer:
             equipment_name=eq_name,
             intent=package.intent,
             summary_answer=summary,
-            detailed_points=detailed[:12],
+            detailed_points=detailed,
             confidence=level,
             confidence_reason=reason,
             citations=citations

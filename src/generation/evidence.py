@@ -95,34 +95,45 @@ class EvidenceFusionEngine:
 
             # A. Technical Records (Parameters)
             if intent in ("equipment_information", "troubleshooting", "general_information"):
-                keywords = ["flow", "head", "power", "speed", "pressure", "material", "temperature", "temp", "type"]
-                stop_words = {"what", "how", "about", "the", "for", "and", "does", "can", "tell", "show", "is", "are", "with", "this", "that"}
+                from src.retrieval.structured_store import token_prefix_match, clean_token
+                stop_words = {"what", "how", "about", "the", "for", "and", "does", "can", "tell", "show", "is", "are", "with", "this", "that", "give", "please"}
                 q_words = [
-                    w.lower() for w in re.findall(r'\b[a-zA-Z]{3,}\b', understanding.query)
-                    if w.lower() not in stop_words
+                    clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]{3,}\b', understanding.query)
+                    if clean_token(w) not in stop_words
                 ]
-                all_kws = list(dict.fromkeys(q_words + keywords))
-                for kw in all_kws:
-                    trs = structured_store.lookup_technical_parameter(tag, kw)
-                    for tr in trs:
-                        ev_id = f"EV-TR-{tr.record_id}"
-                        if ev_id in seen_ids:
-                            continue
-                        seen_ids.add(ev_id)
-                        content_str = f"{tr.parameter}: {tr.value} {tr.unit or ''}".strip()
-                        items.append(
-                            EvidenceItem(
-                                evidence_id=ev_id,
-                                content=content_str,
-                                equipment_tag=tr.equipment_tag,
-                                document_id=tr.document_id,
-                                document_type=str(tr.document_type),
-                                source=tr.source,
-                                relevance_score=0.90,
-                                evidence_type="technical_parameter",
-                                metadata={"parameter": tr.parameter, "value": tr.value, "unit": tr.unit}
-                            )
+                
+                # Retrieve all technical records for the asset dynamically
+                all_trs = structured_store.get_technical_records_by_tag(tag)
+                for qw in q_words:
+                    for tr in structured_store.lookup_technical_parameter(tag, qw):
+                        if tr not in all_trs:
+                            all_trs.append(tr)
+
+                for tr in all_trs:
+                    ev_id = f"EV-TR-{tr.record_id}"
+                    if ev_id in seen_ids:
+                        continue
+                    seen_ids.add(ev_id)
+                    content_str = f"{tr.parameter}: {tr.value} {tr.unit or ''}".strip()
+                    
+                    # Calculate dynamic relevance score: higher if matches query words
+                    param_words = [clean_token(w) for w in re.findall(r'\b[a-zA-Z0-9_-]+\b', tr.parameter + " " + (tr.canonical_field or ""))]
+                    matches_query = any(token_prefix_match(qw, pw, min_len=3) for qw in q_words for pw in param_words) if q_words else False
+                    score = 0.95 if matches_query else 0.85
+
+                    items.append(
+                        EvidenceItem(
+                            evidence_id=ev_id,
+                            content=content_str,
+                            equipment_tag=tr.equipment_tag,
+                            document_id=tr.document_id,
+                            document_type=str(tr.document_type),
+                            source=tr.source,
+                            relevance_score=score,
+                            evidence_type="technical_parameter",
+                            metadata={"parameter": tr.parameter, "value": tr.value, "unit": tr.unit}
                         )
+                    )
 
             # B. Relationship Records (Protection & Interlocks)
             if intent in ("protection", "troubleshooting"):

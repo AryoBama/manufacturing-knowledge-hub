@@ -41,7 +41,15 @@ class LLMAnswerAdapter:
             return self._call_llm(package)
         except Exception as e:
             ans = self.fallback_synthesizer.generate(package)
-            ans.confidence_reason += f" (Note: Deterministic fallback applied: {e})"
+            err_msg = str(e)
+            if "429" in err_msg or "ResourceExhausted" in err_msg or "quota" in err_msg.lower() or "too many requests" in err_msg.lower():
+                clean_err = "LLM provider rate limit exceeded (429 Quota)"
+            elif "401" in err_msg or "403" in err_msg or "unauthorized" in err_msg.lower():
+                clean_err = "LLM authentication failed"
+            else:
+                clean_err = re.sub(r'https?://\S+', '', err_msg).strip()
+                clean_err = clean_err.split("\n")[0][:100]
+            ans.confidence_reason += f" (Note: Deterministic fallback applied: {clean_err})"
             return ans
 
     def synthesize(
@@ -69,10 +77,15 @@ class LLMAnswerAdapter:
             return base_ans
 
         system_msg = (
-            "You are an industrial engineer at Chandra Asri Pacific. "
-            "Answer the query directly and concisely using ONLY the provided verified evidence. "
-            "If a specific parameter (e.g. design temperature, pressure, flow) is mentioned in the evidence, state its exact value and unit. "
-            "Do not extrapolate beyond the evidence."
+            "You are an industrial engineer at Chandra Asri Pacific.\n"
+            "Answer the query directly and concisely using ONLY the provided verified evidence.\n"
+            "Do not extrapolate beyond the evidence.\n"
+            "Respond in JSON format with two keys:\n"
+            "1. 'summary_answer': A concise direct answer answering the query.\n"
+            "2. 'detailed_points': A list of concise strings containing ONLY the specific technical evidence, "
+            "parameter values, or facts directly relevant to the user query. Do NOT include irrelevant specifications "
+            "(e.g., do not include pressure, dimensions, or materials if the user asked about temperature).\n"
+            "If no specific parameter was asked and the user asked generally about the equipment, include key operational specifications."
         )
 
         q_tokens = set(re.findall(r'\b[a-zA-Z0-9]{3,}\b', package.query.lower()))
@@ -96,5 +109,35 @@ class LLMAnswerAdapter:
         user_msg = f"Equipment: {package.equipment_tag or 'N/A'}\nQuery: {package.query}\nEvidence:\n{evidence_text}"
 
         content = self.adapter.complete(user_msg, system_prompt=system_msg, temperature=0.0)
-        base_ans.summary_answer = content.strip()
+
+        # Robust JSON extraction
+        raw_json = content.strip()
+        if "```" in raw_json:
+            match = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', raw_json)
+            if match:
+                raw_json = match.group(1).strip()
+
+        parsed = None
+        try:
+            parsed = json.loads(raw_json)
+        except Exception:
+            match = re.search(r'\{[\s\S]*\}', raw_json)
+            if match:
+                try:
+                    parsed = json.loads(match.group(0))
+                except Exception:
+                    pass
+
+        if isinstance(parsed, dict) and "summary_answer" in parsed:
+            base_ans.summary_answer = str(parsed["summary_answer"]).strip()
+            pts = parsed.get("detailed_points")
+            if isinstance(pts, list) and len(pts) > 0:
+                base_ans.detailed_points = [str(p).strip() for p in pts if str(p).strip()]
+                # Update citation mappings for points
+                attribution = self.fallback_synthesizer._attribution(package, base_ans.detailed_points, base_ans.citations)
+                for field, value in attribution.items():
+                    setattr(base_ans, field, value)
+        else:
+            base_ans.summary_answer = content.strip()
+
         return base_ans
