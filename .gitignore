@@ -4,7 +4,8 @@ __pycache__/
 .env
 venv/
 .venv/
-data/raw/
+~$*.xlsx
+*.tmp
 Case 1_ Manufacturing Knowledge Hub-20260919T101738Z-1-001/
 logs/
 *.log
