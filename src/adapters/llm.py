@@ -34,7 +34,7 @@ class DeepSeekAdapter(LLMAdapter):
         api_key: Optional[str] = None,
         model: Optional[str] = None,
         base_url: Optional[str] = None,
-        timeout: float = 8.0,
+        timeout: Optional[float] = None,
     ):
         self.api_key = api_key or os.getenv("DEEPSEEK_API_KEY", "")
         raw_model = model or os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
@@ -42,7 +42,7 @@ class DeepSeekAdapter(LLMAdapter):
             raw_model = "deepseek-chat"
         self.model = raw_model
         self.base_url = base_url or os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/chat/completions")
-        self.timeout = timeout
+        self.timeout = timeout if timeout is not None else float(os.getenv("LLM_TIMEOUT", "18.0"))
 
     def complete(
         self,
@@ -79,7 +79,7 @@ class GeminiAdapter(LLMAdapter):
         api_key: Optional[str] = None,
         model: Optional[str] = None,
         base_url: Optional[str] = None,
-        timeout: float = 12.0,
+        timeout: Optional[float] = None,
     ):
         self.api_key = api_key or os.getenv("GEMINI_API_KEY", "")
         raw_model = model or os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
@@ -87,7 +87,7 @@ class GeminiAdapter(LLMAdapter):
             raw_model = "gemini-3.8-flash"
         self.model = raw_model
         self.base_url = base_url or os.getenv("GEMINI_BASE_URL", "") or f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent"
-        self.timeout = timeout
+        self.timeout = timeout if timeout is not None else float(os.getenv("LLM_TIMEOUT", "18.0"))
 
     def complete(
         self,
@@ -150,12 +150,12 @@ class OpenAIAdapter(LLMAdapter):
         api_key: Optional[str] = None,
         model: Optional[str] = None,
         base_url: Optional[str] = None,
-        timeout: float = 8.0,
+        timeout: Optional[float] = None,
     ):
         self.api_key = api_key or os.getenv("OPENAI_API_KEY", "")
         self.model = model or os.getenv("OPENAI_MODEL", "gpt-4o-mini")
         self.base_url = base_url or os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1/chat/completions")
-        self.timeout = timeout
+        self.timeout = timeout if timeout is not None else float(os.getenv("LLM_TIMEOUT", "18.0"))
 
     def complete(
         self,

@@ -439,16 +439,37 @@ class AnswerSynthesizer:
         diagnostic_steps = []
         past_incidents = []
 
-        # SME OPL steps
+        # 1. SME OPL procedural steps (Action steps)
         for it in package.items:
             if it.document_type == "OPL":
                 for line in it.content.split("\n"):
-                    line = line.strip("- ").strip()
-                    if any(k in line.lower() for k in ["check", "inspect", "vibration", "leak", "lubricat", "step", "cause", "action"]):
-                        if len(line) > 15 and line not in diagnostic_steps:
+                    line = line.strip("- *#").strip()
+                    # Capture procedural action lines: "Step 1 – Action: ...", "Step 1: ..."
+                    if re.match(r'^Step\s+\d+\s*[-–:]\s*Action:\s*', line, re.IGNORECASE):
+                        step_clean = re.sub(r'^Step\s+(\d+)\s*[-–:]\s*Action:\s*', r'Step \1: ', line, flags=re.IGNORECASE).strip()
+                        if step_clean not in diagnostic_steps:
+                            diagnostic_steps.append(step_clean)
+                    elif re.match(r'^Step\s+\d+\s*[-–:]\s*', line, re.IGNORECASE) and "Check:" not in line:
+                        if line not in diagnostic_steps:
                             diagnostic_steps.append(line)
             elif it.evidence_type == "maintenance_event":
                 past_incidents.append(it.content)
+
+        # Fallback if no explicit "Step N" matched: skip headers and extract actionable lines
+        if not diagnostic_steps:
+            for it in package.items:
+                if it.document_type == "OPL":
+                    for line in it.content.split("\n"):
+                        line = line.strip("- *#").strip()
+                        if any(h in line.upper() for h in [
+                            "ONE POINT LESSON", "STEP-BY-STEP PROCEDURE", "PURPOSE & OBJECTIVE",
+                            "SAFETY PRECAUTIONS", "TOOLS & MATERIALS", "COMMON PROBLEMS",
+                            "KEY LEARNING POINTS", "EQUIPMENT:", "DISCIPLINE:", "AREA:", "RELATED INTERLOCK"
+                        ]):
+                            continue
+                        if any(k in line.lower() for k in ["check", "inspect", "vibration", "leak", "lubricat", "step", "cause", "action"]):
+                            if len(line) > 15 and line not in diagnostic_steps:
+                                diagnostic_steps.append(line)
 
         detailed = []
         q_lower = package.query.lower()
@@ -470,7 +491,7 @@ class AnswerSynthesizer:
 
         if diagnostic_steps:
             detailed.append("Recommended Diagnostic Steps (from SME OPLs):")
-            detailed.extend([f"  1. {s}" for s in diagnostic_steps[:5]])
+            detailed.extend([f"  • {s}" for s in diagnostic_steps[:5]])
         if past_incidents:
             detailed.append("Past Similar Incidents & Root Causes (SAP PM History):")
             detailed.extend([f"  • {inc}" for inc in past_incidents[:3]])
