@@ -10,3 +10,13 @@ logs/
 *.log
 .DS_Store
 Thumbs.db
+
+frontend/node_modules/
+frontend/dist/
+
+# local tooling
+.codex/
+.impeccable/review/
+.impeccable/questions/
+.impeccable/config.local.json
+.impeccable/hooks.json
