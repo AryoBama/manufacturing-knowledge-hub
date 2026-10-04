@@ -193,7 +193,7 @@ class OpenAIAdapter(LLMAdapter):
 
 
 class NvidiaAdapter(OpenAIAdapter):
-    """Adapter for NVIDIA NIM API (build.nvidia.com) providing access to Llama 3.3, DeepSeek-R1, and other open models."""
+    """Adapter for NVIDIA NIM API (build.nvidia.com) providing access to Nemotron, DeepSeek, and open models."""
 
     def __init__(
         self,
@@ -202,9 +202,10 @@ class NvidiaAdapter(OpenAIAdapter):
         base_url: Optional[str] = None,
         timeout: Optional[float] = None,
     ):
+        _load_dotenv_if_present()
         super().__init__(
             api_key=api_key or os.getenv("NVIDIA_API_KEY"),
-            model=model or os.getenv("NVIDIA_MODEL", "meta/llama-3.3-70b-instruct"),
+            model=model or os.getenv("NVIDIA_MODEL", "nvidia/nemotron-3.5-lightning-30b-a3b"),
             base_url=base_url or os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1/chat/completions"),
             timeout=timeout,
         )
