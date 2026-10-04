@@ -6,7 +6,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 def test_run_ingestion_pipeline(tmp_path):
-    input_dir = BASE_DIR / "GA-1201A HEXANE FEED PUMP"
+    raw_ga = BASE_DIR / "data" / "raw" / "GA-1201A"
+    legacy_ga = BASE_DIR / "GA-1201A HEXANE FEED PUMP"
+    input_dir = raw_ga if raw_ga.exists() else legacy_ga
     output_dir = tmp_path / "processed"
 
     result = run_ingestion_pipeline(

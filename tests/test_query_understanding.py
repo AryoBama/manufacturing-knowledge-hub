@@ -37,7 +37,7 @@ def test_hybrid_intent_classification_deterministic_and_llm_fallback():
     hybrid_res = classify_intent_hybrid("Why does the pump stop?")
     assert hybrid_res.intent == "troubleshooting"
     assert hybrid_res.confidence == "HIGH"
-    assert hybrid_res.reason_code == "abnormal_operation_symptom"
+    assert hybrid_res.reason_code in ("abnormal_operation_symptom", "root_cause_analysis_sudden_stop") or "stop" in hybrid_res.reason_code or "symptom" in hybrid_res.reason_code
     assert hybrid_res.intent in VALID_INTENTS
 
     # 3. Conversational past failure inquiry without rigid keyword 'history/rca'

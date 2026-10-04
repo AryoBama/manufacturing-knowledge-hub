@@ -11,7 +11,9 @@ from src.ingestion.convert_teammate_xlsx import (
     convert_all
 )
 
-INPUT_DIR = Path(__file__).resolve().parent.parent / "GA-1201A HEXANE FEED PUMP"
+RAW_GA = Path(__file__).resolve().parent.parent / "data" / "raw" / "GA-1201A"
+LEGACY_GA = Path(__file__).resolve().parent.parent / "GA-1201A HEXANE FEED PUMP"
+INPUT_DIR = RAW_GA if RAW_GA.exists() else LEGACY_GA
 
 
 def test_convert_datasheet():

@@ -3,7 +3,9 @@ from pathlib import Path
 from schemas.common import DocumentType
 from src.ingestion.adapter import adapt_file, detect_document_type_from_file
 
-SOURCE_DIR = Path(__file__).resolve().parent.parent.parent / "GA-1201A HEXANE FEED PUMP"
+RAW_GA = Path(__file__).resolve().parent.parent.parent / "data" / "raw" / "GA-1201A"
+LEGACY_GA = Path(__file__).resolve().parent.parent.parent / "GA-1201A HEXANE FEED PUMP"
+SOURCE_DIR = RAW_GA if RAW_GA.exists() else LEGACY_GA
 
 
 def test_detect_document_type():
