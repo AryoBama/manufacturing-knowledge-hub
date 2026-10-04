@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "CT-7801",
+  "document_id": "TJC-LLD-PID-7801",
+  "document_type": "PID",
+  "source": {
+    "file_name": "P&ID_Set 7.png",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-PID-7801-P01-C01",
+  "title": "Piping & Instrumentation Diagram Register - CT-7801",
+  "equipment_type": null,
+  "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: CT-7801 (COOLING TOWER CELL FAN).\nDocument No: TJC-LLD-PID-7801, Title: P&ID: COOLING TOWER FAN (CT-7801) SYSTEM.\nArea: 7800 \u2013 Cooling Water System, Functional Location: TJC-LLD-7800-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- VSHH-7802: Fan/gearbox vibration HIGH-HIGH (Vibration Switch) [Setpoint: > 9 mm/s]. Function: Cause T1 (Trip Fan Motor CT-7801). Location: Fan Drive Shaft / Gearbox. Interlock: T1/EFF-1/EFF-2/EFF-3\n- TSHH-7803: Gearbox oil temperature HIGH-HIGH (Temp Switch) [Setpoint: > 90 degC]. Function: Cause T2 (Trip Fan Motor CT-7801). Location: Fan Gearbox. Interlock: T2/EFF-1/EFF-2/EFF-3\n- PSL-7807: Gearbox oil pressure LOW (Pressure Switch) [Setpoint: < 0.8 barg]. Function: Cause T3 (Trip Fan Motor CT-7801). Location: Gearbox lube oil system. Interlock: T3/EFF-1/EFF-2\n- MPR-7801: Fan motor overload relay (Motor Protection) [Setpoint: MPR pickup \u2014]. Function: Cause T4 (Trip Fan Motor CT-7801). Location: Motor MCC Panel. Interlock: T4/EFF-1/EFF-2/EFF-3\n- LG gearbox: Gearbox oil sight glass / level gauge (Level Gauge). Function: Permissive P1 (LG Gearbox oil level OK). Location: Fan Gearbox. Interlock: P1\n- LT-7804: Basin level transmitter (Level Transmitter) [Setpoint: > LSL-7804 \u2014]. Function: Permissive P2 (Basin level normal). Location: Cooling Tower Basin. Interlock: P2\n- Lockout Key: Maintenance lockout switch (Hand Switch). Function: Permissive P3 (Lockout release logic). Location: Motor MCC / Field. Interlock: P3\n- AI-7805: Circulating Water pH Analyzer (Analyzer (pH)) [Setpoint: 7.0-8.5 pH]. Function: Monitoring & Dosing Control (dari OPL). Location: Cooling water return line. Interlock: \u2014\n- AI-7806: Conductivity Analyzer (Analyzer (Cond)). Function: Blowdown Control (dari OPL). Location: Cooling water basin/return. Interlock: \u2014\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-CT-7801, Interlock: SEQ-7801."
+}

@@ -7,16 +7,16 @@
       "file_name": "Equipment Datasheet - KC-4501.pdf",
       "page": 1,
       "sheet": null,
-      "revision": "Rev.02",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
     "metadata": {
-      "total_parameters": 6
+      "total_parameters": 27
     },
     "chunk_id": "TJC-LLD-DS-KC-4501-P01-C01",
     "title": "Equipment Datasheet - RECYCLE GAS COMPRESSOR (KC-4501)",
-    "equipment_type": "Reciprocating Compressor",
-    "content": "EQUIPMENT DATASHEET: KC-4501 (RECYCLE GAS COMPRESSOR).\nDocument ID: TJC-LLD-DS-KC-4501, Revision: Rev.02, Status: Issued for Operation.\nEquipment Type: Reciprocating Compressor.\nFunctional Location: TJC-LLD-4500-01.\nService: Recycle gas compression to polymerization loop.\nCompressor Design - Rated Flow: 2200 m3/h\nCompressor Design - Differential Pressure: 13.5 bar\nCompressor Design - Pumping Temperature: 65 degC\nMotor Driver - Motor Power: 250 kW\nMotor Driver - Speed: 740 rpm\nMotor Driver - Voltage: 3300 V"
+    "equipment_type": "Reciprocating Compressor (2-stage)",
+    "content": "EQUIPMENT DATASHEET: KC-4501 (RECYCLE GAS COMPRESSOR).\nDocument ID: TJC-LLD-DS-KC-4501, Revision: Rev.03, Status: Issued for Operation.\nEquipment Type: Reciprocating Compressor (2-stage).\nFunctional Location: TJC-LLD-4500-01.\nService: Compress recycle ethylene/hexane vapour back to reactor loop.\nDesign & Mechanical - Compressor Type: RECIPROCATING, 2-STAGE, 2-THROW\nDesign & Mechanical - Cylinder Material: NODULAR CAST IRON\nDesign & Mechanical - Piston Rings: PTFE FILLED\nDesign & Mechanical - Capacity (Suction): 1250 Nm3/h\nDesign & Mechanical - Packing: PTFE RINGS, DISTANCE PIECE\nDesign & Mechanical - Suction Pressure: 1.2 barg\nDesign & Mechanical - Valves: PLATE TYPE, SS\nDesign & Mechanical - Discharge Pressure: 12.5 barg\nDesign & Mechanical - Lube System: FORCED FEED + FRAME SPLASH\nDesign & Mechanical - Suction Temp.: 40 degC\nDesign & Mechanical - Seal Gas: NITROGEN BUFFER\nDesign & Mechanical - Discharge Temp.: 115 \u00b0C (max)\nDesign & Mechanical - Cooling: JACKET WATER + INTERCOOLER EA-4502\nDesign & Mechanical - Gas: ETHYLENE / HEXANE / H2 MIX\nDesign & Mechanical - Vibration Mon.: VT-4501 CROSSHEAD\nDriver / Motor Data - Driver Type: Electric Motor, 4-pole\nDriver / Motor Data - Output: 250 kW\nDriver / Motor Data - Enclosure: WPII\nDriver / Motor Data - Poles: 4 POLE\nDriver / Motor Data - Area Classification: ZONE 2, IIB T3\nDriver / Motor Data - Speed: 1485 rpm\nDriver / Motor Data - Ex Protection: Ex px IIB T3\nDriver / Motor Data - Voltage: 6000 V / 3 Ph / 50 Hz V\nDriver / Motor Data - Frame: IEC 355\nDriver / Motor Data - Rated Current: 30 A\nDriver / Motor Data - Weight (Motor): 1980 kg\nDriver / Motor Data - Insulation Class: F"
   },
   {
     "equipment_tag": "KC-4501",
@@ -25,31 +25,211 @@
     "source": {
       "file_name": "Interlock Logic Diagram KC-4501.pdf",
       "page": 1,
-      "sheet": null,
-      "revision": "Rev.02",
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
-    "metadata": {},
+    "metadata": {
+      "logic_no": "SEQ-4501",
+      "sil_level": "SIL 2",
+      "total_trips": 6,
+      "total_permissives": 6
+    },
     "chunk_id": "TJC-LLD-IL-KC-4501-P01-C01",
-    "title": "Recycle Gas Compressor Shutdown Logic & Cause Effect (SEQ-4501)",
+    "title": "Interlock Logic & Cause Effect Matrix - KC-4501 (SEQ-4501)",
     "equipment_type": null,
-    "content": "INTERLOCK LOGIC: SEQ-4501. SIL: SIL 2. TAG: KC-4501. FLOC: TJC-LLD-4500-01. CAUSE & EFFECT MATRIX: T1 Lube Oil Pressure LOW-LOW (PSLL-4504 < 1.5 barg, 2oo3) -> Trip Compressor Motor, DCS Alarm, Auto-start standby lube pump. T2 2nd Stage Discharge Temp HIGH-HIGH (TSHH-4502 > 135 degC, 1oo1) -> Trip Compressor Motor, Vent Recycle Loop. T3 Suction KO Drum Level HIGH-HIGH (LSHH-4510, 1oo2) -> Trip Compressor Motor, Close Suction XV-4501. START PERMISSIVES: P1 Lube oil pressure established > 2.5 barg (PT-4504), P2 Suction valve open, P3 Cooling water flow normal."
+    "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-4501 (RECYCLE GAS COMPRESSOR (KC-4501) SHUTDOWN LOGIC).\nDocument No: TJC-LLD-IL-KC-4501, Revision: Rev.03, Status: Issued for Operation, SIL Level: SIL 2.\nEquipment: KC-4501, Functional Location: TJC-LLD-4500-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Lube oil pressure LOW-LOW (PSLL-4504 < 1.5 barg, 2oo3) -> Actions: Trip (EFF-1), Open Min-Flow (EFF-2), Close Discharge (EFF-3), DCS Alarm (EFF-5)\n- T2: Discharge temperature HIGH-HIGH (TSHH-4503 > 140 degC, 1oo1) -> Actions: Trip (EFF-1), Open Min-Flow (EFF-2), DCS Alarm (EFF-5)\n- T3: Discharge pressure HIGH-HIGH (PSHH-4502 > 14 barg, 1oo2) -> Actions: Trip (EFF-1), Open Min-Flow (EFF-2), DCS Alarm (EFF-5)\n- T4: Crosshead vibration HIGH-HIGH (VSHH-4505 > 11 mm/s, 1oo2) -> Actions: Trip (EFF-1), Open Min-Flow (EFF-2), Close Discharge (EFF-3), DCS Alarm (EFF-5)\n- T5: Suction KO drum level HIGH-HIGH (LSHH-4510 > 80 %, 1oo1) -> Actions: Trip (EFF-1), Close Discharge (EFF-3), DCS Alarm (EFF-5)\n- T6: Suction pressure LOW-LOW (PSLL-4501 < 0.3 barg, 1oo1) -> Actions: Trip (EFF-1), Open Min-Flow (EFF-2), DCS Alarm (EFF-5)\nSTART PERMISSIVES (AND-gate conditions to start):\n- P1: Lube oil pressure OK (> 2 barg) (PSLL-4504, Gate: AND)\n- P2: Seal gas established (FT-4506, Gate: AND)\n- P3: KO drum level normal (< 50%) (LT-4510, Gate: AND)\n- P4: Jacket water flow OK (FSL-4508, Gate: AND)\n- P5: No active trip / reset done (DCS reset, Gate: AND)\n- \u2014: ALL permissives TRUE \u2192 START KC-4501 ENABLED (\u2014, Gate: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-4501, Datasheet: TJC-LLD-DS-KC-4501."
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "OPL-KC-4501-01",
     "document_type": "OPL",
     "source": {
-      "file_name": "OPL-KC-4501-01.pdf",
+      "file_name": "OPL-KC-4501-01 Lube_Oil_System_Pre_Start_Priming.pdf",
       "page": 1,
-      "sheet": null,
-      "revision": "Rev.01",
+      "sheet": "Lube Oil System Pre-Start",
+      "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-4501 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-4501"
+    },
     "chunk_id": "OPL-KC-4501-01-P01-C01",
-    "title": "Recycle Gas Compressor Pre-Start Lube Priming Procedure",
+    "title": "One Point Lesson - Lube Oil System Pre-Start & Priming (OPL-KC-4501-01)",
     "equipment_type": null,
-    "content": "ONE POINT LESSON: OPL-KC-4501-01. Title: Recycle Gas Compressor Pre-Start Lube Priming Procedure. Equipment: KC-4501. Area: 4500. Interlock Ref: SEQ-4501. PURPOSE: Ensure crosshead, crankpin, and piston rod packings receive adequate lube pressure prior to compressor start. SAFETY: Flammable gas zone, wear ESD PPE. PROCEDURE: Step 1: Start auxiliary lube oil pump. Step 2: Verify lube pressure on PI-4504 reaches 2.5 barg. Step 3: Check cylinder pre-lube lubricator drops (12 drops/min). Step 4: Confirm zero active trip on SEQ-4501. TROUBLESHOOTING: Low lube pressure -> check suction strainer or gear pump wear."
+    "content": "ONE POINT LESSON (OPL): OPL-KC-4501-01 - Lube Oil System Pre-Start & Priming.\n\nEquipment: KC-4501, Discipline: Mechanical, Area: 4500 - RECYCLE GAS SYSTEM.\n\nReferences: Interlock: SEQ-4501 (SIL 2), P&ID: TJC-LLD-PID-4501.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains lube oil system pre-start & priming for KC-4501 in the RECYCLE GAS SYSTEM. With no lube oil pressure the crankshaft bearings fail in seconds; the pre-lube pump must build pressure before the machine is cranked.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Run the auxiliary lube oil pump and build pressure above 2 barg\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Confirm PSLL-4504 shows healthy oil pressure\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Check the frame oil level and the filter differential pressure\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Verify no oil leaks and correct oil grade in the frame\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Only then give the start command to the main motor\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High discharge temperature trip TSHH-4503, capacity drop | Cause: 1st stage suction plate valve fractured | Action: Replaced complete suction valve set, checked seat, leak tested\n- Symptom: KC-4501 tripped on PSLL-4504 low lube oil pressure | Cause: Lube oil pump gears worn, relief valve set low | Action: Overhauled lube oil pump, reset relief valve, verified 2.5 barg\n- Symptom: High blow-by, low 2nd stage efficiency | Cause: PTFE piston rings worn beyond limit | Action: Renewed 2nd stage PTFE piston and rider rings, honed cylinder\n\nKEY LEARNING POINTS:\n- Point 1: With no lube oil pressure the crankshaft bearings fail in seconds; the pre-lube pump must build pressure before the machine is cranked.\n- Point 2: Respect the interlock SEQ-4501: e.g. PSLL-4504 trips at < 1.5 barg - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-4501 before working on KC-4501.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "OPL-KC-4501-02",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-KC-4501-02 Compressor_Suction_Discharge_Valve_Inspe.pdf",
+      "page": 1,
+      "sheet": "Compressor Suction Discharge",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-4501 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-4501"
+    },
+    "chunk_id": "OPL-KC-4501-02-P01-C01",
+    "title": "One Point Lesson - Compressor Suction/Discharge Valve Inspection (OPL-KC-4501-02)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-KC-4501-02 - Compressor Suction/Discharge Valve Inspection.\n\nEquipment: KC-4501, Discipline: Mechanical, Area: 4500 - RECYCLE GAS SYSTEM.\n\nReferences: Interlock: SEQ-4501 (SIL 2), P&ID: TJC-LLD-PID-4501.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains compressor suction/discharge valve inspection for KC-4501 (RECYCLE GAS COMPRESSOR) in the RECYCLE GAS SYSTEM. Broken plate valves are the classic cause of high discharge temperature (TSHH-4503) and lost capacity on KC-4501. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Isolate, depressurise and purge the cylinder with nitrogen\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Remove the suction and discharge valve caps\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Inspect valve plates, springs and seats; replace as a complete set\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Check the valve gasket and seat for damage\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Torque the valve caps to spec and leak test before start\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High discharge temperature trip TSHH-4503, capacity drop | Cause: 1st stage suction plate valve fractured | Action: Replaced complete suction valve set, checked seat, leak tested\n- Symptom: KC-4501 tripped on PSLL-4504 low lube oil pressure | Cause: Lube oil pump gears worn, relief valve set low | Action: Overhauled lube oil pump, reset relief valve, verified 2.5 barg\n- Symptom: High blow-by, low 2nd stage efficiency | Cause: PTFE piston rings worn beyond limit | Action: Renewed 2nd stage PTFE piston and rider rings, honed cylinder\n\nKEY LEARNING POINTS:\n- Point 1: Broken plate valves are the classic cause of high discharge temperature (TSHH-4503) and lost capacity on KC-4501.\n- Point 2: Respect the interlock SEQ-4501: e.g. PSLL-4504 trips at < 1.5 barg - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-4501 before working on KC-4501.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "OPL-KC-4501-03",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-KC-4501-03 Seal_Gas_N2_Buffer_Management.pdf",
+      "page": 1,
+      "sheet": "Seal Gas (N2 Buffer) Management",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-4501 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-4501"
+    },
+    "chunk_id": "OPL-KC-4501-03-P01-C01",
+    "title": "One Point Lesson - Seal Gas (N2 Buffer) Management (OPL-KC-4501-03)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-KC-4501-03 - Seal Gas (N2 Buffer) Management.\n\nEquipment: KC-4501, Discipline: Process / Operations, Area: 4500 - RECYCLE GAS SYSTEM.\n\nReferences: Interlock: SEQ-4501 (SIL 2), P&ID: TJC-LLD-PID-4501.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains seal gas (n2 buffer) management for KC-4501 (RECYCLE GAS COMPRESSOR) in the RECYCLE GAS SYSTEM. The nitrogen buffer keeps flammable process gas out of the crankcase; loss of seal gas is a fire/explosion risk. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Verify FT-4506 seal gas flow is established before start\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Maintain the buffer differential above process pressure\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Watch the distance-piece vent for signs of leakage\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Respond immediately to a seal-gas low alarm\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Never run the compressor with seal gas lost\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High discharge temperature trip TSHH-4503, capacity drop | Cause: 1st stage suction plate valve fractured | Action: Replaced complete suction valve set, checked seat, leak tested\n- Symptom: KC-4501 tripped on PSLL-4504 low lube oil pressure | Cause: Lube oil pump gears worn, relief valve set low | Action: Overhauled lube oil pump, reset relief valve, verified 2.5 barg\n- Symptom: High blow-by, low 2nd stage efficiency | Cause: PTFE piston rings worn beyond limit | Action: Renewed 2nd stage PTFE piston and rider rings, honed cylinder\n\nKEY LEARNING POINTS:\n- Point 1: The nitrogen buffer keeps flammable process gas out of the crankcase; loss of seal gas is a fire/explosion risk.\n- Point 2: Respect the interlock SEQ-4501: e.g. PSLL-4504 trips at < 1.5 barg - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-4501 before working on KC-4501.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "OPL-KC-4501-04",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-KC-4501-04 Anti_Surge_Recycle_Operation.pdf",
+      "page": 1,
+      "sheet": "Anti-Surge  Recycle Operation",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-4501 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-4501"
+    },
+    "chunk_id": "OPL-KC-4501-04-P01-C01",
+    "title": "One Point Lesson - Anti-Surge / Recycle Operation (OPL-KC-4501-04)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-KC-4501-04 - Anti-Surge / Recycle Operation.\n\nEquipment: KC-4501, Discipline: Process / Operations, Area: 4500 - RECYCLE GAS SYSTEM.\n\nReferences: Interlock: SEQ-4501 (SIL 2), P&ID: TJC-LLD-PID-4501.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains anti-surge / recycle operation for KC-4501 (RECYCLE GAS COMPRESSOR) in the RECYCLE GAS SYSTEM. The recycle (spillback) valve protects the machine at low throughput and during start/stop; incorrect operation risks deadhead and rod overload. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Keep the anti-surge FV-4502 in auto during start-up\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Avoid deadheading against a high discharge pressure (PSHH-4502)\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Watch suction PSLL-4501 for gas starvation\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Return the machine to load slowly, closing recycle gradually\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Investigate any repeated surge cycling with the vendor curve\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High discharge temperature trip TSHH-4503, capacity drop | Cause: 1st stage suction plate valve fractured | Action: Replaced complete suction valve set, checked seat, leak tested\n- Symptom: KC-4501 tripped on PSLL-4504 low lube oil pressure | Cause: Lube oil pump gears worn, relief valve set low | Action: Overhauled lube oil pump, reset relief valve, verified 2.5 barg\n- Symptom: High blow-by, low 2nd stage efficiency | Cause: PTFE piston rings worn beyond limit | Action: Renewed 2nd stage PTFE piston and rider rings, honed cylinder\n\nKEY LEARNING POINTS:\n- Point 1: The recycle (spillback) valve protects the machine at low throughput and during start/stop; incorrect operation risks deadhead and rod overload.\n- Point 2: Respect the interlock SEQ-4501: e.g. PSLL-4504 trips at < 1.5 barg - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-4501 before working on KC-4501.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "OPL-KC-4501-05",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-KC-4501-05 Crosshead_Vibration_Monitoring_VSHH_4505.pdf",
+      "page": 1,
+      "sheet": "Crosshead Vibration Monitoring",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-4501 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-4501"
+    },
+    "chunk_id": "OPL-KC-4501-05-P01-C01",
+    "title": "One Point Lesson - Crosshead Vibration Monitoring (VSHH-4505) (OPL-KC-4501-05)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-KC-4501-05 - Crosshead Vibration Monitoring (VSHH-4505).\n\nEquipment: KC-4501, Discipline: Instrument, Area: 4500 - RECYCLE GAS SYSTEM.\n\nReferences: Interlock: SEQ-4501 (SIL 2), P&ID: TJC-LLD-PID-4501.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains crosshead vibration monitoring (vshh-4505) for KC-4501 (RECYCLE GAS COMPRESSOR) in the RECYCLE GAS SYSTEM. A rising crosshead vibration trend warns of loose running gear before it trips or fails. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Trend VT-4501 crosshead vibration on the daily route\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Alarm at 8 mm/s and trip at 11 mm/s (VSHH-4505)\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Correlate any rise with TE-4507 main bearing temperature\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Investigate rod-load reversals and crosshead pin clearance\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Escalate a sudden step-change to reliability immediately\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Proof test of lube oil low-low trip | Cause: Set-point within tolerance | Action: Recalibrated PSLL-4504 to 1.5 barg, function tested\n- Symptom: Seal gas flow FT-4506 low, buffer pressure unstable | Cause: N2 buffer regulator diaphragm failed | Action: Replaced seal gas regulator, re-established buffer dP\n- Symptom: Proof test of KO drum high-high level trip | Cause: Float healthy, minor set-point trim | Action: Verified LSHH-4510 float and trip action\n\nKEY LEARNING POINTS:\n- Point 1: A rising crosshead vibration trend warns of loose running gear before it trips or fails.\n- Point 2: Respect the interlock SEQ-4501: e.g. PSLL-4504 trips at < 1.5 barg - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-4501 before working on KC-4501.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "OPL-KC-4501-06",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-KC-4501-06 Suction_KO_Drum_Draining_FA_4510.pdf",
+      "page": 1,
+      "sheet": "Suction KO Drum Draining ",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-4501 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-4501"
+    },
+    "chunk_id": "OPL-KC-4501-06-P01-C01",
+    "title": "One Point Lesson - Suction KO Drum Draining (FA-4510) (OPL-KC-4501-06)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-KC-4501-06 - Suction KO Drum Draining (FA-4510).\n\nEquipment: KC-4501, Discipline: Process / Operations, Area: 4500 - RECYCLE GAS SYSTEM.\n\nReferences: Interlock: SEQ-4501 (SIL 2), P&ID: TJC-LLD-PID-4501.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains suction ko drum draining (fa-4510) for KC-4501 (RECYCLE GAS COMPRESSOR) in the RECYCLE GAS SYSTEM. Liquid carried over from the KO drum destroys valves and can bend piston rods; the boot must be drained regularly. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Drain the FA-4510 boot every shift on the operator round\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Watch LT-4510 level and the LSHH-4510 high-high trip\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Never run the compressor with a high KO drum level\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Report frequent liquid carryover to process for investigation\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Confirm the auto-drain (if fitted) is functioning\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High discharge temperature trip TSHH-4503, capacity drop | Cause: 1st stage suction plate valve fractured | Action: Replaced complete suction valve set, checked seat, leak tested\n- Symptom: KC-4501 tripped on PSLL-4504 low lube oil pressure | Cause: Lube oil pump gears worn, relief valve set low | Action: Overhauled lube oil pump, reset relief valve, verified 2.5 barg\n- Symptom: High blow-by, low 2nd stage efficiency | Cause: PTFE piston rings worn beyond limit | Action: Renewed 2nd stage PTFE piston and rider rings, honed cylinder\n\nKEY LEARNING POINTS:\n- Point 1: Liquid carried over from the KO drum destroys valves and can bend piston rods; the boot must be drained regularly.\n- Point 2: Respect the interlock SEQ-4501: e.g. PSLL-4504 trips at < 1.5 barg - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-4501 before working on KC-4501.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "OPL-KC-4501-07",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-KC-4501-07 Intercooler_EA_4502_Performance_Check.pdf",
+      "page": 1,
+      "sheet": "Intercooler EA-4502 Performance",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-4501 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-4501"
+    },
+    "chunk_id": "OPL-KC-4501-07-P01-C01",
+    "title": "One Point Lesson - Intercooler EA-4502 Performance Check (OPL-KC-4501-07)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-KC-4501-07 - Intercooler EA-4502 Performance Check.\n\nEquipment: KC-4501, Discipline: Mechanical, Area: 4500 - RECYCLE GAS SYSTEM.\n\nReferences: Interlock: SEQ-4501 (SIL 2), P&ID: TJC-LLD-PID-4501.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains intercooler ea-4502 performance check for KC-4501 (RECYCLE GAS COMPRESSOR) in the RECYCLE GAS SYSTEM. Poor intercooling raises the 2nd-stage suction temperature and hence the final discharge temperature towards the trip. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Check the interstage temperature drop across EA-4502\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Verify the jacket water flow FSL-4508 is adequate\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Clean the intercooler tubes if the approach temperature rises\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Log the interstage pressure and compare to datasheet\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Report fouling trends so cleaning can be planned\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High discharge temperature trip TSHH-4503, capacity drop | Cause: 1st stage suction plate valve fractured | Action: Replaced complete suction valve set, checked seat, leak tested\n- Symptom: KC-4501 tripped on PSLL-4504 low lube oil pressure | Cause: Lube oil pump gears worn, relief valve set low | Action: Overhauled lube oil pump, reset relief valve, verified 2.5 barg\n- Symptom: High blow-by, low 2nd stage efficiency | Cause: PTFE piston rings worn beyond limit | Action: Renewed 2nd stage PTFE piston and rider rings, honed cylinder\n\nKEY LEARNING POINTS:\n- Point 1: Poor intercooling raises the 2nd-stage suction temperature and hence the final discharge temperature towards the trip.\n- Point 2: Respect the interlock SEQ-4501: e.g. PSLL-4504 trips at < 1.5 barg - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-4501 before working on KC-4501.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_instruments": 18
+    },
+    "chunk_id": "TJC-LLD-PID-4501-P01-C01",
+    "title": "Piping & Instrumentation Diagram Register - KC-4501",
+    "equipment_type": null,
+    "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: KC-4501 (RECYCLE GAS COMPRESSOR).\nDocument No: TJC-LLD-PID-4501, Revision: N/A, Status: Issued for Operation.\nArea: 4500 \u2013 Gas Recovery & Compression, Functional Location: TJC-LLD-4500-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- PSLL-4504: Lube oil pressure LOW-LOW (Pressure Switch) [Setpoint: < 1.5 barg]. Function: Trip initiator T1 & Permissive P1. Location: Lube Oil System\n- TSHH-4503: Discharge temperature HIGH-HIGH (Temperature Switch) [Setpoint: > 140 degC]. Function: Trip initiator T2 \u2192 SEQ-4501. Location: Compressor Discharge\n- PSHH-4502: Discharge pressure HIGH-HIGH (Pressure Switch) [Setpoint: > 14 barg]. Function: Trip initiator T3 \u2192 SEQ-4501. Location: Compressor Discharge\n- VSHH-4505: Crosshead vibration HIGH-HIGH (Vibration Switch) [Setpoint: > 11 mm/s]. Function: Trip initiator T4 \u2192 SEQ-4501. Location: Compressor Crosshead\n- LSHH-4510: Suction KO drum level HIGH-HIGH (Level Switch) [Setpoint: > 80 %]. Function: Trip initiator T5 \u2192 SEQ-4501. Location: KO Drum FA-4510\n- PSLL-4501: Suction pressure LOW-LOW (Pressure Switch) [Setpoint: < 0.3 barg]. Function: Trip initiator T6 \u2192 SEQ-4501. Location: Compressor Suction\n- FT-4506: Seal gas flow Transmitter (Flow Transmitter). Function: Flow measurement & Permissive P2. Location: Seal Gas System\n- LT-4510: KO drum Level Transmitter (Level Transmitter) [Setpoint: < 50 %]. Function: Level measurement & Permissive P3. Location: KO Drum FA-4510\n- FSL-4508: Jacket water flow Switch (Flow Switch). Function: Cooling water flow & Permissive P4. Location: Cooling Water line\n- FV-4502: Anti-Surge Recycle Control Valve (Control Valve) [Setpoint: OPEN ]. Function: EFF-2: Open on Trip / Low Flow. Location: Anti-Surge line\n- XV-4501: Suction Shutdown Valve (On/Off Valve) [Setpoint: CLOSE ]. Function: EFF-3: Close Suction on Trip. Location: Compressor Suction\n- VT-4501: Crosshead vibration transmitter (Vibration Transmitter). Function: Vibration Monitoring (Trend). Location: Compressor Crosshead\n- PT-4501: Suction Pressure Transmitter (Pressure Transmitter). Function: Pressure Monitoring. Location: Compressor Suction\n- PI-1201: Suction Pressure Indicator (Pressure Indicator). Function: Local Pressure Indication. Location: Compressor Suction\n- TIC-4502: Intercooler Temp Controller (Temp Controller). Function: Control intercooler EA-4502. Location: Intercooler EA-4502\n- EA-4502: Intercooler Heat Exchanger (Heat Exchanger). Function: Cools gas between stages. Location: Interstage line\n- PSV-4502: Pressure Safety Valve (Relief Valve). Function: Overpressure protection. Location: Intercooler EA-4502\n- OLL-4504: Lube Oil Pump Relief Valve (Relief Valve) [Setpoint: 2.5 barg]. Function: Set lube oil pump pressure. Location: Lube Oil System\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-KC-4501, Interlock: SEQ-4501."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {
+      "total_nearby_equipment": 8
+    },
+    "chunk_id": "PP-KC-4501-P01-C01",
+    "title": "Plot Plan & Location Data - KC-4501",
+    "equipment_type": null,
+    "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: KC-4501 (RECYCLE GAS COMPRESSOR).\nDocument No: PP-KC-4501, Revision: Rev.00, Status: Issued for Construction.\nArea: 4500 \u2013 Gas Recovery & Compression, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: KC-4501; equipment_name: RECYCLE GAS COMPRESSOR; area: 4500 \u2013 Gas Recovery & Compression; functional_location: TJC-LLD-4500-01; grid_reference: D-4; elevation: +0.00 m; footprint: 5.0 x 4.0 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501 (RECYCLE GAS COMPRESSOR): Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601: Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701: Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
   }
 ]

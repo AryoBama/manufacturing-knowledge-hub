@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "FA-8901",
+  "document_id": "TJC-LLD-DS-FA-8901",
+  "document_type": "DATASHEET",
+  "source": {
+    "file_name": "Equipment Datasheet - FA-8901.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-DS-FA-8901-P01-C01",
+  "title": "Equipment Datasheet - REFLUX ACCUMULATOR DRUM (FA-8901)",
+  "equipment_type": null,
+  "content": "EQUIPMENT DATASHEET: FA-8901 (REFLUX ACCUMULATOR DRUM).\nDocument No: TJC-LLD-DS-FA-8901, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Horizontal Pressure Vessel.\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 8900 \u2013 Solvent Fractionation.\nFunctional Location: TJC-LLD-8900-01, Criticality: High Critical.\nService: Collect DA-8910 column overhead condensate; supply reflux & product.\nMECHANICAL SPECIFICATIONS:\nVessel Type: HORIZONTAL DRUM WITH BOOT; Shell Material: SA-516 Gr.70; Head Type: 2:1 ELLIPSOIDAL; Diameter (ID): 1600 mm; Corrosion Allow.: 3.0 mm; Tangent-Tangent: 4800 mm; Boot: WATER DRAW-OFF BOOT DN300; Design Pressure: 10 barg / FV; PWHT: YES; Operating Pressure: 3.5 barg; Radiography: FULL (RT-1); Design Temp.: 120 degC; PSV: PSV-8901 set 10 barg; Operating Temp.: 68 degC; N2 Blanket: PCV-8905 SPLIT-RANGE\nPERFORMANCE DATA:\nVolume: 9.6 m3; Product Nozzle: N3 4 inch; Reflux Pump: GA-8920 A/B; Boot Drain: N4 2 inch; Inlet Nozzle: N1 8 inch (column overhead); PSV Nozzle: N5 3 inch; Reflux Nozzle: N2 6 inch; Manway: 24 inch; Driver Type: None (static)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-8901, Interlock: SEQ-8901."
+}

@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "YD-2301",
+  "document_id": "TJC-LLD-IL-YD-2301",
+  "document_type": "INTERLOCK",
+  "source": {
+    "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-IL-YD-2301-P01-C01",
+  "title": "Interlock Logic & Cause Effect Matrix - YD-2301 (SEQ-5500)",
+  "equipment_type": null,
+  "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-5500 (DRYER SYSTEM (YD-2301) SHUTDOWN LOGIC).\nDocument No: TJC-LLD-IL-YD-2301, Revision: Rev 3, SIL Level: SIL 2.\nEquipment: YD-2301, Functional Location: TJC-LLD-2300-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Outlet temperature HIGH-HIGH (TSHH-2301 > 125 degC, 1oo1) -> Actions: Trip (EFF-1), Close (EFF-2), Annunciate (EFF-5)\n- T2: Nitrogen purge flow LOW-LOW (FSLL-2302 < 200 kg/h, 2oo3) -> Actions: Trip (EFF-1), Close (EFF-2), Trip (EFF-3), Annunciate (EFF-5)\n- T3: Inlet chute level HIGH-HIGH (LSHH-2303 > 90 %, 1oo1) -> Actions: Trip (EFF-3), Annunciate (EFF-5)\n- T4: Drum speed LOW-LOW (chain slip) (SSLL-2305 < 1 rpm, 1oo1) -> Actions: Trip (EFF-1), Annunciate (EFF-5)\n- T5: Vent O2 HIGH-HIGH (ASHH-2307 > 8 % O2, 1oo2) -> Actions: Trip (EFF-1), Close (EFF-2), Open (EFF-4), Annunciate (EFF-5)\n- T6: Drive motor overload (MPR-2301 MPR pickup, 1oo1) -> Actions: Trip (EFF-1), Close (EFF-2), Annunciate (EFF-5)\nSTART PERMISSIVES (AND-gate conditions to start pump):\n- P1: Nitrogen inerting established (O2 < 5%) (AT-2307, Gate Logic: AND)\n- P2: Steam condensate drain open (ZSO-2304, Gate Logic: AND)\n- P3: Lube oil to gearbox OK (PSL-2306, Gate Logic: AND)\n- P4: No active trip / reset done (DCS reset, Gate Logic: AND)\n- \u2014: ALL permissives TRUE \u2192 START YD-2301 ENABLED (\u2014, Gate Logic: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-2301, Datasheet: TJC-LLD-DS-YD-2301."
+}

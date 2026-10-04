@@ -1,0 +1,986 @@
+[
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-001",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Vessel Type",
+    "value": "HORIZONTAL DRUM WITH BOOT",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Vessel Type"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-002",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Shell Material",
+    "value": "SA-516 Gr.70",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Shell Material"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-003",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Head Type",
+    "value": "2:1 ELLIPSOIDAL",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Head Type"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-004",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Diameter (ID)",
+    "value": 1600,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Diameter (ID)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-005",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Corrosion Allow.",
+    "value": 3.0,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Corrosion Allow."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-006",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tangent-Tangent",
+    "value": 4800,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Tangent-Tangent"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-007",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Boot",
+    "value": "WATER DRAW-OFF BOOT DN300",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Boot"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-008",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Design Pressure",
+    "value": 10,
+    "unit": "barg / FV",
+    "canonical_field": null,
+    "source_label": "Design Pressure"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-009",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "PWHT",
+    "value": "YES",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "PWHT"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-010",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Operating Pressure",
+    "value": 3.5,
+    "unit": "barg",
+    "canonical_field": null,
+    "source_label": "Operating Pressure"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-011",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Radiography",
+    "value": "FULL (RT-1)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Radiography"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-012",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Design Temp.",
+    "value": 120,
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Design Temp."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-013",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "PSV",
+    "value": "PSV-8901 set 10 barg",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "PSV"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-014",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Operating Temp.",
+    "value": 68,
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Operating Temp."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-015",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "N2 Blanket",
+    "value": "PCV-8905 SPLIT-RANGE",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "N2 Blanket"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-016",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Volume",
+    "value": 9.6,
+    "unit": "m3",
+    "canonical_field": null,
+    "source_label": "Volume"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-017",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Product Nozzle",
+    "value": "N3 4 inch",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Product Nozzle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-018",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Reflux Pump",
+    "value": "GA-8920 A/B",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Reflux Pump"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-019",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Boot Drain",
+    "value": "N4 2 inch",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Boot Drain"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-020",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Inlet Nozzle",
+    "value": "N1 8 inch (column overhead)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Inlet Nozzle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-021",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "PSV Nozzle",
+    "value": "N5 3 inch",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "PSV Nozzle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-022",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Reflux Nozzle",
+    "value": "N2 6 inch",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Reflux Nozzle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-023",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Manway",
+    "value": "24 inch",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Manway"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Horizontal Pressure Vessel",
+      "functional_location": "TJC-LLD-8900-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-FA-8901-024",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Driver Type",
+    "value": "None (static)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Driver Type"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "LSHH-8901",
+      "instrument_type": "Level Switch",
+      "instrument_description": "Drum level HIGH-HIGH",
+      "function": "Cause T1 (Trip Column Feed)"
+    },
+    "record_id": "TR-LSHH-8901-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "LSHH-8901 Setpoint",
+    "value": "> 85",
+    "unit": "%",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Drum level HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "LSLL-8901",
+      "instrument_type": "Level Switch",
+      "instrument_description": "Drum level LOW-LOW",
+      "function": "Cause T2 (Trip Reflux Pump GA-8920)"
+    },
+    "record_id": "TR-LSLL-8901-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "LSLL-8901 Setpoint",
+    "value": "< 15",
+    "unit": "%",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Drum level LOW-LOW Setpoint"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSHH-8902",
+      "instrument_type": "Pressure Switch",
+      "instrument_description": "Drum pressure HIGH-HIGH",
+      "function": "Cause T3 (Open Vent PCV-8905)"
+    },
+    "record_id": "TR-PSHH-8902-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSHH-8902 Setpoint",
+    "value": "> 8",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Drum pressure HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "HS-8901",
+      "instrument_type": "Hand Switch",
+      "instrument_description": "Manual Emergency Stop",
+      "function": "Cause T4 (Manual E-Stop)"
+    },
+    "record_id": "TR-HS-8901-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "HS-8901 Setpoint",
+    "value": "Manual",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Manual Emergency Stop Setpoint"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "LT-8901",
+      "instrument_type": "Level Transmitter",
+      "instrument_description": "Level Transmitter",
+      "function": "Permissive P1 (Level in normal band) & Control"
+    },
+    "record_id": "TR-LT-8901-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "LT-8901 Setpoint",
+    "value": "20-80",
+    "unit": "%",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Level Transmitter Setpoint"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSV-8901",
+      "instrument_type": "Relief Valve",
+      "instrument_description": "Pressure Safety Valve",
+      "function": "Overpressure protection (Car-sealed open)"
+    },
+    "record_id": "TR-PSV-8901-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSV-8901 Setpoint",
+    "value": "10",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Pressure Safety Valve Setpoint"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-EQUIPMENT_TAG",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_tag",
+    "value": "FA-8901",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_tag"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-EQUIPMENT_NAME",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_name",
+    "value": "REFLUX ACCUMULATOR DRUM",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_name"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-AREA",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "area",
+    "value": "8900 \u2013 Solvent Fractionation",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "area"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-FUNCTIONAL_LOCATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "functional_location",
+    "value": "TJC-LLD-8900-01",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "functional_location"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-GRID_REFERENCE",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "grid_reference",
+    "value": "H-4",
+    "unit": null,
+    "canonical_field": "grid_reference",
+    "source_label": "grid_reference"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-ELEVATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "elevation",
+    "value": "+4.50",
+    "unit": "m",
+    "canonical_field": "elevation",
+    "source_label": "elevation"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-FOOTPRINT",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "footprint",
+    "value": "5.0 x 2.0",
+    "unit": "m (approx)",
+    "canonical_field": null,
+    "source_label": "footprint"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-COORDINATE_SYSTEM",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "coordinate_system",
+    "value": "Plant Grid (E/N)",
+    "unit": "metres",
+    "canonical_field": null,
+    "source_label": "coordinate_system"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-ACCESS_ROAD",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "access_road",
+    "value": "Road 6m",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "access_road"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-MAIN_PIPE_RACK",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "main_pipe_rack",
+    "value": "Main Pipe Rack shown",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "main_pipe_rack"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-HAZARDOUS_AREA_REF",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "hazardous_area_ref",
+    "value": "WPN-MAT-001",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "hazardous_area_ref"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-FA-8901-NOTES",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "notes",
+    "value": "Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "notes"
+  }
+]

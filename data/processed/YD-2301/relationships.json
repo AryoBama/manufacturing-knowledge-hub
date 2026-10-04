@@ -1,0 +1,629 @@
+[
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T1",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "YD-2301",
+        "YD-2301",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-5500-T1",
+    "source_tag": "TSHH-2301",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Outlet temperature HIGH-HIGH (Setpoint: > 125 degC, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T2",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "Trip (EFF-3)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "YD-2301",
+        "YD-2301",
+        "YD-2301",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-5500-T2",
+    "source_tag": "FSLL-2302",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Nitrogen purge flow LOW-LOW (Setpoint: < 200 kg/h, Voting: 2oo3)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T3",
+      "actions": [
+        "Trip (EFF-3)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "YD-2301",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-5500-T3",
+    "source_tag": "LSHH-2303",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Inlet chute level HIGH-HIGH (Setpoint: > 90 %, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T4",
+      "actions": [
+        "Trip (EFF-1)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "YD-2301",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-5500-T4",
+    "source_tag": "SSLL-2305",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Drum speed LOW-LOW (chain slip) (Setpoint: < 1 rpm, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T5",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "Open Min-Flow (EFF-4)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "YD-2301",
+        "YD-2301",
+        "YD-2301",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-5500-T5",
+    "source_tag": "ASHH-2307",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Vent O2 HIGH-HIGH (Setpoint: > 8 % O2, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T6",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "YD-2301",
+        "YD-2301",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-5500-T6",
+    "source_tag": "MPR-2301",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Drive motor overload (Setpoint: MPR pickup, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P1",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-5500-P1",
+    "source_tag": "AT-2307",
+    "relationship": "permissive_for",
+    "target_tag": "YD-2301",
+    "context": "Nitrogen inerting established (O2 < 5%) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P2",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-5500-P2",
+    "source_tag": "ZSO-2304",
+    "relationship": "permissive_for",
+    "target_tag": "YD-2301",
+    "context": "Steam condensate drain open (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P3",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-5500-P3",
+    "source_tag": "PSL-2306",
+    "relationship": "permissive_for",
+    "target_tag": "YD-2301",
+    "context": "Lube oil to gearbox OK (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temperature Switch",
+      "related_interlock": "SEQ-5500 T1"
+    },
+    "relationship_id": "REL-PID-TSHH-2301",
+    "source_tag": "TSHH-2301",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Outlet temperature HIGH-HIGH (Temperature Switch). Function: Trip initiator T1 \u2192 SEQ-5500. Location: Powder outlet line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Switch",
+      "related_interlock": "SEQ-5500 T2"
+    },
+    "relationship_id": "REL-PID-FSLL-2302",
+    "source_tag": "FSLL-2302",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Nitrogen purge flow LOW-LOW (Flow Switch). Function: Trip initiator T2 \u2192 SEQ-5500. Location: N2 purge line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Switch",
+      "related_interlock": "SEQ-5500 T3"
+    },
+    "relationship_id": "REL-PID-LSHH-2303",
+    "source_tag": "LSHH-2303",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Inlet chute level HIGH-HIGH (Level Switch). Function: Trip initiator T3 \u2192 SEQ-5500. Location: Powder inlet chute"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Speed Switch",
+      "related_interlock": "SEQ-5500 T4"
+    },
+    "relationship_id": "REL-PID-SSLL-2305",
+    "source_tag": "SSLL-2305",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Drum speed LOW-LOW (chain slip) (Speed Switch). Function: Trip initiator T4 \u2192 SEQ-5500. Location: Drum drive / sprocket"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Analyzer Switch",
+      "related_interlock": "SEQ-5500 T5"
+    },
+    "relationship_id": "REL-PID-ASHH-2307",
+    "source_tag": "ASHH-2307",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Vent O2 HIGH-HIGH (Analyzer Switch). Function: Trip initiator T5 \u2192 SEQ-5500. Location: Vent line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Protection Relay",
+      "related_interlock": "SEQ-5500 T6"
+    },
+    "relationship_id": "REL-PID-MPR-2301",
+    "source_tag": "MPR-2301",
+    "relationship": "triggers_trip",
+    "target_tag": "YD-2301",
+    "context": "Drive motor overload (Protection Relay). Function: Trip initiator T6 (overload/electrical fault). Location: Motor MCC"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "SEQ-5500 EFF-2"
+    },
+    "relationship_id": "REL-PID-TV-2301",
+    "source_tag": "TV-2301",
+    "relationship": "controls",
+    "target_tag": "YD-2301",
+    "context": "Steam Inlet Valve (Control Valve). Function: EFF-2: Close on trip; stop heat. Location: Steam inlet line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "SEQ-5500 EFF-4"
+    },
+    "relationship_id": "REL-PID-FV-2302",
+    "source_tag": "FV-2302",
+    "relationship": "controls",
+    "target_tag": "YD-2301",
+    "context": "N2 Purge Valve (Control Valve). Function: EFF-4: Open on trip; max inert. Location: N2 purge line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "On/Off Valve",
+      "related_interlock": "SEQ-5500 EFF-3"
+    },
+    "relationship_id": "REL-PID-XV-2210",
+    "source_tag": "XV-2210",
+    "relationship": "controls",
+    "target_tag": "YD-2301",
+    "context": "Centrifuge Feed Isolation Valve (On/Off Valve). Function: EFF-3: Trip centrifuge feed to stop powder. Location: Powder inlet line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pump / Motor",
+      "related_interlock": "SEQ-5500 EFF-3"
+    },
+    "relationship_id": "REL-PID-GF-2210",
+    "source_tag": "GF-2210",
+    "relationship": "monitors",
+    "target_tag": "YD-2301",
+    "context": "Centrifuge Feed Unit (Pump / Motor). Function: EFF-3: Trip centrifuge feed. Location: Centrifuge"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Analyzer Transmitter",
+      "related_interlock": "SEQ-5500 P1"
+    },
+    "relationship_id": "REL-PID-AT-2307",
+    "source_tag": "AT-2307",
+    "relationship": "permissive_for",
+    "target_tag": "YD-2301",
+    "context": "Vent O2 Analyzer (Analyzer Transmitter). Function: Start permissive P1 (Inerting established). Location: Vent line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Limit Switch",
+      "related_interlock": "SEQ-5500 P2"
+    },
+    "relationship_id": "REL-PID-ZSO-2304",
+    "source_tag": "ZSO-2304",
+    "relationship": "permissive_for",
+    "target_tag": "YD-2301",
+    "context": "Steam Condensate Drain Position (Open) (Limit Switch). Function: Start permissive P2. Location: Condensate drain"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "SEQ-5500 P3"
+    },
+    "relationship_id": "REL-PID-PSL-2306",
+    "source_tag": "PSL-2306",
+    "relationship": "permissive_for",
+    "target_tag": "YD-2301",
+    "context": "Gearbox Lube Oil Pressure LOW (Pressure Switch). Function: Start permissive P3 (Lube oil OK). Location: Gearbox lube oil"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Controller",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-TIC-2301",
+    "source_tag": "TIC-2301",
+    "relationship": "controls",
+    "target_tag": "YD-2301",
+    "context": "Temperature Controller (Temp Controller). Function: Control steam ramp-up via TV-2301. Location: DCS"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FT-2302",
+    "source_tag": "FT-2302",
+    "relationship": "monitors",
+    "target_tag": "YD-2301",
+    "context": "Nitrogen Purge Flow Transmitter (Flow Transmitter). Function: Flow measurement for N2. Location: N2 purge line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PT-2304",
+    "source_tag": "PT-2304",
+    "relationship": "monitors",
+    "target_tag": "YD-2301",
+    "context": "Steam Pressure Transmitter (Pressure Transmitter). Function: Steam pressure monitoring. Location: Steam inlet line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Moisture Analyzer",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-MT-2306",
+    "source_tag": "MT-2306",
+    "relationship": "monitors",
+    "target_tag": "YD-2301",
+    "context": "Outlet Moisture Transmitter (Moisture Analyzer). Function: Monitor outlet moisture. Location: Powder outlet line"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Hand Switch",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-HS-2301",
+    "source_tag": "HS-2301",
+    "relationship": "monitors",
+    "target_tag": "YD-2301",
+    "context": "Emergency Stop Hand Switch (Hand Switch). Function: Local/DCS emergency stop. Location: Local control station"
+  }
+]

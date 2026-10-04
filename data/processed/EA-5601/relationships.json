@@ -1,0 +1,338 @@
+[
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-IL-EA-5601",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram EA-5601.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P2",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-N/A (control loop only)-P2",
+    "source_tag": "TI-5604",
+    "relationship": "permissive_for",
+    "target_tag": "EA-5601",
+    "context": "Condensate trap draining (TI-5604 < steam T) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Controller",
+      "related_interlock": "C1/EFF-1"
+    },
+    "relationship_id": "REL-PID-TIC-5602",
+    "source_tag": "TIC-5602",
+    "relationship": "controls",
+    "target_tag": "EA-5601",
+    "context": "Outlet Temperature Controller (Temp Controller). Function: Control Loop C1, EFF-1 (Modulate Steam Valve). Location: Hot hexane out line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-TT-5602",
+    "source_tag": "TT-5602",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Outlet Temperature Transmitter (Temp Transmitter). Function: Senses hexane temp for TIC-5602. Location: Hot hexane out line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "EFF-1"
+    },
+    "relationship_id": "REL-PID-TV-5602",
+    "source_tag": "TV-5602",
+    "relationship": "controls",
+    "target_tag": "EA-5601",
+    "context": "Steam Control Valve (Control Valve). Function: Modulated by TIC-5602 (EFF-1). Location: MP steam in line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Signal / Actuator",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-TCV-5602",
+    "source_tag": "TCV-5602",
+    "relationship": "controls",
+    "target_tag": "EA-5601",
+    "context": "Temp Control Valve Actuator Signal (Signal / Actuator). Function: Actuator control signal for TV-5602. Location: MP steam in line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "dP Alarm",
+      "related_interlock": "A1/EFF-2"
+    },
+    "relationship_id": "REL-PID-PDAH-5605",
+    "source_tag": "PDAH-5605",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Tube-side Fouling Alarm (dP Alarm). Function: Cause A1 / EFF-2 Alarm (Fouling). Location: Solvent across exchanger"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "dP Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PDT-5605",
+    "source_tag": "PDT-5605",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Tube-side Diff Pressure Transmitter (dP Transmitter). Function: Sends dP signal to PDAH-5605. Location: Solvent across exchanger"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PT-5605",
+    "source_tag": "PT-5605",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Outlet Pressure Transmitter (Pressure Transmitter). Function: Pressure Monitoring. Location: Hot hexane out line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Safety Valve",
+      "related_interlock": "R1/EFF-3"
+    },
+    "relationship_id": "REL-PID-PSV-5607",
+    "source_tag": "PSV-5607",
+    "relationship": "controls",
+    "target_tag": "EA-5601",
+    "context": "Tube-side Relief Valve (Pressure Safety Valve). Function: Mechanical Relief (R1 / EFF-3). Location: Hot hexane out line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Indicator",
+      "related_interlock": "P2"
+    },
+    "relationship_id": "REL-PID-TI-5604",
+    "source_tag": "TI-5604",
+    "relationship": "permissive_for",
+    "target_tag": "EA-5601",
+    "context": "Condensate Temperature Indicator (Temp Indicator). Function: Permissive P2 / Local indication. Location: Condensate Out line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-TT-5604",
+    "source_tag": "TT-5604",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Condensate Temperature Transmitter (Temp Transmitter). Function: Condensate Temperature Monitoring. Location: Condensate Out line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Steam Trap",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-ST-5604",
+    "source_tag": "ST-5604",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Steam Trap Assembly (Steam Trap). Function: Drains condensate. Location: Condensate Out line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FT-5603",
+    "source_tag": "FT-5603",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Steam Flow Transmitter (Flow Transmitter). Function: Steam Flow Measurement. Location: MP steam in line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Indicator",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FI-5603",
+    "source_tag": "FI-5603",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Steam Flow Indicator (Flow Indicator). Function: Local/DCS Flow Indication. Location: MP steam in line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Indicator",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FI-5601",
+    "source_tag": "FI-5601",
+    "relationship": "monitors",
+    "target_tag": "EA-5601",
+    "context": "Hexane Flow Indicator (Flow Indicator). Function: Local/DCS Flow Indication. Location: Cold hexane in line"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Switch",
+      "related_interlock": "P1"
+    },
+    "relationship_id": "REL-PID-FSL upstream",
+    "source_tag": "FSL upstream",
+    "relationship": "permissive_for",
+    "target_tag": "EA-5601",
+    "context": "Solvent Flow Switch (dari GA-5610) (Flow Switch). Function: Permissive P1 (Flow Established). Location: Cold hexane in line"
+  }
+]

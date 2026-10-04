@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "YD-2301",
+  "document_id": "TJC-LLD-PP-YD-2301",
+  "document_type": "PLOT_PLAN",
+  "source": {
+    "file_name": "Plot Plan - YD-2301.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Construction"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-PP-YD-2301-P01-C01",
+  "title": "Plot Plan & Location Data - YD-2301",
+  "equipment_type": null,
+  "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: YD-2301 (POLYMER FLUID BED DRYER).\nDocument No: TJC-LLD-PP-YD-2301, Revision: Rev 0, Status: Issued for Construction.\nArea: 2300 \u2013 Polymer Separation & Drying, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: YD-2301; equipment_name: POLYMER FLUID BED DRYER; area: 2300 \u2013 Polymer Separation & Drying; functional_location: TJC-LLD-2300-01; grid_reference: B-5; elevation: +6.00 m; footprint: 4.0 x 9.5 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A: Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501: Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601: Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701: Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+}

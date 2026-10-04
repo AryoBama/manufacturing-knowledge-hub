@@ -1,0 +1,57 @@
+{
+  "equipment": "CT-7801",
+  "source_directory": "C:\\Users\\AryoBama\\Lomba\\CALIBER\\manufacturing-knowledge-hub\\data\\raw\\CT-7801",
+  "total_objects": 95,
+  "valid_objects": 95,
+  "invalid_objects": 0,
+  "validation_passed": true,
+  "by_type": {
+    "document_chunks": 11,
+    "technical_records": 43,
+    "maintenance_records": 27,
+    "relationships": 14
+  },
+  "maintenance_semantics": {
+    "total_events": 27,
+    "actual_failures_or_breakdowns": 3,
+    "routine_preventive_or_tests": 24
+  },
+  "unmapped_technical_parameters": [
+    "Air Flow",
+    "Area Classification",
+    "Blade Material",
+    "Drift Eliminator",
+    "Drive Shaft",
+    "Driver Type",
+    "Enclosure",
+    "Fan Diameter",
+    "Fan Speed",
+    "Fan Type",
+    "Fill",
+    "Frame",
+    "Gearbox Oil",
+    "Gearbox Ratio",
+    "Insulation Class",
+    "Mounting",
+    "Output",
+    "Poles",
+    "Range / Approach",
+    "Tower Type",
+    "Water Flow (Cell)",
+    "Weight (Motor)",
+    "access_road",
+    "area",
+    "coordinate_system",
+    "equipment_name",
+    "equipment_tag",
+    "footprint",
+    "functional_location",
+    "hazardous_area_ref",
+    "main_pipe_rack",
+    "notes"
+  ],
+  "warnings": [
+    "50 object(s) lack formal revision in source (preserved as null without inferring)"
+  ],
+  "validation_errors": []
+}

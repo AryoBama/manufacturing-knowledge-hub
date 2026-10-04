@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "YD-2301",
+  "document_id": "OPL-YD-2301-05",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-YD-2301-05 - Rotary_Joint_Steam_Leak_Handling_Kadant.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-YD-2301-05-P01-C01",
+  "title": "One Point Lesson - Rotary Joint Steam Leak Handling (Kadant) (OPL-YD-2301-05)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-YD-2301-05 - Rotary Joint Steam Leak Handling (Kadant).\n\nEquipment: YD-2301 (POLYMER FLUID BED DRYER), Discipline: Mechanical, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nRelated Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nRotary joint steam leak handling (kadant) for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. The Kadant rotary joint seal wears and leaks live steam at the drum head, a burn hazard and steam loss.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Identify the leak at the rotary joint carbon seal face\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Reduce steam and plan an isolation window with operations\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Replace the rotary joint seal kit and inspect the nipple\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Check the O-ring (NBR) and the joint-to-shaft alignment\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Leak test on steam-up before returning the dryer to service\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Likely Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Likely Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: SSLL-2305 speed low alarm, chain slack observed | Likely Cause: Chain elongation with normal wear caused slip | Action: Adjusted take-up, lubricated chain, checked sprocket wear\n\nKEY LEARNING POINTS:\n- Point 1: The Kadant rotary joint seal wears and leaks live steam at the drum head, a burn hazard and steam loss.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

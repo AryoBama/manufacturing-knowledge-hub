@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "EA-5601",
+  "document_id": "TJC-LLD-DS-EA-5601",
+  "document_type": "DATASHEET",
+  "source": {
+    "file_name": "Equipment Datasheet - EA-5601.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-DS-EA-5601-P01-C01",
+  "title": "Equipment Datasheet - SOLVENT HEATER (EA-5601)",
+  "equipment_type": null,
+  "content": "EQUIPMENT DATASHEET: EA-5601 (SOLVENT HEATER).\nDocument No: TJC-LLD-DS-EA-5601, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Shell & Tube Heat Exchanger (BEM).\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 5600 \u2013 Solvent Recovery System.\nFunctional Location: TJC-LLD-5600-01, Criticality: Low Critical.\nService: Heat recovered hexane solvent using MP steam before recycle.\nMECHANICAL SPECIFICATIONS:\nTEMA Type: BEM, HORIZONTAL; Tube Length: 6000 mm; No. of Tubes: 246; Duty: 1.85 MW; Tube Passes: 2; Shell Side Fluid: MP STEAM 10 barg; Tube Material: SS304L; Tube Side Fluid: HEXANE SOLVENT; Shell Material: SA-516 Gr.70; Shell Design P/T: 13 barg / 200 \u00b0C; Tubesheet: SA-516-70 + SS304 overlay; Tube Design P/T: 16 barg / 200 \u00b0C; Baffle: SEGMENTAL 25% CUT; Tube OD x BWG: 19.05 mm x 14 BWG; Gasket: SPIRAL WOUND SS316/GRAPHITE\nPERFORMANCE DATA:\nHeat Transfer Area: 88 m2; Steam Consumption: 3100 kg/h; Clean U: 620 W/m2K; Solvent Inlet T: 45 \u00b0C; Service U: 480 W/m2K; Solvent Outlet T: 95 \u00b0C; Fouling (Tube): 0.00035 m2K/W; Pressure Drop (Tube): 0.35 bar; Driver Type: None (static)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-5601, Interlock: N/A (control loop only)."
+}

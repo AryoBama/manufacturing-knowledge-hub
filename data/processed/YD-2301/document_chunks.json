@@ -1,0 +1,235 @@
+[
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_parameters": 27
+    },
+    "chunk_id": "TJC-LLD-DS-YD-2301-P01-C01",
+    "title": "Equipment Datasheet - POLYMER FLUID BED DRYER (YD-2301)",
+    "equipment_type": "Rotary Steam-Tube Dryer",
+    "content": "EQUIPMENT DATASHEET: YD-2301 (POLYMER FLUID BED DRYER).\nDocument ID: TJC-LLD-DS-YD-2301, Revision: Rev.03, Status: Issued for Operation.\nEquipment Type: Rotary Steam-Tube Dryer.\nFunctional Location: TJC-LLD-2300-01.\nService: Drying of LLDPE polymer powder from centrifuge to < 300 ppm moisture.\nDesign & Mechanical - Dryer Type: ROTARY STEAM-TUBE, INDIRECT\nDesign & Mechanical - Drum Diameter: 1800 mm\nDesign & Mechanical - Drum Length: 9000 mm\nDesign & Mechanical - Rotation Speed: 4 rpm\nDesign & Mechanical - Heating Medium: LP STEAM 4.5 barg\nDesign & Mechanical - Inert Medium: NITROGEN\nDesign & Mechanical - Design Temp.: 150 degC\nDesign & Mechanical - Operating Temp.: 95-110 degC\nDesign & Mechanical - Body Material: SM400B\nDesign & Mechanical - Rotor Shaft: SM400B / SS400\nDesign & Mechanical - Gland Packing: PTFE (PILLER 4526L)\nDesign & Mechanical - Oil Seal: NBR\nDesign & Mechanical - O-Ring: NBR\nDesign & Mechanical - Rotary Joint: ASSEMBLY, KADANT\nDesign & Mechanical - Drive: CHAIN & SPROCKET SCM440\nDriver / Motor Data - Output: 22 kW\nDriver / Motor Data - Poles: 4 POLE\nDriver / Motor Data - Speed: 1450 rpm\nDriver / Motor Data - Voltage: 380 V / 3 Ph / 50 Hz V\nDriver / Motor Data - Rated Current: 43 A\nDriver / Motor Data - Insulation Class: F\nDriver / Motor Data - Enclosure: TEFC IP55\nDriver / Motor Data - Area Classification: ZONE 2, IIA T3\nDriver / Motor Data - Ex Protection: Ex nA IIC T3 Gc\nDriver / Motor Data - Frame: IEC 180L\nDriver / Motor Data - Weight (Motor+Gearbox): 833 kg\nDriver / Motor Data - Driver Type: Electric Motor via Chain-Sprocket, TEFC"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-IL-YD-2301",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "logic_no": "SEQ-5500",
+      "sil_level": "SIL 2",
+      "total_trips": 6,
+      "total_permissives": 5
+    },
+    "chunk_id": "TJC-LLD-IL-YD-2301-P01-C01",
+    "title": "Interlock Logic & Cause Effect Matrix - YD-2301 (SEQ-5500)",
+    "equipment_type": null,
+    "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-5500 (DRYER SYSTEM (YD-2301) SHUTDOWN LOGIC).\nDocument No: TJC-LLD-IL-YD-2301, Revision: Rev.03, Status: Issued for Operation, SIL Level: SIL 2.\nEquipment: YD-2301, Functional Location: TJC-LLD-2300-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Outlet temperature HIGH-HIGH (TSHH-2301 > 125 degC, 1oo1) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), DCS Alarm (EFF-5)\n- T2: Nitrogen purge flow LOW-LOW (FSLL-2302 < 200 kg/h, 2oo3) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), Trip (EFF-3), DCS Alarm (EFF-5)\n- T3: Inlet chute level HIGH-HIGH (LSHH-2303 > 90 %, 1oo1) -> Actions: Trip (EFF-3), DCS Alarm (EFF-5)\n- T4: Drum speed LOW-LOW (chain slip) (SSLL-2305 < 1 rpm, 1oo1) -> Actions: Trip (EFF-1), DCS Alarm (EFF-5)\n- T5: Vent O2 HIGH-HIGH (ASHH-2307 > 8 % O2, 1oo2) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), Open Min-Flow (EFF-4), DCS Alarm (EFF-5)\n- T6: Drive motor overload (MPR-2301 MPR pickup, 1oo1) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), DCS Alarm (EFF-5)\nSTART PERMISSIVES (AND-gate conditions to start):\n- P1: Nitrogen inerting established (O2 < 5%) (AT-2307, Gate: AND)\n- P2: Steam condensate drain open (ZSO-2304, Gate: AND)\n- P3: Lube oil to gearbox OK (PSL-2306, Gate: AND)\n- P4: No active trip / reset done (DCS reset, Gate: AND)\n- \u2014: ALL permissives TRUE \u2192 START YD-2301 ENABLED (\u2014, Gate: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-2301, Datasheet: TJC-LLD-DS-YD-2301."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "OPL-YD-2301-01",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-YD-2301-01 - Nitrogen_Inerting_Before_Steam_On.pdf",
+      "page": 1,
+      "sheet": "Nitrogen Inerting",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-5500 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-2301"
+    },
+    "chunk_id": "OPL-YD-2301-01-P01-C01",
+    "title": "One Point Lesson - Nitrogen Inerting Before Steam-On (OPL-YD-2301-01)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-YD-2301-01 - Nitrogen Inerting Before Steam-On.\n\nEquipment: YD-2301, Discipline: Process / Operations, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nReferences: Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nNitrogen inerting before steam-on for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. Polymer powder + oxygen + heat can cause a dust explosion. The dryer must be fully inerted before any steam is admitted.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Start the N2 purge and raise FT-2302 flow above 200 kg/h\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Confirm the vent O2 analyzer AT-2307 reads below 5 %\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Only then admit steam gradually via TIC-2301 / TV-2301\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Never bypass the FSLL-2302 low-flow inert trip to start faster\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: If O2 rises above 8 %, the ASHH-2307 trip will stop steam and drive\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: Scheduled proof test of dryer outlet high-high temperature trip | Cause: Set-point within tolerance, minor zero drift corrected | Action: Recalibrated TSHH-2301 to 125 degC and function tested to logic\n\nKEY LEARNING POINTS:\n- Point 1: Polymer powder + oxygen + heat can cause a dust explosion. The dryer must be fully inerted before any steam is admitted.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "OPL-YD-2301-02",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-YD-2301-02 - Gland_Packing_Replacement_PTFE_4526L.pdf",
+      "page": 1,
+      "sheet": "Gland Packing Replacement",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-5500 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-2301"
+    },
+    "chunk_id": "OPL-YD-2301-02-P01-C01",
+    "title": "One Point Lesson - Gland Packing Replacement (PTFE 4526L) (OPL-YD-2301-02)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-YD-2301-02 - Gland Packing Replacement (PTFE 4526L).\n\nEquipment: YD-2301, Discipline: Mechanical, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nReferences: Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nGland packing replacement (ptfe 4526l) for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. Worn gland packing lets powder and steam leak at the drum ends. This is the most frequent YD-2301 maintenance job and a housekeeping/safety issue.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Isolate steam and N2, drain condensate, and LOTO the drive\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Remove the old PTFE rings (8 pcs 4526L at discharge, 2 pcs 4505L at feed)\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Fit new rings one at a time, staggering the joints by 90 deg\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Tighten the gland follower evenly - snug only, never over-torque\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Warm through slowly and re-check for leaks, re-nip after 24 h\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: SSLL-2305 speed low alarm, chain slack observed | Cause: Chain elongation with normal wear caused slip | Action: Adjusted take-up, lubricated chain, checked sprocket wear\n\nKEY LEARNING POINTS:\n- Point 1: Worn gland packing lets powder and steam leak at the drum ends. This is the most frequent YD-2301 maintenance job and a housekeeping/safety issue.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "OPL-YD-2301-03",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-YD-2301-03 - Chain_Sprocket_Lubrication_and_Tension_S.pdf",
+      "page": 1,
+      "sheet": "Chain & Sprocket",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-5500 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-2301"
+    },
+    "chunk_id": "OPL-YD-2301-03-P01-C01",
+    "title": "One Point Lesson - Chain & Sprocket Lubrication and Tension Check (OPL-YD-2301-03)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-YD-2301-03 - Chain & Sprocket Lubrication and Tension Check.\n\nEquipment: YD-2301, Discipline: Mechanical, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nReferences: Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nChain & sprocket lubrication and tension check for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. A dry or slack drive chain slips and drops the drum speed, tripping SSLL-2305 and stopping drying.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Stop the drive motor, apply LOTO and remove the chain guard\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Check chain mid-span slack - target 15-25 mm deflection\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Apply high-temp drive chain lubricant evenly across the links\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Inspect SCM440 sprocket teeth for hooking or wear marks\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Re-fit chain guard, remove LOTO, test-run and monitor SS-2305 speed\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: SSLL-2305 speed low alarm, chain slack observed | Cause: Chain elongation with normal wear caused slip | Action: Adjusted take-up, lubricated chain, checked sprocket wear\n\nKEY LEARNING POINTS:\n- Point 1: A dry or slack drive chain slips and drops the drum speed, tripping SSLL-2305 and stopping drying.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "OPL-YD-2301-04",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-YD-2301-04 - Controlled_Temperature_Ramp_Up_Procedure.pdf",
+      "page": 1,
+      "sheet": "Temperature Ramp-Up Procedure",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-5500 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-2301"
+    },
+    "chunk_id": "OPL-YD-2301-04-P01-C01",
+    "title": "One Point Lesson - Controlled Temperature Ramp-Up Procedure (OPL-YD-2301-04)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-YD-2301-04 - Controlled Temperature Ramp-Up Procedure.\n\nEquipment: YD-2301, Discipline: Process / Operations, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nReferences: Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nControlled temperature ramp-up procedure for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. Heating the drum too quickly warps the shell and cracks the steam tubes, causing tube leaks and long downtime.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Ramp TIC-2301 at a maximum of 10 degC per 10 minutes\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Hold at 60 degC to let the drum warm through evenly\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Watch drum thermal growth at the trunnion supports\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Reach the 95-110 degC operating band slowly\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: If uneven expansion / rubbing is heard, pause the ramp\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: Scheduled proof test of dryer outlet high-high temperature trip | Cause: Set-point within tolerance, minor zero drift corrected | Action: Recalibrated TSHH-2301 to 125 degC and function tested to logic\n\nKEY LEARNING POINTS:\n- Point 1: Heating the drum too quickly warps the shell and cracks the steam tubes, causing tube leaks and long downtime.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "OPL-YD-2301-05",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-YD-2301-05 - Rotary_Joint_Steam_Leak_Handling_Kadant.pdf",
+      "page": 1,
+      "sheet": "Rotary Joint Steam Leak",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-5500 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-2301"
+    },
+    "chunk_id": "OPL-YD-2301-05-P01-C01",
+    "title": "One Point Lesson - Rotary Joint Steam Leak Handling (Kadant) (OPL-YD-2301-05)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-YD-2301-05 - Rotary Joint Steam Leak Handling (Kadant).\n\nEquipment: YD-2301, Discipline: Mechanical, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nReferences: Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nRotary joint steam leak handling (kadant) for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. The Kadant rotary joint seal wears and leaks live steam at the drum head, a burn hazard and steam loss.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Identify the leak at the rotary joint carbon seal face\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Reduce steam and plan an isolation window with operations\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Replace the rotary joint seal kit and inspect the nipple\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Check the O-ring (NBR) and the joint-to-shaft alignment\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Leak test on steam-up before returning the dryer to service\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: SSLL-2305 speed low alarm, chain slack observed | Cause: Chain elongation with normal wear caused slip | Action: Adjusted take-up, lubricated chain, checked sprocket wear\n\nKEY LEARNING POINTS:\n- Point 1: The Kadant rotary joint seal wears and leaks live steam at the drum head, a burn hazard and steam loss.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "OPL-YD-2301-06",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-YD-2301-06 - Outlet_Moisture_Control_Retention_Time_M.pdf",
+      "page": 1,
+      "sheet": "Moisture Control & Retention",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-5500 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-2301"
+    },
+    "chunk_id": "OPL-YD-2301-06-P01-C01",
+    "title": "One Point Lesson - Outlet Moisture Control & Retention Time (MT-2306) (OPL-YD-2301-06)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-YD-2301-06 - Outlet Moisture Control & Retention Time (MT-2306).\n\nEquipment: YD-2301, Discipline: Process / Operations, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nReferences: Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nOutlet moisture control & retention time (mt-2306) for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. The product specification is below 300 ppm moisture. Rising outlet moisture means lost drying and off-spec powder.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Read the MT-2306 outlet moisture every shift\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: If moisture rises above 300 ppm, check steam pressure PT-2304 first\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Verify drum speed and hence retention time is correct\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Cross-check against the daily lab moisture sample\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Adjust feed rate or steam to bring moisture back in spec\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: Scheduled proof test of dryer outlet high-high temperature trip | Cause: Set-point within tolerance, minor zero drift corrected | Action: Recalibrated TSHH-2301 to 125 degC and function tested to logic\n\nKEY LEARNING POINTS:\n- Point 1: The product specification is below 300 ppm moisture. Rising outlet moisture means lost drying and off-spec powder.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "OPL-YD-2301-07",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-YD-2301-07 - Trunnion_Bearing_Inspection_Drum_Float.pdf",
+      "page": 1,
+      "sheet": "Trunnion Bearing & Drum Float",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-5500 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-2301"
+    },
+    "chunk_id": "OPL-YD-2301-07-P01-C01",
+    "title": "One Point Lesson - Trunnion Bearing Inspection & Drum Float (OPL-YD-2301-07)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-YD-2301-07 - Trunnion Bearing Inspection & Drum Float.\n\nEquipment: YD-2301, Discipline: Mechanical, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nReferences: Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nTrunnion bearing inspection & drum float for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. The support trunnions carry the full drum weight; worn rollers cause vibration and mis-tracking of the drum.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Do a listening / vibration check on both trunnions each round\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Grease the trunnion bearings on the scheduled route\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Check the drum axial float stays within 5 mm\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Inspect the thrust roller for wear and correct tracking\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Report any drum wobble or unusual thrust to reliability\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: SSLL-2305 speed low alarm, chain slack observed | Cause: Chain elongation with normal wear caused slip | Action: Adjusted take-up, lubricated chain, checked sprocket wear\n\nKEY LEARNING POINTS:\n- Point 1: The support trunnions carry the full drum weight; worn rollers cause vibration and mis-tracking of the drum.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_instruments": 18
+    },
+    "chunk_id": "TJC-LLD-PID-2301-P01-C01",
+    "title": "Piping & Instrumentation Diagram Register - YD-2301",
+    "equipment_type": null,
+    "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: YD-2301 (POLYMER FLUID BED DRYER).\nDocument No: TJC-LLD-PID-2301, Revision: N/A, Status: Issued for Operation.\nArea: 2300 \u2013 POWDER DRYING SYSTEM, Functional Location: TJC-LLD-2300-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- TSHH-2301: Outlet temperature HIGH-HIGH (Temperature Switch) [Setpoint: > 125 degC]. Function: Trip initiator T1 \u2192 SEQ-5500. Location: Powder outlet line\n- FSLL-2302: Nitrogen purge flow LOW-LOW (Flow Switch) [Setpoint: < 200 kg/h]. Function: Trip initiator T2 \u2192 SEQ-5500. Location: N2 purge line\n- LSHH-2303: Inlet chute level HIGH-HIGH (Level Switch) [Setpoint: > 90 %]. Function: Trip initiator T3 \u2192 SEQ-5500. Location: Powder inlet chute\n- SSLL-2305: Drum speed LOW-LOW (chain slip) (Speed Switch) [Setpoint: < 1 rpm]. Function: Trip initiator T4 \u2192 SEQ-5500. Location: Drum drive / sprocket\n- ASHH-2307: Vent O2 HIGH-HIGH (Analyzer Switch) [Setpoint: > 8 % O2]. Function: Trip initiator T5 \u2192 SEQ-5500. Location: Vent line\n- MPR-2301: Drive motor overload (Protection Relay) [Setpoint: MPR relay ]. Function: Trip initiator T6 (overload/electrical fault). Location: Motor MCC\n- TV-2301: Steam Inlet Valve (Control Valve) [Setpoint: CLOSED ]. Function: EFF-2: Close on trip; stop heat. Location: Steam inlet line\n- FV-2302: N2 Purge Valve (Control Valve) [Setpoint: OPEN ]. Function: EFF-4: Open on trip; max inert. Location: N2 purge line\n- XV-2210: Centrifuge Feed Isolation Valve (On/Off Valve) [Setpoint: CLOSED ]. Function: EFF-3: Trip centrifuge feed to stop powder. Location: Powder inlet line\n- GF-2210: Centrifuge Feed Unit (Pump / Motor) [Setpoint: STOP ]. Function: EFF-3: Trip centrifuge feed. Location: Centrifuge\n- AT-2307: Vent O2 Analyzer (Analyzer Transmitter) [Setpoint: < 5 % O2]. Function: Start permissive P1 (Inerting established). Location: Vent line\n- ZSO-2304: Steam Condensate Drain Position (Open) (Limit Switch) [Setpoint: OPEN ]. Function: Start permissive P2. Location: Condensate drain\n- PSL-2306: Gearbox Lube Oil Pressure LOW (Pressure Switch) [Setpoint: OK ]. Function: Start permissive P3 (Lube oil OK). Location: Gearbox lube oil\n- TIC-2301: Temperature Controller (Temp Controller). Function: Control steam ramp-up via TV-2301. Location: DCS\n- FT-2302: Nitrogen Purge Flow Transmitter (Flow Transmitter). Function: Flow measurement for N2. Location: N2 purge line\n- PT-2304: Steam Pressure Transmitter (Pressure Transmitter). Function: Steam pressure monitoring. Location: Steam inlet line\n- MT-2306: Outlet Moisture Transmitter (Moisture Analyzer) [Setpoint: 300 ppm]. Function: Monitor outlet moisture. Location: Powder outlet line\n- HS-2301: Emergency Stop Hand Switch (Hand Switch) [Setpoint: Manual ]. Function: Local/DCS emergency stop. Location: Local control station\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-YD-2301, Interlock: SEQ-5500."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {
+      "total_nearby_equipment": 8
+    },
+    "chunk_id": "PP-YD-2301-P01-C01",
+    "title": "Plot Plan & Location Data - YD-2301",
+    "equipment_type": null,
+    "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: YD-2301 (POLYMER FLUID BED DRYER).\nDocument No: PP-YD-2301, Revision: Rev.00, Status: Issued for Construction.\nArea: 2300 \u2013 Polymer Separation & Drying, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: YD-2301; equipment_name: POLYMER FLUID BED DRYER; area: 2300 \u2013 Polymer Separation & Drying; functional_location: TJC-LLD-2300-01; grid_reference: B-5; elevation: +6.00 m; footprint: 4.0 x 9.5 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A: Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501: Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601: Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701: Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+  }
+]

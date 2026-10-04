@@ -1,20 +1,20 @@
 {
   "equipment": "GA-1201A",
-  "source_directory": "GA-1201A HEXANE FEED PUMP",
-  "total_objects": 148,
-  "valid_objects": 148,
+  "source_directory": "C:\\Users\\AryoBama\\Lomba\\CALIBER\\manufacturing-knowledge-hub\\data\\raw\\GA-1201A",
+  "total_objects": 120,
+  "valid_objects": 120,
   "invalid_objects": 0,
   "validation_passed": true,
   "by_type": {
-    "document_chunks": 13,
+    "document_chunks": 11,
     "technical_records": 55,
-    "maintenance_records": 52,
+    "maintenance_records": 26,
     "relationships": 28
   },
   "maintenance_semantics": {
-    "total_events": 52,
-    "actual_failures_or_breakdowns": 7,
-    "routine_preventive_or_tests": 45
+    "total_events": 26,
+    "actual_failures_or_breakdowns": 1,
+    "routine_preventive_or_tests": 25
   },
   "unmapped_technical_parameters": [
     "Area Classification",
@@ -52,7 +52,7 @@
     "notes"
   ],
   "warnings": [
-    "90 object(s) lack formal revision in source (preserved as null without inferring)"
+    "64 object(s) lack formal revision in source (preserved as null without inferring)"
   ],
   "validation_errors": []
 }

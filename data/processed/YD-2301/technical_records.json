@@ -1,0 +1,1292 @@
+[
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-001",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Dryer Type",
+    "value": "ROTARY STEAM-TUBE, INDIRECT",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Dryer Type"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-002",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Drum Diameter",
+    "value": 1800,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Drum Diameter"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-003",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Drum Length",
+    "value": 9000,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Drum Length"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-004",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Rotation Speed",
+    "value": 4,
+    "unit": "rpm",
+    "canonical_field": null,
+    "source_label": "Rotation Speed"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-005",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Heating Medium",
+    "value": "LP STEAM 4.5 barg",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Heating Medium"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-006",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Inert Medium",
+    "value": "NITROGEN",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Inert Medium"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-007",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Design Temp.",
+    "value": 150,
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Design Temp."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-008",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Operating Temp.",
+    "value": "95-110",
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Operating Temp."
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-009",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Body Material",
+    "value": "SM400B",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Body Material"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-010",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Rotor Shaft",
+    "value": "SM400B / SS400",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Rotor Shaft"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-011",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Gland Packing",
+    "value": "PTFE (PILLER 4526L)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Gland Packing"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-012",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Oil Seal",
+    "value": "NBR",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Oil Seal"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-013",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "O-Ring",
+    "value": "NBR",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "O-Ring"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-014",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Rotary Joint",
+    "value": "ASSEMBLY, KADANT",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Rotary Joint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-015",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Drive",
+    "value": "CHAIN & SPROCKET SCM440",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Drive"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-016",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Output",
+    "value": 22,
+    "unit": "kW",
+    "canonical_field": null,
+    "source_label": "Output"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-017",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Poles",
+    "value": "4 POLE",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Poles"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-018",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Speed",
+    "value": 1450,
+    "unit": "rpm",
+    "canonical_field": "motor_speed",
+    "source_label": "Speed"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-019",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Voltage",
+    "value": "380 V / 3 Ph / 50 Hz",
+    "unit": "V",
+    "canonical_field": "motor_voltage",
+    "source_label": "Voltage"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-020",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Rated Current",
+    "value": 43,
+    "unit": "A",
+    "canonical_field": "rated_current",
+    "source_label": "Rated Current"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-021",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Insulation Class",
+    "value": "F",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Insulation Class"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-022",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Enclosure",
+    "value": "TEFC IP55",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Enclosure"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-023",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Area Classification",
+    "value": "ZONE 2, IIA T3",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Area Classification"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-024",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Ex Protection",
+    "value": "Ex nA IIC T3 Gc",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Ex Protection"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-025",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Frame",
+    "value": "IEC 180L",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Frame"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-026",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Weight (Motor+Gearbox)",
+    "value": 833,
+    "unit": "kg",
+    "canonical_field": null,
+    "source_label": "Weight (Motor+Gearbox)"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-DS-YD-2301",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - YD-2301.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Rotary Steam-Tube Dryer",
+      "functional_location": "TJC-LLD-2300-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-YD-2301-027",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Driver Type",
+    "value": "Electric Motor via Chain-Sprocket, TEFC",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Driver Type"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TSHH-2301",
+      "instrument_type": "Temperature Switch",
+      "instrument_description": "Outlet temperature HIGH-HIGH",
+      "function": "Trip initiator T1 \u2192 SEQ-5500"
+    },
+    "record_id": "TR-TSHH-2301-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TSHH-2301 Setpoint",
+    "value": "> 125",
+    "unit": "degC",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Outlet temperature HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FSLL-2302",
+      "instrument_type": "Flow Switch",
+      "instrument_description": "Nitrogen purge flow LOW-LOW",
+      "function": "Trip initiator T2 \u2192 SEQ-5500"
+    },
+    "record_id": "TR-FSLL-2302-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FSLL-2302 Setpoint",
+    "value": "< 200",
+    "unit": "kg/h",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Nitrogen purge flow LOW-LOW Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "LSHH-2303",
+      "instrument_type": "Level Switch",
+      "instrument_description": "Inlet chute level HIGH-HIGH",
+      "function": "Trip initiator T3 \u2192 SEQ-5500"
+    },
+    "record_id": "TR-LSHH-2303-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "LSHH-2303 Setpoint",
+    "value": "> 90",
+    "unit": "%",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Inlet chute level HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "SSLL-2305",
+      "instrument_type": "Speed Switch",
+      "instrument_description": "Drum speed LOW-LOW (chain slip)",
+      "function": "Trip initiator T4 \u2192 SEQ-5500"
+    },
+    "record_id": "TR-SSLL-2305-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "SSLL-2305 Setpoint",
+    "value": "< 1",
+    "unit": "rpm",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Drum speed LOW-LOW (chain slip) Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "ASHH-2307",
+      "instrument_type": "Analyzer Switch",
+      "instrument_description": "Vent O2 HIGH-HIGH",
+      "function": "Trip initiator T5 \u2192 SEQ-5500"
+    },
+    "record_id": "TR-ASHH-2307-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "ASHH-2307 Setpoint",
+    "value": "> 8",
+    "unit": "% O2",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Vent O2 HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "MPR-2301",
+      "instrument_type": "Protection Relay",
+      "instrument_description": "Drive motor overload",
+      "function": "Trip initiator T6 (overload/electrical fault)"
+    },
+    "record_id": "TR-MPR-2301-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "MPR-2301 Setpoint",
+    "value": "MPR relay",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Drive motor overload Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TV-2301",
+      "instrument_type": "Control Valve",
+      "instrument_description": "Steam Inlet Valve",
+      "function": "EFF-2: Close on trip; stop heat"
+    },
+    "record_id": "TR-TV-2301-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TV-2301 Setpoint",
+    "value": "CLOSED",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Steam Inlet Valve Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FV-2302",
+      "instrument_type": "Control Valve",
+      "instrument_description": "N2 Purge Valve",
+      "function": "EFF-4: Open on trip; max inert"
+    },
+    "record_id": "TR-FV-2302-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FV-2302 Setpoint",
+    "value": "OPEN",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "N2 Purge Valve Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "XV-2210",
+      "instrument_type": "On/Off Valve",
+      "instrument_description": "Centrifuge Feed Isolation Valve",
+      "function": "EFF-3: Trip centrifuge feed to stop powder"
+    },
+    "record_id": "TR-XV-2210-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "XV-2210 Setpoint",
+    "value": "CLOSED",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Centrifuge Feed Isolation Valve Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "GF-2210",
+      "instrument_type": "Pump / Motor",
+      "instrument_description": "Centrifuge Feed Unit",
+      "function": "EFF-3: Trip centrifuge feed"
+    },
+    "record_id": "TR-GF-2210-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "GF-2210 Setpoint",
+    "value": "STOP",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Centrifuge Feed Unit Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "AT-2307",
+      "instrument_type": "Analyzer Transmitter",
+      "instrument_description": "Vent O2 Analyzer",
+      "function": "Start permissive P1 (Inerting established)"
+    },
+    "record_id": "TR-AT-2307-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "AT-2307 Setpoint",
+    "value": "< 5",
+    "unit": "% O2",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Vent O2 Analyzer Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "ZSO-2304",
+      "instrument_type": "Limit Switch",
+      "instrument_description": "Steam Condensate Drain Position (Open)",
+      "function": "Start permissive P2"
+    },
+    "record_id": "TR-ZSO-2304-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "ZSO-2304 Setpoint",
+    "value": "OPEN",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Steam Condensate Drain Position (Open) Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSL-2306",
+      "instrument_type": "Pressure Switch",
+      "instrument_description": "Gearbox Lube Oil Pressure LOW",
+      "function": "Start permissive P3 (Lube oil OK)"
+    },
+    "record_id": "TR-PSL-2306-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSL-2306 Setpoint",
+    "value": "OK",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Gearbox Lube Oil Pressure LOW Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "MT-2306",
+      "instrument_type": "Moisture Analyzer",
+      "instrument_description": "Outlet Moisture Transmitter",
+      "function": "Monitor outlet moisture"
+    },
+    "record_id": "TR-MT-2306-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "MT-2306 Setpoint",
+    "value": "300",
+    "unit": "ppm",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Outlet Moisture Transmitter Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "TJC-LLD-PID-2301",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set_02.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "HS-2301",
+      "instrument_type": "Hand Switch",
+      "instrument_description": "Emergency Stop Hand Switch",
+      "function": "Local/DCS emergency stop"
+    },
+    "record_id": "TR-HS-2301-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "HS-2301 Setpoint",
+    "value": "Manual",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Emergency Stop Hand Switch Setpoint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-EQUIPMENT_TAG",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_tag",
+    "value": "YD-2301",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_tag"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-EQUIPMENT_NAME",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_name",
+    "value": "POLYMER FLUID BED DRYER",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_name"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-AREA",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "area",
+    "value": "2300 \u2013 Polymer Separation & Drying",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "area"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-FUNCTIONAL_LOCATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "functional_location",
+    "value": "TJC-LLD-2300-01",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "functional_location"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-GRID_REFERENCE",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "grid_reference",
+    "value": "B-5",
+    "unit": null,
+    "canonical_field": "grid_reference",
+    "source_label": "grid_reference"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-ELEVATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "elevation",
+    "value": "+6.00",
+    "unit": "m",
+    "canonical_field": "elevation",
+    "source_label": "elevation"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-FOOTPRINT",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "footprint",
+    "value": "4.0 x 9.5",
+    "unit": "m (approx)",
+    "canonical_field": null,
+    "source_label": "footprint"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-COORDINATE_SYSTEM",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "coordinate_system",
+    "value": "Plant Grid (E/N)",
+    "unit": "metres",
+    "canonical_field": null,
+    "source_label": "coordinate_system"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-ACCESS_ROAD",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "access_road",
+    "value": "Road 6m",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "access_road"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-MAIN_PIPE_RACK",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "main_pipe_rack",
+    "value": "Main Pipe Rack shown",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "main_pipe_rack"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-HAZARDOUS_AREA_REF",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "hazardous_area_ref",
+    "value": "WPN-MAT-001",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "hazardous_area_ref"
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "PP-YD-2301",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - YD-2301.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-YD-2301-NOTES",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "notes",
+    "value": "Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "notes"
+  }
+]

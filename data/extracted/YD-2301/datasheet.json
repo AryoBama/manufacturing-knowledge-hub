@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "YD-2301",
+  "document_id": "TJC-LLD-DS-YD-2301",
+  "document_type": "DATASHEET",
+  "source": {
+    "file_name": "Equipment Datasheet - YD-2301.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-DS-YD-2301-P01-C01",
+  "title": "Equipment Datasheet - POLYMER FLUID BED DRYER (YD-2301)",
+  "equipment_type": null,
+  "content": "EQUIPMENT DATASHEET: YD-2301 (POLYMER FLUID BED DRYER).\nDocument No: TJC-LLD-DS-YD-2301, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Rotary Steam-Tube Dryer.\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 2300 \u2013 Polymer Separation & Drying.\nFunctional Location: TJC-LLD-2300-01, Criticality: High Critical.\nService: Drying of LLDPE polymer powder from centrifuge to < 300 ppm moisture.\nMECHANICAL SPECIFICATIONS:\nDryer Type: ROTARY STEAM-TUBE, INDIRECT; Drum Diameter: 1800 mm; Drum Length: 9000 mm; Rotation Speed: 4 rpm; Heating Medium: LP STEAM 4.5 barg; Inert Medium: NITROGEN; Design Temp.: 150 degC; Operating Temp.: 95-110 degC; Body Material: SM400B; Rotor Shaft: SM400B / SS400; Gland Packing: PTFE (PILLER 4526L); Oil Seal: NBR; O-Ring: NBR; Rotary Joint: ASSEMBLY, KADANT; Drive: CHAIN & SPROCKET SCM440\nMOTOR & ELECTRICAL SPECIFICATIONS:\nOutput: 22 kW; Poles: 4 POLE; Speed: 1450 rpm; Voltage: 380 V / 3 Ph / 50 Hz; Rated Current: 43 A; Insulation Class: F; Enclosure: TEFC IP55; Area Classification: ZONE 2, IIA T3; Ex Protection: Ex nA IIC T3 Gc; Frame: IEC 180L; Weight (Motor+Gearbox): 833 kg; Driver Type: Electric Motor via Chain-Sprocket, TEFC\nCROSS REFERENCES: P&ID: TJC-LLD-PID-2301, Interlock: SEQ-5500."
+}

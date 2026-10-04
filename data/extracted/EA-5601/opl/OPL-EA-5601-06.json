@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "EA-5601",
+  "document_id": "OPL-EA-5601-06",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-EA-5601-06-P01-C01",
+  "title": "One Point Lesson - Fouling Trend & Cleaning Schedule (PDT-5605) (OPL-EA-5601-06)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-EA-5601-06 - Fouling Trend & Cleaning Schedule (PDT-5605).\n\nEquipment: EA-5601 (SOLVENT HEATER), Discipline: Instrument, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nRelated Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains fouling trend & cleaning schedule (pdt-5605) for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Trending the tube-side differential pressure predicts when cleaning is due before the duty is lost. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Log PDT-5605 differential pressure weekly\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Note the PDAH-5605 fouling alarm at 0.7 bar dP\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Correlate rising dP with any outlet-temperature shortfall\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Plan cleaning before the duty loss becomes critical\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Feed the trend into the exchanger cleaning program\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Outlet temperature hunting around set-point | Likely Cause: Steam valve TV-5602 loop poorly tuned | Action: Retuned TIC-5602 PID, verified stable control\n- Symptom: Erratic tube dP reading | Likely Cause: Impulse lines plugged with fines | Action: Cleaned and re-zeroed PDT-5605 transmitter\n- Symptom: Cracked gauge glass on condensate pot | Likely Cause: Thermal/mechanical stress on glass | Action: Replaced LG-5606 gauge glass and seals\n\nKEY LEARNING POINTS:\n- Point 1: Trending the tube-side differential pressure predicts when cleaning is due before the duty is lost.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

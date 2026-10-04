@@ -1,0 +1,626 @@
+[
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560614",
+    "date": "2024-06-09",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560545",
+    "date": "2024-07-16",
+    "failure_occurred": true,
+    "failure_mode": "Hexane weeping at LV-6701 stem packing",
+    "symptom": "Hexane weeping at LV-6701 stem packing",
+    "root_cause": "PTFE V-ring packing worn",
+    "corrective_action": "Renewed PTFE V-ring packing set, re-torqued gland",
+    "downtime_hours": 4.0,
+    "parts_replaced": [
+      "PTFE V-ring packing set"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560576",
+    "date": "2024-07-20",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560604",
+    "date": "2024-07-22",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560582",
+    "date": "2024-09-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560590",
+    "date": "2024-09-17",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560536",
+    "date": "2024-11-13",
+    "failure_occurred": true,
+    "failure_mode": "Unspecified",
+    "symptom": "Manual handwheel jack on LV-6701 seized",
+    "root_cause": "Corrosion in handwheel thread",
+    "corrective_action": "Overhauled handwheel assembly, greased thread",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Handwheel assembly"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560548",
+    "date": "2024-12-01",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled air set maintenance",
+    "root_cause": "Filter element dirty",
+    "corrective_action": "Replaced filter regulator element, drained bowl",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Filter regulator element"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560552",
+    "date": "2024-12-16",
+    "failure_occurred": true,
+    "failure_mode": "Continuous air leak, valve drifting closed",
+    "symptom": "Continuous air leak, valve drifting closed",
+    "root_cause": "Fisher 667 diaphragm ruptured",
+    "corrective_action": "Replaced actuator diaphragm, re-benched, recalibrated",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "Fisher 667 diaphragm"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560573",
+    "date": "2024-12-20",
+    "failure_occurred": true,
+    "failure_mode": "Minor weep at body/bonnet joint",
+    "symptom": "Minor weep at body/bonnet joint",
+    "root_cause": "Spiral-wound body gasket relaxed",
+    "corrective_action": "Renewed body gasket, torqued bonnet bolts",
+    "downtime_hours": 4.0,
+    "parts_replaced": [
+      "SW body gasket"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560530",
+    "date": "2025-01-06",
+    "failure_occurred": true,
+    "failure_mode": "LV-6701 not responding to LIC-6701, level control lost",
+    "symptom": "LV-6701 not responding to LIC-6701, level control lost",
+    "root_cause": "Stem seized in PTFE packing (over-tightened + fines)",
+    "corrective_action": "Freed stem, renewed packing, lubricated, re-stroked and calibrated",
+    "downtime_hours": 5.0,
+    "parts_replaced": [
+      "PTFE V-ring packing set"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560564",
+    "date": "2025-01-21",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "LV-6701 isolation for planned maintenance",
+    "root_cause": "Planned - bypass used to hold level",
+    "corrective_action": "Lined up HV-6701 manual bypass, isolated LV-6701 safely",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560600",
+    "date": "2025-02-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560628",
+    "date": "2025-03-07",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-6701",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560566",
+    "date": "2025-03-12",
+    "failure_occurred": true,
+    "failure_mode": "Unspecified",
+    "symptom": "LV-6701 passing when closed (Class IV exceeded)",
+    "root_cause": "Seat/plug erosion from polymer bottoms",
+    "corrective_action": "Lapped seat and plug, restored Class IV shut-off",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Lapping compound"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560542",
+    "date": "2025-05-26",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Positioner giving position error after drift",
+    "root_cause": "Positioner feedback out of calibration",
+    "corrective_action": "Recalibrated DVC6200, updated firmware, verified travel",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560558",
+    "date": "2025-06-02",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Proof test of separator high-high level trip",
+    "root_cause": "Within tolerance",
+    "corrective_action": "Recalibrated LSHH-6710 and verified EFF-1 open action",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560570",
+    "date": "2025-06-18",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Position feedback mismatch on DCS",
+    "root_cause": "Limit switches out of adjustment",
+    "corrective_action": "Recalibrated open/closed limit switches",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560609",
+    "date": "2025-07-17",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560596",
+    "date": "2025-09-08",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560602",
+    "date": "2025-09-19",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560588",
+    "date": "2025-10-31",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560586",
+    "date": "2025-11-02",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560619",
+    "date": "2025-11-22",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560624",
+    "date": "2025-11-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-6701",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History (All Equipment).xlsx",
+      "page": 1,
+      "sheet": null,
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {},
+    "event_id": "NT-2024-560607",
+    "date": "2025-12-01",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "-"
+    ]
+  }
+]

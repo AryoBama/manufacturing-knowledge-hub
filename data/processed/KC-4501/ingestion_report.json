@@ -1,24 +1,59 @@
 {
   "equipment": "KC-4501",
-  "source_directory": "data\\extracted\\KC-4501",
-  "total_objects": 36,
-  "valid_objects": 36,
+  "source_directory": "C:\\Users\\AryoBama\\Lomba\\CALIBER\\manufacturing-knowledge-hub\\data\\raw\\KC-4501",
+  "total_objects": 115,
+  "valid_objects": 115,
   "invalid_objects": 0,
   "validation_passed": true,
   "by_type": {
-    "document_chunks": 3,
-    "technical_records": 6,
+    "document_chunks": 11,
+    "technical_records": 49,
     "maintenance_records": 27,
-    "relationships": 0
+    "relationships": 28
   },
   "maintenance_semantics": {
     "total_events": 27,
-    "actual_failures_or_breakdowns": 8,
-    "routine_preventive_or_tests": 19
+    "actual_failures_or_breakdowns": 2,
+    "routine_preventive_or_tests": 25
   },
-  "unmapped_technical_parameters": [],
+  "unmapped_technical_parameters": [
+    "Area Classification",
+    "Capacity (Suction)",
+    "Compressor Type",
+    "Cooling",
+    "Cylinder Material",
+    "Discharge Pressure",
+    "Discharge Temp.",
+    "Driver Type",
+    "Enclosure",
+    "Ex Protection",
+    "Frame",
+    "Gas",
+    "Insulation Class",
+    "Lube System",
+    "Output",
+    "Packing",
+    "Piston Rings",
+    "Poles",
+    "Seal Gas",
+    "Suction Pressure",
+    "Suction Temp.",
+    "Valves",
+    "Vibration Mon.",
+    "Weight (Motor)",
+    "access_road",
+    "area",
+    "coordinate_system",
+    "equipment_name",
+    "equipment_tag",
+    "footprint",
+    "functional_location",
+    "hazardous_area_ref",
+    "main_pipe_rack",
+    "notes"
+  ],
   "warnings": [
-    "27 object(s) lack formal revision in source (preserved as null without inferring)"
+    "63 object(s) lack formal revision in source (preserved as null without inferring)"
   ],
   "validation_errors": []
 }

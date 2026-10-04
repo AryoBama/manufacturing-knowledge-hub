@@ -1,0 +1,416 @@
+[
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T1",
+      "actions": [
+        "Trip Feed (EFF-1)",
+        "DCS Alarm (EFF-4)"
+      ],
+      "targets": [
+        "FA-8901",
+        "DCS"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-8901-T1",
+    "source_tag": "LSHH-8901",
+    "relationship": "triggers_trip",
+    "target_tag": "FA-8901",
+    "context": "Drum level HIGH-HIGH (Setpoint: > 85 %, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T2",
+      "actions": [
+        "Trip Pump (EFF-2)",
+        "DCS Alarm (EFF-4)"
+      ],
+      "targets": [
+        "FA-8901",
+        "DCS"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-8901-T2",
+    "source_tag": "LSLL-8901",
+    "relationship": "triggers_trip",
+    "target_tag": "FA-8901",
+    "context": "Drum level LOW-LOW (Setpoint: < 15 %, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T3",
+      "actions": [
+        "Open Min-Flow (EFF-3)",
+        "DCS Alarm (EFF-4)"
+      ],
+      "targets": [
+        "FA-8901",
+        "DCS"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-8901-T3",
+    "source_tag": "PSHH-8902",
+    "relationship": "triggers_trip",
+    "target_tag": "FA-8901",
+    "context": "Drum pressure HIGH-HIGH (Setpoint: > 8 barg, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T4",
+      "actions": [
+        "Trip Feed (EFF-1)",
+        "Trip Pump (EFF-2)",
+        "Open Min-Flow (EFF-3)",
+        "DCS Alarm (EFF-4)"
+      ],
+      "targets": [
+        "FA-8901",
+        "FA-8901",
+        "FA-8901",
+        "DCS"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-8901-T4",
+    "source_tag": "HS-8901",
+    "relationship": "triggers_trip",
+    "target_tag": "FA-8901",
+    "context": "Emergency stop (manual) (Setpoint: Manual, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P1",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-8901-P1",
+    "source_tag": "LT-8901",
+    "relationship": "permissive_for",
+    "target_tag": "FA-8901",
+    "context": "Level in normal band (20-80%) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P2",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-8901-P2",
+    "source_tag": "PT-8902",
+    "relationship": "permissive_for",
+    "target_tag": "FA-8901",
+    "context": "N2 blanket healthy (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P3",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-8901-P3",
+    "source_tag": "LT-8903",
+    "relationship": "permissive_for",
+    "target_tag": "FA-8901",
+    "context": "Boot not flooded (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Switch",
+      "related_interlock": "T1/EFF-1/EFF-4"
+    },
+    "relationship_id": "REL-PID-LSHH-8901",
+    "source_tag": "LSHH-8901",
+    "relationship": "triggers_trip",
+    "target_tag": "FA-8901",
+    "context": "Drum level HIGH-HIGH (Level Switch). Function: Cause T1 (Trip Column Feed). Location: Drum FA-8901 Level Bridle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Switch",
+      "related_interlock": "T2/EFF-2/EFF-4"
+    },
+    "relationship_id": "REL-PID-LSLL-8901",
+    "source_tag": "LSLL-8901",
+    "relationship": "triggers_trip",
+    "target_tag": "FA-8901",
+    "context": "Drum level LOW-LOW (Level Switch). Function: Cause T2 (Trip Reflux Pump GA-8920). Location: Drum FA-8901 Level Bridle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "T3/EFF-3/EFF-4"
+    },
+    "relationship_id": "REL-PID-PSHH-8902",
+    "source_tag": "PSHH-8902",
+    "relationship": "monitors",
+    "target_tag": "FA-8901",
+    "context": "Drum pressure HIGH-HIGH (Pressure Switch). Function: Cause T3 (Open Vent PCV-8905). Location: Drum FA-8901"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Hand Switch",
+      "related_interlock": "T4/EFF-1/EFF-2/EFF-3/EFF-4"
+    },
+    "relationship_id": "REL-PID-HS-8901",
+    "source_tag": "HS-8901",
+    "relationship": "monitors",
+    "target_tag": "FA-8901",
+    "context": "Manual Emergency Stop (Hand Switch). Function: Cause T4 (Manual E-Stop). Location: Local Control Station"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Transmitter",
+      "related_interlock": "P1"
+    },
+    "relationship_id": "REL-PID-LT-8901",
+    "source_tag": "LT-8901",
+    "relationship": "permissive_for",
+    "target_tag": "FA-8901",
+    "context": "Level Transmitter (Level Transmitter). Function: Permissive P1 (Level in normal band) & Control. Location: Drum FA-8901 Level Bridle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Transmitter",
+      "related_interlock": "P2"
+    },
+    "relationship_id": "REL-PID-PT-8902",
+    "source_tag": "PT-8902",
+    "relationship": "permissive_for",
+    "target_tag": "FA-8901",
+    "context": "Pressure Transmitter (Pressure Transmitter). Function: Permissive P2 (N2 blanket healthy) & Control. Location: Drum FA-8901"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Transmitter",
+      "related_interlock": "P3"
+    },
+    "relationship_id": "REL-PID-LT-8903",
+    "source_tag": "LT-8903",
+    "relationship": "permissive_for",
+    "target_tag": "FA-8901",
+    "context": "Boot Interface Level (Level Transmitter). Function: Permissive P3 (Boot not flooded) & Control. Location: Drum FA-8901 Water Boot"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "EFF-3"
+    },
+    "relationship_id": "REL-PID-PCV-8905",
+    "source_tag": "PCV-8905",
+    "relationship": "controls",
+    "target_tag": "FA-8901",
+    "context": "N2 Blanketing Split-Range Valve (Control Valve). Function: Nitrogen blanketing & Venting. Location: N2 Blanket / Vent Header"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Relief Valve",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PSV-8901",
+    "source_tag": "PSV-8901",
+    "relationship": "controls",
+    "target_tag": "FA-8901",
+    "context": "Pressure Safety Valve (Relief Valve). Function: Overpressure protection (Car-sealed open). Location: Drum FA-8901 Top Nozzle"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Hand Valve",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-HV-8904",
+    "source_tag": "HV-8904",
+    "relationship": "controls",
+    "target_tag": "FA-8901",
+    "context": "Boot Drain Valve (Hand Valve). Function: Manual boot draining. Location: Water Boot Drain Line"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Centrifugal Pump",
+      "related_interlock": "EFF-2"
+    },
+    "relationship_id": "REL-PID-GA-8920 A/B",
+    "source_tag": "GA-8920 A/B",
+    "relationship": "monitors",
+    "target_tag": "FA-8901",
+    "context": "Reflux Pump A/B (Duty/Standby) (Centrifugal Pump). Function: Memompa refluks ke kolom DA-8910. Location: Pump Skid"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "YD-2301",
+  "document_id": "OPL-YD-2301-01",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-YD-2301-01 - Nitrogen_Inerting_Before_Steam_On.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-YD-2301-01-P01-C01",
+  "title": "One Point Lesson - Nitrogen Inerting Before Steam-On (OPL-YD-2301-01)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-YD-2301-01 - Nitrogen Inerting Before Steam-On.\n\nEquipment: YD-2301 (POLYMER FLUID BED DRYER), Discipline: Process / Operations, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nRelated Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nNitrogen inerting before steam-on for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. Polymer powder + oxygen + heat can cause a dust explosion. The dryer must be fully inerted before any steam is admitted.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Start the N2 purge and raise FT-2302 flow above 200 kg/h\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Confirm the vent O2 analyzer AT-2307 reads below 5 %\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Only then admit steam gradually via TIC-2301 / TV-2301\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Never bypass the FSLL-2302 low-flow inert trip to start faster\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: If O2 rises above 8 %, the ASHH-2307 trip will stop steam and drive\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Likely Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Likely Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: Scheduled proof test of dryer outlet high-high temperature trip | Likely Cause: Set-point within tolerance, minor zero drift corrected | Action: Recalibrated TSHH-2301 to 125 degC and function tested to logic\n\nKEY LEARNING POINTS:\n- Point 1: Polymer powder + oxygen + heat can cause a dust explosion. The dryer must be fully inerted before any steam is admitted.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

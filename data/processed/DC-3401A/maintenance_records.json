@@ -1,0 +1,724 @@
+[
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 13,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560212",
+    "date": "2024-07-08",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Bed multipoint TC point 3 reading open circuit",
+    "root_cause": "Thermocouple element failed at the sheath junction",
+    "corrective_action": "Replaced TC point 3 in the multipoint assembly, verified reading and TSHH-3401 select",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "Multipoint thermocouple element (1 pt)"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 24,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560229",
+    "date": "2024-07-30",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "N2 inert valve slow / sticking during inerting step",
+    "root_cause": "Actuator seals hardened, positioner out of calibration",
+    "corrective_action": "Serviced actuator, replaced seals, recalibrated positioner",
+    "downtime_hours": 6.0,
+    "parts_replaced": [
+      "Actuator seal kit"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 26,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560235",
+    "date": "2024-08-05",
+    "failure_occurred": true,
+    "failure_mode": "Instrument Setpoint Drift",
+    "symptom": "Scheduled statutory PSV pop test",
+    "root_cause": "Set pressure drift +0.3 barg found",
+    "corrective_action": "Overhauled PSV-3401, lapped seat, re-set to 6 barg, certified",
+    "downtime_hours": 12.0,
+    "parts_replaced": [
+      "PSV soft goods kit"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 51,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560286",
+    "date": "2024-10-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 54,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560267",
+    "date": "2024-10-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 57,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560291",
+    "date": "2024-10-20",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 63,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560306",
+    "date": "2024-11-01",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 70,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560218",
+    "date": "2024-11-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "One heater bank drawing no current, slow heat-up",
+    "root_cause": "Electric heater element bank open circuit / element burnt",
+    "corrective_action": "Replaced heater element bank, meggered, verified TIC-17343 response",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Heater element bank"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 72,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560223",
+    "date": "2024-11-30",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Inerting O2 analyzer drift vs portable reference",
+    "root_cause": "Analyzer zero drift and sample dryer saturated",
+    "corrective_action": "Recalibrated AI-3401 on span gas, replaced sample dryer",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Sample dryer cartridge"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 79,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560244",
+    "date": "2024-12-14",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Reduction H2 analyzer reading unreliable",
+    "root_cause": "H2 analyzer cell at end of life",
+    "corrective_action": "Replaced H2 analyzer cell, calibrated, verified reduction tracking",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "H2 analyzer cell"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 84,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560295",
+    "date": "2024-12-26",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 91,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560313",
+    "date": "2025-01-06",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-3401",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 117,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560274",
+    "date": "2025-03-09",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 125,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560281",
+    "date": "2025-04-06",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 126,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560240",
+    "date": "2025-04-07",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "End-of-life catalyst replacement at turnaround",
+    "root_cause": "Spent Pd/Al2O3 catalyst at end of run",
+    "corrective_action": "Vacuumed out spent catalyst, inspected grids, loaded 3.2 m3 fresh catalyst",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Pd/Al2O3 catalyst 3.2 m3"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 137,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560311",
+    "date": "2025-05-03",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 144,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560263",
+    "date": "2025-05-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 145,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560288",
+    "date": "2025-05-31",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 148,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560272",
+    "date": "2025-06-11",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 156,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560317",
+    "date": "2025-07-06",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-3401",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 163,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560253",
+    "date": "2025-08-01",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Grid inspection during catalyst change window",
+    "root_cause": "Minor scale on SS304 grid, no distortion",
+    "corrective_action": "Cleaned and inspected support/hold-down grids, NDT of welds",
+    "downtime_hours": 24.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 164,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560300",
+    "date": "2025-08-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 180,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560259",
+    "date": "2025-09-24",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Proof test of carrier nitrogen low-flow trip",
+    "root_cause": "Within tolerance",
+    "corrective_action": "Recalibrated FSLL-17343 to 150 kg/h and function tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 183,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560242",
+    "date": "2025-09-29",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Nitrogen leak at bottom manway during leak test",
+    "root_cause": "Spiral-wound gasket unevenly seated",
+    "corrective_action": "Renewed SW SS316/graphite gasket, re-torqued in star pattern, leak test passed",
+    "downtime_hours": 10.0,
+    "parts_replaced": [
+      "SW SS316/graphite gasket"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 186,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560277",
+    "date": "2025-10-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 205,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560256",
+    "date": "2025-12-01",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIL-2 proof test of reduction reactor logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated TSHH/PSHH/FSLL trips, verified heater trip and H2 block",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History DC-3401A.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 208,
+      "original_tag": "DC-3401A",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560248",
+    "date": "2025-12-04",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Heater outlet temperature overshooting set-point",
+    "root_cause": "Loop tuning too aggressive after heater repair",
+    "corrective_action": "Retuned TIC-17343 PID, verified smooth ramp",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  }
+]

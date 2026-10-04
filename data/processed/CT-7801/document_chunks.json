@@ -1,0 +1,235 @@
+[
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-DS-CT-7801",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - CT-7801.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_parameters": 25
+    },
+    "chunk_id": "TJC-LLD-DS-CT-7801-P01-C01",
+    "title": "Equipment Datasheet - COOLING TOWER CELL FAN (CT-7801)",
+    "equipment_type": "Induced Draft Cooling Tower Fan",
+    "content": "EQUIPMENT DATASHEET: CT-7801 (COOLING TOWER CELL FAN).\nDocument ID: TJC-LLD-DS-CT-7801, Revision: Rev.03, Status: Issued for Operation.\nEquipment Type: Induced Draft Cooling Tower Fan.\nFunctional Location: TJC-LLD-7800-01.\nService: Induced draft cooling of circulating water for LLDPE unit.\nDesign & Mechanical - Tower Type: INDUCED DRAFT, COUNTERFLOW, CELL 1\nDesign & Mechanical - Blade Material: FRP (GRP)\nDesign & Mechanical - Fan Diameter: 7300 mm (24 ft)\nDesign & Mechanical - Drive Shaft: COMPOSITE FLOATING SHAFT\nDesign & Mechanical - Fan Type: AXIAL, 6 FRP BLADES\nDesign & Mechanical - Water Flow (Cell): 2200 m3/h\nDesign & Mechanical - Air Flow: 1,150,000 m3/h\nDesign & Mechanical - Range / Approach: 10 degC / 4 degC\nDesign & Mechanical - Fan Speed: 128 rpm\nDesign & Mechanical - Drift Eliminator: PVC CELLULAR\nDesign & Mechanical - Gearbox Ratio: 11.3 : 1 RIGHT ANGLE\nDesign & Mechanical - Fill: PVC FILM FILL\nDesign & Mechanical - Gearbox Oil: ISO VG 220 (4.5 L)\nDriver / Motor Data - Output: 55 kW\nDriver / Motor Data - Enclosure: TEFC IP56 (wet duty)\nDriver / Motor Data - Poles: 6 POLE\nDriver / Motor Data - Area Classification: NON-HAZARDOUS\nDriver / Motor Data - Speed: 970 rpm\nDriver / Motor Data - Mounting: IN-DUCT, WET\nDriver / Motor Data - Voltage: 380 V / 3 Ph / 50 Hz V\nDriver / Motor Data - Frame: IEC 250M\nDriver / Motor Data - Rated Current: 104 A\nDriver / Motor Data - Weight (Motor): 410 kg\nDriver / Motor Data - Insulation Class: F\nDriver / Motor Data - Driver Type: Electric Motor via Gearbox, TEFC"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-IL-CT-7801",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - CT-7801.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "logic_no": "SEQ-7801",
+      "sil_level": "SIL 1",
+      "total_trips": 4,
+      "total_permissives": 4
+    },
+    "chunk_id": "TJC-LLD-IL-CT-7801-P01-C01",
+    "title": "Interlock Logic & Cause Effect Matrix - CT-7801 (SEQ-7801)",
+    "equipment_type": null,
+    "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-7801 (COOLING TOWER FAN (CT-7801) SHUTDOWN LOGIC).\nDocument No: TJC-LLD-IL-CT-7801, Revision: Rev.03, Status: Issued for Operation, SIL Level: SIL 1.\nEquipment: CT-7801, Functional Location: TJC-LLD-7800-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Fan/gearbox vibration HIGH-HIGH (VSHH-7802 > 9 mm/s, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2), Start Standby Pump STANDBY (EFF-3)\n- T2: Gearbox oil temperature HIGH-HIGH (TSHH-7803 > 90 degC, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2), Start Standby Pump STANDBY (EFF-3)\n- T3: Gearbox oil pressure LOW (PSL-7807 < 0.8 barg, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2)\n- T4: Fan motor overload (MPR-7801 MPR pickup, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2), Start Standby Pump STANDBY (EFF-3)\nSTART PERMISSIVES (AND-gate conditions to start):\n- P1: Gearbox oil level OK (LG gearbox, Gate: AND)\n- P2: Basin level normal (> LSL-7804) (LT-7804, Gate: AND)\n- P3: No fan lockout / maintenance key released (lockout, Gate: AND)\n- \u2014: ALL permissives TRUE \u2192 START CT-7801 ENABLED (\u2014, Gate: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-7801, Datasheet: TJC-LLD-DS-CT-7801."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "OPL-CT-7801-01",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-CT-7801-01 - Barscreen_Cleaning_Suction_Screen.pdf",
+      "page": 1,
+      "sheet": "Barscreen Cleaning",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-7801 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-7801"
+    },
+    "chunk_id": "OPL-CT-7801-01-P01-C01",
+    "title": "One Point Lesson - Barscreen Cleaning (Suction Screen) (OPL-CT-7801-01)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-CT-7801-01 - Barscreen Cleaning (Suction Screen).\n\nEquipment: CT-7801, Discipline: Process / Operations, Area: 7800 - COOLING TOWER SYSTEM.\n\nReferences: Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains barscreen cleaning (suction screen) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. A clogged barscreen starves the circulating water pumps and fouls the fill, reducing cooling for the whole unit. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Rake the SS304 barscreen every shift on the round\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Remove leaves, debris and biological growth\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Check the differential level across the screen\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Dispose of debris correctly and log the cleaning\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Report rapid re-fouling to water treatment\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Routine barscreen cleaning on operator round | Cause: Normal debris accumulation | Action: Raked barscreen clear, checked differential level\n- Symptom: Scheduled fan gearbox oil change | Cause: Routine - oil sample acceptable | Action: Drained and refilled ISO VG 220, replaced breather\n- Symptom: VSHH-7802 vibration alarm on CT-7801 fan | Cause: Leading-edge erosion on one FRP blade caused imbalance | Action: Inspected blades, re-balanced fan, vibration normalised\n\nKEY LEARNING POINTS:\n- Point 1: A clogged barscreen starves the circulating water pumps and fouls the fill, reducing cooling for the whole unit.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "OPL-CT-7801-02",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-CT-7801-02 - Gearbox_Oil_Level_Change_ISO_VG_220.pdf",
+      "page": 1,
+      "sheet": "Gearbox Oil Level & Change",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-7801 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-7801"
+    },
+    "chunk_id": "OPL-CT-7801-02-P01-C01",
+    "title": "One Point Lesson - Gearbox Oil Level & Change (ISO VG 220) (OPL-CT-7801-02)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-CT-7801-02 - Gearbox Oil Level & Change (ISO VG 220).\n\nEquipment: CT-7801, Discipline: Mechanical, Area: 7800 - COOLING TOWER SYSTEM.\n\nReferences: Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains gearbox oil level & change (iso vg 220) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. Low or degraded gearbox oil causes overheating (TSHH-7803) and gear failure high up on the fan deck. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Check the gearbox sight-glass oil level\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Sample the oil for water contamination and metal\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Change the ISO VG 220 (4.5 L) per the schedule\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Verify the oil pressure PSL-7807 after refill\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Record the oil change and next due date\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Scheduled fan gearbox oil change | Cause: Routine - oil sample acceptable | Action: Drained and refilled ISO VG 220, replaced breather\n- Symptom: VSHH-7802 vibration alarm on CT-7801 fan | Cause: Leading-edge erosion on one FRP blade caused imbalance | Action: Inspected blades, re-balanced fan, vibration normalised\n- Symptom: TSHH-7803 gearbox oil temperature rising | Cause: Degraded oil and fouled oil cooler | Action: Changed oil, cleaned oil cooler, verified temperature\n\nKEY LEARNING POINTS:\n- Point 1: Low or degraded gearbox oil causes overheating (TSHH-7803) and gear failure high up on the fan deck.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "OPL-CT-7801-03",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-CT-7801-03 - Fan_Blade_Inspection_Balance_FRP.pdf",
+      "page": 1,
+      "sheet": "Fan Blade Inspection & Balance",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-7801 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-7801"
+    },
+    "chunk_id": "OPL-CT-7801-03-P01-C01",
+    "title": "One Point Lesson - Fan Blade Inspection & Balance (FRP) (OPL-CT-7801-03)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-CT-7801-03 - Fan Blade Inspection & Balance (FRP).\n\nEquipment: CT-7801, Discipline: Mechanical, Area: 7800 - COOLING TOWER SYSTEM.\n\nReferences: Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains fan blade inspection & balance (frp) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. A cracked or eroded FRP blade unbalances the fan and causes the VSHH-7802 vibration trip. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Lock out the fan and inspect all 6 FRP blades\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Check for cracks, leading-edge erosion and tip clearance\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Verify the blade pitch angle is uniform on all blades\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Re-balance the fan if vibration is high\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Torque the blade root bolts to specification\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Scheduled fan gearbox oil change | Cause: Routine - oil sample acceptable | Action: Drained and refilled ISO VG 220, replaced breather\n- Symptom: VSHH-7802 vibration alarm on CT-7801 fan | Cause: Leading-edge erosion on one FRP blade caused imbalance | Action: Inspected blades, re-balanced fan, vibration normalised\n- Symptom: TSHH-7803 gearbox oil temperature rising | Cause: Degraded oil and fouled oil cooler | Action: Changed oil, cleaned oil cooler, verified temperature\n\nKEY LEARNING POINTS:\n- Point 1: A cracked or eroded FRP blade unbalances the fan and causes the VSHH-7802 vibration trip.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "OPL-CT-7801-04",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-CT-7801-04 - Circulating_Water_pH_Control_AI_7805.pdf",
+      "page": 1,
+      "sheet": "Circulating Water pH",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-7801 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-7801"
+    },
+    "chunk_id": "OPL-CT-7801-04-P01-C01",
+    "title": "One Point Lesson - Circulating Water pH Control (AI-7805) (OPL-CT-7801-04)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-CT-7801-04 - Circulating Water pH Control (AI-7805).\n\nEquipment: CT-7801, Discipline: Process / Operations, Area: 7800 - COOLING TOWER SYSTEM.\n\nReferences: Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains circulating water ph control (ai-7805) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. Wrong pH causes scaling or corrosion across the entire cooling water loop, not just this cell. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Read the AI-7805 pH each shift (target 7.0-8.5)\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Check the acid / caustic dosing pumps are running\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Cross-check against a manual lab titration\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Adjust the dosing set-point as needed\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Report large pH swings to water treatment\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Routine barscreen cleaning on operator round | Cause: Normal debris accumulation | Action: Raked barscreen clear, checked differential level\n- Symptom: Scheduled fan gearbox oil change | Cause: Routine - oil sample acceptable | Action: Drained and refilled ISO VG 220, replaced breather\n- Symptom: VSHH-7802 vibration alarm on CT-7801 fan | Cause: Leading-edge erosion on one FRP blade caused imbalance | Action: Inspected blades, re-balanced fan, vibration normalised\n\nKEY LEARNING POINTS:\n- Point 1: Wrong pH causes scaling or corrosion across the entire cooling water loop, not just this cell.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "OPL-CT-7801-05",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-CT-7801-05 - Drift_Eliminator_Fill_Inspection.pdf",
+      "page": 1,
+      "sheet": "Drift Eliminator & Fill",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-7801 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-7801"
+    },
+    "chunk_id": "OPL-CT-7801-05-P01-C01",
+    "title": "One Point Lesson - Drift Eliminator & Fill Inspection (OPL-CT-7801-05)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-CT-7801-05 - Drift Eliminator & Fill Inspection.\n\nEquipment: CT-7801, Discipline: Mechanical, Area: 7800 - COOLING TOWER SYSTEM.\n\nReferences: Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains drift eliminator & fill inspection for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. Fouled or collapsed fill and drift eliminators cut the cooling performance and raise the basin temperature. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Inspect the PVC fill for scaling and collapse\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Check the drift eliminator packs are aligned\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Hose down fouled sections during a cell outage\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Report a thermal performance drop via TT-7801\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Plan fill replacement if degradation is widespread\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Scheduled fan gearbox oil change | Cause: Routine - oil sample acceptable | Action: Drained and refilled ISO VG 220, replaced breather\n- Symptom: VSHH-7802 vibration alarm on CT-7801 fan | Cause: Leading-edge erosion on one FRP blade caused imbalance | Action: Inspected blades, re-balanced fan, vibration normalised\n- Symptom: TSHH-7803 gearbox oil temperature rising | Cause: Degraded oil and fouled oil cooler | Action: Changed oil, cleaned oil cooler, verified temperature\n\nKEY LEARNING POINTS:\n- Point 1: Fouled or collapsed fill and drift eliminators cut the cooling performance and raise the basin temperature.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "OPL-CT-7801-06",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-CT-7801-06 - Gearbox_Vibration_Monitoring_VSHH_7802.pdf",
+      "page": 1,
+      "sheet": "Gearbox Vibration Monitoring",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-7801 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-7801"
+    },
+    "chunk_id": "OPL-CT-7801-06-P01-C01",
+    "title": "One Point Lesson - Gearbox Vibration Monitoring (VSHH-7802) (OPL-CT-7801-06)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-CT-7801-06 - Gearbox Vibration Monitoring (VSHH-7802).\n\nEquipment: CT-7801, Discipline: Instrument, Area: 7800 - COOLING TOWER SYSTEM.\n\nReferences: Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains gearbox vibration monitoring (vshh-7802) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. A rising vibration trend warns of gear or bearing wear before the fan trips or throws a blade. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Trend the VS-7802 reading on the PdM route\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Alarm at 6 mm/s and trip at 9 mm/s (VSHH-7802)\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Correlate the rise with gearbox oil temperature TE-7803\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Inspect the floating drive-shaft couplings\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Escalate a step-change to reliability\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Scheduled pH analyzer calibration | Cause: Electrode drift | Action: Recalibrated AI-7805 on buffer solutions, replaced electrode\n- Symptom: Blowdown conductivity reading unreliable | Cause: Conductivity cell fouled with scale | Action: Cleaned and recalibrated AI-7806 conductivity cell\n- Symptom: Routine barscreen cleaning on operator round | Cause: Normal debris accumulation | Action: Raked barscreen clear, checked differential level\n\nKEY LEARNING POINTS:\n- Point 1: A rising vibration trend warns of gear or bearing wear before the fan trips or throws a blade.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "OPL-CT-7801-07",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-CT-7801-07 - Conductivity_Blowdown_Control_AI_7806.pdf",
+      "page": 1,
+      "sheet": "Conductivity & Blowdown Control",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-7801 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-7801"
+    },
+    "chunk_id": "OPL-CT-7801-07-P01-C01",
+    "title": "One Point Lesson - Conductivity / Blowdown Control (AI-7806) (OPL-CT-7801-07)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-CT-7801-07 - Conductivity / Blowdown Control (AI-7806).\n\nEquipment: CT-7801, Discipline: Process / Operations, Area: 7800 - COOLING TOWER SYSTEM.\n\nReferences: Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains conductivity / blowdown control (ai-7806) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. High conductivity means the water is over-concentrated; automatic blowdown keeps the cycles of concentration in range. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Read the AI-7806 conductivity value\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Verify the automatic blowdown valve XV-7806 operates\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Maintain the target cycles of concentration\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Log make-up versus blowdown volumes\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Coordinate chemical dosing with water treatment\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Routine barscreen cleaning on operator round | Cause: Normal debris accumulation | Action: Raked barscreen clear, checked differential level\n- Symptom: Scheduled fan gearbox oil change | Cause: Routine - oil sample acceptable | Action: Drained and refilled ISO VG 220, replaced breather\n- Symptom: VSHH-7802 vibration alarm on CT-7801 fan | Cause: Leading-edge erosion on one FRP blade caused imbalance | Action: Inspected blades, re-balanced fan, vibration normalised\n\nKEY LEARNING POINTS:\n- Point 1: High conductivity means the water is over-concentrated; automatic blowdown keeps the cycles of concentration in range.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_instruments": 9
+    },
+    "chunk_id": "TJC-LLD-PID-7801-P01-C01",
+    "title": "Piping & Instrumentation Diagram Register - CT-7801",
+    "equipment_type": null,
+    "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: CT-7801 (COOLING TOWER CELL FAN).\nDocument No: TJC-LLD-PID-7801, Revision: N/A, Status: Issued for Operation.\nArea: 7800 \u2013 Cooling Water System, Functional Location: TJC-LLD-7800-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- VSHH-7802: Fan/gearbox vibration HIGH-HIGH (Vibration Switch) [Setpoint: > 9 mm/s]. Function: Cause T1 (Trip Fan Motor CT-7801). Location: Fan Drive Shaft / Gearbox\n- TSHH-7803: Gearbox oil temperature HIGH-HIGH (Temp Switch) [Setpoint: > 90 degC]. Function: Cause T2 (Trip Fan Motor CT-7801). Location: Fan Gearbox\n- PSL-7807: Gearbox oil pressure LOW (Pressure Switch) [Setpoint: < 0.8 barg]. Function: Cause T3 (Trip Fan Motor CT-7801). Location: Gearbox lube oil system\n- MPR-7801: Fan motor overload relay (Motor Protection) [Setpoint: MPR pickup ]. Function: Cause T4 (Trip Fan Motor CT-7801). Location: Motor MCC Panel\n- LG gearbox: Gearbox oil sight glass / level gauge (Level Gauge). Function: Permissive P1 (LG Gearbox oil level OK). Location: Fan Gearbox\n- LT-7804: Basin level transmitter (Level Transmitter) [Setpoint: > LSL-7804 ]. Function: Permissive P2 (Basin level normal). Location: Cooling Tower Basin\n- Lockout Key: Maintenance lockout switch (Hand Switch). Function: Permissive P3 (Lockout release logic). Location: Motor MCC / Field\n- AI-7805: Circulating Water pH Analyzer (Analyzer (pH)) [Setpoint: 7.0-8.5 pH]. Function: Monitoring & Dosing Control (dari OPL). Location: Cooling water return line\n- AI-7806: Conductivity Analyzer (Analyzer (Cond)). Function: Blowdown Control (dari OPL). Location: Cooling water basin/return\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-CT-7801, Interlock: SEQ-7801."
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "PP-CT-7801",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - CT-7801.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {
+      "total_nearby_equipment": 8
+    },
+    "chunk_id": "PP-CT-7801-P01-C01",
+    "title": "Plot Plan & Location Data - CT-7801",
+    "equipment_type": null,
+    "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: CT-7801 (COOLING TOWER CELL FAN).\nDocument No: PP-CT-7801, Revision: Rev.00, Status: Issued for Construction.\nArea: 7800 \u2013 Cooling Water System, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: CT-7801; equipment_name: COOLING TOWER CELL FAN; area: 7800 \u2013 Cooling Water System; functional_location: TJC-LLD-7800-01; grid_reference: G-2; elevation: +12.00 m; footprint: 5.0 x 5.0 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501 (RECYCLE GAS COMPRESSOR): Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601 (SOLVENT HEATER): Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701 (SEPARATOR LEVEL CONTROL VALVE): Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801 (COOLING TOWER CELL FAN): Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+  }
+]

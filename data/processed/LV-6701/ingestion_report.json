@@ -1,0 +1,58 @@
+{
+  "equipment": "LV-6701",
+  "source_directory": "C:\\Users\\AryoBama\\Lomba\\CALIBER\\manufacturing-knowledge-hub\\data\\raw\\LV-6701",
+  "total_objects": 93,
+  "valid_objects": 93,
+  "invalid_objects": 0,
+  "validation_passed": true,
+  "by_type": {
+    "document_chunks": 11,
+    "technical_records": 38,
+    "maintenance_records": 26,
+    "relationships": 18
+  },
+  "maintenance_semantics": {
+    "total_events": 26,
+    "actual_failures_or_breakdowns": 4,
+    "routine_preventive_or_tests": 22
+  },
+  "unmapped_technical_parameters": [
+    "Action on Air Fail",
+    "Actuator",
+    "Air Supply",
+    "Bench Set",
+    "Body Material",
+    "Body Rating",
+    "Body Size",
+    "Controller",
+    "Driver Type",
+    "Fail Action",
+    "Handwheel",
+    "Input Signal",
+    "Leakage Class",
+    "Limit Switch",
+    "Packing",
+    "Positioner",
+    "Rated CV",
+    "Service Fluid",
+    "Solenoid",
+    "Stroke",
+    "Trim Characteristic",
+    "Trim Material",
+    "Valve Type",
+    "access_road",
+    "area",
+    "coordinate_system",
+    "equipment_name",
+    "equipment_tag",
+    "footprint",
+    "functional_location",
+    "hazardous_area_ref",
+    "main_pipe_rack",
+    "notes"
+  ],
+  "warnings": [
+    "49 object(s) lack formal revision in source (preserved as null without inferring)"
+  ],
+  "validation_errors": []
+}

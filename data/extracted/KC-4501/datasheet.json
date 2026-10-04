@@ -1,53 +1,17 @@
 {
+  "equipment_tag": "KC-4501",
   "document_id": "TJC-LLD-DS-KC-4501",
   "document_type": "DATASHEET",
-  "equipment_tag": "KC-4501",
-  "equipment_name": "RECYCLE GAS COMPRESSOR",
-  "equipment_type": "Reciprocating Compressor",
-  "functional_location": "TJC-LLD-4500-01",
-  "service": "Recycle gas compression to polymerization loop",
   "source": {
     "file_name": "Equipment Datasheet - KC-4501.pdf",
     "page": 1,
-    "revision": "Rev.02",
+    "sheet": null,
+    "revision": "Rev 3",
     "status": "Issued for Operation"
   },
-  "parameters": [
-    {
-      "category": "Compressor Design",
-      "parameter": "Rated Flow",
-      "value": 2200,
-      "unit": "m3/h"
-    },
-    {
-      "category": "Compressor Design",
-      "parameter": "Differential Pressure",
-      "value": 13.5,
-      "unit": "bar"
-    },
-    {
-      "category": "Compressor Design",
-      "parameter": "Pumping Temperature",
-      "value": 65,
-      "unit": "degC"
-    },
-    {
-      "category": "Motor Driver",
-      "parameter": "Motor Power",
-      "value": 250,
-      "unit": "kW"
-    },
-    {
-      "category": "Motor Driver",
-      "parameter": "Speed",
-      "value": 740,
-      "unit": "rpm"
-    },
-    {
-      "category": "Motor Driver",
-      "parameter": "Voltage",
-      "value": 3300,
-      "unit": "V"
-    }
-  ]
+  "metadata": {},
+  "chunk_id": "TJC-LLD-DS-KC-4501-P01-C01",
+  "title": "Equipment Datasheet - RECYCLE GAS COMPRESSOR (KC-4501)",
+  "equipment_type": null,
+  "content": "EQUIPMENT DATASHEET: KC-4501 (RECYCLE GAS COMPRESSOR).\nDocument No: TJC-LLD-DS-KC-4501, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Reciprocating Compressor (2-stage).\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 4500 \u2013 Gas Recovery & Compression.\nFunctional Location: TJC-LLD-4500-01, Criticality: High Critical.\nService: Compress recycle ethylene/hexane vapour back to reactor loop.\nMECHANICAL SPECIFICATIONS:\nCompressor Type: RECIPROCATING, 2-STAGE, 2-THROW; Cylinder Material: NODULAR CAST IRON; Piston Rings: PTFE FILLED; Capacity (Suction): 1250 Nm3/h; Packing: PTFE RINGS, DISTANCE PIECE; Suction Pressure: 1.2 barg; Valves: PLATE TYPE, SS; Discharge Pressure: 12.5 barg; Lube System: FORCED FEED + FRAME SPLASH; Suction Temp.: 40 \u00b0C; Seal Gas: NITROGEN BUFFER; Discharge Temp.: 115 \u00b0C (max); Cooling: JACKET WATER + INTERCOOLER EA-4502; Gas: ETHYLENE / HEXANE / H2 MIX; Vibration Mon.: VT-4501 CROSSHEAD\nMOTOR & ELECTRICAL SPECIFICATIONS:\nDriver Type: Electric Motor, 4-pole; Output: 250 kW; Enclosure: WPII; Poles: 4 POLE; Area Classification: ZONE 2, IIB T3; Speed: 1485 rpm; Ex Protection: Ex px IIB T3; Voltage: 6000 V / 3 Ph / 50 Hz; Frame: IEC 355; Rated Current: 30 A; Weight (Motor): 1980 kg; Insulation Class: F\nCROSS REFERENCES: P&ID: TJC-LLD-PID-4501, Interlock: SEQ-4501."
 }

@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "DC-3401A",
+  "document_id": "TJC-LLD-IL-DC-3401A",
+  "document_type": "INTERLOCK",
+  "source": {
+    "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-IL-DC-3401A-P01-C01",
+  "title": "Interlock Logic & Cause Effect Matrix - DC-3401A (SEQ-3401)",
+  "equipment_type": null,
+  "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-3401 (CATALYST REDUCTION REACTOR (DC-3401A) + HEATER EA-3401 LOGIC).\nDocument No: TJC-LLD-IL-DC-3401A, Revision: Rev 3, SIL Level: SIL 2.\nEquipment: DC-3401A, Functional Location: TJC-LLD-3400-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Bed temperature HIGH-HIGH (TSHH-3401 > 230 degC, 2oo3) -> Actions: Trip (EFF-1), Close (EFF-2), Maintain (EFF-4), Annunciate (EFF-5)\n- T2: Reactor pressure HIGH-HIGH (PSHH-3404 > 5 barg, 1oo2) -> Actions: Trip (EFF-1), Close (EFF-2), Open (EFF-3), Annunciate (EFF-5)\n- T3: Outlet O2 HIGH during H2 (inerting fail) (AI-3401 > 100 ppm, 1oo1) -> Actions: Trip (EFF-1), Close (EFF-2), Annunciate (EFF-5)\n- T4: Nitrogen carrier flow LOW-LOW (FSLL-17343 < 150 kg/h, 1oo1) -> Actions: Trip (EFF-1), Close (EFF-2), Annunciate (EFF-5)\n- T5: Heater element over-temperature (EHT-3401 skin TC > 260 degC, 1oo1) -> Actions: Trip (EFF-1), Annunciate (EFF-5)\n- T6: Emergency stop (manual) (HS-3401 Manual, 1oo1) -> Actions: Trip (EFF-1), Close (EFF-2), Open (EFF-3), Annunciate (EFF-5)\nSTART PERMISSIVES (AND-gate conditions to start pump):\n- P1: O2 free / inerting done (AI-3401 < 100 ppm) (AI-3401, Gate Logic: AND)\n- P2: N2 carrier flow established (> 150 kg/h) (FT-17343, Gate Logic: AND)\n- P3: Bed homogeneous 120 degC (all TE within 15 degC) (TE-3401, Gate Logic: AND)\n- P4: No active trip / reset done (DCS reset, Gate Logic: AND)\n- \u2014: ALL permissives TRUE \u2192 START DC-3401A ENABLED (\u2014, Gate Logic: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-3401, Datasheet: TJC-LLD-DS-DC-3401A."
+}

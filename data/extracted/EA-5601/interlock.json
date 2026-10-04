@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "EA-5601",
+  "document_id": "TJC-LLD-IL-EA-5601",
+  "document_type": "INTERLOCK",
+  "source": {
+    "file_name": "Interlock Logic Diagram EA-5601.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-IL-EA-5601-P01-C01",
+  "title": "Interlock Logic & Cause Effect Matrix - EA-5601 (N/A (control loop only))",
+  "equipment_type": null,
+  "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: N/A (control loop only) (SOLVENT HEATER EA-5601 - TEMPERATURE CONTROL (no dedicated ESD trip)).\nDocument No: TJC-LLD-IL-EA-5601, Revision: Rev 3, SIL Level: N/A.\nEquipment: EA-5601, Functional Location: TJC-LLD-5600-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n\nSTART PERMISSIVES (AND-gate conditions to start pump):\n- P1: Solvent flow established (from GA-5610) (FSL upstream, Gate Logic: AND)\n- P2: Condensate trap draining (TI-5604 < steam T) (TI-5604, Gate Logic: AND)\n- \u2014: ALL permissives TRUE \u2192 START EA-5601 ENABLED (\u2014, Gate Logic: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-5601, Datasheet: TJC-LLD-DS-EA-5601."
+}

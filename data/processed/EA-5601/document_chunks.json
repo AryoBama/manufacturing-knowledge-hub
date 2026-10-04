@@ -1,0 +1,235 @@
+[
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_parameters": 24
+    },
+    "chunk_id": "TJC-LLD-DS-EA-5601-P01-C01",
+    "title": "Equipment Datasheet - SOLVENT HEATER (EA-5601)",
+    "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+    "content": "EQUIPMENT DATASHEET: EA-5601 (SOLVENT HEATER).\nDocument ID: TJC-LLD-DS-EA-5601, Revision: Rev.03, Status: Issued for Operation.\nEquipment Type: Shell & Tube Heat Exchanger (BEM).\nFunctional Location: TJC-LLD-5600-01.\nService: Heat recovered hexane solvent using MP steam before recycle.\nDesign & Mechanical - TEMA Type: BEM, HORIZONTAL\nDesign & Mechanical - Tube Length: 6000 mm\nDesign & Mechanical - No. of Tubes: 246\nDesign & Mechanical - Duty: 1.85 MW\nDesign & Mechanical - Tube Passes: 2\nDesign & Mechanical - Shell Side Fluid: MP STEAM 10 barg\nDesign & Mechanical - Tube Material: SS304L\nDesign & Mechanical - Tube Side Fluid: HEXANE SOLVENT\nDesign & Mechanical - Shell Material: SA-516 Gr.70\nDesign & Mechanical - Shell Design P/T: 13 barg / 200 degC\nDesign & Mechanical - Tubesheet: SA-516-70 + SS304 overlay\nDesign & Mechanical - Tube Design P/T: 16 barg / 200 degC\nDesign & Mechanical - Baffle: SEGMENTAL 25% CUT\nDesign & Mechanical - Tube OD x BWG: 19.05 mm x 14 BWG\nDesign & Mechanical - Gasket: SPIRAL WOUND SS316/GRAPHITE\nPerformance / Nozzle Data - Heat Transfer Area: 88 m2\nPerformance / Nozzle Data - Steam Consumption: 3100 kg/h\nPerformance / Nozzle Data - Clean U: 620 W/m2K\nPerformance / Nozzle Data - Solvent Inlet T: 45 degC\nPerformance / Nozzle Data - Service U: 480 W/m2K\nPerformance / Nozzle Data - Solvent Outlet T: 95 degC\nPerformance / Nozzle Data - Fouling (Tube): 0.00035 m2K/W\nPerformance / Nozzle Data - Pressure Drop (Tube): 0.35 bar\nDriver / Motor Data - Driver Type: None (static)"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-IL-EA-5601",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram EA-5601.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "logic_no": "N/A (control loop only)",
+      "sil_level": "N/A",
+      "total_trips": 0,
+      "total_permissives": 3
+    },
+    "chunk_id": "TJC-LLD-IL-EA-5601-P01-C01",
+    "title": "Interlock Logic & Cause Effect Matrix - EA-5601 (N/A (control loop only))",
+    "equipment_type": null,
+    "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: N/A (control loop only) (SOLVENT HEATER EA-5601 - TEMPERATURE CONTROL (no dedicated ESD trip)).\nDocument No: TJC-LLD-IL-EA-5601, Revision: Rev.03, Status: Issued for Operation, SIL Level: N/A.\nEquipment: EA-5601, Functional Location: TJC-LLD-5600-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n\nSTART PERMISSIVES (AND-gate conditions to start):\n- P1: Solvent flow established (from GA-5610) (FSL upstream, Gate: AND)\n- P2: Condensate trap draining (TI-5604 < steam T) (TI-5604, Gate: AND)\n- \u2014: ALL permissives TRUE \u2192 START EA-5601 ENABLED (\u2014, Gate: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-5601, Datasheet: TJC-LLD-DS-EA-5601."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "OPL-EA-5601-01",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-EA-5601-01 - Tube_Side_Cleaning_Hydrojetting.pdf",
+      "page": 1,
+      "sheet": "Tube Side Cleaning (Hydrojettin",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "N/A (control loop only)",
+      "pid_reference": "TJC-LLD-PID-5601"
+    },
+    "chunk_id": "OPL-EA-5601-01-P01-C01",
+    "title": "One Point Lesson - Tube Side Cleaning (Hydrojetting) (OPL-EA-5601-01)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-EA-5601-01 - Tube Side Cleaning (Hydrojetting).\n\nEquipment: EA-5601, Discipline: Mechanical, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nReferences: Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains tube side cleaning (hydrojetting) for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Hexane fouling on the tube side raises the differential pressure (PDT-5605) and cuts the heat duty, leaving cold solvent downstream. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Isolate the solvent side and purge with nitrogen, remove channel covers\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Hydrojet the 246 tubes (19.05 mm) to remove fouling\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Inspect tubes for corrosion or pitting\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Verify tube-side dP restored and no residual blockage\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Re-gasket with new SW SS316 gasket and box up to torque\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High tube dP PDT-5605, low solvent outlet temperature | Cause: Hexane fouling / polymer fines deposit on tube bores | Action: Hydrojetted 246 tubes, restored dP and duty, re-gasketed\n- Symptom: Hexane weep at channel flange | Cause: Spiral-wound channel gasket relaxed / damaged | Action: Renewed channel gasket, re-torqued in cross pattern\n- Symptom: Continuous steam at condensate, high steam use | Cause: Steam trap element failed open | Action: Replaced steam trap element, verified condensate temperature\n\nKEY LEARNING POINTS:\n- Point 1: Hexane fouling on the tube side raises the differential pressure (PDT-5605) and cuts the heat duty, leaving cold solvent downstream.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "OPL-EA-5601-02",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-EA-5601-02 - Gasket_Replacement_Flange_Box_Up.pdf",
+      "page": 1,
+      "sheet": "Gasket Replacement & Flange",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "N/A (control loop only)",
+      "pid_reference": "TJC-LLD-PID-5601"
+    },
+    "chunk_id": "OPL-EA-5601-02-P01-C01",
+    "title": "One Point Lesson - Gasket Replacement & Flange Box-Up (OPL-EA-5601-02)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-EA-5601-02 - Gasket Replacement & Flange Box-Up.\n\nEquipment: EA-5601, Discipline: Mechanical, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nReferences: Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains gasket replacement & flange box-up for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Spiral-wound gaskets are single-use; reusing one causes hexane leaks at the channel and shell flanges. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Remove the old shell and channel gaskets completely\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Clean and inspect the gasket seating faces for damage\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Fit new SW SS316/graphite gaskets, correctly centred\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Torque the flange bolts in a cross pattern in passes\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Leak test on start-up and re-torque hot if permitted\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High tube dP PDT-5605, low solvent outlet temperature | Cause: Hexane fouling / polymer fines deposit on tube bores | Action: Hydrojetted 246 tubes, restored dP and duty, re-gasketed\n- Symptom: Hexane weep at channel flange | Cause: Spiral-wound channel gasket relaxed / damaged | Action: Renewed channel gasket, re-torqued in cross pattern\n- Symptom: Continuous steam at condensate, high steam use | Cause: Steam trap element failed open | Action: Replaced steam trap element, verified condensate temperature\n\nKEY LEARNING POINTS:\n- Point 1: Spiral-wound gaskets are single-use; reusing one causes hexane leaks at the channel and shell flanges.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "OPL-EA-5601-03",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-EA-5601-03 - Steam_Trap_Health_Check.pdf",
+      "page": 1,
+      "sheet": "Steam Trap Health Check",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "N/A (control loop only)",
+      "pid_reference": "TJC-LLD-PID-5601"
+    },
+    "chunk_id": "OPL-EA-5601-03-P01-C01",
+    "title": "One Point Lesson - Steam Trap Health Check (OPL-EA-5601-03)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-EA-5601-03 - Steam Trap Health Check.\n\nEquipment: EA-5601, Discipline: Process / Operations, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nReferences: Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains steam trap health check for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. A failed steam trap either floods the shell (killing duty) or blows live steam (wasting energy); regular checks catch both. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Compare the condensate temperature TI-5604 to steam temperature\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Use ultrasonic or a listening stick to check trap operation\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: A cold trap means flooding; a continuously hot blow means leak-through\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Check the condensate pot level gauge LG-5606\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Replace the trap element or trap as required\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High tube dP PDT-5605, low solvent outlet temperature | Cause: Hexane fouling / polymer fines deposit on tube bores | Action: Hydrojetted 246 tubes, restored dP and duty, re-gasketed\n- Symptom: Hexane weep at channel flange | Cause: Spiral-wound channel gasket relaxed / damaged | Action: Renewed channel gasket, re-torqued in cross pattern\n- Symptom: Continuous steam at condensate, high steam use | Cause: Steam trap element failed open | Action: Replaced steam trap element, verified condensate temperature\n\nKEY LEARNING POINTS:\n- Point 1: A failed steam trap either floods the shell (killing duty) or blows live steam (wasting energy); regular checks catch both.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "OPL-EA-5601-04",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-EA-5601-04 - Thermal_Shock_Avoidance_on_Start_Up.pdf",
+      "page": 1,
+      "sheet": "Thermal-Shock Avoidance",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "N/A (control loop only)",
+      "pid_reference": "TJC-LLD-PID-5601"
+    },
+    "chunk_id": "OPL-EA-5601-04-P01-C01",
+    "title": "One Point Lesson - Thermal-Shock Avoidance on Start-Up (OPL-EA-5601-04)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-EA-5601-04 - Thermal-Shock Avoidance on Start-Up.\n\nEquipment: EA-5601, Discipline: Process / Operations, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nReferences: Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains thermal-shock avoidance on start-up for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Admitting steam onto a cold tube bundle too fast cracks the tube-to-tubesheet joints, causing internal leaks. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Establish solvent (tube-side) flow first\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Admit steam slowly by ramping the TV-5602 / TIC-5602 set-point\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Warm the exchanger through gradually\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Avoid sudden large steps in the outlet temperature set-point\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Watch for knocking that indicates condensate hammer\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High tube dP PDT-5605, low solvent outlet temperature | Cause: Hexane fouling / polymer fines deposit on tube bores | Action: Hydrojetted 246 tubes, restored dP and duty, re-gasketed\n- Symptom: Hexane weep at channel flange | Cause: Spiral-wound channel gasket relaxed / damaged | Action: Renewed channel gasket, re-torqued in cross pattern\n- Symptom: Continuous steam at condensate, high steam use | Cause: Steam trap element failed open | Action: Replaced steam trap element, verified condensate temperature\n\nKEY LEARNING POINTS:\n- Point 1: Admitting steam onto a cold tube bundle too fast cracks the tube-to-tubesheet joints, causing internal leaks.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "OPL-EA-5601-05",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-EA-5601-05 - Tube_Leak_Detection_Plugging.pdf",
+      "page": 1,
+      "sheet": "Tube Leak Detection & Plugging",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "N/A (control loop only)",
+      "pid_reference": "TJC-LLD-PID-5601"
+    },
+    "chunk_id": "OPL-EA-5601-05-P01-C01",
+    "title": "One Point Lesson - Tube Leak Detection & Plugging (OPL-EA-5601-05)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-EA-5601-05 - Tube Leak Detection & Plugging.\n\nEquipment: EA-5601, Discipline: Mechanical, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nReferences: Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains tube leak detection & plugging for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. A tube leak lets steam into the solvent (rising outlet temperature and water in the solvent); the leaking tube must be found and plugged. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Isolate and hydrotest the shell side to find the leak\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Bubble-test to identify the specific leaking tube\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Plug both ends of the tube with tapered plugs\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Record the plugged-tube count (maximum 5 % of tubes)\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Plan bundle replacement if the plugging limit is reached\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High tube dP PDT-5605, low solvent outlet temperature | Cause: Hexane fouling / polymer fines deposit on tube bores | Action: Hydrojetted 246 tubes, restored dP and duty, re-gasketed\n- Symptom: Hexane weep at channel flange | Cause: Spiral-wound channel gasket relaxed / damaged | Action: Renewed channel gasket, re-torqued in cross pattern\n- Symptom: Continuous steam at condensate, high steam use | Cause: Steam trap element failed open | Action: Replaced steam trap element, verified condensate temperature\n\nKEY LEARNING POINTS:\n- Point 1: A tube leak lets steam into the solvent (rising outlet temperature and water in the solvent); the leaking tube must be found and plugged.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "OPL-EA-5601-06",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605.pdf",
+      "page": 1,
+      "sheet": "Fouling Trend & Cleaning",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "N/A (control loop only)",
+      "pid_reference": "TJC-LLD-PID-5601"
+    },
+    "chunk_id": "OPL-EA-5601-06-P01-C01",
+    "title": "One Point Lesson - Fouling Trend & Cleaning Schedule (PDT-5605) (OPL-EA-5601-06)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-EA-5601-06 - Fouling Trend & Cleaning Schedule (PDT-5605).\n\nEquipment: EA-5601, Discipline: Instrument, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nReferences: Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains fouling trend & cleaning schedule (pdt-5605) for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Trending the tube-side differential pressure predicts when cleaning is due before the duty is lost. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Log PDT-5605 differential pressure weekly\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Note the PDAH-5605 fouling alarm at 0.7 bar dP\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Correlate rising dP with any outlet-temperature shortfall\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Plan cleaning before the duty loss becomes critical\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Feed the trend into the exchanger cleaning program\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Outlet temperature hunting around set-point | Cause: Steam valve TV-5602 loop poorly tuned | Action: Retuned TIC-5602 PID, verified stable control\n- Symptom: Erratic tube dP reading | Cause: Impulse lines plugged with fines | Action: Cleaned and re-zeroed PDT-5605 transmitter\n- Symptom: Cracked gauge glass on condensate pot | Cause: Thermal/mechanical stress on glass | Action: Replaced LG-5606 gauge glass and seals\n\nKEY LEARNING POINTS:\n- Point 1: Trending the tube-side differential pressure predicts when cleaning is due before the duty is lost.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "OPL-EA-5601-07",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-EA-5601-07 - PSV_5607_Testing_Car_Seal_Management.pdf",
+      "page": 1,
+      "sheet": "PSV-5607 Testing & Car-Seal ",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "N/A (control loop only)",
+      "pid_reference": "TJC-LLD-PID-5601"
+    },
+    "chunk_id": "OPL-EA-5601-07-P01-C01",
+    "title": "One Point Lesson - PSV-5607 Testing & Car-Seal Management (OPL-EA-5601-07)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-EA-5601-07 - PSV-5607 Testing & Car-Seal Management.\n\nEquipment: EA-5601, Discipline: Mechanical, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nReferences: Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains psv-5607 testing & car-seal management for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. The tube-side relief valve is the exchanger's overpressure protection and must be proven and never isolated in service. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Confirm PSV-5607 is set to 16 barg on the nameplate\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Carry out an off-line pop test per the statutory schedule\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Keep the PSV inlet/outlet isolation car-sealed open in service\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Record the test certificate and next due date\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Never block-in a live PSV without an authorised spare\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High tube dP PDT-5605, low solvent outlet temperature | Cause: Hexane fouling / polymer fines deposit on tube bores | Action: Hydrojetted 246 tubes, restored dP and duty, re-gasketed\n- Symptom: Hexane weep at channel flange | Cause: Spiral-wound channel gasket relaxed / damaged | Action: Renewed channel gasket, re-torqued in cross pattern\n- Symptom: Continuous steam at condensate, high steam use | Cause: Steam trap element failed open | Action: Replaced steam trap element, verified condensate temperature\n\nKEY LEARNING POINTS:\n- Point 1: The tube-side relief valve is the exchanger's overpressure protection and must be proven and never isolated in service.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_instruments": 15
+    },
+    "chunk_id": "TJC-LLD-PID-5601-P01-C01",
+    "title": "Piping & Instrumentation Diagram Register - EA-5601",
+    "equipment_type": null,
+    "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: EA-5601 (SOLVENT HEATER).\nDocument No: TJC-LLD-PID-5601, Revision: N/A, Status: Issued for Operation.\nArea: 5600 \u2013 Solvent Recovery System, Functional Location: TJC-LLD-5600-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- TIC-5602: Outlet Temperature Controller (Temp Controller) [Setpoint: SP 95 degC]. Function: Control Loop C1, EFF-1 (Modulate Steam Valve). Location: Hot hexane out line\n- TT-5602: Outlet Temperature Transmitter (Temp Transmitter). Function: Senses hexane temp for TIC-5602. Location: Hot hexane out line\n- TV-5602: Steam Control Valve (Control Valve) [Setpoint: Air-actuated ]. Function: Modulated by TIC-5602 (EFF-1). Location: MP steam in line\n- TCV-5602: Temp Control Valve Actuator Signal (Signal / Actuator). Function: Actuator control signal for TV-5602. Location: MP steam in line\n- PDAH-5605: Tube-side Fouling Alarm (dP Alarm) [Setpoint: > 0.7 bar]. Function: Cause A1 / EFF-2 Alarm (Fouling). Location: Solvent across exchanger\n- PDT-5605: Tube-side Diff Pressure Transmitter (dP Transmitter). Function: Sends dP signal to PDAH-5605. Location: Solvent across exchanger\n- PT-5605: Outlet Pressure Transmitter (Pressure Transmitter). Function: Pressure Monitoring. Location: Hot hexane out line\n- PSV-5607: Tube-side Relief Valve (Pressure Safety Valve) [Setpoint: 16 barg]. Function: Mechanical Relief (R1 / EFF-3). Location: Hot hexane out line\n- TI-5604: Condensate Temperature Indicator (Temp Indicator). Function: Permissive P2 / Local indication. Location: Condensate Out line\n- TT-5604: Condensate Temperature Transmitter (Temp Transmitter). Function: Condensate Temperature Monitoring. Location: Condensate Out line\n- ST-5604: Steam Trap Assembly (Steam Trap). Function: Drains condensate. Location: Condensate Out line\n- FT-5603: Steam Flow Transmitter (Flow Transmitter). Function: Steam Flow Measurement. Location: MP steam in line\n- FI-5603: Steam Flow Indicator (Flow Indicator). Function: Local/DCS Flow Indication. Location: MP steam in line\n- FI-5601: Hexane Flow Indicator (Flow Indicator). Function: Local/DCS Flow Indication. Location: Cold hexane in line\n- FSL upstream: Solvent Flow Switch (dari GA-5610) (Flow Switch). Function: Permissive P1 (Flow Established). Location: Cold hexane in line\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-EA-5601, Interlock: N/A (control loop only)."
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {
+      "total_nearby_equipment": 8
+    },
+    "chunk_id": "PP-EA-5601-P01-C01",
+    "title": "Plot Plan & Location Data - EA-5601",
+    "equipment_type": null,
+    "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: EA-5601 (SOLVENT HEATER).\nDocument No: PP-EA-5601, Revision: Rev.00, Status: Issued for Construction.\nArea: 5600 \u2013 Solvent Recovery System, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: EA-5601; equipment_name: SOLVENT HEATER; area: 5600 \u2013 Solvent Recovery System; functional_location: TJC-LLD-5600-01; grid_reference: E-3; elevation: +0.00 m; footprint: 6.5 x 2.0 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501 (RECYCLE GAS COMPRESSOR): Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601 (SOLVENT HEATER): Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701: Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+  }
+]

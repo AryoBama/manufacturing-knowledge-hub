@@ -1,0 +1,1142 @@
+[
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-001",
+    "record_type": "technical_parameter",
+    "category": "General & Type",
+    "parameter": "Reactor Type",
+    "value": "VERTICAL FIXED-BED, DOWNFLOW",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Reactor Type"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-002",
+    "record_type": "technical_parameter",
+    "category": "General & Type",
+    "parameter": "Catalyst",
+    "value": "Pd / Al2O3 (PdO reduced to Pd)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Catalyst"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-003",
+    "record_type": "technical_parameter",
+    "category": "General & Type",
+    "parameter": "Catalyst Volume",
+    "value": 3.2,
+    "unit": "m3",
+    "canonical_field": null,
+    "source_label": "Catalyst Volume"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-004",
+    "record_type": "technical_parameter",
+    "category": "General & Type",
+    "parameter": "Diameter (ID)",
+    "value": 1200,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Diameter (ID)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-005",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Shell Material",
+    "value": "SA-516 Gr.70 + SS304 clad",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Shell Material"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-006",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tangent-Tangent",
+    "value": 4500,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Tangent-Tangent"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-007",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Internals",
+    "value": "SS304 support grid + hold-down",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Internals"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-008",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Design Pressure",
+    "value": 6,
+    "unit": "barg / FV",
+    "canonical_field": null,
+    "source_label": "Design Pressure"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-009",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Heater",
+    "value": "EA-3401 ELECTRIC PRE-HEATER 180 kW",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Heater"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-010",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Operating Pressure",
+    "value": 2,
+    "unit": "kg/cm2g",
+    "canonical_field": null,
+    "source_label": "Operating Pressure"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-011",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Inert Medium",
+    "value": "NITROGEN",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Inert Medium"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-012",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Design Temp.",
+    "value": 250,
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Design Temp."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-013",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Reductant",
+    "value": "HYDROGEN (diluted in N2)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Reductant"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-014",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Operating Temp.",
+    "value": "180-210",
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Operating Temp."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-015",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "PSV",
+    "value": "PSV-3401 set 6 barg",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "PSV"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-016",
+    "record_type": "technical_parameter",
+    "category": "Performance",
+    "parameter": "EA-3401 Heater Output",
+    "value": 180,
+    "unit": "kW",
+    "canonical_field": null,
+    "source_label": "EA-3401 Heater Output"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-017",
+    "record_type": "technical_parameter",
+    "category": "Performance",
+    "parameter": "Heater Voltage",
+    "value": "380 V / 3 Ph / 50 Hz",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Heater Voltage"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-018",
+    "record_type": "technical_parameter",
+    "category": "Performance",
+    "parameter": "Heater Current",
+    "value": 273,
+    "unit": "A",
+    "canonical_field": null,
+    "source_label": "Heater Current"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-019",
+    "record_type": "technical_parameter",
+    "category": "Performance",
+    "parameter": "Heater Type",
+    "value": "IN-LINE ELECTRIC, N2 STREAM",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Heater Type"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-020",
+    "record_type": "technical_parameter",
+    "category": "Performance",
+    "parameter": "TIC Control",
+    "value": "TIC-17343 (heater outlet)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "TIC Control"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-021",
+    "record_type": "technical_parameter",
+    "category": "Performance",
+    "parameter": "Bed TC's",
+    "value": "TE-3401-1..8 multipoint",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Bed TC's"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-022",
+    "record_type": "technical_parameter",
+    "category": "Electrical & Safety",
+    "parameter": "Area Classification",
+    "value": "ZONE 1, IIC T3",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Area Classification"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-023",
+    "record_type": "technical_parameter",
+    "category": "Electrical & Safety",
+    "parameter": "Ex Protection",
+    "value": "Ex d IIC T3",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Ex Protection"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+      "functional_location": "TJC-LLD-3400-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-DC-3401A-024",
+    "record_type": "technical_parameter",
+    "category": "Driver",
+    "parameter": "Driver Type",
+    "value": "None (static vessel) - assoc. heater EA-3401",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Driver Type"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TSHH-3401",
+      "instrument_type": "Temperature Switch",
+      "instrument_description": "Bed temperature HIGH-HIGH",
+      "function": "Trip initiator T1 \u2192 SEQ-3401"
+    },
+    "record_id": "TR-TSHH-3401-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TSHH-3401 Setpoint",
+    "value": "> 230",
+    "unit": "degC",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Bed temperature HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSHH-3404",
+      "instrument_type": "Pressure Switch",
+      "instrument_description": "Reactor pressure HIGH-HIGH",
+      "function": "Trip initiator T2 \u2192 SEQ-3401"
+    },
+    "record_id": "TR-PSHH-3404-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSHH-3404 Setpoint",
+    "value": "> 5",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Reactor pressure HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "AI-3401",
+      "instrument_type": "Analyzer",
+      "instrument_description": "Outlet O2 Analyzer",
+      "function": "Trip initiator T3 & Permissive P1"
+    },
+    "record_id": "TR-AI-3401-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "AI-3401 Setpoint",
+    "value": "> 100",
+    "unit": "ppm",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Outlet O2 Analyzer Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FSLL-17343",
+      "instrument_type": "Flow Switch",
+      "instrument_description": "Nitrogen carrier flow LOW-LOW",
+      "function": "Trip initiator T4 \u2192 SEQ-3401"
+    },
+    "record_id": "TR-FSLL-17343-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FSLL-17343 Setpoint",
+    "value": "< 150",
+    "unit": "kg/h",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Nitrogen carrier flow LOW-LOW Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "EHT-3401",
+      "instrument_type": "Temp Switch (Skin)",
+      "instrument_description": "Heater element over-temperature",
+      "function": "Trip initiator T5 \u2192 SEQ-3401"
+    },
+    "record_id": "TR-EHT-3401-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "EHT-3401 Setpoint",
+    "value": "> 260",
+    "unit": "degC",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Heater element over-temperature Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "HS-3401",
+      "instrument_type": "Hand Switch",
+      "instrument_description": "Emergency Stop Hand Switch",
+      "function": "Trip initiator T6 (Manual ESD)"
+    },
+    "record_id": "TR-HS-3401-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "HS-3401 Setpoint",
+    "value": "Manual",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Emergency Stop Hand Switch Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TIC-17343",
+      "instrument_type": "Temp Controller",
+      "instrument_description": "Heater Outlet Temp Controller",
+      "function": "Control heater EA-3401"
+    },
+    "record_id": "TR-TIC-17343-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TIC-17343 Setpoint",
+    "value": "180-210",
+    "unit": "degC",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Heater Outlet Temp Controller Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FV-17343",
+      "instrument_type": "Control Valve",
+      "instrument_description": "N2 Carrier Flow Control Valve",
+      "function": "EFF-4: Maintain/Increase N2 on trip"
+    },
+    "record_id": "TR-FV-17343-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FV-17343 Setpoint",
+    "value": "MAINTAIN",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "N2 Carrier Flow Control Valve Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FV-3403",
+      "instrument_type": "Control Valve",
+      "instrument_description": "H2 Injection Flow Control Valve",
+      "function": "EFF-2: Close H2 on trip"
+    },
+    "record_id": "TR-FV-3403-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FV-3403 Setpoint",
+    "value": "CLOSED",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "H2 Injection Flow Control Valve Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PV-3404",
+      "instrument_type": "On/Off Valve",
+      "instrument_description": "Reactor Vent Valve",
+      "function": "EFF-3: Open reactor vent on trip"
+    },
+    "record_id": "TR-PV-3404-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PV-3404 Setpoint",
+    "value": "OPEN",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Reactor Vent Valve Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "EA-3401",
+      "instrument_type": "Heater",
+      "instrument_description": "In-Line Electric Pre-Heater",
+      "function": "EFF-1: Trip Heater on trip"
+    },
+    "record_id": "TR-EA-3401-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "EA-3401 Setpoint",
+    "value": "TRIP",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "In-Line Electric Pre-Heater Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSV-3401",
+      "instrument_type": "Relief Valve",
+      "instrument_description": "Pressure Safety Valve",
+      "function": "Overpressure protection"
+    },
+    "record_id": "TR-PSV-3401-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSV-3401 Setpoint",
+    "value": "6",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Pressure Safety Valve Setpoint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-EQUIPMENT_TAG",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_tag",
+    "value": "DC-3401A",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_tag"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-EQUIPMENT_NAME",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_name",
+    "value": "CATALYST REDUCTION REACTOR",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_name"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-AREA",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "area",
+    "value": "3400 \u2013 Catalyst Preparation",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "area"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-FUNCTIONAL_LOCATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "functional_location",
+    "value": "TJC-LLD-3400-01",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "functional_location"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-GRID_REFERENCE",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "grid_reference",
+    "value": "C-2",
+    "unit": null,
+    "canonical_field": "grid_reference",
+    "source_label": "grid_reference"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-ELEVATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "elevation",
+    "value": "+0.00",
+    "unit": "m",
+    "canonical_field": "elevation",
+    "source_label": "elevation"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-FOOTPRINT",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "footprint",
+    "value": "2.5 x 2.5",
+    "unit": "m (approx)",
+    "canonical_field": null,
+    "source_label": "footprint"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-COORDINATE_SYSTEM",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "coordinate_system",
+    "value": "Plant Grid (E/N)",
+    "unit": "metres",
+    "canonical_field": null,
+    "source_label": "coordinate_system"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-ACCESS_ROAD",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "access_road",
+    "value": "Road 6m",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "access_road"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-MAIN_PIPE_RACK",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "main_pipe_rack",
+    "value": "Main Pipe Rack shown",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "main_pipe_rack"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-HAZARDOUS_AREA_REF",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "hazardous_area_ref",
+    "value": "WPN-MAT-001",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "hazardous_area_ref"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-DC-3401A-NOTES",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "notes",
+    "value": "Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "notes"
+  }
+]

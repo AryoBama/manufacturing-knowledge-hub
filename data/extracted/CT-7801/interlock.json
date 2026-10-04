@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "CT-7801",
+  "document_id": "TJC-LLD-IL-CT-7801",
+  "document_type": "INTERLOCK",
+  "source": {
+    "file_name": "Interlock Logic Diagram - CT-7801.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-IL-CT-7801-P01-C01",
+  "title": "Interlock Logic & Cause Effect Matrix - CT-7801 (SEQ-7801)",
+  "equipment_type": null,
+  "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-7801 (COOLING TOWER FAN (CT-7801) SHUTDOWN LOGIC).\nDocument No: TJC-LLD-IL-CT-7801, Revision: Rev 3, SIL Level: SIL 1.\nEquipment: CT-7801, Functional Location: TJC-LLD-7800-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Fan/gearbox vibration HIGH-HIGH (VSHH-7802 > 9 mm/s, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2), Start Spare (EFF-3)\n- T2: Gearbox oil temperature HIGH-HIGH (TSHH-7803 > 90 degC, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2), Start Spare (EFF-3)\n- T3: Gearbox oil pressure LOW (PSL-7807 < 0.8 barg, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2)\n- T4: Fan motor overload (MPR-7801 MPR pickup, 1oo1) -> Actions: Trip Motor (EFF-1), DCS Alarm (EFF-2), Start Spare (EFF-3)\nSTART PERMISSIVES (AND-gate conditions to start pump):\n- P1: Gearbox oil level OK (LG gearbox, Gate Logic: AND)\n- P2: Basin level normal (> LSL-7804) (LT-7804, Gate Logic: AND)\n- P3: No fan lockout / maintenance key released (lockout, Gate Logic: AND)\n- \u2014: ALL permissives TRUE \u2192 START CT-7801 ENABLED (\u2014, Gate Logic: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-7801, Datasheet: TJC-LLD-DS-CT-7801."
+}

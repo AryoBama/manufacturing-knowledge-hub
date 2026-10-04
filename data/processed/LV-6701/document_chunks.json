@@ -1,0 +1,235 @@
+[
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "TJC-LLD-DS-LV-6701",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - LV-6701.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_parameters": 23
+    },
+    "chunk_id": "TJC-LLD-DS-LV-6701-P01-C01",
+    "title": "Equipment Datasheet - SEPARATOR LEVEL CONTROL VALVE (LV-6701)",
+    "equipment_type": "Globe Control Valve + Diaphragm Actuator",
+    "content": "EQUIPMENT DATASHEET: LV-6701 (SEPARATOR LEVEL CONTROL VALVE).\nDocument ID: TJC-LLD-DS-LV-6701, Revision: Rev.03, Status: Issued for Operation.\nEquipment Type: Globe Control Valve + Diaphragm Actuator.\nFunctional Location: TJC-LLD-6700-01.\nService: Level control of LP Separator FA-6710 bottoms to downstream.\nDesign & Mechanical - Valve Type: GLOBE, CAGE-GUIDED, ED\nDesign & Mechanical - Fail Action: FAIL CLOSED (FC)\nDesign & Mechanical - Actuator: FISHER 667 SIZE 45\nDesign & Mechanical - Body Size: 3 inch (DN80)\nDesign & Mechanical - Positioner: DVC6200 HART, 4-20 mA\nDesign & Mechanical - Body Rating: ASME 300#\nDesign & Mechanical - Air Supply: 1.4 barg INSTRUMENT AIR\nDesign & Mechanical - Body Material: WCC CARBON STEEL\nDesign & Mechanical - Packing: PTFE V-RING\nDesign & Mechanical - Trim Material: SS316 + STELLITE\nDesign & Mechanical - Bench Set: 0.2-1.0 barg\nDesign & Mechanical - Trim Characteristic: EQUAL PERCENTAGE\nDesign & Mechanical - Handwheel: TOP-MOUNTED\nDesign & Mechanical - Rated CV: 110\nDesign & Mechanical - Service Fluid: HEXANE + POLYMER BOTTOMS\nDriver / Motor Data - Controller: LIC-6701 (on FA-6710 level)\nDriver / Motor Data - Action on Air Fail: VALVE CLOSES\nDriver / Motor Data - Input Signal: 4-20 mA\nDriver / Motor Data - Solenoid: XV-6701 (ESD)\nDriver / Motor Data - Stroke: 38 mm\nDriver / Motor Data - Limit Switch: ZSL/ZSH-6701\nDriver / Motor Data - Leakage Class: ANSI CLASS IV\nDriver / Motor Data - Driver Type: Pneumatic Spring-Diaphragm Actuator"
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "TJC-LLD-IL-LV-6701",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - LV-6701.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "logic_no": "SEQ-6701",
+      "sil_level": "SIL 1",
+      "total_trips": 4,
+      "total_permissives": 4
+    },
+    "chunk_id": "TJC-LLD-IL-LV-6701-P01-C01",
+    "title": "Interlock Logic & Cause Effect Matrix - LV-6701 (SEQ-6701)",
+    "equipment_type": null,
+    "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-6701 (LP SEPARATOR LEVEL PROTECTION (FA-6710 / LV-6701) LOGIC).\nDocument No: TJC-LLD-IL-LV-6701, Revision: Rev.03, Status: Issued for Operation, SIL Level: SIL 1.\nEquipment: LV-6701, Functional Location: TJC-LLD-6700-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Separator level HIGH-HIGH (LSHH-6710 > 85 %, 1oo2) -> Actions: Open Min-Flow (EFF-1), DCS Alarm (EFF-4)\n- T2: Separator level LOW-LOW (LSLL-6710 < 15 %, 1oo2) -> Actions: Close Discharge (EFF-2), DCS Alarm (EFF-4)\n- T3: ESD activation (manual) (HS-6701 ESD signal, 1oo1) -> Actions: Vent Actuator (EFF-3), DCS Alarm (EFF-4)\n- T4: Instrument air pressure LOW (PSL-6702 < 1.0 barg, 1oo1) -> Actions: Vent Actuator (EFF-3), DCS Alarm (EFF-4)\nSTART PERMISSIVES (AND-gate conditions to start):\n- P1: Instrument air available (> 1.2 barg) (PI-6702, Gate: AND)\n- P2: Positioner DVC6200 in AUTO/healthy (DVC6200, Gate: AND)\n- P3: Bypass HV-6701 closed (normal operation) (HV-6701, Gate: AND)\n- \u2014: ALL permissives TRUE \u2192 START LV-6701 ENABLED (\u2014, Gate: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-6701, Datasheet: TJC-LLD-DS-LV-6701."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "OPL-LV-6701-01",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-LV-6701-01 - Control_Valve_Stroke_Calibration_DVC6200.pdf",
+      "page": 1,
+      "sheet": "Control Valve Stroke",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-6701 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-6701"
+    },
+    "chunk_id": "OPL-LV-6701-01-P01-C01",
+    "title": "One Point Lesson - Control Valve Stroke Calibration (DVC6200) (OPL-LV-6701-01)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-LV-6701-01 - Control Valve Stroke Calibration (DVC6200).\n\nEquipment: LV-6701, Discipline: Instrument, Area: 6700 - LP SEPARATOR SYSTEM.\n\nReferences: Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains control valve stroke calibration (dvc6200) for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. Correct mapping of the 4-20 mA signal to 0-100 % valve stroke is essential for stable separator level control. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Connect the HART communicator and establish link to DVC6200\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Run the Auto-Travel calibration routine in the positioner\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Step the 4-20mA signal (0, 25, 50, 75, 100%) and verify stroke\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Check fail-closed action on signal loss (4mA = 0%)\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Save the calibration signature to the asset management system\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: LV-6701 not responding to LIC-6701, level control lost | Cause: Stem seized in PTFE packing (over-tightened + fines) | Action: Freed stem, renewed packing, lubricated, re-stroked and calibrated\n- Symptom: Positioner giving position error after drift | Cause: Positioner feedback out of calibration | Action: Recalibrated DVC6200, updated firmware, verified travel\n- Symptom: Hexane weeping at LV-6701 stem packing | Cause: PTFE V-ring packing worn | Action: Renewed PTFE V-ring packing set, re-torqued gland\n\nKEY LEARNING POINTS:\n- Point 1: Correct mapping of the 4-20 mA signal to 0-100 % valve stroke is essential for stable separator level control.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "OPL-LV-6701-02",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-LV-6701-02 - Instrument_Air_Supply_Filter_Regulator.pdf",
+      "page": 1,
+      "sheet": " Air Supply & Filter Regulator",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-6701 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-6701"
+    },
+    "chunk_id": "OPL-LV-6701-02-P01-C01",
+    "title": "One Point Lesson - Instrument Air Supply & Filter Regulator (OPL-LV-6701-02)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-LV-6701-02 - Instrument Air Supply & Filter Regulator.\n\nEquipment: LV-6701, Discipline: Instrument, Area: 6700 - LP SEPARATOR SYSTEM.\n\nReferences: Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains instrument air supply & filter regulator for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. Dirty or low instrument air makes the valve sluggish or fail closed, upsetting FA-6710 level and tripping PSL-6702. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Check the PI-6702 air supply is at 1.4 barg\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Drain the filter regulator bowl of condensate\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Replace a clogged air filter element\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Confirm there are no air leaks on the tubing/fittings\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Verify PSL-6702 low-air alarm set-point\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: LV-6701 not responding to LIC-6701, level control lost | Cause: Stem seized in PTFE packing (over-tightened + fines) | Action: Freed stem, renewed packing, lubricated, re-stroked and calibrated\n- Symptom: Positioner giving position error after drift | Cause: Positioner feedback out of calibration | Action: Recalibrated DVC6200, updated firmware, verified travel\n- Symptom: Hexane weeping at LV-6701 stem packing | Cause: PTFE V-ring packing worn | Action: Renewed PTFE V-ring packing set, re-torqued gland\n\nKEY LEARNING POINTS:\n- Point 1: Dirty or low instrument air makes the valve sluggish or fail closed, upsetting FA-6710 level and tripping PSL-6702.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "OPL-LV-6701-03",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-LV-6701-03 - Packing_Adjustment_PTFE_V_Ring.pdf",
+      "page": 1,
+      "sheet": "Packing Adjustment(PTFE V-Ring)",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-6701 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-6701"
+    },
+    "chunk_id": "OPL-LV-6701-03-P01-C01",
+    "title": "One Point Lesson - Packing Adjustment (PTFE V-Ring) (OPL-LV-6701-03)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-LV-6701-03 - Packing Adjustment (PTFE V-Ring).\n\nEquipment: LV-6701, Discipline: Mechanical, Area: 6700 - LP SEPARATOR SYSTEM.\n\nReferences: Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains packing adjustment (ptfe v-ring) for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. Loose packing leaks hexane at the stem; over-tight packing makes the stem stick and the valve hunt. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Isolate the line and depressurise before touching packing\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Snug the packing nuts evenly in small increments\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Stroke the valve and check for a leak-free, smooth travel\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Do not over-torque - excessive friction degrades control\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Record the packing adjustment in the valve history\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Manual handwheel jack on LV-6701 seized | Cause: Corrosion in handwheel thread | Action: Overhauled handwheel assembly, greased thread\n- Symptom: LV-6701 passing when closed (Class IV exceeded) | Cause: Seat/plug erosion from polymer bottoms | Action: Lapped seat and plug, restored Class IV shut-off\n- Symptom: Minor weep at body/bonnet joint | Cause: Spiral-wound body gasket relaxed | Action: Renewed body gasket, torqued bonnet bolts\n\nKEY LEARNING POINTS:\n- Point 1: Loose packing leaks hexane at the stem; over-tight packing makes the stem stick and the valve hunt.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "OPL-LV-6701-04",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-LV-6701-04 - Positioner_Response_Loop_Check.pdf",
+      "page": 1,
+      "sheet": "Positioner Response & Loop",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-6701 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-6701"
+    },
+    "chunk_id": "OPL-LV-6701-04-P01-C01",
+    "title": "One Point Lesson - Positioner Response & Loop Check (OPL-LV-6701-04)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-LV-6701-04 - Positioner Response & Loop Check.\n\nEquipment: LV-6701, Discipline: Instrument, Area: 6700 - LP SEPARATOR SYSTEM.\n\nReferences: Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains positioner response & loop check for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. Poor positioner tuning makes the level controller LIC-6701 hunt and the separator level cycle. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Step the LIC-6701 output and watch the valve response\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Check the ZSL/ZSH-6701 limit-switch feedback\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Tune the positioner gain for a stable, prompt travel\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Confirm there is no overshoot or stiction step\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Verify the valve seats fully at 4 mA (Class IV)\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: LV-6701 not responding to LIC-6701, level control lost | Cause: Stem seized in PTFE packing (over-tightened + fines) | Action: Freed stem, renewed packing, lubricated, re-stroked and calibrated\n- Symptom: Positioner giving position error after drift | Cause: Positioner feedback out of calibration | Action: Recalibrated DVC6200, updated firmware, verified travel\n- Symptom: Hexane weeping at LV-6701 stem packing | Cause: PTFE V-ring packing worn | Action: Renewed PTFE V-ring packing set, re-torqued gland\n\nKEY LEARNING POINTS:\n- Point 1: Poor positioner tuning makes the level controller LIC-6701 hunt and the separator level cycle.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "OPL-LV-6701-05",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-LV-6701-05 - Manual_Bypass_HV_6701_Operation.pdf",
+      "page": 1,
+      "sheet": "Manual Bypass (HV-6701)",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-6701 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-6701"
+    },
+    "chunk_id": "OPL-LV-6701-05-P01-C01",
+    "title": "One Point Lesson - Manual Bypass (HV-6701) Operation (OPL-LV-6701-05)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-LV-6701-05 - Manual Bypass (HV-6701) Operation.\n\nEquipment: LV-6701, Discipline: Process / Operations, Area: 6700 - LP SEPARATOR SYSTEM.\n\nReferences: Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains manual bypass (hv-6701) operation for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. The manual bypass lets operators keep the separator level safely while LV-6701 is isolated for maintenance. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Notify the panel and take LIC-6701 to manual\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Crack open the bypass HV-6701 slowly\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Throttle HV-6701 to hold FA-6710 level using LT-6710\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Isolate LV-6701 (close block valves) for the work\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Reverse the steps and re-establish auto control afterwards\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: LV-6701 isolation for planned maintenance | Cause: Planned - bypass used to hold level | Action: Lined up HV-6701 manual bypass, isolated LV-6701 safely\n- Symptom: LV-6701 not responding to LIC-6701, level control lost | Cause: Stem seized in PTFE packing (over-tightened + fines) | Action: Freed stem, renewed packing, lubricated, re-stroked and calibrated\n- Symptom: Manual handwheel jack on LV-6701 seized | Cause: Corrosion in handwheel thread | Action: Overhauled handwheel assembly, greased thread\n\nKEY LEARNING POINTS:\n- Point 1: The manual bypass lets operators keep the separator level safely while LV-6701 is isolated for maintenance.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "OPL-LV-6701-06",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-LV-6701-06 - Fail_Closed_ESD_Action_Verification.pdf",
+      "page": 1,
+      "sheet": "Fail-Closed & ESD Action",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-6701 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-6701"
+    },
+    "chunk_id": "OPL-LV-6701-06-P01-C01",
+    "title": "One Point Lesson - Fail-Closed & ESD Action Verification (OPL-LV-6701-06)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-LV-6701-06 - Fail-Closed & ESD Action Verification.\n\nEquipment: LV-6701, Discipline: Instrument, Area: 6700 - LP SEPARATOR SYSTEM.\n\nReferences: Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains fail-closed & esd action verification for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. On air failure or ESD (XV-6701), the valve must drive closed to prevent gas blow-by from the separator. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Trip the XV-6701 ESD solenoid during the test\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Confirm the actuator vents and the valve closes\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Time the full closure - it must be within 5 seconds\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Check the ZSL-6701 closed limit confirms on the DCS\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Reset the ESD and return the valve to auto\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: LV-6701 not responding to LIC-6701, level control lost | Cause: Stem seized in PTFE packing (over-tightened + fines) | Action: Freed stem, renewed packing, lubricated, re-stroked and calibrated\n- Symptom: Positioner giving position error after drift | Cause: Positioner feedback out of calibration | Action: Recalibrated DVC6200, updated firmware, verified travel\n- Symptom: Hexane weeping at LV-6701 stem packing | Cause: PTFE V-ring packing worn | Action: Renewed PTFE V-ring packing set, re-torqued gland\n\nKEY LEARNING POINTS:\n- Point 1: On air failure or ESD (XV-6701), the valve must drive closed to prevent gas blow-by from the separator.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "OPL-LV-6701-07",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-LV-6701-07 - Actuator_Diaphragm_Inspection_Fisher_667.pdf",
+      "page": 1,
+      "sheet": "Actuator Diaphragm Inspection",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-6701 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-6701"
+    },
+    "chunk_id": "OPL-LV-6701-07-P01-C01",
+    "title": "One Point Lesson - Actuator Diaphragm Inspection (Fisher 667) (OPL-LV-6701-07)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-LV-6701-07 - Actuator Diaphragm Inspection (Fisher 667).\n\nEquipment: LV-6701, Discipline: Instrument, Area: 6700 - LP SEPARATOR SYSTEM.\n\nReferences: Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains actuator diaphragm inspection (fisher 667) for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. A ruptured actuator diaphragm causes loss of control and a continuous air leak; periodic inspection prevents surprise failures. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Inspect the Fisher 667 diaphragm for cracks or perishing\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Check the bench set is 0.2-1.0 barg\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Replace the NBR/fabric diaphragm if hardened\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Re-stroke and recalibrate after any diaphragm work\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Confirm the spring range still gives full 38 mm travel\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: LV-6701 not responding to LIC-6701, level control lost | Cause: Stem seized in PTFE packing (over-tightened + fines) | Action: Freed stem, renewed packing, lubricated, re-stroked and calibrated\n- Symptom: Positioner giving position error after drift | Cause: Positioner feedback out of calibration | Action: Recalibrated DVC6200, updated firmware, verified travel\n- Symptom: Hexane weeping at LV-6701 stem packing | Cause: PTFE V-ring packing worn | Action: Renewed PTFE V-ring packing set, re-torqued gland\n\nKEY LEARNING POINTS:\n- Point 1: A ruptured actuator diaphragm causes loss of control and a continuous air leak; periodic inspection prevents surprise failures.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "TJC-LLD-PID-6701",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 6.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_instruments": 12
+    },
+    "chunk_id": "TJC-LLD-PID-6701-P01-C01",
+    "title": "Piping & Instrumentation Diagram Register - LV-6701",
+    "equipment_type": null,
+    "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: LV-6701 (SEPARATOR LEVEL CONTROL VALVE).\nDocument No: TJC-LLD-PID-6701, Revision: N/A, Status: Issued for Operation.\nArea: 6700 \u2013 Product Separation, Functional Location: TJC-LLD-6700-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- LIC-6701: Level Indicator Controller (Level Controller). Function: Mengontrol bukaan LV-6701. Location: FA-6710 / LV-6701 loop\n- LSHH-6710: Separator level HIGH-HIGH switch (Level Switch) [Setpoint: > 85 %]. Function: Cause T1 / EFF-1 (Open LV-6701 fully). Location: FA-6710 (LP Separator)\n- LSLL-6710: Separator level LOW-LOW switch (Level Switch) [Setpoint: < 15 %]. Function: Cause T2 / EFF-2 (Close LV-6701) & EFF-4 (DCS Alarm). Location: FA-6710 (LP Separator)\n- HS-6701: ESD manual switch (Hand Switch). Function: Cause T3 / EFF-3 (Vent actuator). Location: Control Panel / Field\n- PSL-6702: Instrument air pressure LOW switch (Pressure Switch) [Setpoint: < 1.0 barg]. Function: Cause T4 / EFF-3 (Vent actuator) & EFF-4 (DCS Alarm). Location: 3\" IA-6702 line\n- PI-6702: Instrument air pressure indicator (Pressure Indicator). Function: Permissive P1 (PI-6702 > 1.2 barg). Location: 3\" IA-6702 line\n- FIC-6702: Flow Indicator Controller (Flow Controller). Function: Flow control on inlet line. Location: Inlet FA-6710 (6\" HC line)\n- TIC-6702: Temperature Indicator Controller (Temp Controller). Function: Temperature control. Location: Overhead line / FA-6710\n- TB-6702: Temperature Block/Element (Temp Element). Function: Temperature measurement. Location: Bottoms line\n- DVC6200: Digital Valve Controller (Positioner). Function: Permissive P2 (Positioner healthy) / Hart communicator port. Location: Di badan LV-6701\n- HV-6701: Manual bypass valve (Hand Valve). Function: Permissive P3 (Bypass closed). Location: Bypass line\n- XV-6701: ESD Solenoid Valve (Solenoid Valve). Function: Mengeksekusi logic Trip dengan cara membuang angin (venting actuator). Location: Sistem pneumatic LV-6701\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-LV-6701, Interlock: SEQ-6701 (SIL 1)."
+  },
+  {
+    "equipment_tag": "LV-6701",
+    "document_id": "PP-LV-6701",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan LV-6701.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {
+      "total_nearby_equipment": 8
+    },
+    "chunk_id": "PP-LV-6701-P01-C01",
+    "title": "Plot Plan & Location Data - LV-6701",
+    "equipment_type": null,
+    "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: LV-6701 (SEPARATOR LEVEL CONTROL VALVE).\nDocument No: PP-LV-6701, Revision: Rev.00, Status: Issued for Construction.\nArea: 6700 \u2013 Product Separation, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: LV-6701; equipment_name: SEPARATOR LEVEL CONTROL VALVE; area: 6700 \u2013 Product Separation; functional_location: TJC-LLD-6700-01; grid_reference: F-5; elevation: +3.00 m; footprint: 1.5 x 1.5 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501 (RECYCLE GAS COMPRESSOR): Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601 (SOLVENT HEATER): Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701 (SEPARATOR LEVEL CONTROL VALVE): Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+  }
+]

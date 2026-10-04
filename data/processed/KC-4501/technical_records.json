@@ -7,21 +7,21 @@
       "file_name": "Equipment Datasheet - KC-4501.pdf",
       "page": 1,
       "sheet": null,
-      "revision": "Rev.02",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
     "metadata": {
-      "equipment_type": "Reciprocating Compressor",
+      "equipment_type": "Reciprocating Compressor (2-stage)",
       "functional_location": "TJC-LLD-4500-01"
     },
     "record_id": "TR-TJC-LLD-DS-KC-4501-001",
     "record_type": "technical_parameter",
-    "category": "Compressor Design",
-    "parameter": "Rated Flow",
-    "value": 2200,
-    "unit": "m3/h",
-    "canonical_field": "rated_flow",
-    "source_label": "Rated Flow"
+    "category": "Design & Mechanical",
+    "parameter": "Compressor Type",
+    "value": "RECIPROCATING, 2-STAGE, 2-THROW",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Compressor Type"
   },
   {
     "equipment_tag": "KC-4501",
@@ -31,21 +31,21 @@
       "file_name": "Equipment Datasheet - KC-4501.pdf",
       "page": 1,
       "sheet": null,
-      "revision": "Rev.02",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
     "metadata": {
-      "equipment_type": "Reciprocating Compressor",
+      "equipment_type": "Reciprocating Compressor (2-stage)",
       "functional_location": "TJC-LLD-4500-01"
     },
     "record_id": "TR-TJC-LLD-DS-KC-4501-002",
     "record_type": "technical_parameter",
-    "category": "Compressor Design",
-    "parameter": "Differential Pressure",
-    "value": 13.5,
-    "unit": "bar",
-    "canonical_field": "differential_pressure",
-    "source_label": "Differential Pressure"
+    "category": "Design & Mechanical",
+    "parameter": "Cylinder Material",
+    "value": "NODULAR CAST IRON",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Cylinder Material"
   },
   {
     "equipment_tag": "KC-4501",
@@ -55,21 +55,21 @@
       "file_name": "Equipment Datasheet - KC-4501.pdf",
       "page": 1,
       "sheet": null,
-      "revision": "Rev.02",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
     "metadata": {
-      "equipment_type": "Reciprocating Compressor",
+      "equipment_type": "Reciprocating Compressor (2-stage)",
       "functional_location": "TJC-LLD-4500-01"
     },
     "record_id": "TR-TJC-LLD-DS-KC-4501-003",
     "record_type": "technical_parameter",
-    "category": "Compressor Design",
-    "parameter": "Pumping Temperature",
-    "value": 65,
-    "unit": "degC",
-    "canonical_field": "pumping_temperature",
-    "source_label": "Pumping Temperature"
+    "category": "Design & Mechanical",
+    "parameter": "Piston Rings",
+    "value": "PTFE FILLED",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Piston Rings"
   },
   {
     "equipment_tag": "KC-4501",
@@ -79,21 +79,21 @@
       "file_name": "Equipment Datasheet - KC-4501.pdf",
       "page": 1,
       "sheet": null,
-      "revision": "Rev.02",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
     "metadata": {
-      "equipment_type": "Reciprocating Compressor",
+      "equipment_type": "Reciprocating Compressor (2-stage)",
       "functional_location": "TJC-LLD-4500-01"
     },
     "record_id": "TR-TJC-LLD-DS-KC-4501-004",
     "record_type": "technical_parameter",
-    "category": "Motor Driver",
-    "parameter": "Motor Power",
-    "value": 250,
-    "unit": "kW",
-    "canonical_field": "motor_power",
-    "source_label": "Motor Power"
+    "category": "Design & Mechanical",
+    "parameter": "Capacity (Suction)",
+    "value": 1250,
+    "unit": "Nm3/h",
+    "canonical_field": null,
+    "source_label": "Capacity (Suction)"
   },
   {
     "equipment_tag": "KC-4501",
@@ -103,18 +103,402 @@
       "file_name": "Equipment Datasheet - KC-4501.pdf",
       "page": 1,
       "sheet": null,
-      "revision": "Rev.02",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
     "metadata": {
-      "equipment_type": "Reciprocating Compressor",
+      "equipment_type": "Reciprocating Compressor (2-stage)",
       "functional_location": "TJC-LLD-4500-01"
     },
     "record_id": "TR-TJC-LLD-DS-KC-4501-005",
     "record_type": "technical_parameter",
-    "category": "Motor Driver",
+    "category": "Design & Mechanical",
+    "parameter": "Packing",
+    "value": "PTFE RINGS, DISTANCE PIECE",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Packing"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-006",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Suction Pressure",
+    "value": 1.2,
+    "unit": "barg",
+    "canonical_field": null,
+    "source_label": "Suction Pressure"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-007",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Valves",
+    "value": "PLATE TYPE, SS",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Valves"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-008",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Discharge Pressure",
+    "value": 12.5,
+    "unit": "barg",
+    "canonical_field": null,
+    "source_label": "Discharge Pressure"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-009",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Lube System",
+    "value": "FORCED FEED + FRAME SPLASH",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Lube System"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-010",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Suction Temp.",
+    "value": 40,
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Suction Temp."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-011",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Seal Gas",
+    "value": "NITROGEN BUFFER",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Seal Gas"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-012",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Discharge Temp.",
+    "value": 115,
+    "unit": "\u00b0C (max)",
+    "canonical_field": null,
+    "source_label": "Discharge Temp."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-013",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Cooling",
+    "value": "JACKET WATER + INTERCOOLER EA-4502",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Cooling"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-014",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Gas",
+    "value": "ETHYLENE / HEXANE / H2 MIX",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Gas"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-015",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Vibration Mon.",
+    "value": "VT-4501 CROSSHEAD",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Vibration Mon."
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-016",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Driver Type",
+    "value": "Electric Motor, 4-pole",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Driver Type"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-017",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Output",
+    "value": 250,
+    "unit": "kW",
+    "canonical_field": null,
+    "source_label": "Output"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-018",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Enclosure",
+    "value": "WPII",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Enclosure"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-019",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Poles",
+    "value": "4 POLE",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Poles"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-020",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Area Classification",
+    "value": "ZONE 2, IIB T3",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Area Classification"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-021",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
     "parameter": "Speed",
-    "value": 740,
+    "value": 1485,
     "unit": "rpm",
     "canonical_field": "motor_speed",
     "source_label": "Speed"
@@ -127,20 +511,652 @@
       "file_name": "Equipment Datasheet - KC-4501.pdf",
       "page": 1,
       "sheet": null,
-      "revision": "Rev.02",
+      "revision": "Rev.03",
       "status": "Issued for Operation"
     },
     "metadata": {
-      "equipment_type": "Reciprocating Compressor",
+      "equipment_type": "Reciprocating Compressor (2-stage)",
       "functional_location": "TJC-LLD-4500-01"
     },
-    "record_id": "TR-TJC-LLD-DS-KC-4501-006",
+    "record_id": "TR-TJC-LLD-DS-KC-4501-022",
     "record_type": "technical_parameter",
-    "category": "Motor Driver",
+    "category": "Driver / Motor Data",
+    "parameter": "Ex Protection",
+    "value": "Ex px IIB T3",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Ex Protection"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-023",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
     "parameter": "Voltage",
-    "value": 3300,
+    "value": "6000 V / 3 Ph / 50 Hz",
     "unit": "V",
     "canonical_field": "motor_voltage",
     "source_label": "Voltage"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-024",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Frame",
+    "value": "IEC 355",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Frame"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-025",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Rated Current",
+    "value": 30,
+    "unit": "A",
+    "canonical_field": "rated_current",
+    "source_label": "Rated Current"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-026",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Weight (Motor)",
+    "value": 1980,
+    "unit": "kg",
+    "canonical_field": null,
+    "source_label": "Weight (Motor)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-DS-KC-4501",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - KC-4501.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Reciprocating Compressor (2-stage)",
+      "functional_location": "TJC-LLD-4500-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-KC-4501-027",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Insulation Class",
+    "value": "F",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Insulation Class"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSLL-4504",
+      "instrument_type": "Pressure Switch",
+      "instrument_description": "Lube oil pressure LOW-LOW",
+      "function": "Trip initiator T1 & Permissive P1"
+    },
+    "record_id": "TR-PSLL-4504-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSLL-4504 Setpoint",
+    "value": "< 1.5",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Lube oil pressure LOW-LOW Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TSHH-4503",
+      "instrument_type": "Temperature Switch",
+      "instrument_description": "Discharge temperature HIGH-HIGH",
+      "function": "Trip initiator T2 \u2192 SEQ-4501"
+    },
+    "record_id": "TR-TSHH-4503-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TSHH-4503 Setpoint",
+    "value": "> 140",
+    "unit": "degC",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Discharge temperature HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSHH-4502",
+      "instrument_type": "Pressure Switch",
+      "instrument_description": "Discharge pressure HIGH-HIGH",
+      "function": "Trip initiator T3 \u2192 SEQ-4501"
+    },
+    "record_id": "TR-PSHH-4502-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSHH-4502 Setpoint",
+    "value": "> 14",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Discharge pressure HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "VSHH-4505",
+      "instrument_type": "Vibration Switch",
+      "instrument_description": "Crosshead vibration HIGH-HIGH",
+      "function": "Trip initiator T4 \u2192 SEQ-4501"
+    },
+    "record_id": "TR-VSHH-4505-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "VSHH-4505 Setpoint",
+    "value": "> 11",
+    "unit": "mm/s",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Crosshead vibration HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "LSHH-4510",
+      "instrument_type": "Level Switch",
+      "instrument_description": "Suction KO drum level HIGH-HIGH",
+      "function": "Trip initiator T5 \u2192 SEQ-4501"
+    },
+    "record_id": "TR-LSHH-4510-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "LSHH-4510 Setpoint",
+    "value": "> 80",
+    "unit": "%",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Suction KO drum level HIGH-HIGH Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSLL-4501",
+      "instrument_type": "Pressure Switch",
+      "instrument_description": "Suction pressure LOW-LOW",
+      "function": "Trip initiator T6 \u2192 SEQ-4501"
+    },
+    "record_id": "TR-PSLL-4501-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSLL-4501 Setpoint",
+    "value": "< 0.3",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Suction pressure LOW-LOW Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "LT-4510",
+      "instrument_type": "Level Transmitter",
+      "instrument_description": "KO drum Level Transmitter",
+      "function": "Level measurement & Permissive P3"
+    },
+    "record_id": "TR-LT-4510-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "LT-4510 Setpoint",
+    "value": "< 50",
+    "unit": "%",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "KO drum Level Transmitter Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "FV-4502",
+      "instrument_type": "Control Valve",
+      "instrument_description": "Anti-Surge Recycle Control Valve",
+      "function": "EFF-2: Open on Trip / Low Flow"
+    },
+    "record_id": "TR-FV-4502-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "FV-4502 Setpoint",
+    "value": "OPEN",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Anti-Surge Recycle Control Valve Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "XV-4501",
+      "instrument_type": "On/Off Valve",
+      "instrument_description": "Suction Shutdown Valve",
+      "function": "EFF-3: Close Suction on Trip"
+    },
+    "record_id": "TR-XV-4501-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "XV-4501 Setpoint",
+    "value": "CLOSE",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Suction Shutdown Valve Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "OLL-4504",
+      "instrument_type": "Relief Valve",
+      "instrument_description": "Lube Oil Pump Relief Valve",
+      "function": "Set lube oil pump pressure"
+    },
+    "record_id": "TR-OLL-4504-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "OLL-4504 Setpoint",
+    "value": "2.5",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Lube Oil Pump Relief Valve Setpoint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-EQUIPMENT_TAG",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_tag",
+    "value": "KC-4501",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_tag"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-EQUIPMENT_NAME",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_name",
+    "value": "RECYCLE GAS COMPRESSOR",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_name"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-AREA",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "area",
+    "value": "4500 \u2013 Gas Recovery & Compression",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "area"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-FUNCTIONAL_LOCATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "functional_location",
+    "value": "TJC-LLD-4500-01",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "functional_location"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-GRID_REFERENCE",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "grid_reference",
+    "value": "D-4",
+    "unit": null,
+    "canonical_field": "grid_reference",
+    "source_label": "grid_reference"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-ELEVATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "elevation",
+    "value": "+0.00",
+    "unit": "m",
+    "canonical_field": "elevation",
+    "source_label": "elevation"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-FOOTPRINT",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "footprint",
+    "value": "5.0 x 4.0",
+    "unit": "m (approx)",
+    "canonical_field": null,
+    "source_label": "footprint"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-COORDINATE_SYSTEM",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "coordinate_system",
+    "value": "Plant Grid (E/N)",
+    "unit": "metres",
+    "canonical_field": null,
+    "source_label": "coordinate_system"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-ACCESS_ROAD",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "access_road",
+    "value": "Road 6m",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "access_road"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-MAIN_PIPE_RACK",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "main_pipe_rack",
+    "value": "Main Pipe Rack shown",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "main_pipe_rack"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-HAZARDOUS_AREA_REF",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "hazardous_area_ref",
+    "value": "WPN-MAT-001",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "hazardous_area_ref"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "PP-KC-4501",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan KC-4501.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-KC-4501-NOTES",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "notes",
+    "value": "Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "notes"
   }
 ]

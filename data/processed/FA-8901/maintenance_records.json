@@ -1,0 +1,664 @@
+[
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 9,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560767",
+    "date": "2024-07-01",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Nitrogen leak at manway after inspection",
+    "root_cause": "SW gasket unevenly seated",
+    "corrective_action": "Renewed SW SS316/graphite gasket, leak test passed",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "SW SS316/graphite manway gasket"
+    ]
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 10,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560745",
+    "date": "2024-07-04",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Boot drain valve N4 passing / leaking",
+    "root_cause": "Seat eroded by water/solids",
+    "corrective_action": "Reseated / replaced boot drain valve HV-8904",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Boot drain valve"
+    ]
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 17,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560790",
+    "date": "2024-07-21",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 23,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560786",
+    "date": "2024-07-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 30,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560830",
+    "date": "2024-08-20",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-8901",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 34,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560769",
+    "date": "2024-09-02",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Drum pressure reading erratic",
+    "root_cause": "Impulse line plugged",
+    "corrective_action": "Cleared impulse line, re-zeroed PT-8902",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 41,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560739",
+    "date": "2024-09-11",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Reflux drum level transmitter drifting vs gauge",
+    "root_cause": "Transmitter zero drift",
+    "corrective_action": "Recalibrated LT-8901 against the bridle gauge",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 47,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560814",
+    "date": "2024-09-24",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 62,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560835",
+    "date": "2024-10-31",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-8901",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 71,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560742",
+    "date": "2024-11-30",
+    "failure_occurred": true,
+    "failure_mode": "Instrument Setpoint Drift",
+    "symptom": "Statutory relief valve test",
+    "root_cause": "Set pressure drift found",
+    "corrective_action": "Overhauled PSV-8901, lapped seat, re-set 10 barg, certified",
+    "downtime_hours": 10.0,
+    "parts_replaced": [
+      "PSV soft goods kit"
+    ]
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 74,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560779",
+    "date": "2024-12-09",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 75,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560824",
+    "date": "2024-12-11",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-8901",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 78,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560777",
+    "date": "2024-12-13",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIL-1 proof test of overhead protection logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated LSHH/LSLL/PSHH trips, verified EFF actions",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 81,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560747",
+    "date": "2024-12-16",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Blanket / vent split-range valve hunting",
+    "root_cause": "Split-range calibration overlap incorrect",
+    "corrective_action": "Re-tuned PCV-8905 split-range, verified PT-8902 hold",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 85,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560792",
+    "date": "2024-12-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 90,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560808",
+    "date": "2025-01-04",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 124,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560757",
+    "date": "2025-04-06",
+    "failure_occurred": true,
+    "failure_mode": "Impulse Line / Orifice Fouling",
+    "symptom": "Level bridle gauge not tracking",
+    "root_cause": "Bridle legs plugged with fines",
+    "corrective_action": "Blew down and cleared bridle, restored gauge",
+    "downtime_hours": 4.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 131,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560795",
+    "date": "2025-04-14",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 134,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560803",
+    "date": "2025-04-25",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 143,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560763",
+    "date": "2025-05-26",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Scheduled corrosion monitoring of boot",
+    "root_cause": "Wall thickness within corrosion allowance",
+    "corrective_action": "UT survey of boot and shell bottom, logged in RBI file",
+    "downtime_hours": 12.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 161,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560753",
+    "date": "2025-07-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Proof test of drum high-high level trip",
+    "root_cause": "Within tolerance",
+    "corrective_action": "Recalibrated LSHH-8901 and verified EFF-1 column feed trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 170,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560784",
+    "date": "2025-09-03",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 194,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560773",
+    "date": "2025-11-01",
+    "failure_occurred": true,
+    "failure_mode": "Impulse Line / Orifice Fouling",
+    "symptom": "Turnaround internal inspection",
+    "root_cause": "Mist pad slightly fouled, vortex breaker intact",
+    "corrective_action": "Inspected internals, cleaned mist pad, NDT of nozzles",
+    "downtime_hours": 36.0,
+    "parts_replaced": [
+      "Manway gasket"
+    ]
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 207,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560797",
+    "date": "2025-12-03",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History FA-8901.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 210,
+      "original_tag": "FA-8901",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560819",
+    "date": "2025-12-06",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  }
+]

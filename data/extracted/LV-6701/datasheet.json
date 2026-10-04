@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "LV-6701",
+  "document_id": "TJC-LLD-DS-LV-6701",
+  "document_type": "DATASHEET",
+  "source": {
+    "file_name": "Equipment Datasheet - LV-6701.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-DS-LV-6701-P01-C01",
+  "title": "Equipment Datasheet - SEPARATOR LEVEL CONTROL VALVE (LV-6701)",
+  "equipment_type": null,
+  "content": "EQUIPMENT DATASHEET: LV-6701 (SEPARATOR LEVEL CONTROL VALVE).\nDocument No: TJC-LLD-DS-LV-6701, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Globe Control Valve + Diaphragm Actuator.\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 6700 \u2013 Product Separation.\nFunctional Location: TJC-LLD-6700-01, Criticality: Low Critical.\nService: Level control of LP Separator FA-6710 bottoms to downstream.\nMECHANICAL SPECIFICATIONS:\nValve Type: GLOBE, CAGE-GUIDED, ED; Fail Action: FAIL CLOSED (FC); Actuator: FISHER 667 SIZE 45; Body Size: 3 inch (DN80); Positioner: DVC6200 HART, 4-20 mA; Body Rating: ASME 300#; Air Supply: 1.4 barg INSTRUMENT AIR; Body Material: WCC CARBON STEEL; Packing: PTFE V-RING; Trim Material: SS316 + STELLITE; Bench Set: 0.2-1.0 barg; Trim Characteristic: EQUAL PERCENTAGE; Handwheel: TOP-MOUNTED; Rated CV: 110; Service Fluid: HEXANE + POLYMER BOTTOMS\nMOTOR & ELECTRICAL SPECIFICATIONS:\nController: LIC-6701 (on FA-6710 level); Action on Air Fail: VALVE CLOSES; Input Signal: 4-20 mA; Solenoid: XV-6701 (ESD); Stroke: 38 mm; Limit Switch: ZSL/ZSH-6701; Leakage Class: ANSI CLASS IV; Driver Type: Pneumatic Spring-Diaphragm Actuator\nCROSS REFERENCES: P&ID: TJC-LLD-PID-6701, Interlock: SEQ-6701."
+}

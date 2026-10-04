@@ -1,0 +1,59 @@
+{
+  "equipment": "DC-3401A",
+  "source_directory": "C:\\Users\\AryoBama\\Lomba\\CALIBER\\manufacturing-knowledge-hub\\data\\raw\\DC-3401A",
+  "total_objects": 113,
+  "valid_objects": 113,
+  "invalid_objects": 0,
+  "validation_passed": true,
+  "by_type": {
+    "document_chunks": 11,
+    "technical_records": 48,
+    "maintenance_records": 27,
+    "relationships": 27
+  },
+  "maintenance_semantics": {
+    "total_events": 27,
+    "actual_failures_or_breakdowns": 5,
+    "routine_preventive_or_tests": 22
+  },
+  "unmapped_technical_parameters": [
+    "Area Classification",
+    "Bed TC's",
+    "Catalyst",
+    "Catalyst Volume",
+    "Design Pressure",
+    "Design Temp.",
+    "Diameter (ID)",
+    "Driver Type",
+    "EA-3401 Heater Output",
+    "Ex Protection",
+    "Heater",
+    "Heater Current",
+    "Heater Type",
+    "Heater Voltage",
+    "Inert Medium",
+    "Internals",
+    "Operating Pressure",
+    "Operating Temp.",
+    "PSV",
+    "Reactor Type",
+    "Reductant",
+    "Shell Material",
+    "TIC Control",
+    "Tangent-Tangent",
+    "access_road",
+    "area",
+    "coordinate_system",
+    "equipment_name",
+    "equipment_tag",
+    "footprint",
+    "functional_location",
+    "hazardous_area_ref",
+    "main_pipe_rack",
+    "notes"
+  ],
+  "warnings": [
+    "65 object(s) lack formal revision in source (preserved as null without inferring)"
+  ],
+  "validation_errors": []
+}

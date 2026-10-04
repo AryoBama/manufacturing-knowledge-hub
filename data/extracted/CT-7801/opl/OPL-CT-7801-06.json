@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "CT-7801",
+  "document_id": "OPL-CT-7801-06",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-CT-7801-06 - Gearbox_Vibration_Monitoring_VSHH_7802.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-CT-7801-06-P01-C01",
+  "title": "One Point Lesson - Gearbox Vibration Monitoring (VSHH-7802) (OPL-CT-7801-06)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-CT-7801-06 - Gearbox Vibration Monitoring (VSHH-7802).\n\nEquipment: CT-7801 (COOLING TOWER CELL FAN), Discipline: Instrument, Area: 7800 - COOLING TOWER SYSTEM.\n\nRelated Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains gearbox vibration monitoring (vshh-7802) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. A rising vibration trend warns of gear or bearing wear before the fan trips or throws a blade. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Trend the VS-7802 reading on the PdM route\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Alarm at 6 mm/s and trip at 9 mm/s (VSHH-7802)\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Correlate the rise with gearbox oil temperature TE-7803\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Inspect the floating drive-shaft couplings\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Escalate a step-change to reliability\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Scheduled pH analyzer calibration | Likely Cause: Electrode drift | Action: Recalibrated AI-7805 on buffer solutions, replaced electrode\n- Symptom: Blowdown conductivity reading unreliable | Likely Cause: Conductivity cell fouled with scale | Action: Cleaned and recalibrated AI-7806 conductivity cell\n- Symptom: Routine barscreen cleaning on operator round | Likely Cause: Normal debris accumulation | Action: Raked barscreen clear, checked differential level\n\nKEY LEARNING POINTS:\n- Point 1: A rising vibration trend warns of gear or bearing wear before the fan trips or throws a blade.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

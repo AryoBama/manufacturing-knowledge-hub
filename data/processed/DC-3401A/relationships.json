@@ -1,0 +1,633 @@
+[
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T1",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "Maintain (EFF-4)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "DC-3401A",
+        "DC-3401A",
+        "DC-3401A",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-3401-T1",
+    "source_tag": "TSHH-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Bed temperature HIGH-HIGH (Setpoint: > 230 degC, Voting: 2oo3)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T2",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "Open Min-Flow (EFF-3)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "DC-3401A",
+        "DC-3401A",
+        "DC-3401A",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-3401-T2",
+    "source_tag": "PSHH-3404",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Reactor pressure HIGH-HIGH (Setpoint: > 5 barg, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T3",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "DC-3401A",
+        "DC-3401A",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-3401-T3",
+    "source_tag": "AI-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Outlet O2 HIGH during H2 (inerting fail) (Setpoint: > 100 ppm, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T4",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "DC-3401A",
+        "DC-3401A",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-3401-T4",
+    "source_tag": "FSLL-17343",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Nitrogen carrier flow LOW-LOW (Setpoint: < 150 kg/h, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T5",
+      "actions": [
+        "Trip (EFF-1)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "DC-3401A",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-3401-T5",
+    "source_tag": "EHT-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Heater element over-temperature (Setpoint: skin TC > 260 degC, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T6",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-2)",
+        "Open Min-Flow (EFF-3)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "DC-3401A",
+        "DC-3401A",
+        "DC-3401A",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-3401-T6",
+    "source_tag": "HS-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Emergency stop (manual) (Setpoint: Manual, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P1",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-3401-P1",
+    "source_tag": "AI-3401",
+    "relationship": "permissive_for",
+    "target_tag": "DC-3401A",
+    "context": "O2 free / inerting done (AI-3401 < 100 ppm) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P2",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-3401-P2",
+    "source_tag": "FT-17343",
+    "relationship": "permissive_for",
+    "target_tag": "DC-3401A",
+    "context": "N2 carrier flow established (> 150 kg/h) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P3",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-3401-P3",
+    "source_tag": "TE-3401",
+    "relationship": "permissive_for",
+    "target_tag": "DC-3401A",
+    "context": "Bed homogeneous 120 degC (all TE within 15 degC) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temperature Switch",
+      "related_interlock": "SEQ-3401 T1"
+    },
+    "relationship_id": "REL-PID-TSHH-3401",
+    "source_tag": "TSHH-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Bed temperature HIGH-HIGH (Temperature Switch). Function: Trip initiator T1 \u2192 SEQ-3401. Location: Reactor bed"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temperature Element",
+      "related_interlock": "SEQ-3401 P3"
+    },
+    "relationship_id": "REL-PID-TE-3401",
+    "source_tag": "TE-3401",
+    "relationship": "monitors",
+    "target_tag": "DC-3401A",
+    "context": "Multipoint Thermocouple (8 points) (Temperature Element). Function: Bed temperature profile monitoring. Location: Reactor bed"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "SEQ-3401 T2"
+    },
+    "relationship_id": "REL-PID-PSHH-3404",
+    "source_tag": "PSHH-3404",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Reactor pressure HIGH-HIGH (Pressure Switch). Function: Trip initiator T2 \u2192 SEQ-3401. Location: Reactor vent line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Indicator",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PI-3404",
+    "source_tag": "PI-3404",
+    "relationship": "monitors",
+    "target_tag": "DC-3401A",
+    "context": "Reactor Pressure Indicator (Pressure Indicator). Function: Local pressure indication. Location: Reactor vent line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Analyzer",
+      "related_interlock": "SEQ-3401 T3 / P1"
+    },
+    "relationship_id": "REL-PID-AI-3401",
+    "source_tag": "AI-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Outlet O2 Analyzer (Analyzer). Function: Trip initiator T3 & Permissive P1. Location: Reactor outlet line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Switch",
+      "related_interlock": "SEQ-3401 T4"
+    },
+    "relationship_id": "REL-PID-FSLL-17343",
+    "source_tag": "FSLL-17343",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Nitrogen carrier flow LOW-LOW (Flow Switch). Function: Trip initiator T4 \u2192 SEQ-3401. Location: N2 carrier line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Transmitter",
+      "related_interlock": "SEQ-3401 P2"
+    },
+    "relationship_id": "REL-PID-FT-17343",
+    "source_tag": "FT-17343",
+    "relationship": "permissive_for",
+    "target_tag": "DC-3401A",
+    "context": "Nitrogen carrier Flow Transmitter (Flow Transmitter). Function: Flow measurement & Permissive P2. Location: N2 carrier line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Indicator (DCS)",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FI-17343",
+    "source_tag": "FI-17343",
+    "relationship": "monitors",
+    "target_tag": "DC-3401A",
+    "context": "Nitrogen carrier Flow Indicator (Flow Indicator (DCS)). Function: Flow indication on DCS. Location: N2 carrier line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Switch (Skin)",
+      "related_interlock": "SEQ-3401 T5"
+    },
+    "relationship_id": "REL-PID-EHT-3401",
+    "source_tag": "EHT-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Heater element over-temperature (Temp Switch (Skin)). Function: Trip initiator T5 \u2192 SEQ-3401. Location: In-Line Heater EA-3401"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Hand Switch",
+      "related_interlock": "SEQ-3401 T6"
+    },
+    "relationship_id": "REL-PID-HS-3401",
+    "source_tag": "HS-3401",
+    "relationship": "triggers_trip",
+    "target_tag": "DC-3401A",
+    "context": "Emergency Stop Hand Switch (Hand Switch). Function: Trip initiator T6 (Manual ESD). Location: Local panel"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Controller",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-TIC-17343",
+    "source_tag": "TIC-17343",
+    "relationship": "controls",
+    "target_tag": "DC-3401A",
+    "context": "Heater Outlet Temp Controller (Temp Controller). Function: Control heater EA-3401. Location: Heater outlet"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "SEQ-3401 EFF-4"
+    },
+    "relationship_id": "REL-PID-FV-17343",
+    "source_tag": "FV-17343",
+    "relationship": "controls",
+    "target_tag": "DC-3401A",
+    "context": "N2 Carrier Flow Control Valve (Control Valve). Function: EFF-4: Maintain/Increase N2 on trip. Location: N2 carrier line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "SEQ-3401 EFF-2"
+    },
+    "relationship_id": "REL-PID-FV-3403",
+    "source_tag": "FV-3403",
+    "relationship": "controls",
+    "target_tag": "DC-3401A",
+    "context": "H2 Injection Flow Control Valve (Control Valve). Function: EFF-2: Close H2 on trip. Location: H2 injection line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FT-3403",
+    "source_tag": "FT-3403",
+    "relationship": "monitors",
+    "target_tag": "DC-3401A",
+    "context": "H2 Injection Flow Transmitter (Flow Transmitter). Function: Flow measurement for H2. Location: H2 injection line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Indicator (DCS)",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-FI-3403",
+    "source_tag": "FI-3403",
+    "relationship": "monitors",
+    "target_tag": "DC-3401A",
+    "context": "H2 Injection Flow Indicator (Flow Indicator (DCS)). Function: Flow indication on DCS. Location: H2 injection line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "On/Off Valve",
+      "related_interlock": "SEQ-3401 EFF-3"
+    },
+    "relationship_id": "REL-PID-PV-3404",
+    "source_tag": "PV-3404",
+    "relationship": "controls",
+    "target_tag": "DC-3401A",
+    "context": "Reactor Vent Valve (On/Off Valve). Function: EFF-3: Open reactor vent on trip. Location: Reactor vent line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Heater",
+      "related_interlock": "SEQ-3401 EFF-1"
+    },
+    "relationship_id": "REL-PID-EA-3401",
+    "source_tag": "EA-3401",
+    "relationship": "monitors",
+    "target_tag": "DC-3401A",
+    "context": "In-Line Electric Pre-Heater (Heater). Function: EFF-1: Trip Heater on trip. Location: N2 carrier line"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Relief Valve",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PSV-3401",
+    "source_tag": "PSV-3401",
+    "relationship": "controls",
+    "target_tag": "DC-3401A",
+    "context": "Pressure Safety Valve (Relief Valve). Function: Overpressure protection. Location: Reactor top"
+  }
+]

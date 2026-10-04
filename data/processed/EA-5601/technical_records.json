@@ -1,0 +1,934 @@
+[
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-001",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "TEMA Type",
+    "value": "BEM, HORIZONTAL",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "TEMA Type"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-002",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tube Length",
+    "value": 6000,
+    "unit": "mm",
+    "canonical_field": null,
+    "source_label": "Tube Length"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-003",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "No. of Tubes",
+    "value": 246,
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "No. of Tubes"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-004",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Duty",
+    "value": 1.85,
+    "unit": "MW",
+    "canonical_field": null,
+    "source_label": "Duty"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-005",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tube Passes",
+    "value": 2,
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Tube Passes"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-006",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Shell Side Fluid",
+    "value": "MP STEAM 10 barg",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Shell Side Fluid"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-007",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tube Material",
+    "value": "SS304L",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Tube Material"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-008",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tube Side Fluid",
+    "value": "HEXANE SOLVENT",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Tube Side Fluid"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-009",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Shell Material",
+    "value": "SA-516 Gr.70",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Shell Material"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-010",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Shell Design P/T",
+    "value": "13 barg / 200",
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Shell Design P/T"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-011",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tubesheet",
+    "value": "SA-516-70 + SS304 overlay",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Tubesheet"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-012",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tube Design P/T",
+    "value": "16 barg / 200",
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Tube Design P/T"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-013",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Baffle",
+    "value": "SEGMENTAL 25% CUT",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Baffle"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-014",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Tube OD x BWG",
+    "value": "19.05 mm x 14 BWG",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Tube OD x BWG"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-015",
+    "record_type": "technical_parameter",
+    "category": "Design & Mechanical",
+    "parameter": "Gasket",
+    "value": "SPIRAL WOUND SS316/GRAPHITE",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Gasket"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-016",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Heat Transfer Area",
+    "value": 88,
+    "unit": "m2",
+    "canonical_field": null,
+    "source_label": "Heat Transfer Area"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-017",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Steam Consumption",
+    "value": 3100,
+    "unit": "kg/h",
+    "canonical_field": null,
+    "source_label": "Steam Consumption"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-018",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Clean U",
+    "value": 620,
+    "unit": "W/m2K",
+    "canonical_field": null,
+    "source_label": "Clean U"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-019",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Solvent Inlet T",
+    "value": 45,
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Solvent Inlet T"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-020",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Service U",
+    "value": 480,
+    "unit": "W/m2K",
+    "canonical_field": null,
+    "source_label": "Service U"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-021",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Solvent Outlet T",
+    "value": 95,
+    "unit": "degC",
+    "canonical_field": null,
+    "source_label": "Solvent Outlet T"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-022",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Fouling (Tube)",
+    "value": 0.00035,
+    "unit": "m2K/W",
+    "canonical_field": null,
+    "source_label": "Fouling (Tube)"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-023",
+    "record_type": "technical_parameter",
+    "category": "Performance / Nozzle Data",
+    "parameter": "Pressure Drop (Tube)",
+    "value": 0.35,
+    "unit": "bar",
+    "canonical_field": null,
+    "source_label": "Pressure Drop (Tube)"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-DS-EA-5601",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - EA-5601.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "equipment_type": "Shell & Tube Heat Exchanger (BEM)",
+      "functional_location": "TJC-LLD-5600-01"
+    },
+    "record_id": "TR-TJC-LLD-DS-EA-5601-024",
+    "record_type": "technical_parameter",
+    "category": "Driver / Motor Data",
+    "parameter": "Driver Type",
+    "value": "None (static)",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "Driver Type"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TIC-5602",
+      "instrument_type": "Temp Controller",
+      "instrument_description": "Outlet Temperature Controller",
+      "function": "Control Loop C1, EFF-1 (Modulate Steam Valve)"
+    },
+    "record_id": "TR-TIC-5602-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TIC-5602 Setpoint",
+    "value": "SP 95",
+    "unit": "degC",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Outlet Temperature Controller Setpoint"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "TV-5602",
+      "instrument_type": "Control Valve",
+      "instrument_description": "Steam Control Valve",
+      "function": "Modulated by TIC-5602 (EFF-1)"
+    },
+    "record_id": "TR-TV-5602-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "TV-5602 Setpoint",
+    "value": "Air-actuated",
+    "unit": null,
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Steam Control Valve Setpoint"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PDAH-5605",
+      "instrument_type": "dP Alarm",
+      "instrument_description": "Tube-side Fouling Alarm",
+      "function": "Cause A1 / EFF-2 Alarm (Fouling)"
+    },
+    "record_id": "TR-PDAH-5605-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PDAH-5605 Setpoint",
+    "value": "> 0.7",
+    "unit": "bar",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Tube-side Fouling Alarm Setpoint"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "TJC-LLD-PID-5601",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 5.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_tag": "PSV-5607",
+      "instrument_type": "Pressure Safety Valve",
+      "instrument_description": "Tube-side Relief Valve",
+      "function": "Mechanical Relief (R1 / EFF-3)"
+    },
+    "record_id": "TR-PSV-5607-SETPOINT",
+    "record_type": "setpoint",
+    "category": "Instrumentation Setpoint",
+    "parameter": "PSV-5607 Setpoint",
+    "value": "16",
+    "unit": "barg",
+    "canonical_field": "instrument_setpoint",
+    "source_label": "Tube-side Relief Valve Setpoint"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-EQUIPMENT_TAG",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_tag",
+    "value": "EA-5601",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_tag"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-EQUIPMENT_NAME",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "equipment_name",
+    "value": "SOLVENT HEATER",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "equipment_name"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-AREA",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "area",
+    "value": "5600 \u2013 Solvent Recovery System",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "area"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-FUNCTIONAL_LOCATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "functional_location",
+    "value": "TJC-LLD-5600-01",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "functional_location"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-GRID_REFERENCE",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "grid_reference",
+    "value": "E-3",
+    "unit": null,
+    "canonical_field": "grid_reference",
+    "source_label": "grid_reference"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-ELEVATION",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "elevation",
+    "value": "+0.00",
+    "unit": "m",
+    "canonical_field": "elevation",
+    "source_label": "elevation"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-FOOTPRINT",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "footprint",
+    "value": "6.5 x 2.0",
+    "unit": "m (approx)",
+    "canonical_field": null,
+    "source_label": "footprint"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-COORDINATE_SYSTEM",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "coordinate_system",
+    "value": "Plant Grid (E/N)",
+    "unit": "metres",
+    "canonical_field": null,
+    "source_label": "coordinate_system"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-ACCESS_ROAD",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "access_road",
+    "value": "Road 6m",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "access_road"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-MAIN_PIPE_RACK",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "main_pipe_rack",
+    "value": "Main Pipe Rack shown",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "main_pipe_rack"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-HAZARDOUS_AREA_REF",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "hazardous_area_ref",
+    "value": "WPN-MAT-001",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "hazardous_area_ref"
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "PP-EA-5601",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan EA-5601.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {},
+    "record_id": "TR-EA-5601-NOTES",
+    "record_type": "coordinate",
+    "category": "Plant Location",
+    "parameter": "notes",
+    "value": "Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.",
+    "unit": null,
+    "canonical_field": null,
+    "source_label": "notes"
+  }
+]

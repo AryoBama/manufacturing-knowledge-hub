@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "YD-2301",
+  "document_id": "OPL-YD-2301-03",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-YD-2301-03 - Chain_Sprocket_Lubrication_and_Tension_S.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-YD-2301-03-P01-C01",
+  "title": "One Point Lesson - Chain & Sprocket Lubrication and Tension Check (OPL-YD-2301-03)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-YD-2301-03 - Chain & Sprocket Lubrication and Tension Check.\n\nEquipment: YD-2301 (POLYMER FLUID BED DRYER), Discipline: Mechanical, Area: 2300 \u2013 POWDER DRYING SYSTEM.\n\nRelated Interlock: SEQ-5500 (SIL 2), P&ID: TJC-LLD-PID-2301.\n\nPURPOSE & OBJECTIVE:\nChain & sprocket lubrication and tension check for YD-2301 (POLYMER FLUID BED DRYER) in the POWDER DRYING SYSTEM. A dry or slack drive chain slips and drops the drum speed, tripping SSLL-2305 and stopping drying.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Stop the drive motor, apply LOTO and remove the chain guard\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Check chain mid-span slack - target 15-25 mm deflection\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Apply high-temp drive chain lubricant evenly across the links\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Inspect SCM440 sprocket teeth for hooking or wear marks\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Re-fit chain guard, remove LOTO, test-run and monitor SS-2305 speed\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Steam and powder leaking at YD-2301 discharge gland | Likely Cause: PTFE 4526L gland packing worn beyond service limit | Action: Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after\n- Symptom: Minor powder weep at feed-end gland | Likely Cause: PTFE 4505L packing hardened and worn | Action: Renewed 2 pcs PTFE 4505L feed-end packing\n- Symptom: SSLL-2305 speed low alarm, chain slack observed | Likely Cause: Chain elongation with normal wear caused slip | Action: Adjusted take-up, lubricated chain, checked sprocket wear\n\nKEY LEARNING POINTS:\n- Point 1: A dry or slack drive chain slips and drops the drum speed, tripping SSLL-2305 and stopping drying.\n- Point 2: Respect the interlock SEQ-5500: e.g. TSHH-2301 trips at > 125 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-2301 before working on YD-2301.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

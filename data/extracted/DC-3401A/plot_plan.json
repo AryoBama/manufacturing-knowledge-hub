@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "DC-3401A",
+  "document_id": "TJC-LLD-PP-DC-3401A",
+  "document_type": "PLOT_PLAN",
+  "source": {
+    "file_name": "Plot Plan DC-3401A.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Construction"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-PP-DC-3401A-P01-C01",
+  "title": "Plot Plan & Location Data - DC-3401A",
+  "equipment_type": null,
+  "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: DC-3401A (CATALYST REDUCTION REACTOR).\nDocument No: TJC-LLD-PP-DC-3401A, Revision: Rev 0, Status: Issued for Construction.\nArea: 3400 \u2013 Catalyst Preparation, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: DC-3401A; equipment_name: CATALYST REDUCTION REACTOR; area: 3400 \u2013 Catalyst Preparation; functional_location: TJC-LLD-3400-01; grid_reference: C-2; elevation: +0.00 m; footprint: 2.5 x 2.5 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501: Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601: Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701: Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+}

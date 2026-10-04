@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "EA-5601",
+  "document_id": "TJC-LLD-PP-EA-5601",
+  "document_type": "PLOT_PLAN",
+  "source": {
+    "file_name": "Plot Plan EA-5601.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Construction"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-PP-EA-5601-P01-C01",
+  "title": "Plot Plan & Location Data - EA-5601",
+  "equipment_type": null,
+  "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: EA-5601 (SOLVENT HEATER).\nDocument No: TJC-LLD-PP-EA-5601, Revision: Rev 0, Status: Issued for Construction.\nArea: 5600 \u2013 Solvent Recovery System, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: EA-5601; equipment_name: SOLVENT HEATER; area: 5600 \u2013 Solvent Recovery System; functional_location: TJC-LLD-5600-01; grid_reference: E-3; elevation: +0.00 m; footprint: 6.5 x 2.0 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501 (RECYCLE GAS COMPRESSOR): Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601 (SOLVENT HEATER): Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701: Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+}

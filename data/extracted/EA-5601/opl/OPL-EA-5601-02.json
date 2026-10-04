@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "EA-5601",
+  "document_id": "OPL-EA-5601-02",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-EA-5601-02 - Gasket_Replacement_Flange_Box_Up.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-EA-5601-02-P01-C01",
+  "title": "One Point Lesson - Gasket Replacement & Flange Box-Up (OPL-EA-5601-02)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-EA-5601-02 - Gasket Replacement & Flange Box-Up.\n\nEquipment: EA-5601 (SOLVENT HEATER), Discipline: Mechanical, Area: 5600 - SOLVENT HEATING SYSTEM.\n\nRelated Interlock: N/A (control loop only), P&ID: TJC-LLD-PID-5601.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains gasket replacement & flange box-up for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Spiral-wound gaskets are single-use; reusing one causes hexane leaks at the channel and shell flanges. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Remove the old shell and channel gaskets completely\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Clean and inspect the gasket seating faces for damage\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Fit new SW SS316/graphite gaskets, correctly centred\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Torque the flange bolts in a cross pattern in passes\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Leak test on start-up and re-torque hot if permitted\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: High tube dP PDT-5605, low solvent outlet temperature | Likely Cause: Hexane fouling / polymer fines deposit on tube bores | Action: Hydrojetted 246 tubes, restored dP and duty, re-gasketed\n- Symptom: Hexane weep at channel flange | Likely Cause: Spiral-wound channel gasket relaxed / damaged | Action: Renewed channel gasket, re-torqued in cross pattern\n- Symptom: Continuous steam at condensate, high steam use | Likely Cause: Steam trap element failed open | Action: Replaced steam trap element, verified condensate temperature\n\nKEY LEARNING POINTS:\n- Point 1: Spiral-wound gaskets are single-use; reusing one causes hexane leaks at the channel and shell flanges.\n- Point 2: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.\n- Point 3: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

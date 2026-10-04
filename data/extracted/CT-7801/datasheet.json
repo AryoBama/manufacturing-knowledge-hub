@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "CT-7801",
+  "document_id": "TJC-LLD-DS-CT-7801",
+  "document_type": "DATASHEET",
+  "source": {
+    "file_name": "Equipment Datasheet - CT-7801.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-DS-CT-7801-P01-C01",
+  "title": "Equipment Datasheet - COOLING TOWER CELL FAN (CT-7801)",
+  "equipment_type": null,
+  "content": "EQUIPMENT DATASHEET: CT-7801 (COOLING TOWER CELL FAN).\nDocument No: TJC-LLD-DS-CT-7801, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Induced Draft Cooling Tower Fan.\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 7800 \u2013 Cooling Water System.\nFunctional Location: TJC-LLD-7800-01, Criticality: Non Critical.\nService: Induced draft cooling of circulating water for LLDPE unit.\nMECHANICAL SPECIFICATIONS:\nTower Type: INDUCED DRAFT, COUNTERFLOW, CELL 1; Blade Material: FRP (GRP); Fan Diameter: 7300 mm (24 ft); Drive Shaft: COMPOSITE FLOATING SHAFT; Fan Type: AXIAL, 6 FRP BLADES; Water Flow (Cell): 2200 m3/h; Air Flow: 1,150,000 m3/h; Range / Approach: 10 degC / 4 degC; Fan Speed: 128 rpm; Drift Eliminator: PVC CELLULAR; Gearbox Ratio: 11.3 : 1 RIGHT ANGLE; Fill: PVC FILM FILL; Gearbox Oil: ISO VG 220 (4.5 L)\nMOTOR & ELECTRICAL SPECIFICATIONS:\nOutput: 55 kW; Enclosure: TEFC IP56 (wet duty); Poles: 6 POLE; Area Classification: NON-HAZARDOUS; Speed: 970 rpm; Mounting: IN-DUCT, WET; Voltage: 380 V / 3 Ph / 50 Hz; Frame: IEC 250M; Rated Current: 104 A; Weight (Motor): 410 kg; Insulation Class: F; Driver Type: Electric Motor via Gearbox, TEFC\nCROSS REFERENCES: P&ID: TJC-LLD-PID-7801, Interlock: SEQ-7801."
+}

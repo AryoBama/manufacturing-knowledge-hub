@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "DC-3401A",
+  "document_id": "TJC-LLD-DS-DC-3401A",
+  "document_type": "DATASHEET",
+  "source": {
+    "file_name": "Equipment Datasheet - DC-3401A.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-DS-DC-3401A-P01-C01",
+  "title": "Equipment Datasheet - CATALYST REDUCTION REACTOR (DC-3401A)",
+  "equipment_type": null,
+  "content": "EQUIPMENT DATASHEET: DC-3401A (CATALYST REDUCTION REACTOR).\nDocument No: TJC-LLD-DS-DC-3401A, Revision: Rev 3, Status: Issued for Operation.\nEquipment Type: Fixed-Bed Reactor (Pd Catalyst).\nPlant Unit: Linear Low Density Polyethylene (LLDPE) Unit, Area: 3400 \u2013 Catalyst Preparation.\nFunctional Location: TJC-LLD-3400-01, Criticality: High Critical.\nService: Reduction of PdO catalyst to Pd using H2 (PdO + H2 -> Pd).\nMECHANICAL SPECIFICATIONS:\nReactor Type: VERTICAL FIXED-BED, DOWNFLOW; Catalyst: Pd / Al2O3 (PdO reduced to Pd); Catalyst Volume: 3.2 m3; Diameter (ID): 1200 mm; Shell Material: SA-516 Gr.70 + SS304 clad; Tangent-Tangent: 4500 mm; Internals: SS304 support grid + hold-down; Design Pressure: 6 barg / FV; Heater: EA-3401 ELECTRIC PRE-HEATER 180 kW; Operating Pressure: 2 kg/cm2g; Inert Medium: NITROGEN; Design Temp.: 250 \u00b0C; Reductant: HYDROGEN (diluted in N2); Operating Temp.: 180-210 \u00b0C; PSV: PSV-3401 set 6 barg\nPEFORMANCE DATA:\nEA-3401 Heater Output: 180 kW; Heater Voltage: 380 V / 3 Ph / 50 Hz; Heater Current: 273 A; Heater Type: IN-LINE ELECTRIC, N2 STREAM; TIC Control: TIC-17343 (heater outlet); Bed TC's: TE-3401-1..8 multipoint; Area Classification: ZONE 1, IIC T3; Ex Protection: Ex d IIC T3; Driver Type: None (static vessel) - assoc. heater EA-3401\nCROSS REFERENCES: P&ID: TJC-LLD-PID-3401, Interlock: SEQ-3401."
+}

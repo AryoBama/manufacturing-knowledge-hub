@@ -1,0 +1,235 @@
+[
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-DS-FA-8901",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - FA-8901.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_parameters": 24
+    },
+    "chunk_id": "TJC-LLD-DS-FA-8901-P01-C01",
+    "title": "Equipment Datasheet - REFLUX ACCUMULATOR DRUM (FA-8901)",
+    "equipment_type": "Horizontal Pressure Vessel",
+    "content": "EQUIPMENT DATASHEET: FA-8901 (REFLUX ACCUMULATOR DRUM).\nDocument ID: TJC-LLD-DS-FA-8901, Revision: Rev.03, Status: Issued for Operation.\nEquipment Type: Horizontal Pressure Vessel.\nFunctional Location: TJC-LLD-8900-01.\nService: Collect DA-8910 column overhead condensate; supply reflux & product.\nDesign & Mechanical - Vessel Type: HORIZONTAL DRUM WITH BOOT\nDesign & Mechanical - Shell Material: SA-516 Gr.70\nDesign & Mechanical - Head Type: 2:1 ELLIPSOIDAL\nDesign & Mechanical - Diameter (ID): 1600 mm\nDesign & Mechanical - Corrosion Allow.: 3.0 mm\nDesign & Mechanical - Tangent-Tangent: 4800 mm\nDesign & Mechanical - Boot: WATER DRAW-OFF BOOT DN300\nDesign & Mechanical - Design Pressure: 10 barg / FV\nDesign & Mechanical - PWHT: YES\nDesign & Mechanical - Operating Pressure: 3.5 barg\nDesign & Mechanical - Radiography: FULL (RT-1)\nDesign & Mechanical - Design Temp.: 120 degC\nDesign & Mechanical - PSV: PSV-8901 set 10 barg\nDesign & Mechanical - Operating Temp.: 68 degC\nDesign & Mechanical - N2 Blanket: PCV-8905 SPLIT-RANGE\nPerformance / Nozzle Data - Volume: 9.6 m3\nPerformance / Nozzle Data - Product Nozzle: N3 4 inch\nPerformance / Nozzle Data - Reflux Pump: GA-8920 A/B\nPerformance / Nozzle Data - Boot Drain: N4 2 inch\nPerformance / Nozzle Data - Inlet Nozzle: N1 8 inch (column overhead)\nPerformance / Nozzle Data - PSV Nozzle: N5 3 inch\nPerformance / Nozzle Data - Reflux Nozzle: N2 6 inch\nPerformance / Nozzle Data - Manway: 24 inch\nDriver / Motor Data - Driver Type: None (static)"
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-IL-FA-8901",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "logic_no": "SEQ-8901",
+      "sil_level": "SIL 1",
+      "total_trips": 4,
+      "total_permissives": 5
+    },
+    "chunk_id": "TJC-LLD-IL-FA-8901-P01-C01",
+    "title": "Interlock Logic & Cause Effect Matrix - FA-8901 (SEQ-8901)",
+    "equipment_type": null,
+    "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-8901 (REFLUX ACCUMULATOR (FA-8901) OVERHEAD PROTECTION LOGIC).\nDocument No: TJC-LLD-IL-FA-8901, Revision: Rev.03, Status: Issued for Operation, SIL Level: SIL 1.\nEquipment: FA-8901, Functional Location: TJC-LLD-8900-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Drum level HIGH-HIGH (LSHH-8901 > 85 %, 1oo2) -> Actions: Trip Feed (EFF-1), DCS Alarm (EFF-4)\n- T2: Drum level LOW-LOW (LSLL-8901 < 15 %, 1oo2) -> Actions: Trip Pump (EFF-2), DCS Alarm (EFF-4)\n- T3: Drum pressure HIGH-HIGH (PSHH-8902 > 8 barg, 1oo2) -> Actions: Open Min-Flow (EFF-3), DCS Alarm (EFF-4)\n- T4: Emergency stop (manual) (HS-8901 Manual, 1oo1) -> Actions: Trip Feed (EFF-1), Trip Pump (EFF-2), Open Min-Flow (EFF-3), DCS Alarm (EFF-4)\nSTART PERMISSIVES (AND-gate conditions to start):\n- P1: Level in normal band (20-80%) (LT-8901, Gate: AND)\n- P2: N2 blanket healthy (PT-8902, Gate: AND)\n- P3: Boot not flooded (LT-8903, Gate: AND)\n- P4: No active trip / reset done (DCS reset, Gate: AND)\n- \u2014: ALL permissives TRUE \u2192 START FA-8901 ENABLED (\u2014, Gate: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-8901, Datasheet: TJC-LLD-DS-FA-8901."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "OPL-FA-8901-01",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-FA-8901-01 - Level_Gauge_Bridle_Verification_LT_8901.pdf",
+      "page": 1,
+      "sheet": "Level Gauge & Bridle",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-8901 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-8901"
+    },
+    "chunk_id": "OPL-FA-8901-01-P01-C01",
+    "title": "One Point Lesson - Level Gauge / Bridle Verification (LT-8901) (OPL-FA-8901-01)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-FA-8901-01 - Level Gauge / Bridle Verification (LT-8901).\n\nEquipment: FA-8901, Discipline: Instrument, Area: 8900 - HEXANE COLUMN OVERHEAD SYSTEM.\n\nReferences: Interlock: SEQ-8901 (SIL 1), P&ID: TJC-LLD-PID-8901.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains level gauge / bridle verification (lt-8901) for FA-8901 (REFLUX ACCUMULATOR DRUM) in the HEXANE COLUMN OVERHEAD SYSTEM. A false level reading causes reflux pump cavitation (low) or column flooding (high); the transmitter must agree with the gauge. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Cross-check LT-8901 against the level bridle gauge\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Blow down the bridle to clear any plugging\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Confirm the LSHH-8901 and LSLL-8901 switch actions\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Verify the level tracks correctly through a level change\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Log any deviation and recalibrate if needed\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Reflux drum level transmitter drifting vs gauge | Cause: Transmitter zero drift | Action: Recalibrated LT-8901 against the bridle gauge\n- Symptom: Blanket / vent split-range valve hunting | Cause: Split-range calibration overlap incorrect | Action: Re-tuned PCV-8905 split-range, verified PT-8902 hold\n- Symptom: Proof test of drum high-high level trip | Cause: Within tolerance | Action: Recalibrated LSHH-8901 and verified EFF-1 column feed trip\n\nKEY LEARNING POINTS:\n- Point 1: A false level reading causes reflux pump cavitation (low) or column flooding (high); the transmitter must agree with the gauge.\n- Point 2: Respect the interlock SEQ-8901: e.g. LSHH-8901 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-8901 before working on FA-8901.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "OPL-FA-8901-02",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-FA-8901-02 - PSV_8901_Testing_Car_Seal_Management.pdf",
+      "page": 1,
+      "sheet": "PSV-8901 Testing & Car-Seal ",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-8901 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-8901"
+    },
+    "chunk_id": "OPL-FA-8901-02-P01-C01",
+    "title": "One Point Lesson - PSV-8901 Testing & Car-Seal Management (OPL-FA-8901-02)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-FA-8901-02 - PSV-8901 Testing & Car-Seal Management.\n\nEquipment: FA-8901, Discipline: Mechanical, Area: 8900 - HEXANE COLUMN OVERHEAD SYSTEM.\n\nReferences: Interlock: SEQ-8901 (SIL 1), P&ID: TJC-LLD-PID-8901.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains psv-8901 testing & car-seal management for FA-8901 (REFLUX ACCUMULATOR DRUM) in the HEXANE COLUMN OVERHEAD SYSTEM. The relief valve is the drum's last line of overpressure defence and must be proven and never isolated in service. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Confirm PSV-8901 is set to 10 barg\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Carry out the off-line pop test per the statutory schedule\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Keep the PSV isolation car-sealed open in service\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Tag and file the test certificate\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Never block-in a live PSV without an authorised spare\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Statutory relief valve test | Cause: Set pressure drift found | Action: Overhauled PSV-8901, lapped seat, re-set 10 barg, certified\n- Symptom: Boot drain valve N4 passing / leaking | Cause: Seat eroded by water/solids | Action: Reseated / replaced boot drain valve HV-8904\n- Symptom: Scheduled corrosion monitoring of boot | Cause: Wall thickness within corrosion allowance | Action: UT survey of boot and shell bottom, logged in RBI file\n\nKEY LEARNING POINTS:\n- Point 1: The relief valve is the drum's last line of overpressure defence and must be proven and never isolated in service.\n- Point 2: Respect the interlock SEQ-8901: e.g. LSHH-8901 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-8901 before working on FA-8901.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "OPL-FA-8901-03",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-FA-8901-03 - Water_Boot_Draining_LT_8903.pdf",
+      "page": 1,
+      "sheet": "Water Boot Draining",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-8901 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-8901"
+    },
+    "chunk_id": "OPL-FA-8901-03-P01-C01",
+    "title": "One Point Lesson - Water Boot Draining (LT-8903) (OPL-FA-8901-03)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-FA-8901-03 - Water Boot Draining (LT-8903).\n\nEquipment: FA-8901, Discipline: Process / Operations, Area: 8900 - HEXANE COLUMN OVERHEAD SYSTEM.\n\nReferences: Interlock: SEQ-8901 (SIL 1), P&ID: TJC-LLD-PID-8901.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains water boot draining (lt-8903) for FA-8901 (REFLUX ACCUMULATOR DRUM) in the HEXANE COLUMN OVERHEAD SYSTEM. Water accumulating in the boot upsets reflux quality and can slug the reflux pump; regular draining keeps the interface controlled. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Monitor the boot interface level LT-8903\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Drain the boot N4 to the oily-water sewer via HV-8904\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Stop draining before hydrocarbon breaks through (watch interface)\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Log the drain volume each shift\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Report a rising water make to process\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Reflux drum level transmitter drifting vs gauge | Cause: Transmitter zero drift | Action: Recalibrated LT-8901 against the bridle gauge\n- Symptom: Statutory relief valve test | Cause: Set pressure drift found | Action: Overhauled PSV-8901, lapped seat, re-set 10 barg, certified\n- Symptom: Boot drain valve N4 passing / leaking | Cause: Seat eroded by water/solids | Action: Reseated / replaced boot drain valve HV-8904\n\nKEY LEARNING POINTS:\n- Point 1: Water accumulating in the boot upsets reflux quality and can slug the reflux pump; regular draining keeps the interface controlled.\n- Point 2: Respect the interlock SEQ-8901: e.g. LSHH-8901 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-8901 before working on FA-8901.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "OPL-FA-8901-04",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-FA-8901-04 - Nitrogen_Blanketing_PCV_8905.pdf",
+      "page": 1,
+      "sheet": "Nitrogen Blanketing ",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-8901 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-8901"
+    },
+    "chunk_id": "OPL-FA-8901-04-P01-C01",
+    "title": "One Point Lesson - Nitrogen Blanketing (PCV-8905) (OPL-FA-8901-04)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-FA-8901-04 - Nitrogen Blanketing (PCV-8905).\n\nEquipment: FA-8901, Discipline: Process / Operations, Area: 8900 - HEXANE COLUMN OVERHEAD SYSTEM.\n\nReferences: Interlock: SEQ-8901 (SIL 1), P&ID: TJC-LLD-PID-8901.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains nitrogen blanketing (pcv-8905) for FA-8901 (REFLUX ACCUMULATOR DRUM) in the HEXANE COLUMN OVERHEAD SYSTEM. The nitrogen blanket keeps air out of the hexane drum and holds a stable pressure; loss of blanket risks an explosive atmosphere. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Verify the PCV-8905 split-range holds PT-8902 pressure\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Confirm the blanket makes up on falling pressure\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Confirm the vent relieves on rising pressure\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Respond immediately to a blanket-loss alarm\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Check the N2 supply header pressure is adequate\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Reflux drum level transmitter drifting vs gauge | Cause: Transmitter zero drift | Action: Recalibrated LT-8901 against the bridle gauge\n- Symptom: Statutory relief valve test | Cause: Set pressure drift found | Action: Overhauled PSV-8901, lapped seat, re-set 10 barg, certified\n- Symptom: Boot drain valve N4 passing / leaking | Cause: Seat eroded by water/solids | Action: Reseated / replaced boot drain valve HV-8904\n\nKEY LEARNING POINTS:\n- Point 1: The nitrogen blanket keeps air out of the hexane drum and holds a stable pressure; loss of blanket risks an explosive atmosphere.\n- Point 2: Respect the interlock SEQ-8901: e.g. LSHH-8901 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-8901 before working on FA-8901.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "OPL-FA-8901-05",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-FA-8901-05 - Reflux_Pump_Low_Level_Protection_LSLL_89.pdf",
+      "page": 1,
+      "sheet": "Reflux Pump Low-Level ",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-8901 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-8901"
+    },
+    "chunk_id": "OPL-FA-8901-05-P01-C01",
+    "title": "One Point Lesson - Reflux Pump Low-Level Protection (LSLL-8901) (OPL-FA-8901-05)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-FA-8901-05 - Reflux Pump Low-Level Protection (LSLL-8901).\n\nEquipment: FA-8901, Discipline: Instrument, Area: 8900 - HEXANE COLUMN OVERHEAD SYSTEM.\n\nReferences: Interlock: SEQ-8901 (SIL 1), P&ID: TJC-LLD-PID-8901.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains reflux pump low-level protection (lsll-8901) for FA-8901 (REFLUX ACCUMULATOR DRUM) in the HEXANE COLUMN OVERHEAD SYSTEM. A low drum level cavitates and damages the GA-8920 reflux pump; the LSLL trip must be proven and never casually bypassed. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Confirm the LSLL-8901 trip stops GA-8920\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Test the trip during commissioning and proof tests\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Never bypass the trip without an authorised permit\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Investigate any repeated low-level events\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Verify the pump restarts only after level recovers\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Reflux drum level transmitter drifting vs gauge | Cause: Transmitter zero drift | Action: Recalibrated LT-8901 against the bridle gauge\n- Symptom: Blanket / vent split-range valve hunting | Cause: Split-range calibration overlap incorrect | Action: Re-tuned PCV-8905 split-range, verified PT-8902 hold\n- Symptom: Proof test of drum high-high level trip | Cause: Within tolerance | Action: Recalibrated LSHH-8901 and verified EFF-1 column feed trip\n\nKEY LEARNING POINTS:\n- Point 1: A low drum level cavitates and damages the GA-8920 reflux pump; the LSLL trip must be proven and never casually bypassed.\n- Point 2: Respect the interlock SEQ-8901: e.g. LSHH-8901 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-8901 before working on FA-8901.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "OPL-FA-8901-06",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-FA-8901-06 - Corrosion_Thickness_Inspection.pdf",
+      "page": 1,
+      "sheet": "Corrosion & Thickness Inspectio",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-8901 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-8901"
+    },
+    "chunk_id": "OPL-FA-8901-06-P01-C01",
+    "title": "One Point Lesson - Corrosion / Thickness Inspection (OPL-FA-8901-06)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-FA-8901-06 - Corrosion / Thickness Inspection.\n\nEquipment: FA-8901, Discipline: Mechanical, Area: 8900 - HEXANE COLUMN OVERHEAD SYSTEM.\n\nReferences: Interlock: SEQ-8901 (SIL 1), P&ID: TJC-LLD-PID-8901.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains corrosion / thickness inspection for FA-8901 (REFLUX ACCUMULATOR DRUM) in the HEXANE COLUMN OVERHEAD SYSTEM. The boot and shell bottom see the water phase and are corrosion-prone; periodic thickness checks catch wall loss early. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Take UT thickness readings on the shell bottom and boot\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Compare readings to the 3.0 mm corrosion allowance\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Inspect the mist pad and vortex breaker at turnaround\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Record the readings in the RBI / inspection file\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Flag any accelerated wall loss to inspection engineering\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Statutory relief valve test | Cause: Set pressure drift found | Action: Overhauled PSV-8901, lapped seat, re-set 10 barg, certified\n- Symptom: Boot drain valve N4 passing / leaking | Cause: Seat eroded by water/solids | Action: Reseated / replaced boot drain valve HV-8904\n- Symptom: Scheduled corrosion monitoring of boot | Cause: Wall thickness within corrosion allowance | Action: UT survey of boot and shell bottom, logged in RBI file\n\nKEY LEARNING POINTS:\n- Point 1: The boot and shell bottom see the water phase and are corrosion-prone; periodic thickness checks catch wall loss early.\n- Point 2: Respect the interlock SEQ-8901: e.g. LSHH-8901 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-8901 before working on FA-8901.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "OPL-FA-8901-07",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-FA-8901-07 - Manway_Box_Up_After_Internal_Inspection.pdf",
+      "page": 1,
+      "sheet": "Manway Box-Up",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-8901 (SIL 1)",
+      "pid_reference": "TJC-LLD-PID-8901"
+    },
+    "chunk_id": "OPL-FA-8901-07-P01-C01",
+    "title": "One Point Lesson - Manway Box-Up After Internal Inspection (OPL-FA-8901-07)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-FA-8901-07 - Manway Box-Up After Internal Inspection.\n\nEquipment: FA-8901, Discipline: Mechanical, Area: 8900 - HEXANE COLUMN OVERHEAD SYSTEM.\n\nReferences: Interlock: SEQ-8901 (SIL 1), P&ID: TJC-LLD-PID-8901.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains manway box-up after internal inspection for FA-8901 (REFLUX ACCUMULATOR DRUM) in the HEXANE COLUMN OVERHEAD SYSTEM. Correct gasket selection and bolt torque after inspection prevent a hexane leak from the manway. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Fit a new SW SS316/graphite manway gasket\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Torque the manway bolts in a star pattern in passes\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Leak test with the nitrogen blanket\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Re-instate the PSV and all instruments\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Confirm the drum is ready before re-introducing hydrocarbon\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Statutory relief valve test | Cause: Set pressure drift found | Action: Overhauled PSV-8901, lapped seat, re-set 10 barg, certified\n- Symptom: Boot drain valve N4 passing / leaking | Cause: Seat eroded by water/solids | Action: Reseated / replaced boot drain valve HV-8904\n- Symptom: Scheduled corrosion monitoring of boot | Cause: Wall thickness within corrosion allowance | Action: UT survey of boot and shell bottom, logged in RBI file\n\nKEY LEARNING POINTS:\n- Point 1: Correct gasket selection and bolt torque after inspection prevent a hexane leak from the manway.\n- Point 2: Respect the interlock SEQ-8901: e.g. LSHH-8901 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-8901 before working on FA-8901.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "TJC-LLD-PID-8901",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 8.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_instruments": 11
+    },
+    "chunk_id": "TJC-LLD-PID-8901-P01-C01",
+    "title": "Piping & Instrumentation Diagram Register - FA-8901",
+    "equipment_type": null,
+    "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: FA-8901 (REFLUX ACCUMULATOR DRUM).\nDocument No: TJC-LLD-PID-8901, Revision: N/A, Status: Issued for Operation.\nArea: 8900 \u2013 Solvent Fractionation, Functional Location: TJC-LLD-8900-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- LSHH-8901: Drum level HIGH-HIGH (Level Switch) [Setpoint: > 85 %]. Function: Cause T1 (Trip Column Feed). Location: Drum FA-8901 Level Bridle\n- LSLL-8901: Drum level LOW-LOW (Level Switch) [Setpoint: < 15 %]. Function: Cause T2 (Trip Reflux Pump GA-8920). Location: Drum FA-8901 Level Bridle\n- PSHH-8902: Drum pressure HIGH-HIGH (Pressure Switch) [Setpoint: > 8 barg]. Function: Cause T3 (Open Vent PCV-8905). Location: Drum FA-8901\n- HS-8901: Manual Emergency Stop (Hand Switch) [Setpoint: Manual ]. Function: Cause T4 (Manual E-Stop). Location: Local Control Station\n- LT-8901: Level Transmitter (Level Transmitter) [Setpoint: 20-80 %]. Function: Permissive P1 (Level in normal band) & Control. Location: Drum FA-8901 Level Bridle\n- PT-8902: Pressure Transmitter (Pressure Transmitter). Function: Permissive P2 (N2 blanket healthy) & Control. Location: Drum FA-8901\n- LT-8903: Boot Interface Level (Level Transmitter). Function: Permissive P3 (Boot not flooded) & Control. Location: Drum FA-8901 Water Boot\n- PCV-8905: N2 Blanketing Split-Range Valve (Control Valve). Function: Nitrogen blanketing & Venting. Location: N2 Blanket / Vent Header\n- PSV-8901: Pressure Safety Valve (Relief Valve) [Setpoint: 10 barg]. Function: Overpressure protection (Car-sealed open). Location: Drum FA-8901 Top Nozzle\n- HV-8904: Boot Drain Valve (Hand Valve). Function: Manual boot draining. Location: Water Boot Drain Line\n- GA-8920 A/B: Reflux Pump A/B (Duty/Standby) (Centrifugal Pump). Function: Memompa refluks ke kolom DA-8910. Location: Pump Skid\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-FA-8901, Interlock: SEQ-8901 (SIL 1)."
+  },
+  {
+    "equipment_tag": "FA-8901",
+    "document_id": "PP-FA-8901",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan - FA-8901.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {
+      "total_nearby_equipment": 8
+    },
+    "chunk_id": "PP-FA-8901-P01-C01",
+    "title": "Plot Plan & Location Data - FA-8901",
+    "equipment_type": null,
+    "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: FA-8901 (REFLUX ACCUMULATOR DRUM).\nDocument No: PP-FA-8901, Revision: Rev.00, Status: Issued for Construction.\nArea: 8900 \u2013 Solvent Fractionation, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: FA-8901; equipment_name: REFLUX ACCUMULATOR DRUM; area: 8900 \u2013 Solvent Fractionation; functional_location: TJC-LLD-8900-01; grid_reference: H-4; elevation: +4.50 m; footprint: 5.0 x 2.0 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501 (RECYCLE GAS COMPRESSOR): Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601 (SOLVENT HEATER): Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701 (SEPARATOR LEVEL CONTROL VALVE): Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801 (COOLING TOWER CELL FAN): Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901 (REFLUX ACCUMULATOR DRUM): Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+  }
+]

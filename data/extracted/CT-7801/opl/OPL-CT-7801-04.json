@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "CT-7801",
+  "document_id": "OPL-CT-7801-04",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-CT-7801-04 - Circulating_Water_pH_Control_AI_7805.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-CT-7801-04-P01-C01",
+  "title": "One Point Lesson - Circulating Water pH Control (AI-7805) (OPL-CT-7801-04)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-CT-7801-04 - Circulating Water pH Control (AI-7805).\n\nEquipment: CT-7801 (COOLING TOWER CELL FAN), Discipline: Process / Operations, Area: 7800 - COOLING TOWER SYSTEM.\n\nRelated Interlock: SEQ-7801 (SIL 1), P&ID: TJC-LLD-PID-7801.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains circulating water ph control (ai-7805) for CT-7801 (COOLING TOWER CELL FAN) in the COOLING TOWER SYSTEM. Wrong pH causes scaling or corrosion across the entire cooling water loop, not just this cell. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Read the AI-7805 pH each shift (target 7.0-8.5)\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Check the acid / caustic dosing pumps are running\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Cross-check against a manual lab titration\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Adjust the dosing set-point as needed\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Report large pH swings to water treatment\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Routine barscreen cleaning on operator round | Likely Cause: Normal debris accumulation | Action: Raked barscreen clear, checked differential level\n- Symptom: Scheduled fan gearbox oil change | Likely Cause: Routine - oil sample acceptable | Action: Drained and refilled ISO VG 220, replaced breather\n- Symptom: VSHH-7802 vibration alarm on CT-7801 fan | Likely Cause: Leading-edge erosion on one FRP blade caused imbalance | Action: Inspected blades, re-balanced fan, vibration normalised\n\nKEY LEARNING POINTS:\n- Point 1: Wrong pH causes scaling or corrosion across the entire cooling water loop, not just this cell.\n- Point 2: Respect the interlock SEQ-7801: e.g. VSHH-7802 trips at > 9 mm/s - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-7801 before working on CT-7801.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

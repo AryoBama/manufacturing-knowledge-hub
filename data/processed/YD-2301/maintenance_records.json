@@ -1,0 +1,752 @@
+[
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 2,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560138",
+    "date": "2024-06-14",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Outlet moisture reading drifting vs lab sample",
+    "root_cause": "Analyzer sample line partly blocked and cell drift",
+    "corrective_action": "Cleaned sample line and recalibrated MT-2306 to lab reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 22,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560184",
+    "date": "2024-07-26",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 27,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560149",
+    "date": "2024-08-05",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "O2 analyzer reading unstable, inerting confidence low",
+    "root_cause": "O2 sensor cell end of life",
+    "corrective_action": "Replaced O2 sensor cell, calibrated on span gas, verified ASHH-2307",
+    "downtime_hours": 6.0,
+    "parts_replaced": [
+      "O2 analyzer sensor cell"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 40,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560161",
+    "date": "2024-09-10",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 45,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560170",
+    "date": "2024-09-20",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 58,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560132",
+    "date": "2024-10-23",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "FT-2302 nitrogen purge flow reading low/erratic",
+    "root_cause": "Flow element fouled with fine powder carryover",
+    "corrective_action": "Removed and cleaned flow element, verified FSLL-2302 trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 64,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560155",
+    "date": "2024-11-04",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 68,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560123",
+    "date": "2024-11-15",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled proof test of dryer outlet high-high temperature trip",
+    "root_cause": "Set-point within tolerance, minor zero drift corrected",
+    "corrective_action": "Recalibrated TSHH-2301 to 125 degC and function tested to logic",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 86,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560121",
+    "date": "2024-12-27",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Minor powder weep at feed-end gland",
+    "root_cause": "PTFE 4505L packing hardened and worn",
+    "corrective_action": "Renewed 2 pcs PTFE 4505L feed-end packing",
+    "downtime_hours": 10.5,
+    "parts_replaced": [
+      "PTFE packing PILLER 4505L (2 pcs)"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 103,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560205",
+    "date": "2025-02-08",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-5500",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 108,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560202",
+    "date": "2025-02-26",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-5500",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 110,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560194",
+    "date": "2025-03-01",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 111,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560117",
+    "date": "2025-03-03",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Steam and powder leaking at YD-2301 discharge gland",
+    "root_cause": "PTFE 4526L gland packing worn beyond service limit",
+    "corrective_action": "Replaced 8 pcs PTFE 4526L packing, staggered joints, re-nipped after warm-up",
+    "downtime_hours": 12.0,
+    "parts_replaced": [
+      "PTFE packing PILLER 4526L (8 pcs)"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 115,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560141",
+    "date": "2025-03-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled drive gearbox oil change",
+    "root_cause": "Routine - oil sample acceptable",
+    "corrective_action": "Drained and refilled ISO VG 220, replaced breather",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 220 gear oil (18 L)"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 121,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560189",
+    "date": "2025-03-25",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 127,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560200",
+    "date": "2025-04-09",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 136,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560182",
+    "date": "2025-04-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 138,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560168",
+    "date": "2025-05-04",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 140,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560127",
+    "date": "2025-05-21",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "SSLL-2305 speed low alarm, chain slack observed",
+    "root_cause": "Chain elongation with normal wear caused slip",
+    "corrective_action": "Adjusted take-up, lubricated chain, checked sprocket wear",
+    "downtime_hours": 4.0,
+    "parts_replaced": [
+      "Chain oil"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 159,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560166",
+    "date": "2025-07-23",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 169,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560134",
+    "date": "2025-08-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Rumbling noise and vibration from NDE trunnion",
+    "root_cause": "NDE trunnion support roller bearing worn/spalled",
+    "corrective_action": "Replaced NDE trunnion roller bearing, re-checked drum tracking",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Trunnion roller bearing"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 173,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560143",
+    "date": "2025-09-16",
+    "failure_occurred": true,
+    "failure_mode": "Baseplate / Foundation Degradation",
+    "symptom": "Suspected internal steam tube leak (rising moisture, water in powder)",
+    "root_cause": "Two steam tubes cracked from thermal cycling",
+    "corrective_action": "Hydrotested bundle, plugged 2 leaking tubes both ends",
+    "downtime_hours": 36.0,
+    "parts_replaced": [
+      "Tube plugs (tapered) x4"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 175,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560147",
+    "date": "2025-09-17",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIL-2 proof test of dryer shutdown logic",
+    "root_cause": "All trips healthy",
+    "corrective_action": "Simulated TSHH/FSLL/ASHH trips, verified EFF actions and centrifuge trip",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 178,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560175",
+    "date": "2025-09-23",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 185,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560210",
+    "date": "2025-10-09",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-5500",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 196,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560130",
+    "date": "2025-11-13",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Live steam leaking at YD-2301 head rotary joint",
+    "root_cause": "Kadant rotary joint carbon seal worn out",
+    "corrective_action": "Replaced rotary joint seal kit, renewed NBR O-ring, leak tested",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Kadant rotary joint seal kit"
+    ]
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 199,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560159",
+    "date": "2025-11-19",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "YD-2301",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History YD-2301.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 209,
+      "original_tag": "YD-2301",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560178",
+    "date": "2025-12-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  }
+]

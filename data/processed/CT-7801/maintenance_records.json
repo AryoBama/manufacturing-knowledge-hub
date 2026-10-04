@@ -1,0 +1,726 @@
+[
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 3,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560713",
+    "date": "2024-06-14",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 6,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560733",
+    "date": "2024-06-22",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-7801",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 11,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560696",
+    "date": "2024-07-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 18,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560673",
+    "date": "2024-07-22",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 38,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560679",
+    "date": "2024-09-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 44,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560652",
+    "date": "2024-09-19",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Displaced drift eliminator panels, visible drift",
+    "root_cause": "Panels dislodged by wind/age",
+    "corrective_action": "Realigned and secured PVC drift eliminator panels",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "PVC eliminator panels"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 50,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560727",
+    "date": "2024-10-03",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 53,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560645",
+    "date": "2024-10-07",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled pH analyzer calibration",
+    "root_cause": "Electrode drift",
+    "corrective_action": "Recalibrated AI-7805 on buffer solutions, replaced electrode",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "pH electrode"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 60,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560657",
+    "date": "2024-10-26",
+    "failure_occurred": true,
+    "failure_mode": "High Vibration / Resonance",
+    "symptom": "Vibration traced to drive-shaft coupling",
+    "root_cause": "Composite floating-shaft coupling worn",
+    "corrective_action": "Replaced drive-shaft coupling, aligned, tested",
+    "downtime_hours": 10.0,
+    "parts_replaced": [
+      "Composite shaft coupling"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 61,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560663",
+    "date": "2024-10-28",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled IR test of wet-duty fan motor",
+    "root_cause": "Insulation healthy",
+    "corrective_action": "Megger and PI test, checked cable gland sealing",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 66,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560699",
+    "date": "2024-11-12",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 83,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560630",
+    "date": "2024-12-24",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Routine barscreen cleaning on operator round",
+    "root_cause": "Normal debris accumulation",
+    "corrective_action": "Raked barscreen clear, checked differential level",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 87,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560685",
+    "date": "2024-12-31",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 95,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560730",
+    "date": "2025-01-18",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 97,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560667",
+    "date": "2025-01-25",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Reduced cooling performance, collapsed fill",
+    "root_cause": "PVC film fill degraded / partially collapsed",
+    "corrective_action": "Replaced degraded fill section, restored performance",
+    "downtime_hours": 24.0,
+    "parts_replaced": [
+      "PVC film fill packs"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 112,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560650",
+    "date": "2025-03-04",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Vibration and noise from fan bearing",
+    "root_cause": "Spherical roller fan bearing worn",
+    "corrective_action": "Replaced fan bearing, re-greased, checked shaft",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Spherical roller bearing"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 129,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560642",
+    "date": "2025-04-12",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "TSHH-7803 gearbox oil temperature rising",
+    "root_cause": "Degraded oil and fouled oil cooler",
+    "corrective_action": "Changed oil, cleaned oil cooler, verified temperature",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 220 oil"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 149,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560703",
+    "date": "2025-06-14",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 152,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560737",
+    "date": "2025-06-23",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "SIS proof test of SEQ-7801",
+    "root_cause": "All trips functioned correctly",
+    "corrective_action": "Simulated trip initiators, verified effects and reset",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 153,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560724",
+    "date": "2025-06-23",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 160,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560688",
+    "date": "2025-07-23",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 162,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560719",
+    "date": "2025-07-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 166,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560636",
+    "date": "2025-08-21",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled fan gearbox oil change",
+    "root_cause": "Routine - oil sample acceptable",
+    "corrective_action": "Drained and refilled ISO VG 220, replaced breather",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "ISO VG 220 gear oil (4.5 L)"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 174,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560654",
+    "date": "2025-09-17",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Blowdown conductivity reading unreliable",
+    "root_cause": "Conductivity cell fouled with scale",
+    "corrective_action": "Cleaned and recalibrated AI-7806 conductivity cell",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 179,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560690",
+    "date": "2025-09-24",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 184,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560638",
+    "date": "2025-10-04",
+    "failure_occurred": true,
+    "failure_mode": "High Vibration / Resonance",
+    "symptom": "VSHH-7802 vibration alarm on CT-7801 fan",
+    "root_cause": "Leading-edge erosion on one FRP blade caused imbalance",
+    "corrective_action": "Inspected blades, re-balanced fan, vibration normalised",
+    "downtime_hours": 12.0,
+    "parts_replaced": [
+      "Balance weights"
+    ]
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History CT-7801.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 192,
+      "original_tag": "CT-7801",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560707",
+    "date": "2025-10-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  }
+]

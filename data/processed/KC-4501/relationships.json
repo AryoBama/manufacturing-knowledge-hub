@@ -1,1 +1,654 @@
-[]
+[
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T1",
+      "actions": [
+        "Trip (EFF-1)",
+        "Open Min-Flow (EFF-2)",
+        "Close Discharge (EFF-3)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "KC-4501",
+        "KC-4501",
+        "KC-4501",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-4501-T1",
+    "source_tag": "PSLL-4504",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Lube oil pressure LOW-LOW (Setpoint: < 1.5 barg, Voting: 2oo3)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T2",
+      "actions": [
+        "Trip (EFF-1)",
+        "Open Min-Flow (EFF-2)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "KC-4501",
+        "KC-4501",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-4501-T2",
+    "source_tag": "TSHH-4503",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Discharge temperature HIGH-HIGH (Setpoint: > 140 degC, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T3",
+      "actions": [
+        "Trip (EFF-1)",
+        "Open Min-Flow (EFF-2)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "KC-4501",
+        "KC-4501",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-4501-T3",
+    "source_tag": "PSHH-4502",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Discharge pressure HIGH-HIGH (Setpoint: > 14 barg, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T4",
+      "actions": [
+        "Trip (EFF-1)",
+        "Open Min-Flow (EFF-2)",
+        "Close Discharge (EFF-3)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "KC-4501",
+        "KC-4501",
+        "KC-4501",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-4501-T4",
+    "source_tag": "VSHH-4505",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Crosshead vibration HIGH-HIGH (Setpoint: > 11 mm/s, Voting: 1oo2)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T5",
+      "actions": [
+        "Trip (EFF-1)",
+        "Close Discharge (EFF-3)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "KC-4501",
+        "KC-4501",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-4501-T5",
+    "source_tag": "LSHH-4510",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Suction KO drum level HIGH-HIGH (Setpoint: > 80 %, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T6",
+      "actions": [
+        "Trip (EFF-1)",
+        "Open Min-Flow (EFF-2)",
+        "DCS Alarm (EFF-5)"
+      ],
+      "targets": [
+        "KC-4501",
+        "KC-4501",
+        "DCS"
+      ],
+      "sil_level": "SIL 2"
+    },
+    "relationship_id": "REL-SEQ-4501-T6",
+    "source_tag": "PSLL-4501",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Suction pressure LOW-LOW (Setpoint: < 0.3 barg, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P1",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-4501-P1",
+    "source_tag": "PSLL-4504",
+    "relationship": "permissive_for",
+    "target_tag": "KC-4501",
+    "context": "Lube oil pressure OK (> 2 barg) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P2",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-4501-P2",
+    "source_tag": "FT-4506",
+    "relationship": "permissive_for",
+    "target_tag": "KC-4501",
+    "context": "Seal gas established (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P3",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-4501-P3",
+    "source_tag": "LT-4510",
+    "relationship": "permissive_for",
+    "target_tag": "KC-4501",
+    "context": "KO drum level normal (< 50%) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-IL-KC-4501",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram KC-4501.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P4",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-4501-P4",
+    "source_tag": "FSL-4508",
+    "relationship": "permissive_for",
+    "target_tag": "KC-4501",
+    "context": "Jacket water flow OK (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "SEQ-4501 T1/P1"
+    },
+    "relationship_id": "REL-PID-PSLL-4504",
+    "source_tag": "PSLL-4504",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Lube oil pressure LOW-LOW (Pressure Switch). Function: Trip initiator T1 & Permissive P1. Location: Lube Oil System"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temperature Switch",
+      "related_interlock": "SEQ-4501 T2"
+    },
+    "relationship_id": "REL-PID-TSHH-4503",
+    "source_tag": "TSHH-4503",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Discharge temperature HIGH-HIGH (Temperature Switch). Function: Trip initiator T2 \u2192 SEQ-4501. Location: Compressor Discharge"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "SEQ-4501 T3"
+    },
+    "relationship_id": "REL-PID-PSHH-4502",
+    "source_tag": "PSHH-4502",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Discharge pressure HIGH-HIGH (Pressure Switch). Function: Trip initiator T3 \u2192 SEQ-4501. Location: Compressor Discharge"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Vibration Switch",
+      "related_interlock": "SEQ-4501 T4"
+    },
+    "relationship_id": "REL-PID-VSHH-4505",
+    "source_tag": "VSHH-4505",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Crosshead vibration HIGH-HIGH (Vibration Switch). Function: Trip initiator T4 \u2192 SEQ-4501. Location: Compressor Crosshead"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Switch",
+      "related_interlock": "SEQ-4501 T5"
+    },
+    "relationship_id": "REL-PID-LSHH-4510",
+    "source_tag": "LSHH-4510",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Suction KO drum level HIGH-HIGH (Level Switch). Function: Trip initiator T5 \u2192 SEQ-4501. Location: KO Drum FA-4510"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "SEQ-4501 T6"
+    },
+    "relationship_id": "REL-PID-PSLL-4501",
+    "source_tag": "PSLL-4501",
+    "relationship": "triggers_trip",
+    "target_tag": "KC-4501",
+    "context": "Suction pressure LOW-LOW (Pressure Switch). Function: Trip initiator T6 \u2192 SEQ-4501. Location: Compressor Suction"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Transmitter",
+      "related_interlock": "SEQ-4501 P2"
+    },
+    "relationship_id": "REL-PID-FT-4506",
+    "source_tag": "FT-4506",
+    "relationship": "permissive_for",
+    "target_tag": "KC-4501",
+    "context": "Seal gas flow Transmitter (Flow Transmitter). Function: Flow measurement & Permissive P2. Location: Seal Gas System"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Transmitter",
+      "related_interlock": "SEQ-4501 P3"
+    },
+    "relationship_id": "REL-PID-LT-4510",
+    "source_tag": "LT-4510",
+    "relationship": "permissive_for",
+    "target_tag": "KC-4501",
+    "context": "KO drum Level Transmitter (Level Transmitter). Function: Level measurement & Permissive P3. Location: KO Drum FA-4510"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Flow Switch",
+      "related_interlock": "SEQ-4501 P4"
+    },
+    "relationship_id": "REL-PID-FSL-4508",
+    "source_tag": "FSL-4508",
+    "relationship": "permissive_for",
+    "target_tag": "KC-4501",
+    "context": "Jacket water flow Switch (Flow Switch). Function: Cooling water flow & Permissive P4. Location: Cooling Water line"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Control Valve",
+      "related_interlock": "SEQ-4501 EFF-2"
+    },
+    "relationship_id": "REL-PID-FV-4502",
+    "source_tag": "FV-4502",
+    "relationship": "controls",
+    "target_tag": "KC-4501",
+    "context": "Anti-Surge Recycle Control Valve (Control Valve). Function: EFF-2: Open on Trip / Low Flow. Location: Anti-Surge line"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "On/Off Valve",
+      "related_interlock": "SEQ-4501 EFF-3"
+    },
+    "relationship_id": "REL-PID-XV-4501",
+    "source_tag": "XV-4501",
+    "relationship": "controls",
+    "target_tag": "KC-4501",
+    "context": "Suction Shutdown Valve (On/Off Valve). Function: EFF-3: Close Suction on Trip. Location: Compressor Suction"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Vibration Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-VT-4501",
+    "source_tag": "VT-4501",
+    "relationship": "monitors",
+    "target_tag": "KC-4501",
+    "context": "Crosshead vibration transmitter (Vibration Transmitter). Function: Vibration Monitoring (Trend). Location: Compressor Crosshead"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Transmitter",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PT-4501",
+    "source_tag": "PT-4501",
+    "relationship": "monitors",
+    "target_tag": "KC-4501",
+    "context": "Suction Pressure Transmitter (Pressure Transmitter). Function: Pressure Monitoring. Location: Compressor Suction"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Indicator",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PI-1201",
+    "source_tag": "PI-1201",
+    "relationship": "monitors",
+    "target_tag": "KC-4501",
+    "context": "Suction Pressure Indicator (Pressure Indicator). Function: Local Pressure Indication. Location: Compressor Suction"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Controller",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-TIC-4502",
+    "source_tag": "TIC-4502",
+    "relationship": "controls",
+    "target_tag": "KC-4501",
+    "context": "Intercooler Temp Controller (Temp Controller). Function: Control intercooler EA-4502. Location: Intercooler EA-4502"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Heat Exchanger",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-EA-4502",
+    "source_tag": "EA-4502",
+    "relationship": "monitors",
+    "target_tag": "KC-4501",
+    "context": "Intercooler Heat Exchanger (Heat Exchanger). Function: Cools gas between stages. Location: Interstage line"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Relief Valve",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-PSV-4502",
+    "source_tag": "PSV-4502",
+    "relationship": "controls",
+    "target_tag": "KC-4501",
+    "context": "Pressure Safety Valve (Relief Valve). Function: Overpressure protection. Location: Intercooler EA-4502"
+  },
+  {
+    "equipment_tag": "KC-4501",
+    "document_id": "TJC-LLD-PID-4501",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID SET 4.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Relief Valve",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-OLL-4504",
+    "source_tag": "OLL-4504",
+    "relationship": "controls",
+    "target_tag": "KC-4501",
+    "context": "Lube Oil Pump Relief Valve (Relief Valve). Function: Set lube oil pump pressure. Location: Lube Oil System"
+  }
+]

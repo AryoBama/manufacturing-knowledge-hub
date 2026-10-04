@@ -1,14 +1,17 @@
 {
-  "chunk_id": "TJC-LLD-IL-KC-4501-P01-C01",
+  "equipment_tag": "KC-4501",
   "document_id": "TJC-LLD-IL-KC-4501",
   "document_type": "INTERLOCK",
-  "title": "Recycle Gas Compressor Shutdown Logic & Cause Effect (SEQ-4501)",
-  "equipment_tag": "KC-4501",
-  "content": "INTERLOCK LOGIC: SEQ-4501. SIL: SIL 2. TAG: KC-4501. FLOC: TJC-LLD-4500-01. CAUSE & EFFECT MATRIX: T1 Lube Oil Pressure LOW-LOW (PSLL-4504 < 1.5 barg, 2oo3) -> Trip Compressor Motor, DCS Alarm, Auto-start standby lube pump. T2 2nd Stage Discharge Temp HIGH-HIGH (TSHH-4502 > 135 degC, 1oo1) -> Trip Compressor Motor, Vent Recycle Loop. T3 Suction KO Drum Level HIGH-HIGH (LSHH-4510, 1oo2) -> Trip Compressor Motor, Close Suction XV-4501. START PERMISSIVES: P1 Lube oil pressure established > 2.5 barg (PT-4504), P2 Suction valve open, P3 Cooling water flow normal.",
   "source": {
     "file_name": "Interlock Logic Diagram KC-4501.pdf",
     "page": 1,
-    "revision": "Rev.02",
+    "sheet": null,
+    "revision": "Rev 3",
     "status": "Issued for Operation"
-  }
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-IL-KC-4501-P01-C01",
+  "title": "Interlock Logic & Cause Effect Matrix - KC-4501 (SEQ-4501)",
+  "equipment_type": null,
+  "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-4501 (RECYCLE GAS COMPRESSOR (KC-4501) SHUTDOWN LOGIC).\nDocument No: TJC-LLD-IL-KC-4501, Revision: Rev 3, SIL Level: SIL 2.\nEquipment: KC-4501, Functional Location: TJC-LLD-4500-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Lube oil pressure LOW-LOW (PSLL-4504 < 1.5 barg, 2oo3) -> Actions: Trip (EFF-1), Open (EFF-2), Close (EFF-3), Annunciate (EFF-5)\n- T2: Discharge temperature HIGH-HIGH (TSHH-4503 > 140 degC, 1oo1) -> Actions: Trip (EFF-1), Open (EFF-2), Annunciate (EFF-5)\n- T3: Discharge pressure HIGH-HIGH (PSHH-4502 > 14 barg, 1oo2) -> Actions: Trip (EFF-1), Open (EFF-2), Annunciate (EFF-5)\n- T4: Crosshead vibration HIGH-HIGH (VSHH-4505 > 11 mm/s, 1oo2) -> Actions: Trip (EFF-1), Open (EFF-2), Close (EFF-3), Annunciate (EFF-5)\n- T5: Suction KO drum level HIGH-HIGH (LSHH-4510 > 80 %, 1oo1) -> Actions: Trip (EFF-1), Close (EFF-3), Annunciate (EFF-5)\n- T6: Suction pressure LOW-LOW (PSLL-4501 < 0.3 barg, 1oo1) -> Actions: Trip (EFF-1), Open (EFF-2), Annunciate (EFF-5)\nSTART PERMISSIVES (AND-gate conditions to start pump):\n- P1: Lube oil pressure OK (> 2 barg) (PSLL-4504, Gate Logic: AND)\n- P2: Seal gas established (FT-4506, Gate Logic: AND)\n- P3: KO drum level normal (< 50%) (LT-4510, Gate Logic: AND)\n- P4: Jacket water flow OK (FSL-4508, Gate Logic: AND)\n- P5: No active trip / reset done (DCS reset, Gate Logic: AND)\n- \u2014: ALL permissives TRUE \u2192 START KC-4501 ENABLED (\u2014, Gate Logic: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-4501, Datasheet: TJC-LLD-DS-KC-4501."
 }

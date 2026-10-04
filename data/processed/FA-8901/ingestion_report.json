@@ -1,0 +1,59 @@
+{
+  "equipment": "FA-8901",
+  "source_directory": "C:\\Users\\AryoBama\\Lomba\\CALIBER\\manufacturing-knowledge-hub\\data\\raw\\FA-8901",
+  "total_objects": 96,
+  "valid_objects": 96,
+  "invalid_objects": 0,
+  "validation_passed": true,
+  "by_type": {
+    "document_chunks": 11,
+    "technical_records": 42,
+    "maintenance_records": 25,
+    "relationships": 18
+  },
+  "maintenance_semantics": {
+    "total_events": 25,
+    "actual_failures_or_breakdowns": 5,
+    "routine_preventive_or_tests": 20
+  },
+  "unmapped_technical_parameters": [
+    "Boot",
+    "Boot Drain",
+    "Corrosion Allow.",
+    "Design Pressure",
+    "Design Temp.",
+    "Diameter (ID)",
+    "Driver Type",
+    "Head Type",
+    "Inlet Nozzle",
+    "Manway",
+    "N2 Blanket",
+    "Operating Pressure",
+    "Operating Temp.",
+    "PSV",
+    "PSV Nozzle",
+    "PWHT",
+    "Product Nozzle",
+    "Radiography",
+    "Reflux Nozzle",
+    "Reflux Pump",
+    "Shell Material",
+    "Tangent-Tangent",
+    "Vessel Type",
+    "Volume",
+    "access_road",
+    "area",
+    "coordinate_system",
+    "equipment_name",
+    "equipment_tag",
+    "footprint",
+    "functional_location",
+    "hazardous_area_ref",
+    "main_pipe_rack",
+    "notes"
+  ],
+  "warnings": [
+    "50 object(s) lack formal revision in source (preserved as null without inferring)"
+  ],
+  "validation_errors": []
+}

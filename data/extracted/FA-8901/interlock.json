@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "FA-8901",
+  "document_id": "TJC-LLD-IL-FA-8901",
+  "document_type": "INTERLOCK",
+  "source": {
+    "file_name": "Interlock Logic Diagram - FA-8901.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 3",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-IL-FA-8901-P01-C01",
+  "title": "Interlock Logic & Cause Effect Matrix - FA-8901 (SEQ-8901)",
+  "equipment_type": null,
+  "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-8901 (REFLUX ACCUMULATOR (FA-8901) OVERHEAD PROTECTION LOGIC).\nDocument No: TJC-LLD-IL-FA-8901, Revision: Rev 3, SIL Level: SIL 1.\nEquipment: FA-8901, Functional Location: TJC-LLD-8900-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Drum level HIGH-HIGH (LSHH-8901 > 85 %, 1oo2) -> Actions: Trip Feed (EFF-1), DCS Alarm (EFF-4)\n- T2: Drum level LOW-LOW (LSLL-8901 < 15 %, 1oo2) -> Actions: Trip Pump (EFF-2), DCS Alarm (EFF-4)\n- T3: Drum pressure HIGH-HIGH (PSHH-8902 > 8 barg, 1oo2) -> Actions: Open Vent (EFF-3), DCS Alarm (EFF-4)\n- T4: Emergency stop (manual) (HS-8901 Manual, 1oo1) -> Actions: Trip Feed (EFF-1), Trip Pump (EFF-2), Open Vent (EFF-3), DCS Alarm (EFF-4)\nSTART PERMISSIVES (AND-gate conditions to start pump):\n- P1: Level in normal band (20-80%) (LT-8901, Gate Logic: AND)\n- P2: N2 blanket healthy (PT-8902, Gate Logic: AND)\n- P3: Boot not flooded (LT-8903, Gate Logic: AND)\n- P4: No active trip / reset done (DCS reset, Gate Logic: AND)\n- \u2014: ALL permissives TRUE \u2192 START FA-8901 ENABLED (\u2014, Gate Logic: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-8901, Datasheet: TJC-LLD-DS-FA-8901."
+}

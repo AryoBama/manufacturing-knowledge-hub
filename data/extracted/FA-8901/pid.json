@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "FA-8901",
+  "document_id": "TJC-LLD-PID-8901",
+  "document_type": "PID",
+  "source": {
+    "file_name": "P&ID_Set 8.png",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-PID-8901-P01-C01",
+  "title": "Piping & Instrumentation Diagram Register - FA-8901",
+  "equipment_type": null,
+  "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: FA-8901 (REFLUX ACCUMULATOR DRUM).\nDocument No: TJC-LLD-PID-8901, Title: P&ID: REFLUX ACCUMULATOR DRUM (FA-8901).\nArea: 8900 \u2013 Solvent Fractionation, Functional Location: TJC-LLD-8900-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- LSHH-8901: Drum level HIGH-HIGH (Level Switch) [Setpoint: > 85 %]. Function: Cause T1 (Trip Column Feed). Location: Drum FA-8901 Level Bridle. Interlock: T1/EFF-1/EFF-4\n- LSLL-8901: Drum level LOW-LOW (Level Switch) [Setpoint: < 15 %]. Function: Cause T2 (Trip Reflux Pump GA-8920). Location: Drum FA-8901 Level Bridle. Interlock: T2/EFF-2/EFF-4\n- PSHH-8902: Drum pressure HIGH-HIGH (Pressure Switch) [Setpoint: > 8 barg]. Function: Cause T3 (Open Vent PCV-8905). Location: Drum FA-8901. Interlock: T3/EFF-3/EFF-4\n- HS-8901: Manual Emergency Stop (Hand Switch) [Setpoint: Manual \u2014]. Function: Cause T4 (Manual E-Stop). Location: Local Control Station. Interlock: T4/EFF-1/EFF-2/EFF-3/EFF-4\n- LT-8901: Level Transmitter (Level Transmitter) [Setpoint: 20-80 %]. Function: Permissive P1 (Level in normal band) & Control. Location: Drum FA-8901 Level Bridle. Interlock: P1\n- PT-8902: Pressure Transmitter (Pressure Transmitter). Function: Permissive P2 (N2 blanket healthy) & Control. Location: Drum FA-8901. Interlock: P2\n- LT-8903: Boot Interface Level (Level Transmitter). Function: Permissive P3 (Boot not flooded) & Control. Location: Drum FA-8901 Water Boot. Interlock: P3\n- PCV-8905: N2 Blanketing Split-Range Valve (Control Valve). Function: Nitrogen blanketing & Venting. Location: N2 Blanket / Vent Header. Interlock: EFF-3\n- PSV-8901: Pressure Safety Valve (Relief Valve) [Setpoint: 10 barg]. Function: Overpressure protection (Car-sealed open). Location: Drum FA-8901 Top Nozzle. Interlock: \u2014\n- HV-8904: Boot Drain Valve (Hand Valve). Function: Manual boot draining. Location: Water Boot Drain Line. Interlock: \u2014\n- GA-8920 A/B: Reflux Pump A/B (Duty/Standby) (Centrifugal Pump). Function: Memompa refluks ke kolom DA-8910. Location: Pump Skid. Interlock: EFF-2\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-FA-8901, Interlock: SEQ-8901 (SIL 1)."
+}

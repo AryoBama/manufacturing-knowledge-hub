@@ -1,0 +1,59 @@
+{
+  "equipment": "YD-2301",
+  "source_directory": "C:\\Users\\AryoBama\\Lomba\\CALIBER\\manufacturing-knowledge-hub\\data\\raw\\YD-2301",
+  "total_objects": 120,
+  "valid_objects": 120,
+  "invalid_objects": 0,
+  "validation_passed": true,
+  "by_type": {
+    "document_chunks": 11,
+    "technical_records": 54,
+    "maintenance_records": 28,
+    "relationships": 27
+  },
+  "maintenance_semantics": {
+    "total_events": 28,
+    "actual_failures_or_breakdowns": 5,
+    "routine_preventive_or_tests": 23
+  },
+  "unmapped_technical_parameters": [
+    "Area Classification",
+    "Body Material",
+    "Design Temp.",
+    "Drive",
+    "Driver Type",
+    "Drum Diameter",
+    "Drum Length",
+    "Dryer Type",
+    "Enclosure",
+    "Ex Protection",
+    "Frame",
+    "Gland Packing",
+    "Heating Medium",
+    "Inert Medium",
+    "Insulation Class",
+    "O-Ring",
+    "Oil Seal",
+    "Operating Temp.",
+    "Output",
+    "Poles",
+    "Rotary Joint",
+    "Rotation Speed",
+    "Rotor Shaft",
+    "Weight (Motor+Gearbox)",
+    "access_road",
+    "area",
+    "coordinate_system",
+    "equipment_name",
+    "equipment_tag",
+    "footprint",
+    "functional_location",
+    "hazardous_area_ref",
+    "main_pipe_rack",
+    "notes"
+  ],
+  "warnings": [
+    "69 object(s) lack formal revision in source (preserved as null without inferring)"
+  ],
+  "validation_errors": []
+}

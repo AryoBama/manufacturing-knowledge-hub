@@ -4,13 +4,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 0,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560424",
     "date": "2024-06-04",
     "failure_occurred": false,
@@ -19,26 +23,28 @@
     "root_cause": "All trips functioned correctly",
     "corrective_action": "Simulated trip initiators, verified effects and reset",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 4,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560339",
     "date": "2024-06-18",
-    "failure_occurred": true,
-    "failure_mode": "Unspecified",
+    "failure_occurred": false,
+    "failure_mode": null,
     "symptom": "Seal gas flow FT-4506 low, buffer pressure unstable",
     "root_cause": "N2 buffer regulator diaphragm failed",
     "corrective_action": "Replaced seal gas regulator, re-established buffer dP",
@@ -52,17 +58,21 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 7,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560332",
     "date": "2024-06-22",
-    "failure_occurred": true,
-    "failure_mode": "Unspecified",
+    "failure_occurred": false,
+    "failure_mode": null,
     "symptom": "High blow-by, low 2nd stage efficiency",
     "root_cause": "PTFE piston rings worn beyond limit",
     "corrective_action": "Renewed 2nd stage PTFE piston and rider rings, honed cylinder",
@@ -76,13 +86,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 12,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560404",
     "date": "2024-07-06",
     "failure_occurred": false,
@@ -91,22 +105,24 @@
     "root_cause": "No hotspot detected",
     "corrective_action": "IR survey of motor / terminations, report filed",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 15,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560350",
     "date": "2024-07-16",
     "failure_occurred": false,
@@ -115,26 +131,28 @@
     "root_cause": "Float healthy, minor set-point trim",
     "corrective_action": "Verified LSHH-4510 float and trip action",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 31,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560368",
     "date": "2024-08-20",
-    "failure_occurred": true,
-    "failure_mode": "Unspecified",
+    "failure_occurred": false,
+    "failure_mode": null,
     "symptom": "Process gas detected at distance-piece vent",
     "root_cause": "PTFE pressure packing rings worn",
     "corrective_action": "Renewed pressure packing set, checked rod runout",
@@ -148,13 +166,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 32,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560415",
     "date": "2024-08-26",
     "failure_occurred": false,
@@ -163,22 +185,24 @@
     "root_cause": "Trend within normal band",
     "corrective_action": "Vibration data captured and trended on PdM route",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 36,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560380",
     "date": "2024-09-03",
     "failure_occurred": false,
@@ -196,13 +220,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 43,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560402",
     "date": "2024-09-19",
     "failure_occurred": false,
@@ -211,26 +239,28 @@
     "root_cause": "No hotspot detected",
     "corrective_action": "IR survey of motor / terminations, report filed",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 46,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560327",
     "date": "2024-09-21",
-    "failure_occurred": true,
-    "failure_mode": "Unspecified",
+    "failure_occurred": false,
+    "failure_mode": null,
     "symptom": "KC-4501 tripped on PSLL-4504 low lube oil pressure",
     "root_cause": "Lube oil pump gears worn, relief valve set low",
     "corrective_action": "Overhauled lube oil pump, reset relief valve, verified 2.5 barg",
@@ -244,13 +274,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 93,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560371",
     "date": "2025-01-08",
     "failure_occurred": false,
@@ -259,22 +293,24 @@
     "root_cause": "Routine - no defect found",
     "corrective_action": "Visual inspection, cleaning, tightness check completed",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 99,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560410",
     "date": "2025-01-29",
     "failure_occurred": false,
@@ -283,26 +319,28 @@
     "root_cause": "Trend within normal band",
     "corrective_action": "Vibration data captured and trended on PdM route",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 101,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "Yes"
+    },
     "event_id": "NT-2024-560347",
     "date": "2025-02-05",
     "failure_occurred": true,
-    "failure_mode": "High interstage temperature, fouling suspected",
+    "failure_mode": "Mechanical / Operational Failure",
     "symptom": "High interstage temperature, fouling suspected",
     "root_cause": "Waterside fouling of intercooler tubes",
     "corrective_action": "Hydrojetted intercooler tubes, restored approach temp",
@@ -316,13 +354,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 102,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560364",
     "date": "2025-02-06",
     "failure_occurred": false,
@@ -331,26 +373,28 @@
     "root_cause": "All trips healthy",
     "corrective_action": "Simulated PSLL/TSHH/VSHH trips, verified recycle open and motor trip",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 105,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "Yes"
+    },
     "event_id": "NT-2024-560356",
     "date": "2025-02-18",
     "failure_occurred": true,
-    "failure_mode": "TE-4507 main bearing temperature rising",
+    "failure_mode": "Bearing Fatigue / Spalling",
     "symptom": "TE-4507 main bearing temperature rising",
     "root_cause": "Restricted oil supply groove to No.2 main bearing",
     "corrective_action": "Inspected and cleared oil passage, checked bearing clearance",
@@ -364,13 +408,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 109,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560392",
     "date": "2025-02-28",
     "failure_occurred": false,
@@ -379,22 +427,24 @@
     "root_cause": "Loop within tolerance",
     "corrective_action": "Verified transmitters and indication against reference",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 120,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560421",
     "date": "2025-03-24",
     "failure_occurred": false,
@@ -403,22 +453,24 @@
     "root_cause": "All trips functioned correctly",
     "corrective_action": "Simulated trip initiators, verified effects and reset",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 130,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560396",
     "date": "2025-04-13",
     "failure_occurred": false,
@@ -427,22 +479,24 @@
     "root_cause": "Loop within tolerance",
     "corrective_action": "Verified transmitters and indication against reference",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 139,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560384",
     "date": "2025-05-15",
     "failure_occurred": false,
@@ -460,17 +514,21 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 147,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560322",
     "date": "2025-06-10",
-    "failure_occurred": true,
-    "failure_mode": "Unspecified",
+    "failure_occurred": false,
+    "failure_mode": null,
     "symptom": "High discharge temperature trip TSHH-4503, capacity drop",
     "root_cause": "1st stage suction plate valve fractured",
     "corrective_action": "Replaced complete suction valve set, checked seat, leak tested",
@@ -484,13 +542,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 154,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560413",
     "date": "2025-06-30",
     "failure_occurred": false,
@@ -499,22 +561,24 @@
     "root_cause": "Trend within normal band",
     "corrective_action": "Vibration data captured and trended on PdM route",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 155,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560334",
     "date": "2025-07-01",
     "failure_occurred": false,
@@ -523,22 +587,24 @@
     "root_cause": "Set-point within tolerance",
     "corrective_action": "Recalibrated PSLL-4504 to 1.5 barg, function tested",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 172,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560359",
     "date": "2025-09-16",
     "failure_occurred": false,
@@ -547,22 +613,24 @@
     "root_cause": "Windings healthy, IR 1200 MOhm",
     "corrective_action": "IR and polarisation index test, cleaned terminal box",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 177,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560377",
     "date": "2025-09-22",
     "failure_occurred": false,
@@ -571,22 +639,24 @@
     "root_cause": "Routine - no defect found",
     "corrective_action": "Visual inspection, cleaning, tightness check completed",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 190,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560419",
     "date": "2025-10-21",
     "failure_occurred": false,
@@ -595,26 +665,28 @@
     "root_cause": "All trips functioned correctly",
     "corrective_action": "Simulated trip initiators, verified effects and reset",
     "downtime_hours": 0.0,
-    "parts_replaced": [
-      "-"
-    ]
+    "parts_replaced": []
   },
   {
     "equipment_tag": "KC-4501",
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 191,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560342",
     "date": "2025-10-23",
-    "failure_occurred": true,
-    "failure_mode": "Unspecified",
+    "failure_occurred": false,
+    "failure_mode": null,
     "symptom": "VSHH-4505 crosshead vibration approaching trip",
     "root_cause": "Crosshead pin clearance excessive",
     "corrective_action": "Renewed crosshead pin/bush, set clearance, vibration normalised",
@@ -628,13 +700,17 @@
     "document_id": "SAP-PM-HIST",
     "document_type": "MAINTENANCE",
     "source": {
-      "file_name": "Maintenance History (All Equipment).xlsx",
+      "file_name": "Maintenance History KC-4501.xlsx",
       "page": 1,
-      "sheet": null,
+      "sheet": "Maintenance History (All Equipm",
       "revision": null,
       "status": "Approved"
     },
-    "metadata": {},
+    "metadata": {
+      "row_index": 206,
+      "original_tag": "KC-4501",
+      "breakdown_flag": "No"
+    },
     "event_id": "NT-2024-560390",
     "date": "2025-12-02",
     "failure_occurred": false,

@@ -1,0 +1,334 @@
+[
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-IL-CT-7801",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - CT-7801.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T1",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "DCS Alarm (EFF-2)",
+        "Start Standby Pump STANDBY (EFF-3)"
+      ],
+      "targets": [
+        "CT-7801",
+        "DCS",
+        "STANDBY"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-7801-T1",
+    "source_tag": "VSHH-7802",
+    "relationship": "triggers_trip",
+    "target_tag": "CT-7801",
+    "context": "Fan/gearbox vibration HIGH-HIGH (Setpoint: > 9 mm/s, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-IL-CT-7801",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - CT-7801.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T2",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "DCS Alarm (EFF-2)",
+        "Start Standby Pump STANDBY (EFF-3)"
+      ],
+      "targets": [
+        "CT-7801",
+        "DCS",
+        "STANDBY"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-7801-T2",
+    "source_tag": "TSHH-7803",
+    "relationship": "triggers_trip",
+    "target_tag": "CT-7801",
+    "context": "Gearbox oil temperature HIGH-HIGH (Setpoint: > 90 degC, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-IL-CT-7801",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - CT-7801.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T3",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "DCS Alarm (EFF-2)"
+      ],
+      "targets": [
+        "CT-7801",
+        "DCS"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-7801-T3",
+    "source_tag": "PSL-7807",
+    "relationship": "triggers_trip",
+    "target_tag": "CT-7801",
+    "context": "Gearbox oil pressure LOW (Setpoint: < 0.8 barg, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-IL-CT-7801",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - CT-7801.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "trip_id": "T4",
+      "actions": [
+        "Trip Motor (EFF-1)",
+        "DCS Alarm (EFF-2)",
+        "Start Standby Pump STANDBY (EFF-3)"
+      ],
+      "targets": [
+        "CT-7801",
+        "DCS",
+        "STANDBY"
+      ],
+      "sil_level": "SIL 1"
+    },
+    "relationship_id": "REL-SEQ-7801-T4",
+    "source_tag": "MPR-7801",
+    "relationship": "triggers_trip",
+    "target_tag": "CT-7801",
+    "context": "Fan motor overload (Setpoint: MPR pickup, Voting: 1oo1)"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-IL-CT-7801",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram - CT-7801.pdf",
+      "page": 1,
+      "sheet": "Start Permissive",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "permissive_id": "P2",
+      "gate": "AND"
+    },
+    "relationship_id": "REL-SEQ-7801-P2",
+    "source_tag": "LT-7804",
+    "relationship": "permissive_for",
+    "target_tag": "CT-7801",
+    "context": "Basin level normal (> LSL-7804) (Logic Gate: AND)"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Vibration Switch",
+      "related_interlock": "T1/EFF-1/EFF-2/EFF-3"
+    },
+    "relationship_id": "REL-PID-VSHH-7802",
+    "source_tag": "VSHH-7802",
+    "relationship": "triggers_trip",
+    "target_tag": "CT-7801",
+    "context": "Fan/gearbox vibration HIGH-HIGH (Vibration Switch). Function: Cause T1 (Trip Fan Motor CT-7801). Location: Fan Drive Shaft / Gearbox"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Temp Switch",
+      "related_interlock": "T2/EFF-1/EFF-2/EFF-3"
+    },
+    "relationship_id": "REL-PID-TSHH-7803",
+    "source_tag": "TSHH-7803",
+    "relationship": "triggers_trip",
+    "target_tag": "CT-7801",
+    "context": "Gearbox oil temperature HIGH-HIGH (Temp Switch). Function: Cause T2 (Trip Fan Motor CT-7801). Location: Fan Gearbox"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Pressure Switch",
+      "related_interlock": "T3/EFF-1/EFF-2"
+    },
+    "relationship_id": "REL-PID-PSL-7807",
+    "source_tag": "PSL-7807",
+    "relationship": "triggers_trip",
+    "target_tag": "CT-7801",
+    "context": "Gearbox oil pressure LOW (Pressure Switch). Function: Cause T3 (Trip Fan Motor CT-7801). Location: Gearbox lube oil system"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Motor Protection",
+      "related_interlock": "T4/EFF-1/EFF-2/EFF-3"
+    },
+    "relationship_id": "REL-PID-MPR-7801",
+    "source_tag": "MPR-7801",
+    "relationship": "monitors",
+    "target_tag": "CT-7801",
+    "context": "Fan motor overload relay (Motor Protection). Function: Cause T4 (Trip Fan Motor CT-7801). Location: Motor MCC Panel"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Gauge",
+      "related_interlock": "P1"
+    },
+    "relationship_id": "REL-PID-LG gearbox",
+    "source_tag": "LG gearbox",
+    "relationship": "permissive_for",
+    "target_tag": "CT-7801",
+    "context": "Gearbox oil sight glass / level gauge (Level Gauge). Function: Permissive P1 (LG Gearbox oil level OK). Location: Fan Gearbox"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Level Transmitter",
+      "related_interlock": "P2"
+    },
+    "relationship_id": "REL-PID-LT-7804",
+    "source_tag": "LT-7804",
+    "relationship": "permissive_for",
+    "target_tag": "CT-7801",
+    "context": "Basin level transmitter (Level Transmitter). Function: Permissive P2 (Basin level normal). Location: Cooling Tower Basin"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Hand Switch",
+      "related_interlock": "P3"
+    },
+    "relationship_id": "REL-PID-Lockout Key",
+    "source_tag": "Lockout Key",
+    "relationship": "permissive_for",
+    "target_tag": "CT-7801",
+    "context": "Maintenance lockout switch (Hand Switch). Function: Permissive P3 (Lockout release logic). Location: Motor MCC / Field"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Analyzer (pH)",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-AI-7805",
+    "source_tag": "AI-7805",
+    "relationship": "controls",
+    "target_tag": "CT-7801",
+    "context": "Circulating Water pH Analyzer (Analyzer (pH)). Function: Monitoring & Dosing Control (dari OPL). Location: Cooling water return line"
+  },
+  {
+    "equipment_tag": "CT-7801",
+    "document_id": "TJC-LLD-PID-7801",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID_Set 7.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "instrument_type": "Analyzer (Cond)",
+      "related_interlock": null
+    },
+    "relationship_id": "REL-PID-AI-7806",
+    "source_tag": "AI-7806",
+    "relationship": "controls",
+    "target_tag": "CT-7801",
+    "context": "Conductivity Analyzer (Analyzer (Cond)). Function: Blowdown Control (dari OPL). Location: Cooling water basin/return"
+  }
+]

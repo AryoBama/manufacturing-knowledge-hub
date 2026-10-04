@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "LV-6701",
+  "document_id": "OPL-LV-6701-05",
+  "document_type": "OPL",
+  "source": {
+    "file_name": "OPL-LV-6701-05 - Manual_Bypass_HV_6701_Operation.pdf",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "OPL-LV-6701-05-P01-C01",
+  "title": "One Point Lesson - Manual Bypass (HV-6701) Operation (OPL-LV-6701-05)",
+  "equipment_type": null,
+  "content": "ONE POINT LESSON (OPL): OPL-LV-6701-05 - Manual Bypass (HV-6701) Operation.\n\nEquipment: LV-6701 (SEPARATOR LEVEL CONTROL VALVE), Discipline: Process / Operations, Area: 6700 - LP SEPARATOR SYSTEM.\n\nRelated Interlock: SEQ-6701 (SIL 1), P&ID: TJC-LLD-PID-6701.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains manual bypass (hv-6701) operation for LV-6701 (SEPARATOR LEVEL CONTROL VALVE) in the LP SEPARATOR SYSTEM. The manual bypass lets operators keep the separator level safely while LV-6701 is isolated for maintenance. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Notify the panel and take LIC-6701 to manual\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Crack open the bypass HV-6701 slowly\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Throttle HV-6701 to hold FA-6710 level using LT-6710\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Isolate LV-6701 (close block valves) for the work\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Reverse the steps and re-establish auto control afterwards\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: LV-6701 isolation for planned maintenance | Likely Cause: Planned - bypass used to hold level | Action: Lined up HV-6701 manual bypass, isolated LV-6701 safely\n- Symptom: LV-6701 not responding to LIC-6701, level control lost | Likely Cause: Stem seized in PTFE packing (over-tightened + fines) | Action: Freed stem, renewed packing, lubricated, re-stroked and calibrated\n- Symptom: Manual handwheel jack on LV-6701 seized | Likely Cause: Corrosion in handwheel thread | Action: Overhauled handwheel assembly, greased thread\n\nKEY LEARNING POINTS:\n- Point 1: The manual bypass lets operators keep the separator level safely while LV-6701 is isolated for maintenance.\n- Point 2: Respect the interlock SEQ-6701: e.g. LSHH-6710 trips at > 85 % - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-6701 before working on LV-6701.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+}

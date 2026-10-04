@@ -1,0 +1,235 @@
+[
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-DS-DC-3401A",
+    "document_type": "DATASHEET",
+    "source": {
+      "file_name": "Equipment Datasheet - DC-3401A.pdf",
+      "page": 1,
+      "sheet": null,
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_parameters": 24
+    },
+    "chunk_id": "TJC-LLD-DS-DC-3401A-P01-C01",
+    "title": "Equipment Datasheet - CATALYST REDUCTION REACTOR (DC-3401A)",
+    "equipment_type": "Fixed-Bed Reactor (Pd Catalyst)",
+    "content": "EQUIPMENT DATASHEET: DC-3401A (CATALYST REDUCTION REACTOR).\nDocument ID: TJC-LLD-DS-DC-3401A, Revision: Rev.03, Status: Issued for Operation.\nEquipment Type: Fixed-Bed Reactor (Pd Catalyst).\nFunctional Location: TJC-LLD-3400-01.\nService: Reduction of PdO catalyst to Pd using H2 (PdO + H2 -> Pd).\nGeneral & Type - Reactor Type: VERTICAL FIXED-BED, DOWNFLOW\nGeneral & Type - Catalyst: Pd / Al2O3 (PdO reduced to Pd)\nGeneral & Type - Catalyst Volume: 3.2 m3\nGeneral & Type - Diameter (ID): 1200 mm\nDesign & Mechanical - Shell Material: SA-516 Gr.70 + SS304 clad\nDesign & Mechanical - Tangent-Tangent: 4500 mm\nDesign & Mechanical - Internals: SS304 support grid + hold-down\nDesign & Mechanical - Design Pressure: 6 barg / FV\nDesign & Mechanical - Heater: EA-3401 ELECTRIC PRE-HEATER 180 kW\nDesign & Mechanical - Operating Pressure: 2 kg/cm2g\nDesign & Mechanical - Inert Medium: NITROGEN\nDesign & Mechanical - Design Temp.: 250 degC\nDesign & Mechanical - Reductant: HYDROGEN (diluted in N2)\nDesign & Mechanical - Operating Temp.: 180-210 degC\nDesign & Mechanical - PSV: PSV-3401 set 6 barg\nPerformance - EA-3401 Heater Output: 180 kW\nPerformance - Heater Voltage: 380 V / 3 Ph / 50 Hz\nPerformance - Heater Current: 273 A\nPerformance - Heater Type: IN-LINE ELECTRIC, N2 STREAM\nPerformance - TIC Control: TIC-17343 (heater outlet)\nPerformance - Bed TC's: TE-3401-1..8 multipoint\nElectrical & Safety - Area Classification: ZONE 1, IIC T3\nElectrical & Safety - Ex Protection: Ex d IIC T3\nDriver - Driver Type: None (static vessel) - assoc. heater EA-3401"
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-IL-DC-3401A",
+    "document_type": "INTERLOCK",
+    "source": {
+      "file_name": "Interlock Logic Diagram DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Cause Effect",
+      "revision": "Rev.03",
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "logic_no": "SEQ-3401",
+      "sil_level": "SIL 2",
+      "total_trips": 6,
+      "total_permissives": 5
+    },
+    "chunk_id": "TJC-LLD-IL-DC-3401A-P01-C01",
+    "title": "Interlock Logic & Cause Effect Matrix - DC-3401A (SEQ-3401)",
+    "equipment_type": null,
+    "content": "INTERLOCK LOGIC & CAUSE EFFECT MATRIX: SEQ-3401 (CATALYST REDUCTION REACTOR (DC-3401A) + HEATER EA-3401 LOGIC).\nDocument No: TJC-LLD-IL-DC-3401A, Revision: Rev.03, Status: Issued for Operation, SIL Level: SIL 2.\nEquipment: DC-3401A, Functional Location: TJC-LLD-3400-01.\nCAUSE & EFFECT MATRIX (TRIPS):\n- T1: Bed temperature HIGH-HIGH (TSHH-3401 > 230 degC, 2oo3) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), Maintain (EFF-4), DCS Alarm (EFF-5)\n- T2: Reactor pressure HIGH-HIGH (PSHH-3404 > 5 barg, 1oo2) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), Open Min-Flow (EFF-3), DCS Alarm (EFF-5)\n- T3: Outlet O2 HIGH during H2 (inerting fail) (AI-3401 > 100 ppm, 1oo1) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), DCS Alarm (EFF-5)\n- T4: Nitrogen carrier flow LOW-LOW (FSLL-17343 < 150 kg/h, 1oo1) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), DCS Alarm (EFF-5)\n- T5: Heater element over-temperature (EHT-3401 skin TC > 260 degC, 1oo1) -> Actions: Trip (EFF-1), DCS Alarm (EFF-5)\n- T6: Emergency stop (manual) (HS-3401 Manual, 1oo1) -> Actions: Trip (EFF-1), Close Discharge (EFF-2), Open Min-Flow (EFF-3), DCS Alarm (EFF-5)\nSTART PERMISSIVES (AND-gate conditions to start):\n- P1: O2 free / inerting done (AI-3401 < 100 ppm) (AI-3401, Gate: AND)\n- P2: N2 carrier flow established (> 150 kg/h) (FT-17343, Gate: AND)\n- P3: Bed homogeneous 120 degC (all TE within 15 degC) (TE-3401, Gate: AND)\n- P4: No active trip / reset done (DCS reset, Gate: AND)\n- \u2014: ALL permissives TRUE \u2192 START DC-3401A ENABLED (\u2014, Gate: AND)\nCROSS REFERENCES: P&ID: TJC-LLD-PID-3401, Datasheet: TJC-LLD-DS-DC-3401A."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "OPL-DC-3401A-01",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-DC-3401A-01 Reduction_DC_3401A_4_Step_Overview.pdf",
+      "page": 1,
+      "sheet": "Reduction DC-3401A 4-Step",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-3401 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-3401"
+    },
+    "chunk_id": "OPL-DC-3401A-01-P01-C01",
+    "title": "One Point Lesson - Reduction DC-3401A 4-Step Overview (OPL-DC-3401A-01)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-DC-3401A-01 - Reduction DC-3401A 4-Step Overview.\n\nEquipment: DC-3401A, Discipline: Process / Operations, Area: 3400 - CATALYST REDUCTION SYSTEM.\n\nReferences: Interlock: SEQ-3401 (SIL 2), P&ID: TJC-LLD-PID-3401.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains reduction dc-3401a 4-step overview for DC-3401A (CATALYST REDUCTION REACTOR) in the CATALYST REDUCTION SYSTEM. The PdO catalyst is shipped in an oxidised state; it must be reduced to Pd before it is active for the process.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: 1. Inerting to below 100 ppm O2.\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: 2. Heating-up bed to 120-135 degC.\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: 3. Hydrogen reduction (managing the exotherm).\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: 4. Cooling down to 30 degC and keeping inert.\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Handover to next shift.\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Bed multipoint TC point 3 reading open circuit | Cause: Thermocouple element failed at the sheath junction | Action: Replaced TC point 3 in the multipoint assembly, verified reading.\n- Symptom: One heater bank drawing no current, slow heat-up | Cause: Electric heater element bank open circuit / element burnt | Action: Replaced heater element bank, meggered, verified TIC-17343 response\n- Symptom: Inerting O2 analyzer drift vs portable reference | Cause: Analyzer zero drift and sample dryer saturated | Action: Recalibrated AI-3401 on span gas, replaced sample dryer\n\nKEY LEARNING POINTS:\n- Point 1: The PdO catalyst is shipped in an oxidised state; it must be reduced to Pd before it is active for the process.\n- Point 2: Respect the interlock SEQ-3401: e.g. TSHH-3401 trips at > 230 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-3401 before working on DC-3401A.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "OPL-DC-3401A-02",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-DC-3401A-02 Inerting_O2_Freeing_Below_100_ppm.pdf",
+      "page": 1,
+      "sheet": "Inerting - O2 Freeing",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-3401 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-3401"
+    },
+    "chunk_id": "OPL-DC-3401A-02-P01-C01",
+    "title": "One Point Lesson - Inerting - O2 Freeing Below 100 ppm (OPL-DC-3401A-02)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-DC-3401A-02 - Inerting - O2 Freeing Below 100 ppm.\n\nEquipment: DC-3401A, Discipline: Process / Operations, Area: 3400 - CATALYST REDUCTION SYSTEM.\n\nReferences: Interlock: SEQ-3401 (SIL 2), P&ID: TJC-LLD-PID-3401.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains inerting - o2 freeing below 100 ppm for DC-3401A (CATALYST REDUCTION REACTOR) in the CATALYST REDUCTION SYSTEM. Hydrogen must never meet oxygen inside the reactor. Inerting is proven before any heating and again before hydrogen is admitted.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Inject nitrogen through FV-17343 into the reactor\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Purge until the outlet O2 analyzer AI-3401 reads below 100 ppm\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Confirm all vent and drain paths are correctly lined up\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Log the O2 value and time before proceeding to heat-up\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: If O2 will not fall, check for air ingress at manways/flanges\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Bed multipoint TC point 3 reading open circuit | Cause: Thermocouple element failed at the sheath junction | Action: Replaced TC point 3 in the multipoint assembly, verified reading.\n- Symptom: One heater bank drawing no current, slow heat-up | Cause: Electric heater element bank open circuit / element burnt | Action: Replaced heater element bank, meggered, verified TIC-17343 response\n- Symptom: Inerting O2 analyzer drift vs portable reference | Cause: Analyzer zero drift and sample dryer saturated | Action: Recalibrated AI-3401 on span gas, replaced sample dryer\n\nKEY LEARNING POINTS:\n- Point 1: Hydrogen must never meet oxygen inside the reactor. Inerting is proven before any heating and again before hydrogen is admitted.\n- Point 2: Respect the interlock SEQ-3401: e.g. TSHH-3401 trips at > 230 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-3401 before working on DC-3401A.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "OPL-DC-3401A-03",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-DC-3401A-03 Heating_Up_Bed_Homogenisation.pdf",
+      "page": 1,
+      "sheet": "Heating-Up & Bed Homogenisation",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-3401 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-3401"
+    },
+    "chunk_id": "OPL-DC-3401A-03-P01-C01",
+    "title": "One Point Lesson - Heating-Up & Bed Homogenisation (OPL-DC-3401A-03)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-DC-3401A-03 - Heating-Up & Bed Homogenisation.\n\nEquipment: DC-3401A, Discipline: Process / Operations, Area: 3400 - CATALYST REDUCTION SYSTEM.\n\nReferences: Interlock: SEQ-3401 (SIL 2), P&ID: TJC-LLD-PID-3401.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains heating-up & bed homogenisation for DC-3401A (CATALYST REDUCTION REACTOR) in the CATALYST REDUCTION SYSTEM. The catalyst bed must be homogeneous at 120-135 degC before hydrogen is introduced, otherwise the reduction is uneven and can run away locally.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Energise heater EA-3401 (power on) after inerting is confirmed\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Set the nitrogen carrier flow to about 275 kg/h\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Raise TIC-17343 slowly to the 180-210 degC band\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Monitor all TE-3401-1..8 until the bed is homogeneous 120-135 degC (~16 h)\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Do not admit H2 until every bed thermocouple is within 15 degC\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Bed multipoint TC point 3 reading open circuit | Cause: Thermocouple element failed at the sheath junction | Action: Replaced TC point 3 in the multipoint assembly, verified reading.\n- Symptom: One heater bank drawing no current, slow heat-up | Cause: Electric heater element bank open circuit / element burnt | Action: Replaced heater element bank, meggered, verified TIC-17343 response\n- Symptom: Inerting O2 analyzer drift vs portable reference | Cause: Analyzer zero drift and sample dryer saturated | Action: Recalibrated AI-3401 on span gas, replaced sample dryer\n\nKEY LEARNING POINTS:\n- Point 1: The catalyst bed must be homogeneous at 120-135 degC before hydrogen is introduced, otherwise the reduction is uneven and can run away locally.\n- Point 2: Respect the interlock SEQ-3401: e.g. TSHH-3401 trips at > 230 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-3401 before working on DC-3401A.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "OPL-DC-3401A-04",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-DC-3401A-04 Hydrogen_Reduction_Safety_Exotherm_Contr.pdf",
+      "page": 1,
+      "sheet": "Hydrogen Reduction Safety",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-3401 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-3401"
+    },
+    "chunk_id": "OPL-DC-3401A-04-P01-C01",
+    "title": "One Point Lesson - Hydrogen Reduction Safety & Exotherm Control (OPL-DC-3401A-04)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-DC-3401A-04 - Hydrogen Reduction Safety & Exotherm Control.\n\nEquipment: DC-3401A, Discipline: Process / Operations, Area: 3400 - CATALYST REDUCTION SYSTEM.\n\nReferences: Interlock: SEQ-3401 (SIL 2), P&ID: TJC-LLD-PID-3401.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains hydrogen reduction safety & exotherm control for DC-3401A in the CATALYST REDUCTION SYSTEM. Hydrogen is flammable over 4-75 % in air. During reduction the PdO->Pd reaction is exothermic and the bed temperature must be watched closely.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Introduce H2 only after inerting and bed homogeneity are confirmed\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Hold a constant N2+H2 flow for about 12 hours\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Watch TE-3401 for any exotherm approaching the TSHH-3401 limit\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: If bed exceeds 230 degC the logic auto-trips heater and blocks H2\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Keep the reactor vent path (PV-3404) available at all times\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Bed multipoint TC point 3 reading open circuit | Cause: Thermocouple element failed at the sheath junction | Action: Replaced TC point 3 in the multipoint assembly, verified reading.\n- Symptom: One heater bank drawing no current, slow heat-up | Cause: Electric heater element bank open circuit / element burnt | Action: Replaced heater element bank, meggered, verified TIC-17343 response\n- Symptom: Inerting O2 analyzer drift vs portable reference | Cause: Analyzer zero drift and sample dryer saturated | Action: Recalibrated AI-3401 on span gas, replaced sample dryer\n\nKEY LEARNING POINTS:\n- Point 1: Hydrogen is flammable over 4-75 % in air. During reduction the PdO->Pd reaction is exothermic and the bed temperature must be watched closely.\n- Point 2: Respect the interlock SEQ-3401: e.g. TSHH-3401 trips at > 230 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-3401 before working on DC-3401A.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "OPL-DC-3401A-05",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-DC-3401A-05 Cooling_Down_Catalyst_Preservation.pdf",
+      "page": 1,
+      "sheet": "Cooling-Down & Catalyst Preserv",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Process / Operations",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-3401 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-3401"
+    },
+    "chunk_id": "OPL-DC-3401A-05-P01-C01",
+    "title": "One Point Lesson - Cooling-Down & Catalyst Preservation (OPL-DC-3401A-05)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-DC-3401A-05 - Cooling-Down & Catalyst Preservation.\n\nEquipment: DC-3401A, Discipline: Process / Operations, Area: 3400 - CATALYST REDUCTION SYSTEM.\n\nReferences: Interlock: SEQ-3401 (SIL 2), P&ID: TJC-LLD-PID-3401.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains cooling-down & catalyst preservation for DC-3401A in the CATALYST REDUCTION SYSTEM. After reduction the catalyst is pyrophoric; it must be cooled slowly and kept under a nitrogen blanket to prevent re-oxidation or fire.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Obtain the correct operating permit and brief the shift team before the task.\n- Precaution 2: Confirm hazardous fluids are isolated / inerted as required by procedure.\n- Precaution 3: Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.\n- Precaution 4: Never defeat a safety interlock or trip without an authorised override permit.\n- Precaution 5: Have emergency actions and communications ready before starting.\n\nTOOLS & MATERIALS:\n- Tool 1: Operating procedure & P&ID\n- Tool 2: Radio / communication with panel\n- Tool 3: Gas detector (O2 / LEL) as required\n- Tool 4: Correct PPE for the fluid handled\n- Tool 5: Sample containers & PPE for sampling\n- Tool 6: Permit-to-work documentation\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Decrease TIC-17343 slowly, no faster than 0.5 degC/s\n- Step 1 - Check: Permit valid & briefed\n- Step 2 - Action: Cool all bed thermocouples below 29 degC (ambient)\n- Step 2 - Check: Parameter within limit\n- Step 3 - Action: Switch off heater EA-3401 (power off) once cool\n- Step 3 - Check: Interlock status confirmed\n- Step 4 - Action: Isolate the reactor and hold nitrogen pressure at 2 kg/cm2\n- Step 4 - Check: Change logged on DCS\n- Step 5 - Action: Never open the reactor to air while the catalyst is active\n- Step 5 - Check: Handover to next shift\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Bed multipoint TC point 3 reading open circuit | Cause: Thermocouple element failed at the sheath junction | Action: Replaced TC point 3 in the multipoint assembly, verified reading.\n- Symptom: One heater bank drawing no current, slow heat-up | Cause: Electric heater element bank open circuit / element burnt | Action: Replaced heater element bank, meggered, verified TIC-17343 response\n- Symptom: Inerting O2 analyzer drift vs portable reference | Cause: Analyzer zero drift and sample dryer saturated | Action: Recalibrated AI-3401 on span gas, replaced sample dryer\n\nKEY LEARNING POINTS:\n- Point 1: After reduction the catalyst is pyrophoric; it must be cooled slowly and kept under a nitrogen blanket to prevent re-oxidation or fire.\n- Point 2: Respect the interlock SEQ-3401: e.g. TSHH-3401 trips at > 230 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-3401 before working on DC-3401A.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "OPL-DC-3401A-06",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-DC-3401A-06 Multipoint_Thermocouple_TE_3401_Verifica.pdf",
+      "page": 1,
+      "sheet": "Multipoint Thermocouple TE-3401",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Instrument",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-3401 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-3401"
+    },
+    "chunk_id": "OPL-DC-3401A-06-P01-C01",
+    "title": "One Point Lesson - Multipoint Thermocouple TE-3401 Verification (OPL-DC-3401A-06)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-DC-3401A-06 - Multipoint Thermocouple TE-3401 Verification.\n\nEquipment: DC-3401A, Discipline: Instrument, Area: 3400 - CATALYST REDUCTION SYSTEM.\n\nReferences: Interlock: SEQ-3401 (SIL 2), P&ID: TJC-LLD-PID-3401.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains multipoint thermocouple te-3401 verification for DC-3401A in the CATALYST REDUCTION SYSTEM. The 8-point bed temperature profile drives the whole reduction; a failed or drifting thermocouple can hide a hot spot.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: De-energise and isolate the loop; place the function to bypass/inhibit under permit.\n- Precaution 2: Inform the panel operator before working on any trip, valve or transmitter.\n- Precaution 3: Take care with instrument air / hydraulic pressure when disconnecting tubing.\n- Precaution 4: Verify intrinsic-safety / Ex integrity is restored before returning to service.\n- Precaution 5: Wear correct PPE and follow ESD/override control procedures.\n\nTOOLS & MATERIALS:\n- Tool 1: HART communicator / positioner software (e.g. ValveLink)\n- Tool 2: Loop calibrator & decade box / pressure source\n- Tool 3: Digital multimeter and clamp meter\n- Tool 4: Span/zero test gas or reference standards\n- Tool 5: Torque screwdriver and small hand tools\n- Tool 6: Certified test/inhibit permit\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Verify all 8 TE-3401 points are reading and note the spread\n- Step 1 - Check: Loop isolated / under permit\n- Step 2 - Action: Flag any single TC more than 15 degC off its neighbours\n- Step 2 - Check: Reference standard traceable\n- Step 3 - Action: Cross-check the profile against TIC-17343 heater outlet\n- Step 3 - Check: As-found & as-left recorded\n- Step 4 - Action: Replace any open-circuit or drifting TC at the next opportunity\n- Step 4 - Check: Trip / control action verified\n- Step 5 - Action: Confirm TSHH-3401 selects the highest bed temperature for the trip\n- Step 5 - Check: Return to service confirmed\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Bed multipoint TC point 3 reading open circuit | Cause: Thermocouple element failed at the sheath junction | Action: Replaced TC point 3 in the multipoint assembly, verified reading.\n- Symptom: Inerting O2 analyzer drift vs portable reference | Cause: Analyzer zero drift and sample dryer saturated | Action: Recalibrated AI-3401 on span gas, replaced sample dryer\n- Symptom: N2 inert valve slow / sticking during inerting step | Cause: Actuator seals hardened, positioner out of calibration | Action: Serviced actuator, replaced seals, recalibrated positioner\n\nKEY LEARNING POINTS:\n- Point 1: The 8-point bed temperature profile drives the whole reduction; a failed or drifting thermocouple can hide a hot spot.\n- Point 2: Respect the interlock SEQ-3401: e.g. TSHH-3401 trips at > 230 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-3401 before working on DC-3401A.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "OPL-DC-3401A-07",
+    "document_type": "OPL",
+    "source": {
+      "file_name": "OPL-DC-3401A-07 Manway_Gasket_Box_Up_After_Catalyst_Chan.pdf",
+      "page": 1,
+      "sheet": "Manway Gasket & Box-Up",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "discipline": "Mechanical",
+      "section": "Complete Lesson",
+      "related_interlock": "SEQ-3401 (SIL 2)",
+      "pid_reference": "TJC-LLD-PID-3401"
+    },
+    "chunk_id": "OPL-DC-3401A-07-P01-C01",
+    "title": "One Point Lesson - Manway Gasket & Box-Up After Catalyst Change (OPL-DC-3401A-07)",
+    "equipment_type": null,
+    "content": "ONE POINT LESSON (OPL): OPL-DC-3401A-07 - Manway Gasket & Box-Up After Catalyst Change.\n\nEquipment: DC-3401A, Discipline: Mechanical, Area: 3400 - CATALYST REDUCTION SYSTEM.\n\nReferences: Interlock: SEQ-3401 (SIL 2), P&ID: TJC-LLD-PID-3401.\n\nPURPOSE & OBJECTIVE:\nThis One Point Lesson explains manway gasket & box-up after catalyst change for DC-3401A in the CATALYST REDUCTION SYSTEM. A leaking manway loses inert gas and risks air ingress that could ignite the fresh, active catalyst.\n\nSAFETY PRECAUTIONS:\n- Precaution 1: Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.\n- Precaution 2: Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.\n- Precaution 3: Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.\n- Precaution 4: Beware of stored mechanical energy (springs, rotating inertia) and pinch points.\n- Precaution 5: Use certified lifting gear and correct manual-handling technique for heavy parts.\n\nTOOLS & MATERIALS:\n- Tool 1: Standard mechanical hand tools & calibrated torque wrench\n- Tool 2: LOTO padlocks and permit\n- Tool 3: Laser/dial alignment kit (as applicable)\n- Tool 4: Feeler gauges, dial indicator, seal/bearing pullers\n- Tool 5: Correct spare parts and gaskets per the BOM\n- Tool 6: Lifting gear and slings (certified)\n\nSTEP-BY-STEP PROCEDURE:\n- Step 1 - Action: Always fit a new spiral-wound SS316/graphite gasket\n- Step 1 - Check: Isolation & LOTO verified\n- Step 2 - Action: Torque the manway bolts in a star pattern to the specified value\n- Step 2 - Check: Parts match BOM / spec\n- Step 3 - Action: Leak test the joint with nitrogen at 2 kg/cm2\n- Step 3 - Check: Torque / clearance to spec\n- Step 4 - Action: Record the catalyst batch number and the loaded volume (3.2 m3)\n- Step 4 - Check: No leak / smooth operation\n- Step 5 - Action: Re-instate PSV-3401 and all instruments before start-up\n- Step 5 - Check: Record in equipment history\n\nCOMMON PROBLEMS & TROUBLESHOOTING:\n- Symptom: Scheduled statutory PSV pop test | Cause: Set pressure drift +0.3 barg found | Action: Overhauled PSV-3401, lapped seat, re-set to 6 barg, certified\n- Symptom: End-of-life catalyst replacement at turnaround | Cause: Spent Pd/Al2O3 catalyst at end of run | Action: Vacuumed out spent catalyst, inspected grids, loaded 3.2 m3 fresh cat.\n- Symptom: Nitrogen leak at bottom manway during leak test | Cause: Spiral-wound gasket unevenly seated | Action: Renewed SW SS316/graphite gasket, re-torqued in star pattern, leak tested.\n\nKEY LEARNING POINTS:\n- Point 1: A leaking manway loses inert gas and risks air ingress that could ignite the fresh, active catalyst.\n- Point 2: Respect the interlock SEQ-3401: e.g. TSHH-3401 trips at > 230 degC - never defeat it without a permit.\n- Point 3: Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-3401 before working on DC-3401A.\n- Point 4: Record the work in the equipment history so the Knowledge Hub stays the single source of truth."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "TJC-LLD-PID-3401",
+    "document_type": "PID",
+    "source": {
+      "file_name": "P&ID Set 3.png",
+      "page": 1,
+      "sheet": "Instrument List",
+      "revision": null,
+      "status": "Issued for Operation"
+    },
+    "metadata": {
+      "total_instruments": 18
+    },
+    "chunk_id": "TJC-LLD-PID-3401-P01-C01",
+    "title": "Piping & Instrumentation Diagram Register - DC-3401A",
+    "equipment_type": null,
+    "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: DC-3401A (CATALYST REDUCTION REACTOR).\nDocument No: TJC-LLD-PID-3401, Revision: N/A, Status: Issued for Operation.\nArea: 3400 \u2013 Catalyst Preparation, Functional Location: TJC-LLD-3400-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- TSHH-3401: Bed temperature HIGH-HIGH (Temperature Switch) [Setpoint: > 230 degC]. Function: Trip initiator T1 \u2192 SEQ-3401. Location: Reactor bed\n- TE-3401: Multipoint Thermocouple (8 points) (Temperature Element). Function: Bed temperature profile monitoring. Location: Reactor bed\n- PSHH-3404: Reactor pressure HIGH-HIGH (Pressure Switch) [Setpoint: > 5 barg]. Function: Trip initiator T2 \u2192 SEQ-3401. Location: Reactor vent line\n- PI-3404: Reactor Pressure Indicator (Pressure Indicator). Function: Local pressure indication. Location: Reactor vent line\n- AI-3401: Outlet O2 Analyzer (Analyzer) [Setpoint: > 100 ppm]. Function: Trip initiator T3 & Permissive P1. Location: Reactor outlet line\n- FSLL-17343: Nitrogen carrier flow LOW-LOW (Flow Switch) [Setpoint: < 150 kg/h]. Function: Trip initiator T4 \u2192 SEQ-3401. Location: N2 carrier line\n- FT-17343: Nitrogen carrier Flow Transmitter (Flow Transmitter). Function: Flow measurement & Permissive P2. Location: N2 carrier line\n- FI-17343: Nitrogen carrier Flow Indicator (Flow Indicator (DCS)). Function: Flow indication on DCS. Location: N2 carrier line\n- EHT-3401: Heater element over-temperature (Temp Switch (Skin)) [Setpoint: > 260 degC]. Function: Trip initiator T5 \u2192 SEQ-3401. Location: In-Line Heater EA-3401\n- HS-3401: Emergency Stop Hand Switch (Hand Switch) [Setpoint: Manual ]. Function: Trip initiator T6 (Manual ESD). Location: Local panel\n- TIC-17343: Heater Outlet Temp Controller (Temp Controller) [Setpoint: 180-210 degC]. Function: Control heater EA-3401. Location: Heater outlet\n- FV-17343: N2 Carrier Flow Control Valve (Control Valve) [Setpoint: MAINTAIN ]. Function: EFF-4: Maintain/Increase N2 on trip. Location: N2 carrier line\n- FV-3403: H2 Injection Flow Control Valve (Control Valve) [Setpoint: CLOSED ]. Function: EFF-2: Close H2 on trip. Location: H2 injection line\n- FT-3403: H2 Injection Flow Transmitter (Flow Transmitter). Function: Flow measurement for H2. Location: H2 injection line\n- FI-3403: H2 Injection Flow Indicator (Flow Indicator (DCS)). Function: Flow indication on DCS. Location: H2 injection line\n- PV-3404: Reactor Vent Valve (On/Off Valve) [Setpoint: OPEN ]. Function: EFF-3: Open reactor vent on trip. Location: Reactor vent line\n- EA-3401: In-Line Electric Pre-Heater (Heater) [Setpoint: TRIP ]. Function: EFF-1: Trip Heater on trip. Location: N2 carrier line\n- PSV-3401: Pressure Safety Valve (Relief Valve) [Setpoint: 6 barg]. Function: Overpressure protection. Location: Reactor top\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-DC-3401A, Interlock: SEQ-3401."
+  },
+  {
+    "equipment_tag": "DC-3401A",
+    "document_id": "PP-DC-3401A",
+    "document_type": "PLOT_PLAN",
+    "source": {
+      "file_name": "Plot Plan DC-3401A.pdf",
+      "page": 1,
+      "sheet": "Location Data",
+      "revision": "Rev.00",
+      "status": "Issued for Construction"
+    },
+    "metadata": {
+      "total_nearby_equipment": 8
+    },
+    "chunk_id": "PP-DC-3401A-P01-C01",
+    "title": "Plot Plan & Location Data - DC-3401A",
+    "equipment_type": null,
+    "content": "PLOT PLAN & EQUIPMENT LOCATION DATA: DC-3401A (CATALYST REDUCTION REACTOR).\nDocument No: PP-DC-3401A, Revision: Rev.00, Status: Issued for Construction.\nArea: 3400 \u2013 Catalyst Preparation, Functional Location: .\nLOCATION SPECIFICATIONS & COORDINATES:\nequipment_tag: DC-3401A; equipment_name: CATALYST REDUCTION REACTOR; area: 3400 \u2013 Catalyst Preparation; functional_location: TJC-LLD-3400-01; grid_reference: C-2; elevation: +0.00 m; footprint: 2.5 x 2.5 m (approx); coordinate_system: Plant Grid (E/N) metres; access_road: Road 6m; main_pipe_rack: Main Pipe Rack shown; hazardous_area_ref: WPN-MAT-001; notes: Elevations relative to grade EL +0.00. Equipment shown at approx footprint scale. Refer to GA drawings for detail.\nNEARBY PLANT EQUIPMENT & ELEVATIONS:\n- GA-1201A (Hexane Feed Pump): Area A1200 (Feed Preparation & Purification), Elevation EL +0.00 m\n- YD-2301 (POLYMER FLUID BED DRYER): Area A2300 (Polymer Separation & Drying), Elevation EL +6.00 m\n- DC-3401A (CATALYST REDUCTION REACTOR): Area A3400 (Catalyst Preparation), Elevation EL +0.00 m\n- KC-4501: Area A4500 (Gas Recovery & Compression), Elevation EL +0.00 m\n- EA-5601: Area A5600 (Solvent Recovery System), Elevation EL +0.00 m\n- LV-6701: Area A6700 (Product Separation), Elevation EL +3.00 m\n- CT-7801: Area A7800 (Cooling Water System), Elevation EL +12.00 m\n- FA-8901: Area A8900 (Solvent Fractionation), Elevation EL +4.50 m"
+  }
+]

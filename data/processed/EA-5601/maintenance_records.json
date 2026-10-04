@@ -1,0 +1,674 @@
+[
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 5,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560498",
+    "date": "2024-06-20",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 8,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560505",
+    "date": "2024-06-22",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 21,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560502",
+    "date": "2024-07-25",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 25,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560455",
+    "date": "2024-07-31",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Statutory relief valve test",
+    "root_cause": "Set pressure within tolerance",
+    "corrective_action": "Overhauled PSV-5607, lapped seat, re-set 16 barg, certified",
+    "downtime_hours": 6.0,
+    "parts_replaced": [
+      "PSV soft goods"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 35,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560435",
+    "date": "2024-09-02",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Hexane weep at channel flange",
+    "root_cause": "Spiral-wound channel gasket relaxed / damaged",
+    "corrective_action": "Renewed channel gasket, re-torqued in cross pattern",
+    "downtime_hours": 8.0,
+    "parts_replaced": [
+      "SW SS316/graphite gasket"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 48,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560450",
+    "date": "2024-09-29",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Erratic tube dP reading",
+    "root_cause": "Impulse lines plugged with fines",
+    "corrective_action": "Cleaned and re-zeroed PDT-5605 transmitter",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 49,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560524",
+    "date": "2024-10-01",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 59,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560465",
+    "date": "2024-10-25",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Scheduled major bundle inspection",
+    "root_cause": "General fouling, tubes within wall-loss limit",
+    "corrective_action": "Pulled bundle, UT of 246 tubes, cleaned and re-installed",
+    "downtime_hours": 40.0,
+    "parts_replaced": [
+      "Bundle gaskets set"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 69,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560511",
+    "date": "2024-11-24",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Infrared thermography survey",
+    "root_cause": "No hotspot detected",
+    "corrective_action": "IR survey of motor / terminations, report filed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 77,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560429",
+    "date": "2024-12-13",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+    "root_cause": "Hexane fouling / polymer fines deposit on tube bores",
+    "corrective_action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed",
+    "downtime_hours": 16.0,
+    "parts_replaced": [
+      "SW SS316/graphite gaskets (2)"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 88,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560518",
+    "date": "2025-01-01",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 89,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560438",
+    "date": "2025-01-03",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Continuous steam at condensate, high steam use",
+    "root_cause": "Steam trap element failed open",
+    "corrective_action": "Replaced steam trap element, verified condensate temperature",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Steam trap element"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 98,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560513",
+    "date": "2025-01-27",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Predictive vibration reading",
+    "root_cause": "Trend within normal band",
+    "corrective_action": "Vibration data captured and trended on PdM route",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 100,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560489",
+    "date": "2025-01-31",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 113,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560441",
+    "date": "2025-03-05",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Water found in solvent, rising outlet temperature",
+    "root_cause": "Two tubes leaking at tube-to-tubesheet joint",
+    "corrective_action": "Located and plugged 2 tubes both ends, hydrotest passed",
+    "downtime_hours": 30.0,
+    "parts_replaced": [
+      "Tapered tube plugs x4"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 123,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560475",
+    "date": "2025-04-05",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 132,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560472",
+    "date": "2025-04-15",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 133,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560493",
+    "date": "2025-04-17",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled instrument loop check",
+    "root_cause": "Loop within tolerance",
+    "corrective_action": "Verified transmitters and indication against reference",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 135,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560470",
+    "date": "2025-04-25",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled monthly preventive inspection",
+    "root_cause": "Routine - no defect found",
+    "corrective_action": "Visual inspection, cleaning, tightness check completed",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 157,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560479",
+    "date": "2025-07-09",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 187,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560468",
+    "date": "2025-10-12",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Corroded saddle hold-down bolts",
+    "root_cause": "Atmospheric corrosion under insulation edge",
+    "corrective_action": "Replaced saddle hold-down bolts, applied coating",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Hold-down bolts"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 189,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560485",
+    "date": "2025-10-20",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Scheduled lubrication task",
+    "root_cause": "Routine lubrication",
+    "corrective_action": "Greased/oiled per lube schedule, levels checked",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Grease / oil"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 198,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560460",
+    "date": "2025-11-16",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Cracked gauge glass on condensate pot",
+    "root_cause": "Thermal/mechanical stress on glass",
+    "corrective_action": "Replaced LG-5606 gauge glass and seals",
+    "downtime_hours": 0.0,
+    "parts_replaced": [
+      "Gauge glass"
+    ]
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 200,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "No"
+    },
+    "event_id": "NT-2024-560446",
+    "date": "2025-11-20",
+    "failure_occurred": false,
+    "failure_mode": null,
+    "symptom": "Outlet temperature hunting around set-point",
+    "root_cause": "Steam valve TV-5602 loop poorly tuned",
+    "corrective_action": "Retuned TIC-5602 PID, verified stable control",
+    "downtime_hours": 0.0,
+    "parts_replaced": []
+  },
+  {
+    "equipment_tag": "EA-5601",
+    "document_id": "SAP-PM-HIST",
+    "document_type": "MAINTENANCE",
+    "source": {
+      "file_name": "Maintenance History EA-5601.xlsx",
+      "page": 1,
+      "sheet": "Maintenance History",
+      "revision": null,
+      "status": "Approved"
+    },
+    "metadata": {
+      "row_index": 202,
+      "original_tag": "EA-5601",
+      "breakdown_flag": "Yes"
+    },
+    "event_id": "NT-2024-560457",
+    "date": "2025-11-28",
+    "failure_occurred": true,
+    "failure_mode": "Mechanical / Operational Failure",
+    "symptom": "Turnaround pressure test and inspection",
+    "root_cause": "No defects found, minor scale",
+    "corrective_action": "Hydrotested shell, IRIS/UT of sample tubes, cleaned",
+    "downtime_hours": 24.0,
+    "parts_replaced": []
+  }
+]

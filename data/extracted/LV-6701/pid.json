@@ -1,0 +1,17 @@
+{
+  "equipment_tag": "LV-6701",
+  "document_id": "TJC-LLD-PID-6701",
+  "document_type": "PID",
+  "source": {
+    "file_name": "P&ID SET 6.png",
+    "page": 1,
+    "sheet": null,
+    "revision": "Rev 0",
+    "status": "Issued for Operation"
+  },
+  "metadata": {},
+  "chunk_id": "TJC-LLD-PID-6701-P01-C01",
+  "title": "Piping & Instrumentation Diagram Register - LV-6701",
+  "equipment_type": null,
+  "content": "PIPING & INSTRUMENTATION DIAGRAM (P&ID) REGISTER: LV-6701 (SEPARATOR LEVEL CONTROL VALVE).\nDocument No: TJC-LLD-PID-6701, Title: P&ID: LP SEPARATOR SYSTEM (FA-6710 & LV-6701).\nArea: 6700 \u2013 Product Separation, Functional Location: TJC-LLD-6700-01.\nINSTRUMENT & PROCESS CONTROL LOOPS:\n- LIC-6701: Level Indicator Controller (Level Controller). Function: Mengontrol bukaan LV-6701. Location: FA-6710 / LV-6701 loop. Interlock: \u2014\n- LSHH-6710: Separator level HIGH-HIGH switch (Level Switch) [Setpoint: > 85 %]. Function: Cause T1 / EFF-1 (Open LV-6701 fully). Location: FA-6710 (LP Separator). Interlock: T1/EFF-1\n- LSLL-6710: Separator level LOW-LOW switch (Level Switch) [Setpoint: < 15 %]. Function: Cause T2 / EFF-2 (Close LV-6701) & EFF-4 (DCS Alarm). Location: FA-6710 (LP Separator). Interlock: T2/EFF-2/EFF-4\n- HS-6701: ESD manual switch (Hand Switch). Function: Cause T3 / EFF-3 (Vent actuator). Location: Control Panel / Field. Interlock: T3/EFF-3\n- PSL-6702: Instrument air pressure LOW switch (Pressure Switch) [Setpoint: < 1.0 barg]. Function: Cause T4 / EFF-3 (Vent actuator) & EFF-4 (DCS Alarm). Location: 3\" IA-6702 line. Interlock: T4/EFF-3/EFF-4\n- PI-6702: Instrument air pressure indicator (Pressure Indicator). Function: Permissive P1 (PI-6702 > 1.2 barg). Location: 3\" IA-6702 line. Interlock: P1\n- FIC-6702: Flow Indicator Controller (Flow Controller). Function: Flow control on inlet line. Location: Inlet FA-6710 (6\" HC line). Interlock: \u2014\n- TIC-6702: Temperature Indicator Controller (Temp Controller). Function: Temperature control. Location: Overhead line / FA-6710. Interlock: \u2014\n- TB-6702: Temperature Block/Element (Temp Element). Function: Temperature measurement. Location: Bottoms line. Interlock: \u2014\n- DVC6200: Digital Valve Controller (Positioner). Function: Permissive P2 (Positioner healthy) / Hart communicator port. Location: Di badan LV-6701. Interlock: P2\n- HV-6701: Manual bypass valve (Hand Valve). Function: Permissive P3 (Bypass closed). Location: Bypass line. Interlock: P3\n- XV-6701: ESD Solenoid Valve (Solenoid Valve). Function: Mengeksekusi logic Trip dengan cara membuang angin (venting actuator). Location: Sistem pneumatic LV-6701. Interlock: \u2014\nCROSS REFERENCES: Datasheet: TJC-LLD-DS-LV-6701, Interlock: SEQ-6701 (SIL 1)."
+}
