@@ -27,3 +27,15 @@ services:
       timeout: 5s
       retries: 3
       start_period: 10s
+
+  knowledge-hub-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: manufacturing-knowledge-hub-ui
+    ports:
+      - "${FRONTEND_PORT:-3000}:8080"
+    depends_on:
+      knowledge-hub-backend:
+        condition: service_healthy
+    restart: unless-stopped

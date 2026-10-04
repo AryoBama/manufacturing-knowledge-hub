@@ -82,6 +82,8 @@ OFFLINE_MODE=true
    docker compose ps
    ```
    *(Tunggu hingga status menunjukkan `Up (healthy)`)*
+   * Aplikasi web (frontend): http://localhost:3000 (ubah dengan `FRONTEND_PORT`)
+   * Backend API / Swagger: http://localhost:8000/docs
 3. Melihat log aplikasi:
    ```bash
    docker compose logs -f
