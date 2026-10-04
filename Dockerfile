@@ -20,7 +20,7 @@ COPY configs/ ./configs/
 COPY data/ ./data/
 COPY src/ ./src/
 COPY evaluation/ ./evaluation/
-COPY run_backend.py .
+COPY scripts/ ./scripts/
 
 # Create logs directory and assign permissions to non-root user
 RUN mkdir -p /app/logs && chown -R appuser:appgroup /app

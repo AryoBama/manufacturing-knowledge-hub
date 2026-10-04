@@ -396,7 +396,7 @@ Sistem telah diuji secara menyeluruh melalui 4 tingkatan piramida pengujian deng
 
 ```powershell
 # 1. Menjalankan Backend REST API Service (FastAPI):
-python run_backend.py
+python scripts/run_backend.py
 # Server aktif pada http://127.0.0.1:8000
 # Dokumentasi interaktif Swagger API pada http://127.0.0.1:8000/docs
 

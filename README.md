@@ -111,7 +111,9 @@ OFFLINE_MODE=true
    ```
 3. Jalankan server FastAPI backend:
    ```bash
-   python run_backend.py
+   python scripts/run_backend.py
+   # atau via uvicorn langsung:
+   # uvicorn src.api.server:app --port 8000 --reload
    ```
    *Server akan aktif di `http://127.0.0.1:8000`.*
 
@@ -197,12 +199,12 @@ Setiap respon dijamin *evidence-grounded* dan memiliki audit skor kepercayaan ya
 ### 1. Showcase Skenario Kompetisi
 Untuk mendemokan skenario tanya-jawab otomatis langsung di terminal:
 ```bash
-python demo.py --showcase
+python scripts/demo.py --showcase
 ```
 
 ### 2. Mode Terminal Interaktif
 ```bash
-python demo.py
+python scripts/demo.py
 ```
 
 ### 3. Menjalankan Automated Test Suite
@@ -222,11 +224,17 @@ manufacturing-knowledge-hub/
 │   ├── plant_equipment_registry.json
 │   └── retrieval_config.json
 ├── data/                     # Knowledge store & dokumen pabrik
-│   ├── extracted/            # Dokumen hasil ekstraksi terstruktur
+│   ├── extracted/            # Dokumen hasil ekstraksi terstruktur AI contract JSON
 │   ├── knowledge/            # Hierarki pabrik dan relasi kausal graf
-│   └── processed/            # Master data P&ID, Datasheet, OPL, SAP PM
+│   ├── processed/            # Master data canonical (P&ID, Datasheet, OPL, SAP PM)
+│   ├── raw/                  # File mentah Excel per equipment (source of truth)
+│   └── vector_store.db       # In-process SQLite vector database (904 embeddings)
 ├── docs/                     # Spesifikasi teknis, rancangan arsitektur, & pitch deck
+├── frontend/                 # Next.js/React Enterprise Knowledge UI
 ├── schemas/                  # Pydantic data contracts (Document, Technical, Maintenance, Graph)
+├── scripts/                  # CLI utilities & entrypoint runner
+│   ├── demo.py               # Interactive CLI & automated competition showcase runner
+│   └── run_backend.py        # Local backend FastAPI server runner
 ├── src/
 │   ├── adapters/             # Pluggable LLM Adapters (Gemini, DeepSeek, OpenAI, OfflineMock)
 │   ├── api/                  # FastAPI REST API (server, routes, models, exceptions)
@@ -240,6 +248,5 @@ manufacturing-knowledge-hub/
 ├── tests/                    # 99 Automated unit & integration tests
 ├── Dockerfile                # Hardened container image (non-root appuser)
 ├── docker-compose.yml        # Orchestration multi-env & volume binding
-├── requirements.txt          # Python dependencies
-└── run_backend.py            # Local backend entrypoint runner
+└── requirements.txt          # Python dependencies
 ```
