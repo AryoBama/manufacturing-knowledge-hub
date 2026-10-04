@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T00:00:00Z",
+  "title": "Design System: Chandra Asri Knowledge Hub",
+  "extensions": {
+    "colorMeta": {
+      "shell-green": {
+        "role": "primary",
+        "displayName": "Shell Green",
+        "canonical": "#12332a",
+        "tonalRamp": [
+          "#0a1f19",
+          "#12332a",
+          "#1b4538",
+          "#2f6454",
+          "#5a8b7a",
+          "#8fb1a4",
+          "#c4d8cf",
+          "#e6efeb"
+        ]
+      },
+      "shell-green-raised": {
+        "role": "primary",
+        "displayName": "Raised Shell",
+        "canonical": "#1b4538",
+        "tonalRamp": [
+          "#0a1f19",
+          "#12332a",
+          "#1b4538",
+          "#2f6454",
+          "#5a8b7a",
+          "#8fb1a4",
+          "#c4d8cf",
+          "#e6efeb"
+        ]
+      },
+      "shell-text": {
+        "role": "neutral",
+        "displayName": "Shell Text",
+        "canonical": "#b9ccc4",
+        "tonalRamp": [
+          "#2f6454",
+          "#4d7d6d",
+          "#6b9588",
+          "#8aaea2",
+          "#b9ccc4",
+          "#cfdcd6",
+          "#e1eae6",
+          "#f1f5f3"
+        ]
+      },
+      "document-ground": {
+        "role": "neutral",
+        "displayName": "Document Ground",
+        "canonical": "#f1f3f1",
+        "tonalRamp": [
+          "#2a2e2c",
+          "#4d534f",
+          "#757b77",
+          "#9ca19e",
+          "#c4c8c5",
+          "#dcdfdd",
+          "#eaecea",
+          "#f1f3f1"
+        ]
+      },
+      "panel-white": {
+        "role": "neutral",
+        "displayName": "Panel White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#303030",
+          "#555555",
+          "#7a7a7a",
+          "#a0a0a0",
+          "#c8c8c8",
+          "#e0e0e0",
+          "#f0f0f0",
+          "#ffffff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#17201d",
+        "tonalRamp": [
+          "#0b0f0e",
+          "#17201d",
+          "#2f3a36",
+          "#4b5852",
+          "#74807a",
+          "#9fa8a3",
+          "#c4cbc7",
+          "#e6e9e7"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#4b5852",
+        "tonalRamp": [
+          "#17201d",
+          "#2f3a36",
+          "#4b5852",
+          "#66736d",
+          "#85908b",
+          "#a6afab",
+          "#c9cfcc",
+          "#e8ebe9"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#c4ccc7",
+        "tonalRamp": [
+          "#4b5852",
+          "#66736d",
+          "#85908b",
+          "#a3ada8",
+          "#c4ccc7",
+          "#d5dbd7",
+          "#e4e8e5",
+          "#f1f3f1"
+        ]
+      },
+      "verified-green": {
+        "role": "status",
+        "displayName": "Verified Green",
+        "canonical": "#1e7a49",
+        "tonalRamp": [
+          "#0d3a22",
+          "#145733",
+          "#1e7a49",
+          "#3d9966",
+          "#6db88c",
+          "#9fd0b4",
+          "#cde8d8",
+          "#e9f5ee"
+        ]
+      },
+      "caution-amber": {
+        "role": "status",
+        "displayName": "Caution Amber",
+        "canonical": "#d9a400",
+        "tonalRamp": [
+          "#4a3700",
+          "#6f5300",
+          "#9a7600",
+          "#d9a400",
+          "#e8bd3a",
+          "#f0d06e",
+          "#f7e4a8",
+          "#fbf3d8"
+        ]
+      },
+      "caution-ink": {
+        "role": "status",
+        "displayName": "Caution Ink",
+        "canonical": "#6f5300",
+        "tonalRamp": [
+          "#2e2200",
+          "#4a3700",
+          "#6f5300",
+          "#9a7600",
+          "#c29a2a",
+          "#dcbe69",
+          "#eedba5",
+          "#fbf3d8"
+        ]
+      },
+      "alarm-red": {
+        "role": "status",
+        "displayName": "Alarm Red",
+        "canonical": "#c8322b",
+        "tonalRamp": [
+          "#4d0f0c",
+          "#771a16",
+          "#a3241e",
+          "#c8322b",
+          "#da6560",
+          "#e8918d",
+          "#f3c2bf",
+          "#fae6e5"
+        ]
+      },
+      "alarm-red-ink": {
+        "role": "status",
+        "displayName": "Alarm Red Ink",
+        "canonical": "#a3241e",
+        "tonalRamp": [
+          "#4d0f0c",
+          "#771a16",
+          "#a3241e",
+          "#c8322b",
+          "#da6560",
+          "#e8918d",
+          "#f3c2bf",
+          "#fae6e5"
+        ]
+      },
+      "caution-wash": {
+        "role": "status",
+        "displayName": "Caution Wash",
+        "canonical": "#fbf3d8",
+        "tonalRamp": [
+          "#fbf3d8"
+        ]
+      },
+      "alarm-wash": {
+        "role": "status",
+        "displayName": "Alarm Wash",
+        "canonical": "#fbeceb",
+        "tonalRamp": [
+          "#fbeceb"
+        ]
+      },
+      "shell-wash": {
+        "role": "neutral",
+        "displayName": "Shell Wash",
+        "canonical": "#cfe3d8",
+        "tonalRamp": [
+          "#cfe3d8"
+        ]
+      },
+      "muted-soft": {
+        "role": "neutral",
+        "displayName": "Muted Soft",
+        "canonical": "#7d8a84",
+        "tonalRamp": [
+          "#7d8a84"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Landing heading only (44px desktop, 32px mobile)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Repository page titles; landing panel titles step to 26px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Answer summary and landing subtitles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Claims, rows, descriptions (15px; 14px values, 13px captions)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "12px tracked caps for field names, column heads, section strips, signal word."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "JetBrains Mono for tags, document numbers, revisions, pages, reference chips, totals."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "drawer-slide",
+        "value": "transform 200ms ease-out",
+        "purpose": "Mobile rail drawer only. Reduced-motion collapses all transitions to 0.01ms."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px (rail becomes collapsible; drawer below)"
+      },
+      {
+        "name": "@xl",
+        "value": "36rem container: card grids go 2-up"
+      },
+      {
+        "name": "@3xl",
+        "value": "48rem container: card grids go 3-up"
+      },
+      {
+        "name": "@4xl",
+        "value": "56rem container: document list becomes a table"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Signal Bar",
+      "kind": "custom",
+      "refersTo": "signal-bar-caution",
+      "description": "Top band of every answer stating how far to trust it; green, amber, or red.",
+      "html": "<div class=\"ds-signal\"><span class=\"ds-diamond\"><span>!</span></span><span class=\"ds-label\">Konflik: perlu verifikasi</span><span class=\"ds-code ds-count\">4 sumber</span></div>",
+      "css": ".ds-signal{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--color-caution,#d9a400);color:var(--color-ink,#17201d)} .ds-diamond{display:grid;place-items:center;width:20px;height:20px;transform:rotate(45deg);border:2px solid var(--color-ink,#17201d)} .ds-diamond span{transform:rotate(-45deg);font-size:11px;font-weight:700;line-height:1} .ds-label{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase} .ds-count{margin-left:auto;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px}"
+    },
+    {
+      "name": "Reference Chip",
+      "kind": "chip",
+      "refersTo": "reference-chip",
+      "description": "Ink square with type code and number, inline after a claim.",
+      "html": "<button class=\"ds-chip\">IL1</button> <button class=\"ds-chip ds-chip-active\">DS2</button>",
+      "css": ".ds-chip{display:inline-grid;place-items:center;height:18px;padding:0 4px;border:0;border-radius:2px;background:var(--color-ink,#17201d);color:#fff;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:500;line-height:1;cursor:pointer} .ds-chip:hover{background:var(--color-shell,#12332a)} .ds-chip:focus-visible{outline:2px solid var(--color-ink,#17201d);outline-offset:2px} .ds-chip-active{background:var(--color-shell,#12332a);box-shadow:0 0 0 1px #fff,0 0 0 3px var(--color-ink,#17201d)}"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Shell-green action, 40px tall, 2px radius.",
+      "html": "<button class=\"ds-btn\">Kirim</button>",
+      "css": ".ds-btn{height:40px;padding:0 16px;border:0;border-radius:0;background:var(--color-shell,#12332a);color:#fff;font-size:14px;font-weight:600;cursor:pointer} .ds-btn:hover{background:var(--color-shell-2,#1b4538)} .ds-btn:focus-visible{outline:2px solid var(--color-ink,#17201d);outline-offset:2px} .ds-btn:disabled{background:var(--color-ground,#f1f3f1);color:var(--color-muted,#4b5852);border:1px solid var(--color-rule,#c4ccc7)}"
+    },
+    {
+      "name": "Segmented Toggle",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Tipe/Plant view switch in a 1px ink frame.",
+      "html": "<div class=\"ds-seg\"><button class=\"ds-seg-on\">Tipe</button><button>Plant</button></div>",
+      "css": ".ds-seg{display:inline-flex;border:1px solid var(--color-ink,#17201d)} .ds-seg button{padding:10px 16px;border:0;background:#fff;color:var(--color-ink,#17201d);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer} .ds-seg button:hover{background:var(--color-ground,#f1f3f1)} .ds-seg .ds-seg-on{background:var(--color-shell,#12332a);color:#fff} .ds-seg button:focus-visible{outline:2px solid var(--color-ink,#17201d);outline-offset:2px}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "panel-cell",
+      "description": "White field with ink border and leading icon; focus outlines the wrapper.",
+      "html": "<label class=\"ds-field\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input placeholder=\"Cari dokumen atau tag…\"></label>",
+      "css": ".ds-field{display:flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--color-ink,#17201d);background:#fff;color:var(--color-muted,#4b5852);font-size:14px} .ds-field input{width:100%;border:0;outline:0;background:transparent;font:inherit;color:var(--color-ink,#17201d)} .ds-field input::placeholder{color:var(--color-muted,#4b5852)} .ds-field:focus-within{outline:2px solid var(--color-ink,#17201d);outline-offset:2px}"
+    },
+    {
+      "name": "Landing Panel Cell",
+      "kind": "card",
+      "refersTo": "panel-cell",
+      "description": "Flat ruled cell that inverts to shell green on hover.",
+      "html": "<a class=\"ds-cell\" href=\"#\"><h2>Chatbot</h2><p class=\"ds-sub\">Tanya jawab</p><p class=\"ds-desc\">Ajukan pertanyaan operasional.</p></a>",
+      "css": ".ds-cell{display:block;min-height:200px;padding:28px;border:1px solid var(--color-ink,#17201d);background:#fff;color:var(--color-ink,#17201d);text-decoration:none} .ds-cell h2{margin:0;font-size:26px;font-weight:700;line-height:1.2} .ds-sub{margin:4px 0 0;font-size:17px;font-weight:500} .ds-desc{margin:12px 0 0;font-size:15px;color:var(--color-muted,#4b5852)} .ds-cell:hover{background:var(--color-shell,#12332a);color:#fff} .ds-cell:hover .ds-desc{color:var(--color-shell-text,#b9ccc4)} .ds-cell:focus-visible{outline:2px solid var(--color-ink,#17201d);outline-offset:2px}"
+    },
+    {
+      "name": "Status Mark",
+      "kind": "custom",
+      "refersTo": "signal-bar-caution",
+      "description": "Diamond plus status text: green for final, amber for any other.",
+      "html": "<span class=\"ds-status\"><i class=\"ds-dia ds-ok\"></i>Approved</span> <span class=\"ds-status ds-warn\"><i class=\"ds-dia\"></i>Draft</span>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--color-ink,#17201d)} .ds-warn{color:var(--color-caution-ink,#6f5300)} .ds-dia{display:inline-block;width:10px;height:10px;transform:rotate(45deg);background:var(--color-caution,#d9a400)} .ds-dia.ds-ok{background:var(--color-ok,#1e7a49)}"
+    },
+    {
+      "name": "Sumber Row",
+      "kind": "custom",
+      "refersTo": "reference-chip",
+      "description": "Ruled source row: code, document, revision, status, page.",
+      "html": "<div class=\"ds-row\"><span class=\"ds-rc\">IL1</span><a class=\"ds-doc\" href=\"#\">DOC-0142</a><span class=\"ds-m\">Rev C</span><span class=\"ds-status\"><i class=\"ds-dia ds-ok\"></i>Approved</span><span class=\"ds-m\">12</span></div>",
+      "css": ".ds-row{display:grid;grid-template-columns:4rem minmax(0,1fr) 6rem 11rem 4rem;gap:12px;align-items:center;padding:10px 16px;border-bottom:1px solid var(--color-rule,#c4ccc7);background:#fff;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px} .ds-rc{display:inline-grid;place-items:center;height:18px;padding:0 4px;border-radius:2px;background:var(--color-ink,#17201d);color:#fff;font-size:11px;font-weight:500;width:fit-content} .ds-doc{color:var(--color-ink,#17201d);font-weight:500;text-decoration:underline;text-decoration-color:var(--color-rule,#c4ccc7);text-underline-offset:4px} .ds-doc:hover{text-decoration-color:var(--color-ink,#17201d)} .ds-m{color:var(--color-muted,#4b5852)} .ds-status{display:inline-flex;align-items:center;gap:8px;font-family:'Public Sans',sans-serif} .ds-dia{width:10px;height:10px;transform:rotate(45deg);background:var(--color-ok,#1e7a49)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Safety Data Sheet",
+    "overview": "Every answer is a controlled document. A signal-word bar states how far to trust it before anything else is read, claims carry coded reference chips inline, and a ruled Sumber table closes it so any claim is verified in one click. The visitor is a plant engineer confirming a spec, setpoint or failure history before acting, so the system is built for scanning and verification rather than persuasion.\n\nThe material is a cool document-white ground with white panels divided by 1px rules, square 2px corners, and no shadows. Structure is the visible ruled-cell armature itself. A deep safety-green shell carries the rail and the verified signal bar. State colours follow ISO 3864 logic and each has one job.",
+    "keyCharacteristics": [
+      "Signal word first, claims with codes second, source table last.",
+      "Flat, ruled, square: depth comes from rules and tone, never shadow.",
+      "One type family (Public Sans) on a strict scale; mono for every code, tag, revision and page.",
+      "Colour is status, not decoration; amber means change or conflict, red means unverified or error.",
+      "Hover inverts a ruled panel to shell green."
+    ],
+    "rules": [
+      {
+        "name": "The One Alert Rule",
+        "body": "Amber is reserved for conflict, partial, and not-final. Red is reserved for unverified and error. Neither is ever used for emphasis, branding or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Diamond Rule",
+        "body": "Every non-green state is marked with a rotated-square (GHS-style) diamond; green states use a plain filled diamond. Colour never carries status alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Means Reference Rule",
+        "body": "Mono is for identifiers and measured data only; running prose never uses it.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "No second sans or serif. Add hierarchy through the scale above, not a new face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Surfaces are flat at rest and flat on hover. State changes swap fill (to shell green, ground, or pale amber), they never add shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do state the signal word before any answer content, and mark every non-green state with a diamond.",
+      "Do give every claim an ink reference chip (type code + number) that resolves to a row in the Sumber table.",
+      "Do set tags, document numbers, revisions, pages and codes in JetBrains Mono.",
+      "Do separate content with 1px rule borders and square corners (2px max).",
+      "Do keep amber for conflict, partial and not-final, and red for unverified and error only.",
+      "Do use Public Sans at the scale above; labels are 12px, 600, 0.08em, uppercase.",
+      "Do keep focus visible: 2px ink outline, white on the shell."
+    ],
+    "donts": [
+      "Don't use shadows, gradients, tinted rounded cards, pill badges or chat avatars.",
+      "Don't use amber or red for decoration, hover, or branding.",
+      "Don't convey status by colour alone; the diamond and the word must be present.",
+      "Don't introduce a second typeface or set prose in mono.",
+      "Don't label the same fact twice (a heading and a caption that repeat each other) except where a surface brief explicitly requires it."
+    ]
+  }
+}
