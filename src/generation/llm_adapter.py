@@ -78,14 +78,10 @@ class LLMAnswerAdapter:
 
         system_msg = (
             "You are an industrial engineer at Chandra Asri Pacific.\n"
-            "Answer the query directly and concisely using ONLY the provided verified evidence.\n"
-            "Do not extrapolate beyond the evidence.\n"
-            "Respond in JSON format with two keys:\n"
-            "1. 'summary_answer': A concise direct answer answering the query.\n"
-            "2. 'detailed_points': A list of concise strings containing ONLY the specific technical evidence, "
-            "parameter values, or facts directly relevant to the user query. Do NOT include irrelevant specifications "
-            "(e.g., do not include pressure, dimensions, or materials if the user asked about temperature).\n"
-            "If no specific parameter was asked and the user asked generally about the equipment, include key operational specifications."
+            "Answer the technical query directly, concisely, and factually in natural language using ONLY the provided verified evidence.\n"
+            "State specific values, tags, setpoints, and units directly (e.g. pressure, temperature, trip setpoint).\n"
+            "Do not extrapolate or speculate beyond the evidence.\n"
+            "Do NOT output raw JSON, code blocks, or meta-commentary. Output the direct factual explanation."
         )
 
         q_tokens = set(re.findall(r'\b[a-zA-Z0-9]{3,}\b', package.query.lower()))
@@ -110,34 +106,43 @@ class LLMAnswerAdapter:
 
         content = self.adapter.complete(user_msg, system_prompt=system_msg, temperature=0.0)
 
-        # Robust JSON extraction
-        raw_json = content.strip()
-        if "```" in raw_json:
-            match = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', raw_json)
-            if match:
-                raw_json = match.group(1).strip()
+        cleaned = content.strip()
+        # 1. Strip markdown fences if present
+        if "```" in cleaned:
+            cleaned = re.sub(r'^```(?:json|markdown)?\s*', '', cleaned)
+            cleaned = re.sub(r'\s*```$', '', cleaned).strip()
 
-        parsed = None
-        try:
-            parsed = json.loads(raw_json)
-        except Exception:
-            match = re.search(r'\{[\s\S]*\}', raw_json)
-            if match:
-                try:
-                    parsed = json.loads(match.group(0))
-                except Exception:
-                    pass
+        # 2. If model output JSON structure, parse or safely extract summary_answer
+        if '"summary_answer"' in cleaned or (cleaned.startswith("{") and cleaned.endswith("}")):
+            try:
+                parsed = json.loads(cleaned)
+                if isinstance(parsed, dict) and "summary_answer" in parsed:
+                    cleaned = str(parsed["summary_answer"]).strip()
+                    pts = parsed.get("detailed_points")
+                    if isinstance(pts, list) and len(pts) > 0:
+                        base_ans.detailed_points = [str(p).strip() for p in pts if str(p).strip()]
+                        attribution = self.fallback_synthesizer._attribution(package, base_ans.detailed_points, base_ans.citations)
+                        for field, value in attribution.items():
+                            setattr(base_ans, field, value)
+            except Exception:
+                # Regex fallback to extract value of "summary_answer": "..." even from truncated JSON
+                m = re.search(r'"summary_answer"\s*:\s*"((?:[^"\\]|\\.)*)"', cleaned)
+                if m:
+                    try:
+                        cleaned = m.group(1).encode('utf-8').decode('unicode_escape', errors='ignore').strip()
+                    except Exception:
+                        cleaned = m.group(1).strip()
+                else:
+                    # Clean any leading/trailing JSON markers
+                    cleaned = re.sub(r'^[{\s"]*summary_answer[":\s]*', '', cleaned).strip()
+                    cleaned = re.sub(r'[,}\s"]*$', '', cleaned).strip()
 
-        if isinstance(parsed, dict) and "summary_answer" in parsed:
-            base_ans.summary_answer = str(parsed["summary_answer"]).strip()
-            pts = parsed.get("detailed_points")
-            if isinstance(pts, list) and len(pts) > 0:
-                base_ans.detailed_points = [str(p).strip() for p in pts if str(p).strip()]
-                # Update citation mappings for points
-                attribution = self.fallback_synthesizer._attribution(package, base_ans.detailed_points, base_ans.citations)
-                for field, value in attribution.items():
-                    setattr(base_ans, field, value)
-        else:
-            base_ans.summary_answer = content.strip()
+        # 3. Final safety sanitization: never allow raw JSON syntax to leak into natural language summary
+        cleaned = re.sub(r'^\s*\{\s*"summary_answer":\s*"?', '', cleaned)
+        cleaned = re.sub(r'"\s*,\s*"detailed_points":.*$', '', cleaned, flags=re.DOTALL)
+        cleaned = cleaned.rstrip('"}').strip()
+
+        if cleaned:
+            base_ans.summary_answer = cleaned
 
         return base_ans
