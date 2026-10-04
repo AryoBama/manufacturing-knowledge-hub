@@ -71,11 +71,11 @@ class ManufacturingKnowledgeHub:
         # Auto-enable LLM if credentials exist and OFFLINE_MODE is not true
         if use_llm is None:
             import os
+            from src.adapters.llm import is_valid_api_key
             offline = os.getenv("OFFLINE_MODE", "false").lower() == "true"
-            has_credentials = bool(
-                os.getenv("DEEPSEEK_API_KEY") or
-                os.getenv("GEMINI_API_KEY") or
-                os.getenv("OPENAI_API_KEY")
+            has_credentials = any(
+                is_valid_api_key(os.getenv(k))
+                for k in ("NVIDIA_API_KEY", "DEEPSEEK_API_KEY", "GEMINI_API_KEY", "OPENAI_API_KEY")
             )
             self.use_llm = (not offline) and has_credentials
         else:

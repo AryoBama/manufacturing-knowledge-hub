@@ -143,7 +143,7 @@ class GeminiAdapter(LLMAdapter):
 
 
 class OpenAIAdapter(LLMAdapter):
-    """Adapter for OpenAI API (gpt-4o-mini, gpt-4o)."""
+    """Adapter for OpenAI-compatible APIs (OpenAI, NVIDIA NIM, Groq, Ollama)."""
 
     def __init__(
         self,
@@ -152,9 +152,13 @@ class OpenAIAdapter(LLMAdapter):
         base_url: Optional[str] = None,
         timeout: Optional[float] = None,
     ):
-        self.api_key = api_key or os.getenv("OPENAI_API_KEY", "")
-        self.model = model or os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-        self.base_url = base_url or os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1/chat/completions")
+        is_nvidia = os.getenv("LLM_PROVIDER", "").lower() == "nvidia" or bool(os.getenv("NVIDIA_API_KEY"))
+        default_base_url = "https://integrate.api.nvidia.com/v1/chat/completions" if is_nvidia else "https://api.openai.com/v1/chat/completions"
+        default_model = "meta/llama-3.3-70b-instruct" if is_nvidia else "gpt-4o-mini"
+
+        self.api_key = api_key or os.getenv("NVIDIA_API_KEY") or os.getenv("OPENAI_API_KEY", "")
+        self.model = model or os.getenv("NVIDIA_MODEL") or os.getenv("OPENAI_MODEL", default_model)
+        self.base_url = base_url or os.getenv("NVIDIA_BASE_URL") or os.getenv("OPENAI_BASE_URL", default_base_url)
         self.timeout = timeout if timeout is not None else float(os.getenv("LLM_TIMEOUT", "18.0"))
 
     def complete(
@@ -178,10 +182,32 @@ class OpenAIAdapter(LLMAdapter):
         if json_mode:
             payload["response_format"] = {"type": "json_object"}
 
+        target_url = self.base_url.rstrip("/")
+        if not target_url.endswith("/chat/completions"):
+            target_url = f"{target_url}/chat/completions"
+
         with httpx.Client(timeout=self.timeout) as client:
-            res = client.post(self.base_url, headers=headers, json=payload)
+            res = client.post(target_url, headers=headers, json=payload)
             res.raise_for_status()
             return res.json()["choices"][0]["message"]["content"]
+
+
+class NvidiaAdapter(OpenAIAdapter):
+    """Adapter for NVIDIA NIM API (build.nvidia.com) providing access to Llama 3.3, DeepSeek-R1, and other open models."""
+
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        model: Optional[str] = None,
+        base_url: Optional[str] = None,
+        timeout: Optional[float] = None,
+    ):
+        super().__init__(
+            api_key=api_key or os.getenv("NVIDIA_API_KEY"),
+            model=model or os.getenv("NVIDIA_MODEL", "meta/llama-3.3-70b-instruct"),
+            base_url=base_url or os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1/chat/completions"),
+            timeout=timeout,
+        )
 
 
 class OfflineMockAdapter(LLMAdapter):
@@ -222,6 +248,16 @@ def _load_dotenv_if_present() -> None:
             pass
 
 
+def is_valid_api_key(val: Optional[str]) -> bool:
+    """Returns True if the API key is non-empty and not an obvious placeholder."""
+    if not val or not val.strip():
+        return False
+    v = val.strip().lower()
+    if any(p in v for p in ("paste", "your-", "your_", "placeholder", "xxx")):
+        return False
+    return len(v) >= 8
+
+
 def get_llm_adapter(provider: Optional[str] = None) -> LLMAdapter:
     """
     Factory creating the appropriate LLM adapter based on environment configuration.
@@ -233,14 +269,18 @@ def get_llm_adapter(provider: Optional[str] = None) -> LLMAdapter:
 
     choice = (provider or os.getenv("LLM_PROVIDER", "")).lower()
 
-    if choice == "deepseek" or (not choice and os.getenv("DEEPSEEK_API_KEY")):
-        if os.getenv("DEEPSEEK_API_KEY"):
+    if choice == "nvidia" or (not choice and is_valid_api_key(os.getenv("NVIDIA_API_KEY"))):
+        if is_valid_api_key(os.getenv("NVIDIA_API_KEY")):
+            return NvidiaAdapter()
+    elif choice == "deepseek" or (not choice and is_valid_api_key(os.getenv("DEEPSEEK_API_KEY"))):
+        if is_valid_api_key(os.getenv("DEEPSEEK_API_KEY")):
             return DeepSeekAdapter()
-    elif choice == "gemini" or (not choice and os.getenv("GEMINI_API_KEY")):
-        if os.getenv("GEMINI_API_KEY"):
+    elif choice == "gemini" or (not choice and is_valid_api_key(os.getenv("GEMINI_API_KEY"))):
+        if is_valid_api_key(os.getenv("GEMINI_API_KEY")):
             return GeminiAdapter()
-    elif choice == "openai" or (not choice and os.getenv("OPENAI_API_KEY")):
-        if os.getenv("OPENAI_API_KEY"):
+    elif choice in ("openai",) or (not choice and is_valid_api_key(os.getenv("OPENAI_API_KEY"))):
+        if is_valid_api_key(os.getenv("OPENAI_API_KEY")):
             return OpenAIAdapter()
 
     return OfflineMockAdapter()
+

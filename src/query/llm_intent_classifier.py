@@ -70,7 +70,14 @@ class LLMIntentClassifier:
                 json_mode=True,
                 temperature=0.0,
             )
-            data = json.loads(raw_json)
+            cleaned = raw_json.strip()
+            if cleaned.startswith("```"):
+                cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+                cleaned = re.sub(r"\s*```$", "", cleaned).strip()
+            if "{" in cleaned and "}" in cleaned:
+                cleaned = cleaned[cleaned.find("{"):cleaned.rfind("}") + 1]
+
+            data = json.loads(cleaned)
             intent = str(data.get("intent", "general_information")).lower()
             if intent not in VALID_INTENTS:
                 intent = "general_information"

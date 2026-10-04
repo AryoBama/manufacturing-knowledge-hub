@@ -45,6 +45,18 @@ def test_factory_returns_deepseek_when_configured(monkeypatch):
     assert adapter.model == "deepseek-chat"
 
 
+def test_factory_returns_nvidia_when_configured(monkeypatch):
+    from src.adapters.llm import NvidiaAdapter
+    monkeypatch.setenv("OFFLINE_MODE", "false")
+    monkeypatch.setenv("NVIDIA_API_KEY", "nvapi-fake-test-key-12345")
+    monkeypatch.setenv("LLM_PROVIDER", "nvidia")
+    adapter = get_llm_adapter()
+    assert isinstance(adapter, NvidiaAdapter)
+    assert adapter.model == "meta/llama-3.3-70b-instruct"
+    assert "nvidia.com" in adapter.base_url
+
+
+
 def test_intent_classifier_with_injected_adapter():
     dummy = DummyTestAdapter()
     classifier = LLMIntentClassifier(adapter=dummy)
