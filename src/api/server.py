@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 
 from src.api.routes import router
+from src.api.repository import router as repository_router
 
 app = FastAPI(
     title="Chandra Asri Manufacturing Knowledge Hub API",
@@ -26,6 +27,7 @@ app.add_middleware(
 
 # Mount main API endpoints
 app.include_router(router)
+app.include_router(repository_router)
 
 
 @app.get("/", include_in_schema=False)
