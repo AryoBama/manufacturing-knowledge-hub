@@ -10,7 +10,7 @@ from src.ingestion.metadata import resolve_equipment
 
 COLUMN_ALIASES = {
     "equipment_tag": ["equipment_tag", "equipment tag", "tag no", "tag_no", "tag", "equipment", "asset"],
-    "event_id": ["event_id", "wo_number", "work order", "notification_no", "notification", "id"],
+    "event_id": ["event_id", "notification_no", "notification", "wo_number", "work order", "id"],
     "date": ["date", "report_date", "failure date", "incident date", "order date", "start_date"],
     "breakdown": ["breakdown", "failure_mode", "failure type", "defect", "mode"],
     "symptom": ["symptom", "problem_description", "problem", "description", "issue"],

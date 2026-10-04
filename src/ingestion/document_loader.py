@@ -9,13 +9,14 @@ from schemas.document import DocumentChunk
 
 class DocumentRegistry:
     def __init__(self, chunks: List[DocumentChunk]):
-        self._chunks = chunks
+        dedup_dict = {c.chunk_id: c for c in chunks}
+        self._chunks = list(dedup_dict.values())
         self._by_tag = defaultdict(list)
         self._by_type = defaultdict(list)
         self._by_doc_id = defaultdict(list)
         self._by_chunk_id = {}
 
-        for chunk in chunks:
+        for chunk in self._chunks:
             self._by_chunk_id[chunk.chunk_id] = chunk
             if chunk.equipment_tag:
                 self._by_tag[chunk.equipment_tag.upper()].append(chunk)

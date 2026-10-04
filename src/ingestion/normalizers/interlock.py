@@ -56,6 +56,49 @@ def normalize_interlock_excel(
     # 1. Parse Cause Effect Trips
     if "Cause Effect" in wb.sheetnames:
         ws = wb["Cause Effect"]
+        # Dynamically discover effect columns from row 2
+        effect_cols = {}
+        for c in range(7, ws.max_column + 1):
+            col_hdr = ws.cell(2, c).value
+            if col_hdr and str(col_hdr).strip():
+                raw_name = str(col_hdr).strip()
+                eff_match = re.match(r"eff_?(\d+)[_ ]*(.*)", raw_name, re.IGNORECASE)
+                if eff_match:
+                    num = eff_match.group(1)
+                    act_name = eff_match.group(2).replace("_", " ").title()
+                    tag_in_col = None
+                    if "xv" in raw_name.lower():
+                        tag_in_col = "XV-" + tag.split("-")[-1].rstrip("AB")
+                    elif "fv" in raw_name.lower():
+                        tag_in_col = "FV-" + tag.split("-")[-1].rstrip("AB")
+                    elif "standby" in raw_name.lower() or "spare" in raw_name.lower():
+                        tag_in_col = (tag[:-1] + "B") if tag.endswith("A") else "STANDBY"
+                    elif "dcs" in raw_name.lower() or "alarm" in raw_name.lower():
+                        tag_in_col = "DCS"
+
+                    if "trip" in raw_name.lower() and "motor" in raw_name.lower():
+                        eff_label = f"Trip Motor (EFF-{num})"
+                        target_cand = tag
+                    elif "close" in raw_name.lower():
+                        eff_label = f"Close Discharge {tag_in_col or ''} (EFF-{num})".replace("  ", " ").strip()
+                        target_cand = tag_in_col or tag
+                    elif "open" in raw_name.lower():
+                        eff_label = f"Open Min-Flow {tag_in_col or ''} (EFF-{num})".replace("  ", " ").strip()
+                        target_cand = tag_in_col or tag
+                    elif "alarm" in raw_name.lower() or "annunciate" in raw_name.lower():
+                        eff_label = f"DCS Alarm (EFF-{num})"
+                        target_cand = "DCS"
+                    elif "standby" in raw_name.lower() or "spare" in raw_name.lower():
+                        eff_label = f"Start Standby Pump {tag_in_col or ''} (EFF-{num})".replace("  ", " ").strip()
+                        target_cand = tag_in_col or tag
+                    else:
+                        eff_label = f"{act_name} (EFF-{num})"
+                        target_cand = tag
+                else:
+                    eff_label = raw_name.replace("_", " ").title()
+                    target_cand = tag
+                effect_cols[c] = (eff_label, target_cand)
+
         for r in range(3, ws.max_row + 1):
             trip_id = ws.cell(r, 2).value
             desc = ws.cell(r, 3).value
@@ -63,24 +106,14 @@ def normalize_interlock_excel(
             sp = ws.cell(r, 5).value
             voting = ws.cell(r, 6).value
 
-            if trip_id and str(trip_id).startswith("T") and len(str(trip_id)) <= 3:
+            if trip_id and str(trip_id).strip().startswith("T") and len(str(trip_id).strip()) <= 4:
                 effs = []
                 targets = []
-                if ws.cell(r, 7).value in ("X", "x"):
-                    effs.append("Trip Motor (EFF-1)")
-                    targets.append(tag)
-                if ws.cell(r, 8).value in ("X", "x"):
-                    effs.append("Close Discharge XV-1201 (EFF-2)")
-                    targets.append("XV-1201")
-                if ws.cell(r, 9).value in ("X", "x"):
-                    effs.append("Open Min-Flow FV-1201 (EFF-3)")
-                    targets.append("FV-1201")
-                if ws.cell(r, 10).value in ("X", "x"):
-                    effs.append("DCS Alarm (EFF-4)")
-                    targets.append("DCS")
-                if ws.cell(r, 11).value in ("X", "x"):
-                    effs.append("Start Standby Pump GA-1201B (EFF-5)")
-                    targets.append("GA-1201B")
+                for c, (eff_label, target_cand) in effect_cols.items():
+                    val = str(ws.cell(r, c).value or "").strip().upper()
+                    if val == "X":
+                        effs.append(eff_label)
+                        targets.append(target_cand)
 
                 actions_str = ", ".join(effs)
                 trip_summary_lines.append(f"- {trip_id}: {desc} ({tag_inst} {sp}, {voting}) -> Actions: {actions_str}")
@@ -146,7 +179,8 @@ def normalize_interlock_excel(
                     )
                     relationships.append(rel_p)
 
-    # 3. Build summary DocumentChunk
+    default_pid = f"TJC-LLD-PID-{tag.replace('GA-', '')}"
+    default_ds = f"TJC-LLD-DS-{tag}"
     content_lines = [
         f"INTERLOCK LOGIC & CAUSE EFFECT MATRIX: {logic_no} ({meta.get('logic_description', 'Shutdown Logic')}).",
         f"Document No: {doc_id}, Revision: {rev or 'N/A'}, Status: {status_str}, SIL Level: {sil_level}.",
@@ -155,7 +189,7 @@ def normalize_interlock_excel(
         "\n".join(trip_summary_lines),
         "START PERMISSIVES (AND-gate conditions to start):",
         "\n".join(perm_summary_lines),
-        f"CROSS REFERENCES: P&ID: {meta.get('pid_reference', 'TJC-LLD-PID-1201')}, Datasheet: {meta.get('datasheet_reference', 'TJC-LLD-DS-GA-1201A')}."
+        f"CROSS REFERENCES: P&ID: {meta.get('pid_reference', default_pid)}, Datasheet: {meta.get('datasheet_reference', default_ds)}."
     ]
     content = "\n".join(content_lines)
 

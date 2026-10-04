@@ -89,6 +89,19 @@ def run_ingestion_pipeline(
     dedup_mnt = list({m.event_id: m for m in aggregated_batch.maintenance_records}.values())
     dedup_rels = list({r.relationship_id: r for r in aggregated_batch.relationships}.values())
 
+    # Filter maintenance records by primary_tag if primary_tag is resolved
+    if primary_tag and primary_tag != "UNKNOWN_ASSET":
+        base_prefix = primary_tag.split("-")[0] + "-" + primary_tag.split("-")[1][:4]
+        tag_mnt = [
+            m for m in dedup_mnt
+            if m.equipment_tag and (
+                m.equipment_tag.upper().startswith(primary_tag.upper()) or
+                m.equipment_tag.upper().startswith(base_prefix)
+            )
+        ]
+        if tag_mnt:
+            dedup_mnt = tag_mnt
+
     # STEP 13: Validate all objects
     batch_dict = {
         "document_chunks": dedup_chunks,
@@ -171,11 +184,41 @@ def run_ingestion_pipeline(
     }
 
 
+def run_all_ingestion(
+    raw_base_dir: Optional[Path] = None,
+    output_base_dir: Optional[Path] = None
+) -> Dict[str, Any]:
+    """
+    Executes the ingestion pipeline across all equipment folders in data/raw.
+    """
+    if raw_base_dir is None:
+        raw_base_dir = BASE_DIR / "data" / "raw"
+    if output_base_dir is None:
+        output_base_dir = BASE_DIR / "data" / "processed"
+
+    results = {}
+    for d in sorted(raw_base_dir.iterdir()):
+        if d.is_dir() and not d.name.startswith("."):
+            tag = d.name
+            print(f"\n>>> Running Ingestion Pipeline for: {tag} ({d})")
+            res = run_ingestion_pipeline(d, output_base_dir, target_equipment_tag=tag)
+            results[tag] = res
+    return results
+
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run Ingestion Pipeline for an Equipment Dataset")
-    parser.add_argument("--input-dir", type=Path, default=BASE_DIR / "GA-1201A HEXANE FEED PUMP")
+    parser = argparse.ArgumentParser(description="Run Ingestion Pipeline for Equipment Dataset(s)")
+    parser.add_argument("--input-dir", type=Path, default=None)
     parser.add_argument("--output-dir", type=Path, default=BASE_DIR / "data" / "processed")
     parser.add_argument("--equipment-tag", type=str, default=None)
+    parser.add_argument("--all", action="store_true", help="Run ingestion for all equipment in data/raw")
     args = parser.parse_args()
 
-    run_ingestion_pipeline(args.input_dir, args.output_dir, args.equipment_tag)
+    raw_ga = BASE_DIR / "data" / "raw" / "GA-1201A"
+    legacy_ga = BASE_DIR / "GA-1201A HEXANE FEED PUMP"
+
+    if args.all or (args.input_dir is None and (BASE_DIR / "data" / "raw").exists()):
+        run_all_ingestion(BASE_DIR / "data" / "raw", args.output_dir)
+    else:
+        inp = args.input_dir or (raw_ga if raw_ga.exists() else legacy_ga)
+        run_ingestion_pipeline(inp, args.output_dir, args.equipment_tag)
