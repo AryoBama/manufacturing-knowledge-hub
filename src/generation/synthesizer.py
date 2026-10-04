@@ -176,6 +176,9 @@ class AnswerSynthesizer:
         content = self._norm(item.content)
         if len(p) >= 12 and p in content:
             return True
+        p_body = re.sub(r'^(?:step\s+\d+|procedure\s+\d+)\s*[-–:]\s*', '', p).strip()
+        if len(p_body) >= 12 and p_body in content:
+            return True
         if item.source.file_name and item.source.file_name.lower() in p:
             return True
         # Structured points (e.g. "PSLL-1201: Triggers trip on GA-1201A") are rebuilt from relationship
@@ -436,40 +439,59 @@ class AnswerSynthesizer:
         tag = package.equipment_tag
         eq_name = PLANT_EQUIPMENT_REGISTRY.get(tag, {}).get("name", "Equipment")
 
-        diagnostic_steps = []
+        opl_procedures = {}
         past_incidents = []
 
-        # 1. SME OPL procedural steps (Action steps)
+        # 1. SME OPL procedural steps grouped by document
         for it in package.items:
             if it.document_type == "OPL":
+                doc_id = it.document_id
+                if doc_id not in opl_procedures:
+                    title = doc_id
+                    for l in it.content.split("\n"):
+                        l_clean = l.strip()
+                        if not l_clean:
+                            continue
+                        m_title = re.search(r'OPL-[\w-]+\s*-\s*([^.\n]+)', l_clean)
+                        if m_title:
+                            title = m_title.group(1).strip()
+                            break
+                    opl_procedures[doc_id] = {
+                        "title": title,
+                        "score": it.relevance_score,
+                        "steps": []
+                    }
+
                 for line in it.content.split("\n"):
                     line = line.strip("- *#").strip()
-                    # Capture procedural action lines: "Step 1 – Action: ...", "Step 1: ..."
                     if re.match(r'^Step\s+\d+\s*[-–:]\s*Action:\s*', line, re.IGNORECASE):
                         step_clean = re.sub(r'^Step\s+(\d+)\s*[-–:]\s*Action:\s*', r'Step \1: ', line, flags=re.IGNORECASE).strip()
-                        if step_clean not in diagnostic_steps:
-                            diagnostic_steps.append(step_clean)
+                        if step_clean not in opl_procedures[doc_id]["steps"]:
+                            opl_procedures[doc_id]["steps"].append(step_clean)
                     elif re.match(r'^Step\s+\d+\s*[-–:]\s*', line, re.IGNORECASE) and "Check:" not in line:
-                        if line not in diagnostic_steps:
-                            diagnostic_steps.append(line)
-            elif it.evidence_type == "maintenance_event":
-                past_incidents.append(it.content)
+                        if line not in opl_procedures[doc_id]["steps"]:
+                            opl_procedures[doc_id]["steps"].append(line)
 
-        # Fallback if no explicit "Step N" matched: skip headers and extract actionable lines
-        if not diagnostic_steps:
-            for it in package.items:
-                if it.document_type == "OPL":
-                    for line in it.content.split("\n"):
-                        line = line.strip("- *#").strip()
-                        if any(h in line.upper() for h in [
-                            "ONE POINT LESSON", "STEP-BY-STEP PROCEDURE", "PURPOSE & OBJECTIVE",
-                            "SAFETY PRECAUTIONS", "TOOLS & MATERIALS", "COMMON PROBLEMS",
-                            "KEY LEARNING POINTS", "EQUIPMENT:", "DISCIPLINE:", "AREA:", "RELATED INTERLOCK"
-                        ]):
-                            continue
-                        if any(k in line.lower() for k in ["check", "inspect", "vibration", "leak", "lubricat", "step", "cause", "action"]):
-                            if len(line) > 15 and line not in diagnostic_steps:
-                                diagnostic_steps.append(line)
+            elif it.evidence_type == "maintenance_event":
+                if it.content not in past_incidents:
+                    past_incidents.append(it.content)
+
+        # Fallback if any OPL has no explicit "Step N"
+        for doc_id, data in opl_procedures.items():
+            if not data["steps"]:
+                for it in package.items:
+                    if it.document_id == doc_id:
+                        for line in it.content.split("\n"):
+                            line = line.strip("- *#").strip()
+                            if any(h in line.upper() for h in [
+                                "ONE POINT LESSON", "STEP-BY-STEP PROCEDURE", "PURPOSE & OBJECTIVE",
+                                "SAFETY PRECAUTIONS", "TOOLS & MATERIALS", "COMMON PROBLEMS",
+                                "KEY LEARNING POINTS", "EQUIPMENT:", "DISCIPLINE:", "AREA:", "RELATED INTERLOCK"
+                            ]):
+                                continue
+                            if any(k in line.lower() for k in ["check", "inspect", "vibration", "leak", "lubricat", "step", "cause", "action"]):
+                                if len(line) > 15 and line not in data["steps"]:
+                                    data["steps"].append(line)
 
         detailed = []
         q_lower = package.query.lower()
@@ -489,9 +511,23 @@ class AnswerSynthesizer:
         else:
             summary = f"Troubleshooting protocol for {tag} ({eq_name}): Follow standardized OPL inspection steps and cross-reference with historical root causes."
 
-        if diagnostic_steps:
+        # Filter procedures with actual steps, sorted by retrieval relevance score
+        valid_procedures = [
+            (doc_id, data["title"], data["steps"])
+            for doc_id, data in sorted(opl_procedures.items(), key=lambda x: x[1]["score"], reverse=True)
+            if data["steps"]
+        ]
+
+        if len(valid_procedures) == 1:
+            doc_id, title, steps = valid_procedures[0]
+            detailed.append(f"Recommended Diagnostic Steps — {title} ({doc_id}):")
+            detailed.extend([f"  • {s}" for s in steps])
+        elif len(valid_procedures) > 1:
             detailed.append("Recommended Diagnostic Steps (from SME OPLs):")
-            detailed.extend([f"  • {s}" for s in diagnostic_steps[:5]])
+            for idx, (doc_id, title, steps) in enumerate(valid_procedures[:2]):
+                detailed.append(f"Procedure {idx+1} — {title} ({doc_id}):")
+                detailed.extend([f"  • {s}" for s in steps])
+
         if past_incidents:
             detailed.append("Past Similar Incidents & Root Causes (SAP PM History):")
             detailed.extend([f"  • {inc}" for inc in past_incidents[:3]])
