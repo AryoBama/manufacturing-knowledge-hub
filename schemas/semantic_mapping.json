@@ -67,6 +67,9 @@
         "Pumping Temperature",
         "Operating Temperature",
         "Design Temperature",
+        "Design Temp.",
+        "Design Temp",
+        "Operating Temp.",
         "Operating Temp",
         "Fluid Temperature"
       ],

@@ -98,24 +98,35 @@ class StructuredKnowledgeStore:
             tag_upper = res["equipment_tag"]
 
         param_clean = parameter_query.strip().lower()
-        canon_field, _ = find_canonical_field(param_clean)
+        query_variants = [param_clean]
+        if "temperature" in param_clean or "temp" in param_clean:
+            query_variants.extend(["temperature", "temp", "temp."])
+        if "pressure" in param_clean or "press" in param_clean:
+            query_variants.extend(["pressure", "press"])
 
         matches: List[TechnicalRecord] = []
-        # Check canonical index
-        if canon_field and (tag_upper, canon_field) in self._tech_by_canon:
-            matches.extend(self._tech_by_canon[tag_upper, canon_field])
+        for qv in query_variants:
+            canon_field, _ = find_canonical_field(qv)
+            if canon_field and (tag_upper, canon_field) in self._tech_by_canon:
+                for tr in self._tech_by_canon[tag_upper, canon_field]:
+                    if tr not in matches:
+                        matches.append(tr)
 
         # Check parameter text match
         candidates = self._tech_by_tag.get(tag_upper, [])
         for tr in candidates:
             if tr in matches:
                 continue
-            if (
-                param_clean in tr.parameter.lower()
-                or tr.parameter.lower() in param_clean
-                or (tr.canonical_field and tr.canonical_field.lower() in param_clean)
-            ):
-                matches.append(tr)
+            tr_param = tr.parameter.lower()
+            tr_canon = (tr.canonical_field or "").lower()
+            for qv in query_variants:
+                if (
+                    qv in tr_param
+                    or tr_param in qv
+                    or (tr_canon and (qv in tr_canon or tr_canon in qv))
+                ):
+                    matches.append(tr)
+                    break
 
         return matches
 

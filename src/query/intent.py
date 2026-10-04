@@ -61,7 +61,7 @@ def classify_intent_deterministic(query: str) -> IntentClassificationResult:
     if any(k in q for k in [
         "how to start", "how to perform", "start-up", "startup", "procedure", "prosedur", "sop",
         "step-by-step", "operating steps", "langkah operasi", "langkah kerja", "cara start",
-        "priming", "pre-start"
+        "priming", "pre-start", "alignment", "aligment", "toleransi", "tolerance", "coupling alignment"
     ]):
         return IntentClassificationResult(
             intent="procedure",
@@ -126,7 +126,8 @@ def classify_intent_deterministic(query: str) -> IntentClassificationResult:
         "aliran", "flow", "motor power", "daya", "daya motor", "penggerak", "drawing", "material",
         "driver", "driven", "driven by", "turbine", "power", "head", "compression ratio",
         "data teknik", "tampilkan data", "apa itu", "apa spesifikasi", "old document", "dokumen lama",
-        "show details", "details for", "show", "data", "pressure", "suction pressure", "bar"
+        "show details", "details for", "show", "data", "pressure", "suction pressure", "bar",
+        "temperature", "temp", "suhu", "design temp", "operating temp"
     ]):
         return IntentClassificationResult(
             intent="equipment_information",

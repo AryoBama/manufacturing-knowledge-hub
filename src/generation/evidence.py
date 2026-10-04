@@ -1,3 +1,4 @@
+import re
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field
 
@@ -94,8 +95,14 @@ class EvidenceFusionEngine:
 
             # A. Technical Records (Parameters)
             if intent in ("equipment_information", "troubleshooting", "general_information"):
-                keywords = ["flow", "head", "power", "speed", "pressure", "material", "temperature", "type"]
-                for kw in keywords:
+                keywords = ["flow", "head", "power", "speed", "pressure", "material", "temperature", "temp", "type"]
+                stop_words = {"what", "how", "about", "the", "for", "and", "does", "can", "tell", "show", "is", "are", "with", "this", "that"}
+                q_words = [
+                    w.lower() for w in re.findall(r'\b[a-zA-Z]{3,}\b', understanding.query)
+                    if w.lower() not in stop_words
+                ]
+                all_kws = list(dict.fromkeys(q_words + keywords))
+                for kw in all_kws:
                     trs = structured_store.lookup_technical_parameter(tag, kw)
                     for tr in trs:
                         ev_id = f"EV-TR-{tr.record_id}"

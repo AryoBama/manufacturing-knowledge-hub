@@ -266,9 +266,31 @@ class AnswerSynthesizer:
         if flow_line:
             summary += f" Key operating point: {flow_line}."
 
-        # Prioritize parameters matching query terms (e.g. npsh, current, head, power)
+        # Prioritize parameters matching query terms (e.g. temperature, pressure, npsh, current, head, power)
         q_words = [w.lower() for w in re.findall(r'\b[a-zA-Z]{3,}\b', package.query)]
-        detailed.sort(key=lambda p: any(w in p.lower() for w in q_words if w not in ["what", "the", "for", "pump"]), reverse=True)
+        target_words = [w for w in q_words if w not in ["what", "how", "about", "the", "for", "and", "does", "pump", "drum", "fan", "valve", "tell", "show"]]
+        if target_words:
+            primary_words = []
+            if "temperature" in target_words or "temp" in target_words:
+                primary_words.extend(["temperature", "temp", "temp."])
+            elif "pressure" in target_words or "press" in target_words:
+                primary_words.extend(["pressure", "press"])
+            elif "flow" in target_words or "capacity" in target_words:
+                primary_words.extend(["flow", "capacity"])
+            elif "head" in target_words:
+                primary_words.append("head")
+            elif "power" in target_words:
+                primary_words.append("power")
+            elif "speed" in target_words or "rpm" in target_words:
+                primary_words.extend(["speed", "rpm"])
+            elif "material" in target_words:
+                primary_words.append("material")
+
+            sort_words = primary_words if primary_words else target_words
+            detailed.sort(key=lambda p: any(w in p.lower() for w in sort_words), reverse=True)
+            matched_param = next((p for p in detailed if any(w in p.lower() for w in sort_words)), "")
+            if matched_param:
+                summary = f"For {tag} ({eq_name}), verified datasheet specifies {matched_param}."
 
         q_lower = package.query.lower()
         if any(k in q_lower for k in ["old doc", "dokumen lama", "is that true", "is this true", "benar?"]):
