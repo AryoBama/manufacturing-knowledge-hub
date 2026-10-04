@@ -149,11 +149,12 @@ def classify_intent_deterministic(query: str) -> IntentClassificationResult:
 
 def classify_intent_hybrid(query: str, fallback_to_llm: bool = True) -> IntentClassificationResult:
     """
-    LLM-Primary Hybrid Intent Classifier:
-    1. Deterministic Security Guard: Blocks prompt injection / jailbreak queries immediately.
-    2. Primary Semantic LLM: Leverages LLM intent classifier to understand semantic nuances.
-    3. Deterministic Fallback: If LLM is disabled, offline, times out, or errors, seamlessly falls back
-       to deterministic industrial engineering rules.
+    High-Performance Hybrid Intent Classifier:
+    1. Deterministic Security Guard: Blocks prompt injection / jailbreak queries immediately (0.1ms).
+    2. High-Precision Rules: If unambiguous industrial patterns match with HIGH confidence,
+       resolves immediately in 0.1ms without incurring 30s LLM network roundtrip.
+    3. Semantic LLM Fallback: For conversational, ambiguous, or unmatched queries, leverages
+       LLM classifier for nuanced intent resolution.
     """
     q = query.strip()
 
@@ -165,7 +166,12 @@ def classify_intent_hybrid(query: str, fallback_to_llm: bool = True) -> IntentCl
             reason_code="security_guardrail"
         )
 
-    # Step 2: Primary Semantic LLM Classification
+    # Step 2: High-Precision Deterministic Rules (Instant 0.1ms)
+    det_result = classify_intent_deterministic(q)
+    if det_result.confidence == "HIGH":
+        return det_result
+
+    # Step 3: Semantic LLM Classification for ambiguous / conversational phrasing
     if fallback_to_llm:
         try:
             llm = get_default_llm_intent_classifier()
@@ -179,8 +185,7 @@ def classify_intent_hybrid(query: str, fallback_to_llm: bool = True) -> IntentCl
         except Exception:
             pass
 
-    # Step 3: Deterministic Rule-Based Fallback
-    return classify_intent_deterministic(q)
+    return det_result
 
 
 def classify_intent(query: str, fallback_to_llm: bool = True) -> str:

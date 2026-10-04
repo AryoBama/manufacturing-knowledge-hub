@@ -52,7 +52,7 @@ def test_factory_returns_nvidia_when_configured(monkeypatch):
     monkeypatch.setenv("LLM_PROVIDER", "nvidia")
     adapter = get_llm_adapter()
     assert isinstance(adapter, NvidiaAdapter)
-    assert adapter.model == "nvidia/nemotron-3.5-lightning-30b-a3b"
+    assert adapter.model == "nvidia/nemotron-3-super-120b-a12b"
     assert "nvidia.com" in adapter.base_url
 
 

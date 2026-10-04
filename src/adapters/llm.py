@@ -205,7 +205,7 @@ class NvidiaAdapter(OpenAIAdapter):
         _load_dotenv_if_present()
         super().__init__(
             api_key=api_key or os.getenv("NVIDIA_API_KEY"),
-            model=model or os.getenv("NVIDIA_MODEL", "nvidia/nemotron-3.5-lightning-30b-a3b"),
+            model=model or os.getenv("NVIDIA_MODEL", "nvidia/nemotron-3-super-120b-a12b"),
             base_url=base_url or os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1/chat/completions"),
             timeout=timeout,
         )
