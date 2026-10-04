@@ -28,11 +28,81 @@
       ? new Date(answer.trace.timestamp).toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' })
       : null,
   )
-  // Keep the last word and its reference chips on one line so chips never wrap alone.
-  const split = (t: string) => {
-    const i = t.lastIndexOf(' ')
-    return i < 0 ? ['', t] : [t.slice(0, i + 1), t.slice(i + 1)]
+  interface InlineToken {
+    type: 'text' | 'bold' | 'code'
+    text: string
   }
+
+  interface ContentBlock {
+    type: 'paragraph' | 'bullet'
+    text: string
+  }
+
+  function cleanLatex(str: string): string {
+    if (!str) return ''
+    return str
+      .replace(/\\\$\\text\{O\}_\{?2\}?\$|\\\$O_2\$|\$\\text\{O\}_\{?2\}?\$|\$O_2\$/gi, 'O₂')
+      .replace(/\\\$\\text\{CO\}_\{?2\}?\$|\\\$CO_2\$|\$\\text\{CO\}_\{?2\}?\$|\$CO_2\$/gi, 'CO₂')
+      .replace(/\\\$\\text\{H\}_\{?2\}?O\$|\\\$H_2O\$|\$\\text\{H\}_\{?2\}?O\$|\$H_2O\$/gi, 'H₂O')
+      .replace(/\\\$\\text\{N\}_\{?2\}?\$|\\\$N_2\$|\$\\text\{N\}_\{?2\}?\$|\$N_2\$/gi, 'N₂')
+      .replace(/\\\$\\text\{([^}]+)\}\$|\$\\text\{([^}]+)\}\$/g, '$1$2')
+      .replace(/\\degree\s*C|°\s*C|\^\s*\\circ\s*C/gi, '°C')
+      .replace(/\\mu\b|\$\\mu\$/g, 'µ')
+      .replace(/\\\$([^\$]+)\\\$|\$([^\$]+)\$/g, '$1$2')
+  }
+
+  function tokenizeInline(raw: string): InlineToken[] {
+    const cleaned = cleanLatex(raw)
+    const tokens: InlineToken[] = []
+    const regex = /(\*\*.*?\*\*|`.*?`)/g
+    let lastIndex = 0
+    let match: RegExpExecArray | null
+
+    while ((match = regex.exec(cleaned)) !== null) {
+      if (match.index > lastIndex) {
+        tokens.push({ type: 'text', text: cleaned.slice(lastIndex, match.index) })
+      }
+      const val = match[0]
+      if (val.startsWith('**') && val.endsWith('**')) {
+        tokens.push({ type: 'bold', text: val.slice(2, -2) })
+      } else if (val.startsWith('`') && val.endsWith('`')) {
+        tokens.push({ type: 'code', text: val.slice(1, -1) })
+      }
+      lastIndex = regex.lastIndex
+    }
+    if (lastIndex < cleaned.length) {
+      tokens.push({ type: 'text', text: cleaned.slice(lastIndex) })
+    }
+    return tokens.length > 0 ? tokens : [{ type: 'text', text: cleaned }]
+  }
+
+  function parseBlocks(raw: string): ContentBlock[] {
+    if (!raw) return []
+    const lines = raw.split('\n').map((l) => l.trim()).filter(Boolean)
+    const blocks: ContentBlock[] = []
+
+    for (const line of lines) {
+      if (/^[•\-*]\s+/.test(line)) {
+        blocks.push({
+          type: 'bullet',
+          text: line.replace(/^[•\-*]\s+/, ''),
+        })
+      } else if (/^\d+\.\s+/.test(line)) {
+        blocks.push({
+          type: 'bullet',
+          text: line.replace(/^\d+\.\s+/, ''),
+        })
+      } else {
+        blocks.push({
+          type: 'paragraph',
+          text: line,
+        })
+      }
+    }
+    return blocks.length > 0 ? blocks : [{ type: 'paragraph', text: raw }]
+  }
+
+  const summaryBlocks = $derived(parseBlocks(answer.summary_answer))
   const code = (c: SourceCitation, n: number) => `${typeCode(c.document_type)}${n}`
 
   // Points arrive as raw text lines ("  • foo", "  1. bar", "Heading:"); split into headings and claims.
@@ -55,6 +125,18 @@
 
   const PRIORITY: Record<string, string> = { CRITICAL: 'Critical', HIGH: 'High', MEDIUM: 'Medium', LOW: 'Low' }
 </script>
+
+{#snippet formattedTokens(rawText: string)}
+  {#each tokenizeInline(rawText) as tok}
+    {#if tok.type === 'bold'}
+      <strong class="font-semibold text-ink">{tok.text}</strong>
+    {:else if tok.type === 'code'}
+      <code class="code rounded-xs bg-ground px-1 py-0.5 text-[13px]">{tok.text}</code>
+    {:else}
+      <span>{tok.text}</span>
+    {/if}
+  {/each}
+{/snippet}
 
 {#snippet marks(refs: number[])}
   {#each refs as n (n)}
@@ -101,14 +183,31 @@
     </div>
   </dl>
 
-  <div class="px-4 py-4">
+  <div class="px-4 py-4 space-y-2.5">
     {#if answer.requires_clarification && answer.clarification_prompt}
       <p class="mb-3 border border-caution bg-caution-wash p-3 text-sm text-caution-ink">{answer.clarification_prompt}</p>
     {/if}
-    <p class="text-[17px] font-medium leading-snug text-ink">
-      {split(answer.summary_answer)[0]}<span class="whitespace-nowrap">{split(answer.summary_answer)[1]}{@render marks(answer.summary_citations ?? [])}</span>
-    </p>
-    <p class="mt-1.5 text-[13px] text-muted">{answer.confidence_reason}</p>
+    {#each summaryBlocks as block, bIdx (bIdx)}
+      {#if block.type === 'bullet'}
+        <div class="flex items-start gap-2.5 text-[15px] leading-relaxed text-ink pl-1">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ink" aria-hidden="true"></span>
+          <div>
+            {@render formattedTokens(block.text)}
+            {#if bIdx === summaryBlocks.length - 1}
+              {@render marks(answer.summary_citations ?? [])}
+            {/if}
+          </div>
+        </div>
+      {:else}
+        <p class="text-[16px] font-medium leading-relaxed text-ink">
+          {@render formattedTokens(block.text)}
+          {#if bIdx === summaryBlocks.length - 1}
+            {@render marks(answer.summary_citations ?? [])}
+          {/if}
+        </p>
+      {/if}
+    {/each}
+    <p class="mt-2 text-[13px] text-muted">{answer.confidence_reason}</p>
   </div>
 
   {#if lines.length > 0}
@@ -117,7 +216,10 @@
         {#if l.heading}
           <h3 class="label border-b border-rule bg-ground px-4 py-2 text-muted">{l.text.replace(/:$/, '')}</h3>
         {:else}
-          <p class="border-b border-rule px-4 py-2.5 text-[15px] leading-snug last:border-b-0">{split(l.text)[0]}<span class="whitespace-nowrap">{split(l.text)[1]}{@render marks(l.refs)}</span></p>
+          <p class="border-b border-rule px-4 py-2.5 text-[15px] leading-snug last:border-b-0">
+            {@render formattedTokens(l.text)}
+            {@render marks(l.refs)}
+          </p>
         {/if}
       {/each}
     </div>
