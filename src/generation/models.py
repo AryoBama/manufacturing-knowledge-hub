@@ -111,6 +111,14 @@ class GeneratedAnswer(BaseModel):
         default_factory=list,
         description="Decoupled operational actions (empty for pure factual queries)"
     )
+    summary_citations: List[int] = Field(
+        default_factory=list,
+        description="1-based indices into `citations` for the evidence behind the summary"
+    )
+    point_citations: List[List[int]] = Field(
+        default_factory=list,
+        description="Parallel to detailed_points: 1-based indices into `citations` supporting each point (empty list = not attributable)"
+    )
     requires_clarification: bool = False
     clarification_prompt: Optional[str] = None
 

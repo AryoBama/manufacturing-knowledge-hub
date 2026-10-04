@@ -107,7 +107,7 @@ class AnswerSynthesizer:
                 recommendations=[],
                 requires_clarification=True,
                 clarification_prompt="Conflicting documentation detected. Please consult the latest approved operating manual or DCS Cause & Effect matrix."
-            )
+            ).model_copy(update=self._attribution(package, conflict_points, citations))
 
 
         # 4. State: Sufficient Evidence
@@ -132,6 +132,8 @@ class AnswerSynthesizer:
 
         ans.recommendations = recommendations
         ans.confidence_breakdown = breakdown
+        for field, value in self._attribution(package, ans.detailed_points, citations).items():
+            setattr(ans, field, value)
         return ans
 
 
@@ -156,6 +158,51 @@ class AnswerSynthesizer:
             structured_store=self.structured_store
         )
         return self.generate(package)
+
+    _TAG_TOKEN = re.compile(r"\b[A-Z][A-Z0-9]*-[A-Z0-9][A-Z0-9-]*\b")
+
+    @staticmethod
+    def _norm(text: str) -> str:
+        collapsed = " ".join(text.replace("•", " ").strip("- ").split())
+        return re.sub(r"^\d+\.\s+", "", collapsed).lower()
+
+    def _points_match_item(self, point: str, item: EvidenceItem, equipment_tag: Optional[str]) -> bool:
+        """True when `point` was derived from `item` (verbatim text, cited file, or shared tag identifiers)."""
+        p = self._norm(point)
+        # Empty lines and section headings ("Start Permissives:") make no claim to attribute.
+        if not p or p.endswith(":"):
+            return False
+        content = self._norm(item.content)
+        if len(p) >= 12 and p in content:
+            return True
+        if item.source.file_name and item.source.file_name.lower() in p:
+            return True
+        # Structured points (e.g. "PSLL-1201: Triggers trip on GA-1201A") are rebuilt from relationship
+        # metadata, so match on the identifiers they mention instead of on verbatim text.
+        if item.evidence_type == "document_chunk":
+            return False
+        tokens = set(self._TAG_TOKEN.findall(point.upper()))
+        if equipment_tag:
+            tokens.discard(equipment_tag.upper())
+        if not tokens:
+            return False
+        haystack = (item.content + " " + " ".join(str(v) for v in item.metadata.values())).upper()
+        return all(t in haystack for t in tokens)
+
+    def _attribution(self, package: EvidencePackage, points: List[str], citations: List[SourceCitation]) -> dict:
+        """Map each detailed point (and the summary) to the 1-based citation indices that support it."""
+        index_by_key = {(c.document_id, c.file_name, c.page): i + 1 for i, c in enumerate(citations)}
+        point_citations: List[List[int]] = []
+        for point in points:
+            hits: List[int] = []
+            for item in package.items:
+                if self._points_match_item(point, item, package.equipment_tag):
+                    idx = index_by_key.get((item.document_id, item.source.file_name, item.source.page))
+                    if idx and idx not in hits:
+                        hits.append(idx)
+            point_citations.append(hits)
+        summary: List[int] = sorted({i for hits in point_citations for i in hits})
+        return {"point_citations": point_citations, "summary_citations": summary}
 
     def _build_citations(self, items: List[EvidenceItem]) -> List[SourceCitation]:
         citations = []
