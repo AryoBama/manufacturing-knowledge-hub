@@ -4,11 +4,17 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: manufacturing-knowledge-hub
+    env_file:
+      - .env
     ports:
       - "8000:8000"
     environment:
       - OFFLINE_MODE=${OFFLINE_MODE:-false}
-      - LLM_PROVIDER=${LLM_PROVIDER:-deepseek}
+      - LLM_PROVIDER=${LLM_PROVIDER:-nvidia}
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY:-}
+      - NVIDIA_MODEL=${NVIDIA_MODEL:-nvidia/nemotron-3-super-120b-a12b}
+      - NVIDIA_BASE_URL=${NVIDIA_BASE_URL:-https://integrate.api.nvidia.com/v1/chat/completions}
+      - LLM_TIMEOUT=${LLM_TIMEOUT:-35.0}
       - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
       - DEEPSEEK_MODEL=${DEEPSEEK_MODEL:-deepseek-chat}
       - DEEPSEEK_BASE_URL=${DEEPSEEK_BASE_URL:-https://api.deepseek.com/chat/completions}
@@ -20,6 +26,7 @@ services:
       - ./configs:/app/configs:ro
       - ./data:/app/data:ro
       - ./logs:/app/logs
+      - ./.env:/app/.env:ro
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/api/ready', timeout=3)\" || exit 1"]
