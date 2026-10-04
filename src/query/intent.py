@@ -1,6 +1,7 @@
 from typing import Optional
 from src.query.llm_intent_classifier import (
     IntentClassificationResult,
+    VALID_INTENTS,
     get_default_llm_intent_classifier,
 )
 
@@ -49,7 +50,9 @@ def classify_intent_deterministic(query: str) -> IntentClassificationResult:
     # Troubleshooting & Anomaly Diagnosis (check first-check / diagnostic questions before history)
     if any(k in q for k in [
         "what is the first check", "first check", "what should i check", "how to fix", "remedy",
-        "troubleshoot", "diagnostic", "abnormal", "anomali"
+        "troubleshoot", "diagnostic", "abnormal", "anomali", "investigate", "investigasi",
+        "what should operators investigate", "what should operator investigate",
+        "what should we check", "how to inspect", "what to check", "what should check"
     ]):
         return IntentClassificationResult(
             intent="troubleshooting",
@@ -99,9 +102,10 @@ def classify_intent_deterministic(query: str) -> IntentClassificationResult:
 
     # Troubleshooting & Anomaly Diagnosis (general anomaly signals)
     if any(k in q for k in [
-        "vibrat", "leak", "high temp", "getar", "bocor", "kebocoran",
-        "panas", "gangguan", "bearing", "noise", "bising", "bunyi",
-        "cavitation", "kavitasi", "misalignment", "seal leak"
+        "vibrat", "leak", "high temp", "high temperature", "discharge temp", "discharge temperature",
+        "overheat", "overheating", "suhu tinggi", "temperatur tinggi", "temperature high",
+        "getar", "bocor", "kebocoran", "panas", "gangguan", "bearing", "noise", "bising", "bunyi",
+        "cavitation", "kavitasi", "misalignment", "seal leak", "fouling", "hunting", "sluggish"
     ]):
         return IntentClassificationResult(
             intent="troubleshooting",
@@ -145,17 +149,38 @@ def classify_intent_deterministic(query: str) -> IntentClassificationResult:
 
 def classify_intent_hybrid(query: str, fallback_to_llm: bool = True) -> IntentClassificationResult:
     """
-    Hybrid Intent Classifier:
-    1. Evaluates deterministic classifier first (HIGH confidence -> instant return).
-    2. If LOW / AMBIGUOUS and fallback_to_llm=True -> triggers LLM classifier fallback.
+    LLM-Primary Hybrid Intent Classifier:
+    1. Deterministic Security Guard: Blocks prompt injection / jailbreak queries immediately.
+    2. Primary Semantic LLM: Leverages LLM intent classifier to understand semantic nuances.
+    3. Deterministic Fallback: If LLM is disabled, offline, times out, or errors, seamlessly falls back
+       to deterministic industrial engineering rules.
     """
-    det_result = classify_intent_deterministic(query)
-    if det_result.confidence == "HIGH" or not fallback_to_llm:
-        return det_result
+    q = query.strip()
 
-    # Step 2: LLM Classifier Fallback
-    llm = get_default_llm_intent_classifier()
-    return llm.classify(query)
+    # Step 1: Immediate Security Guard (Deterministic)
+    if is_jailbreak_or_prompt_injection(q):
+        return IntentClassificationResult(
+            intent="general_information",
+            confidence="HIGH",
+            reason_code="security_guardrail"
+        )
+
+    # Step 2: Primary Semantic LLM Classification
+    if fallback_to_llm:
+        try:
+            llm = get_default_llm_intent_classifier()
+            llm_result = llm.classify(q)
+            if (
+                llm_result.intent in VALID_INTENTS
+                and llm_result.confidence in ("HIGH", "MEDIUM")
+                and llm_result.reason_code != "offline_fallback"
+            ):
+                return llm_result
+        except Exception:
+            pass
+
+    # Step 3: Deterministic Rule-Based Fallback
+    return classify_intent_deterministic(q)
 
 
 def classify_intent(query: str, fallback_to_llm: bool = True) -> str:

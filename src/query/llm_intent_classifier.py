@@ -93,10 +93,16 @@ class LLMIntentClassifier:
 
         # Operational symptoms / sudden anomalies without explicit keyword 'troubleshoot'
         if (
-            ("stop" in q and "sudden" in q)
-            or ("stop" in q and "running" in q)
-            or any(w in q for w in ["why does the pump stop", "why did it stop", "why does", "abnormal vibration", "inspect after", "shaking", "shut unexpectedly"])
-            and any(w in q for w in ["stop", "trip", "check", "inspect", "vibration", "leak", "problem"])
+            any(w in q for w in [
+                "investigate", "high discharge temperature", "high temperature", "overheating",
+                "abnormal noise", "abnormal vibration", "why does the pump stop", "why did it stop",
+                "why does", "inspect after", "shaking", "shut unexpectedly", "hunting", "sluggish"
+            ])
+            or (("stop" in q or "trip" in q) and ("sudden" in q or "unexpected" in q or "running" in q))
+            or (
+                any(w in q for w in ["why does the pump stop", "why did it stop", "why does", "abnormal vibration", "inspect after", "shaking", "shut unexpectedly"])
+                and any(w in q for w in ["stop", "trip", "check", "inspect", "vibration", "leak", "problem"])
+            )
         ):
             return IntentClassificationResult(intent="troubleshooting", confidence="HIGH", reason_code="abnormal_operation_symptom")
 
